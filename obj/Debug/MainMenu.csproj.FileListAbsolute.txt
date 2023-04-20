@@ -1,0 +1,12 @@
+C:\Users\tiago\OneDrive\Documentos\Windows Forms Projetos\MainMenu\MainMenu\bin\Debug\MainMenu.exe.config
+C:\Users\tiago\OneDrive\Documentos\Windows Forms Projetos\MainMenu\MainMenu\bin\Debug\MainMenu.exe
+C:\Users\tiago\OneDrive\Documentos\Windows Forms Projetos\MainMenu\MainMenu\bin\Debug\MainMenu.pdb
+C:\Users\tiago\OneDrive\Documentos\Windows Forms Projetos\MainMenu\MainMenu\obj\Debug\MainMenu.csproj.AssemblyReference.cache
+C:\Users\tiago\OneDrive\Documentos\Windows Forms Projetos\MainMenu\MainMenu\obj\Debug\MainMenu.csproj.SuggestedBindingRedirects.cache
+C:\Users\tiago\OneDrive\Documentos\Windows Forms Projetos\MainMenu\MainMenu\obj\Debug\MainMenu.Form1.resources
+C:\Users\tiago\OneDrive\Documentos\Windows Forms Projetos\MainMenu\MainMenu\obj\Debug\MainMenu.Properties.Resources.resources
+C:\Users\tiago\OneDrive\Documentos\Windows Forms Projetos\MainMenu\MainMenu\obj\Debug\MainMenu.csproj.GenerateResource.cache
+C:\Users\tiago\OneDrive\Documentos\Windows Forms Projetos\MainMenu\MainMenu\obj\Debug\MainMenu.csproj.CoreCompileInputs.cache
+C:\Users\tiago\OneDrive\Documentos\Windows Forms Projetos\MainMenu\MainMenu\obj\Debug\MainMenu.exe
+C:\Users\tiago\OneDrive\Documentos\Windows Forms Projetos\MainMenu\MainMenu\obj\Debug\MainMenu.pdb
+C:\Users\tiago\OneDrive\Documentos\Windows Forms Projetos\MainMenu\MainMenu\obj\Debug\MainMenu.FormLogin.resources
