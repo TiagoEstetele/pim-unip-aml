@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomControls\ToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +61,36 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cadastro.Designer.cs">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Deletar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Deletar.Designer.cs">
+      <DependentUpon>Deletar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editar.Designer.cs">
+      <DependentUpon>Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\informacoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\informacoes.Designer.cs">
+      <DependentUpon>informacoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Ponto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Ponto.Designer.cs">
+      <DependentUpon>Ponto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -65,6 +98,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cadastro.resx">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Deletar.resx">
+      <DependentUpon>Deletar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editar.resx">
+      <DependentUpon>Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\informacoes.resx">
+      <DependentUpon>informacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Ponto.resx">
+      <DependentUpon>Ponto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -74,6 +122,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -87,6 +136,114 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-perfil-azul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-senha-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuário-64 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-senha-azul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconPerfil2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconSenha2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconPerfilAzulClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconSenhaAzulClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-branco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_user_male_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_property_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waste_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rules_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checkmark_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\collapse_arrow_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand_arrow_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuário-64 %283%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driver_license_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tear-off_calendar_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pay_date_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\department_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card_security_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resume_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\permanent_job_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_48px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

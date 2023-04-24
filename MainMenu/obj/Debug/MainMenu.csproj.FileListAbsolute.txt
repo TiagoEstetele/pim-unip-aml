@@ -10,3 +10,8 @@ C:\Users\tiago\OneDrive\Documentos\Windows Forms Projetos\MainMenu\MainMenu\obj\
 C:\Users\tiago\OneDrive\Documentos\Windows Forms Projetos\MainMenu\MainMenu\obj\Debug\MainMenu.exe
 C:\Users\tiago\OneDrive\Documentos\Windows Forms Projetos\MainMenu\MainMenu\obj\Debug\MainMenu.pdb
 C:\Users\tiago\OneDrive\Documentos\Windows Forms Projetos\MainMenu\MainMenu\obj\Debug\MainMenu.FormLogin.resources
+C:\Users\tiago\OneDrive\Documentos\Windows Forms Projetos\MainMenu\MainMenu\obj\Debug\MainMenu.Forms.Cadastro.resources
+C:\Users\tiago\OneDrive\Documentos\Windows Forms Projetos\MainMenu\MainMenu\obj\Debug\MainMenu.Forms.Deletar.resources
+C:\Users\tiago\OneDrive\Documentos\Windows Forms Projetos\MainMenu\MainMenu\obj\Debug\MainMenu.Forms.Editar.resources
+C:\Users\tiago\OneDrive\Documentos\Windows Forms Projetos\MainMenu\MainMenu\obj\Debug\MainMenu.Forms.informacoes.resources
+C:\Users\tiago\OneDrive\Documentos\Windows Forms Projetos\MainMenu\MainMenu\obj\Debug\MainMenu.Forms.Ponto.resources
