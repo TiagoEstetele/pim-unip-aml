@@ -1,0 +1,47 @@
+C:\Users\User\source\repos\cadastrarFuncionario\cadastrarFuncionario\bin\Debug\net6.0-windows\cadastrarFuncionario.exe
+C:\Users\User\source\repos\cadastrarFuncionario\cadastrarFuncionario\bin\Debug\net6.0-windows\cadastrarFuncionario.deps.json
+C:\Users\User\source\repos\cadastrarFuncionario\cadastrarFuncionario\bin\Debug\net6.0-windows\cadastrarFuncionario.runtimeconfig.json
+C:\Users\User\source\repos\cadastrarFuncionario\cadastrarFuncionario\bin\Debug\net6.0-windows\cadastrarFuncionario.dll
+C:\Users\User\source\repos\cadastrarFuncionario\cadastrarFuncionario\bin\Debug\net6.0-windows\cadastrarFuncionario.pdb
+C:\Users\User\source\repos\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.csproj.GenerateResource.cache
+C:\Users\User\source\repos\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.AssemblyInfo.cs
+C:\Users\User\source\repos\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.dll
+C:\Users\User\source\repos\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\refint\cadastrarFuncionario.dll
+C:\Users\User\source\repos\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.pdb
+C:\Users\User\source\repos\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.genruntimeconfig.cache
+C:\Users\User\source\repos\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\ref\cadastrarFuncionario.dll
+C:\Users\User\source\repos\cadastrarFuncionario\cadastrarFuncionario\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\User\source\repos\cadastrarFuncionario\cadastrarFuncionario\bin\Debug\net6.0-windows\Npgsql.dll
+C:\Users\User\source\repos\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.csproj.CopyComplete
+C:\Users\User\source\repos\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.CadastrarFuncionario.resources
+C:\Users\User\source\repos\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.Form2.resources
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\bin\Debug\net6.0-windows\cadastrarFuncionario.exe
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\bin\Debug\net6.0-windows\cadastrarFuncionario.dll
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\bin\Debug\net6.0-windows\Npgsql.dll
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\bin\Debug\net6.0-windows\cadastrarFuncionario.deps.json
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\bin\Debug\net6.0-windows\cadastrarFuncionario.runtimeconfig.json
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\bin\Debug\net6.0-windows\cadastrarFuncionario.pdb
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.csproj.AssemblyReference.cache
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.Alterar_Senha.resources
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.CadastrarFuncionario.resources
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.ControlePonto.resources
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\Form1.DP.resources
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.EditarFuncionario.resources
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\Form1.Funcionario.resources
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.Form1.resources
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.csproj.GenerateResource.cache
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.AssemblyInfoInputs.cache
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.AssemblyInfo.cs
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.csproj.CoreCompileInputs.cache
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.csproj.CopyComplete
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.dll
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\refint\cadastrarFuncionario.dll
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.pdb
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.genruntimeconfig.cache
+C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\ref\cadastrarFuncionario.dll

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="CadastrarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ControlePonto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EditarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Funcionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Alterar_Senha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "V2XGSC+O0mZ17o2HRk26MIhZiEhaH5YEFpC7STz+GMBUea/C2PqZ4nbefIZcnGBdI+pt+cscJVdD/g0NrbhX1Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\cadastrarFuncionario\\cadastrarFuncionario\\cadastrarFuncionario.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\muril\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\muril\\.nuget\\packages\\npgsql\\7.0.2\\npgsql.7.0.2.nupkg.sha512",
+    "C:\\Users\\muril\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
