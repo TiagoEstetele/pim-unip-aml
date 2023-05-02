@@ -24,7 +24,7 @@ namespace cadastrarFuncionario
 
         private void hora_atual_Click(object sender, EventArgs e)
         {
-            string postgres_source = "host=localhost;port=5432;database=PIM_3;username=postgres;password=1902";
+            string postgres_source = "host=localhost;port=5432;database=ibh_pim;username=postgres;password=admin";
             conec = new NpgsqlConnection(postgres_source);
             string sql_hora = "insert into controle_de_horas (id_funcionario, data_movimento)" +
                               " values (@idfun, @data_mov)";

@@ -41,7 +41,6 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.txtCPF = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -51,6 +50,8 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.txtSalario = new System.Windows.Forms.TextBox();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtAdmissao = new System.Windows.Forms.MaskedTextBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -78,9 +79,10 @@
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.txtBanco = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.showPasswordBtn = new MainMenu.CustomControls.ToggleButton();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.btnAtivo = new MainMenu.CustomControls.ToggleButton();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtCPF = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -214,9 +216,10 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.txtCPF);
+            this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.pictureBox3);
-            this.panel5.Controls.Add(this.txtCPF);
             this.panel5.Location = new System.Drawing.Point(30, 257);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(298, 68);
@@ -239,20 +242,6 @@
             this.pictureBox3.Size = new System.Drawing.Size(52, 45);
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
-            // 
-            // txtCPF
-            // 
-            this.txtCPF.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCPF.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCPF.Font = new System.Drawing.Font("Montserrat Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCPF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.txtCPF.Location = new System.Drawing.Point(70, 17);
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(225, 24);
-            this.txtCPF.TabIndex = 6;
-            this.txtCPF.Text = "CPF";
-            this.txtCPF.Click += new System.EventHandler(this.txtCPF_Click);
-            this.txtCPF.TextChanged += new System.EventHandler(this.txtCPF_TextChanged);
             // 
             // panel7
             // 
@@ -341,13 +330,36 @@
             // panel11
             // 
             this.panel11.Controls.Add(this.label4);
-            this.panel11.Controls.Add(this.maskedTextBox1);
+            this.panel11.Controls.Add(this.txtAdmissao);
             this.panel11.Controls.Add(this.panel12);
             this.panel11.Controls.Add(this.pictureBox6);
             this.panel11.Location = new System.Drawing.Point(364, 257);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(298, 68);
             this.panel11.TabIndex = 13;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Font = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.label4.Location = new System.Drawing.Point(70, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(130, 18);
+            this.label4.TabIndex = 26;
+            this.label4.Text = "Data de Admissão";
+            // 
+            // txtAdmissao
+            // 
+            this.txtAdmissao.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAdmissao.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAdmissao.Location = new System.Drawing.Point(73, 21);
+            this.txtAdmissao.Mask = "00/00/0000";
+            this.txtAdmissao.Name = "txtAdmissao";
+            this.txtAdmissao.Size = new System.Drawing.Size(160, 20);
+            this.txtAdmissao.TabIndex = 25;
+            this.txtAdmissao.ValidatingType = typeof(System.DateTime);
             // 
             // panel12
             // 
@@ -468,12 +480,6 @@
             this.comboCargo.Font = new System.Drawing.Font("Montserrat Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboCargo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.comboCargo.FormattingEnabled = true;
-            this.comboCargo.Items.AddRange(new object[] {
-            "teste",
-            "teste",
-            "teste",
-            "teste",
-            "teste"});
             this.comboCargo.Location = new System.Drawing.Point(70, 11);
             this.comboCargo.Name = "comboCargo";
             this.comboCargo.Size = new System.Drawing.Size(225, 34);
@@ -635,41 +641,57 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "Ativo";
             // 
-            // showPasswordBtn
+            // btnAtivo
             // 
-            this.showPasswordBtn.Location = new System.Drawing.Point(486, 447);
-            this.showPasswordBtn.MinimumSize = new System.Drawing.Size(45, 22);
-            this.showPasswordBtn.Name = "showPasswordBtn";
-            this.showPasswordBtn.OffBackColor = System.Drawing.Color.Gray;
-            this.showPasswordBtn.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.showPasswordBtn.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.showPasswordBtn.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.showPasswordBtn.Size = new System.Drawing.Size(45, 22);
-            this.showPasswordBtn.TabIndex = 23;
-            this.showPasswordBtn.UseVisualStyleBackColor = true;
+            this.btnAtivo.Location = new System.Drawing.Point(486, 447);
+            this.btnAtivo.MinimumSize = new System.Drawing.Size(45, 22);
+            this.btnAtivo.Name = "btnAtivo";
+            this.btnAtivo.OffBackColor = System.Drawing.Color.Gray;
+            this.btnAtivo.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.btnAtivo.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.btnAtivo.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAtivo.Size = new System.Drawing.Size(45, 22);
+            this.btnAtivo.TabIndex = 23;
+            this.btnAtivo.UseVisualStyleBackColor = true;
             // 
-            // maskedTextBox1
+            // btnSalvar
             // 
-            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.maskedTextBox1.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(73, 21);
-            this.maskedTextBox1.Mask = "00/00/0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(160, 20);
-            this.maskedTextBox1.TabIndex = 25;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalvar.FlatAppearance.BorderSize = 0;
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvar.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.ForeColor = System.Drawing.Color.White;
+            this.btnSalvar.Location = new System.Drawing.Point(770, 438);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(156, 39);
+            this.btnSalvar.TabIndex = 24;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // label4
+            // label5
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.label4.Location = new System.Drawing.Point(70, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 18);
-            this.label4.TabIndex = 26;
-            this.label4.Text = "Data de Admissão";
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Font = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.label5.Location = new System.Drawing.Point(70, 4);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(34, 18);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "CPF";
+            // 
+            // txtCPF
+            // 
+            this.txtCPF.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCPF.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPF.Location = new System.Drawing.Point(69, 24);
+            this.txtCPF.Mask = "000.000.000-00";
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(160, 20);
+            this.txtCPF.TabIndex = 27;
+            this.txtCPF.ValidatingType = typeof(System.DateTime);
             // 
             // Cadastro
             // 
@@ -677,7 +699,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1018, 532);
-            this.Controls.Add(this.showPasswordBtn);
+            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.btnAtivo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel17);
             this.Controls.Add(this.panel19);
@@ -748,7 +771,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TextBox txtCPF;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -785,10 +807,13 @@
         private System.Windows.Forms.TextBox txtBanco;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboCargo;
-        private CustomControls.ToggleButton showPasswordBtn;
+        private CustomControls.ToggleButton btnAtivo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.MaskedTextBox txtDataNascimento;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox txtAdmissao;
+        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.MaskedTextBox txtCPF;
+        private System.Windows.Forms.Label label5;
     }
 }

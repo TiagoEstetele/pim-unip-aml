@@ -8,7 +8,7 @@ namespace cadastrarFuncionario
 {
     public partial class CadastrarFuncionario : Form
     {
-        string connectionString = "Host=localhost;Port=5432;Database=PIM_3;Username=postgres;Password=1902;";
+        string connectionString = "Host=localhost;Port=5432;Database=ibh_pim;Username=postgres;Password=admin;";
         NpgsqlConnection connection = null;
         private string strsql = string.Empty;
         public List<Cargo> cargoList = new List<Cargo>();
@@ -57,7 +57,7 @@ namespace cadastrarFuncionario
 
         private void btn_salvar_Click(object sender, EventArgs e)
         {
-            string strcad = "insert into dado_funcionario (nome,data_admissao,ctps,data_nascimento,banco,conta,cpf,email,ativo,endereco,id_cargo,salario_bruto,telefone) values(@nome,@data_admissao,@ctps,@data_nascimento,@banco,@conta,@cpf,@email,@ativo,@endereco,@id_cargo,@salario_bruto,@telefone); select currval('dado_funcionario_id_funcionario_seq');";
+            string strcad = "insert into funcionario (nome,data_admissao,ctps,data_nascimento,banco,conta,cpf,email,ativo,endereco,id_cargo,salario_bruto,telefone) values(@nome,@data_admissao,@ctps,@data_nascimento,@banco,@conta,@cpf,@email,@ativo,@endereco,@id_cargo,@salario_bruto,@telefone); select currval('funcionario_id_funcionario_seq');";
             connection = new NpgsqlConnection(connectionString);
 
             connection.Open();

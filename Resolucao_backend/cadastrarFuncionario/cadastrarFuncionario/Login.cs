@@ -40,9 +40,9 @@ namespace cadastrarFuncionario
         {
             try
             {
-                string postgres_source = "host=localhost;port=5432;database=PIM_3;username=postgres;password=1902";
+                string postgres_source = "host=localhost;port=5432;database=ibh_pim;username=postgres;password=admin";
                 conec = new NpgsqlConnection(postgres_source);
-                string sql_login = "select d.id_cargo, d.ativo, d.id_funcionario from login l inner join dado_funcionario d on d.id_funcionario = l.id_funcionario where l.login= @login and l.senha= @senha";
+                string sql_login = "select d.id_cargo, d.ativo, d.id_funcionario from login l inner join funcionario d on d.id_funcionario = l.id_funcionario where l.login= @login and l.senha= @senha";
 
                 NpgsqlCommand comando = new NpgsqlCommand(sql_login, conec);
                 conec.Open();

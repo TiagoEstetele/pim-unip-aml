@@ -90,7 +90,7 @@
             // 
             // showPasswordBtn
             // 
-            this.showPasswordBtn.Location = new System.Drawing.Point(700, 292);
+            this.showPasswordBtn.Location = new System.Drawing.Point(700, 269);
             this.showPasswordBtn.MinimumSize = new System.Drawing.Size(45, 22);
             this.showPasswordBtn.Name = "showPasswordBtn";
             this.showPasswordBtn.OffBackColor = System.Drawing.Color.Gray;
@@ -105,7 +105,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.panel2.Location = new System.Drawing.Point(482, 318);
+            this.panel2.Location = new System.Drawing.Point(482, 295);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(263, 1);
             this.panel2.TabIndex = 20;
@@ -117,7 +117,7 @@
             this.textbox_password.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textbox_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.textbox_password.HideSelection = false;
-            this.textbox_password.Location = new System.Drawing.Point(520, 291);
+            this.textbox_password.Location = new System.Drawing.Point(520, 268);
             this.textbox_password.Name = "textbox_password";
             this.textbox_password.Size = new System.Drawing.Size(242, 20);
             this.textbox_password.TabIndex = 19;
@@ -130,7 +130,7 @@
             // 
             this.pictureBox6.BackgroundImage = global::MainMenu.Properties.Resources.icons8_senha_50__1_;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(482, 285);
+            this.pictureBox6.Location = new System.Drawing.Point(482, 262);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(31, 31);
             this.pictureBox6.TabIndex = 18;
@@ -139,7 +139,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.panel1.Location = new System.Drawing.Point(482, 251);
+            this.panel1.Location = new System.Drawing.Point(482, 228);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(263, 1);
             this.panel1.TabIndex = 17;
@@ -150,11 +150,11 @@
             this.textbox_login.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textbox_login.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textbox_login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.textbox_login.Location = new System.Drawing.Point(519, 223);
+            this.textbox_login.Location = new System.Drawing.Point(519, 200);
             this.textbox_login.Name = "textbox_login";
             this.textbox_login.Size = new System.Drawing.Size(242, 20);
             this.textbox_login.TabIndex = 16;
-            this.textbox_login.Text = "Username";
+            this.textbox_login.Text = "CPF";
             this.textbox_login.Click += new System.EventHandler(this.textbox_login_Click);
             // 
             // btnSignIn
@@ -165,7 +165,7 @@
             this.btnSignIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignIn.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignIn.ForeColor = System.Drawing.Color.White;
-            this.btnSignIn.Location = new System.Drawing.Point(482, 357);
+            this.btnSignIn.Location = new System.Drawing.Point(482, 334);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(263, 39);
             this.btnSignIn.TabIndex = 15;
@@ -177,7 +177,7 @@
             // 
             this.pictureBox7.BackgroundImage = global::MainMenu.Properties.Resources.icons8_usuário_64__3_;
             this.pictureBox7.Image = global::MainMenu.Properties.Resources.icons8_usuário_64__3_;
-            this.pictureBox7.Location = new System.Drawing.Point(482, 218);
+            this.pictureBox7.Location = new System.Drawing.Point(482, 195);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(31, 31);
             this.pictureBox7.TabIndex = 12;
@@ -186,7 +186,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(562, 97);
+            this.pictureBox5.Location = new System.Drawing.Point(562, 74);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(102, 100);
             this.pictureBox5.TabIndex = 10;
@@ -294,8 +294,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(106, 127);

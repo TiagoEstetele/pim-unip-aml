@@ -40,7 +40,7 @@ namespace cadastrarFuncionario
                     MessageBox.Show("As senhas não coincidem", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
 
-                string Postgres_Source = "host=localhost;port=5432;database=PIM_3;username=postgres;password=1902";
+                string Postgres_Source = "host=localhost;port=5432;database=ibh_pim;username=postgres;password=admin";
                 conec = new NpgsqlConnection(Postgres_Source);
                 string Sql_NovaSenha = "update login set senha = @senha_nova where senha = '123' and login = @identif";
                 

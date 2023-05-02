@@ -45,3 +45,7 @@ C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFunciona
 C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.pdb
 C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\cadastrarFuncionario.genruntimeconfig.cache
 C:\Users\muril\OneDrive\Área de Trabalho\cadastrarFuncionario\cadastrarFuncionario\obj\Debug\net6.0-windows\ref\cadastrarFuncionario.dll
+C:\Users\tiago\OneDrive\Documentos\pim-unip-ibh\Resolucao_backend\cadastrarFuncionario\cadastrarFuncionario\bin\Debug\net6.0-windows\cadastrarFuncionario.exe
+C:\Users\tiago\OneDrive\Documentos\pim-unip-ibh\Resolucao_backend\cadastrarFuncionario\cadastrarFuncionario\bin\Debug\net6.0-windows\cadastrarFuncionario.dll
+C:\Users\tiago\OneDrive\Documentos\pim-unip-ibh\Resolucao_backend\cadastrarFuncionario\cadastrarFuncionario\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\tiago\OneDrive\Documentos\pim-unip-ibh\Resolucao_backend\cadastrarFuncionario\cadastrarFuncionario\bin\Debug\net6.0-windows\Npgsql.dll

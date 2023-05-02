@@ -163,19 +163,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\muril\\.nuget\\packages\\": {}
+    "C:\\Users\\tiago\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\cadastrarFuncionario\\cadastrarFuncionario\\cadastrarFuncionario.csproj",
+      "projectUniqueName": "C:\\Users\\tiago\\OneDrive\\Documentos\\pim-unip-ibh\\Resolucao_backend\\cadastrarFuncionario\\cadastrarFuncionario\\cadastrarFuncionario.csproj",
       "projectName": "cadastrarFuncionario",
-      "projectPath": "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\cadastrarFuncionario\\cadastrarFuncionario\\cadastrarFuncionario.csproj",
-      "packagesPath": "C:\\Users\\muril\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\cadastrarFuncionario\\cadastrarFuncionario\\obj\\",
+      "projectPath": "C:\\Users\\tiago\\OneDrive\\Documentos\\pim-unip-ibh\\Resolucao_backend\\cadastrarFuncionario\\cadastrarFuncionario\\cadastrarFuncionario.csproj",
+      "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tiago\\OneDrive\\Documentos\\pim-unip-ibh\\Resolucao_backend\\cadastrarFuncionario\\cadastrarFuncionario\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\muril\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -225,7 +230,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
