@@ -14,7 +14,6 @@ namespace MainMenu
     public partial class FormFuncionario : Form
     {
         //Fields
-
         bool sidebarExpand;
         bool homeCollapse;
         private Form activeForm;
