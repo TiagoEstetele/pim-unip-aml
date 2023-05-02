@@ -70,9 +70,7 @@ namespace MainMenu.Forms
             {
                 var data = (Funcionario)dgvFuncionarios.Rows[e.RowIndex].DataBoundItem;
                 Cadastro form = new Cadastro(data.ID);
-                form.Text = "Editar informacoes";
                 form.ShowDialog();
-
             }
         }
 

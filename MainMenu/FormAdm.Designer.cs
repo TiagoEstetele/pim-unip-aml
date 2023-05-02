@@ -33,35 +33,31 @@
             this.sidebar = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.HomeContainer = new System.Windows.Forms.Panel();
-            this.pictureImageSeta = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnFuncionarios = new System.Windows.Forms.Button();
-            this.btnCadastrar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.menuButton = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnLogout = new System.Windows.Forms.Button();
             this.panelTittleBar = new System.Windows.Forms.Panel();
             this.btnMinimaze = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.labelTittle = new System.Windows.Forms.Label();
             this.panelDesktopPanel = new System.Windows.Forms.Panel();
-            this.btnInformation = new System.Windows.Forms.Button();
-            this.btnError = new System.Windows.Forms.Button();
-            this.btnWarning = new System.Windows.Forms.Button();
-            this.btnSuccess = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.HomeTimer = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureImageSeta = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.btnFuncionarios = new System.Windows.Forms.Button();
+            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.menuButton = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.sidebar.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.HomeContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureImageSeta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.panelTittleBar.SuspendLayout();
             this.panelDesktopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureImageSeta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -104,6 +100,108 @@
             this.HomeContainer.Name = "HomeContainer";
             this.HomeContainer.Size = new System.Drawing.Size(220, 61);
             this.HomeContainer.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Montserrat Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(63, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 26);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Menu";
+            // 
+            // panelTittleBar
+            // 
+            this.panelTittleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.panelTittleBar.Controls.Add(this.btnMinimaze);
+            this.panelTittleBar.Controls.Add(this.btnClose);
+            this.panelTittleBar.Controls.Add(this.labelTittle);
+            this.panelTittleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTittleBar.Location = new System.Drawing.Point(60, 0);
+            this.panelTittleBar.Name = "panelTittleBar";
+            this.panelTittleBar.Size = new System.Drawing.Size(1018, 80);
+            this.panelTittleBar.TabIndex = 1;
+            // 
+            // btnMinimaze
+            // 
+            this.btnMinimaze.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimaze.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimaze.FlatAppearance.BorderSize = 0;
+            this.btnMinimaze.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
+            this.btnMinimaze.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimaze.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinimaze.ForeColor = System.Drawing.Color.White;
+            this.btnMinimaze.Location = new System.Drawing.Point(948, 3);
+            this.btnMinimaze.Name = "btnMinimaze";
+            this.btnMinimaze.Size = new System.Drawing.Size(30, 30);
+            this.btnMinimaze.TabIndex = 5;
+            this.btnMinimaze.Text = "-";
+            this.btnMinimaze.UseVisualStyleBackColor = true;
+            this.btnMinimaze.Click += new System.EventHandler(this.btnMinimaze_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(985, 5);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(30, 30);
+            this.btnClose.TabIndex = 3;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // labelTittle
+            // 
+            this.labelTittle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelTittle.AutoSize = true;
+            this.labelTittle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTittle.ForeColor = System.Drawing.Color.White;
+            this.labelTittle.Location = new System.Drawing.Point(471, 28);
+            this.labelTittle.Name = "labelTittle";
+            this.labelTittle.Size = new System.Drawing.Size(72, 30);
+            this.labelTittle.TabIndex = 2;
+            this.labelTittle.Text = "HOME";
+            this.labelTittle.UseCompatibleTextRendering = true;
+            // 
+            // panelDesktopPanel
+            // 
+            this.panelDesktopPanel.BackColor = System.Drawing.Color.White;
+            this.panelDesktopPanel.Controls.Add(this.pictureBox1);
+            this.panelDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktopPanel.Location = new System.Drawing.Point(60, 80);
+            this.panelDesktopPanel.Name = "panelDesktopPanel";
+            this.panelDesktopPanel.Size = new System.Drawing.Size(1018, 532);
+            this.panelDesktopPanel.TabIndex = 2;
+            this.panelDesktopPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // sidebarTimer
+            // 
+            this.sidebarTimer.Interval = 5;
+            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
+            // 
+            // HomeTimer
+            // 
+            this.HomeTimer.Interval = 10;
+            this.HomeTimer.Tick += new System.EventHandler(this.HomeTimer_Tick);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(406, 178);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // pictureImageSeta
             // 
@@ -196,17 +294,6 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(63, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 26);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Menu";
-            // 
             // menuButton
             // 
             this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -256,145 +343,6 @@
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click_1);
             // 
-            // panelTittleBar
-            // 
-            this.panelTittleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.panelTittleBar.Controls.Add(this.btnMinimaze);
-            this.panelTittleBar.Controls.Add(this.btnClose);
-            this.panelTittleBar.Controls.Add(this.labelTittle);
-            this.panelTittleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTittleBar.Location = new System.Drawing.Point(60, 0);
-            this.panelTittleBar.Name = "panelTittleBar";
-            this.panelTittleBar.Size = new System.Drawing.Size(1018, 80);
-            this.panelTittleBar.TabIndex = 1;
-            // 
-            // btnMinimaze
-            // 
-            this.btnMinimaze.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimaze.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimaze.FlatAppearance.BorderSize = 0;
-            this.btnMinimaze.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
-            this.btnMinimaze.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimaze.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMinimaze.ForeColor = System.Drawing.Color.White;
-            this.btnMinimaze.Location = new System.Drawing.Point(948, 3);
-            this.btnMinimaze.Name = "btnMinimaze";
-            this.btnMinimaze.Size = new System.Drawing.Size(30, 30);
-            this.btnMinimaze.TabIndex = 5;
-            this.btnMinimaze.Text = "-";
-            this.btnMinimaze.UseVisualStyleBackColor = true;
-            this.btnMinimaze.Click += new System.EventHandler(this.btnMinimaze_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(985, 5);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(30, 30);
-            this.btnClose.TabIndex = 3;
-            this.btnClose.Text = "X";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // labelTittle
-            // 
-            this.labelTittle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelTittle.AutoSize = true;
-            this.labelTittle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTittle.ForeColor = System.Drawing.Color.White;
-            this.labelTittle.Location = new System.Drawing.Point(471, 28);
-            this.labelTittle.Name = "labelTittle";
-            this.labelTittle.Size = new System.Drawing.Size(72, 30);
-            this.labelTittle.TabIndex = 2;
-            this.labelTittle.Text = "HOME";
-            this.labelTittle.UseCompatibleTextRendering = true;
-            // 
-            // panelDesktopPanel
-            // 
-            this.panelDesktopPanel.BackColor = System.Drawing.Color.White;
-            this.panelDesktopPanel.Controls.Add(this.btnInformation);
-            this.panelDesktopPanel.Controls.Add(this.btnError);
-            this.panelDesktopPanel.Controls.Add(this.btnWarning);
-            this.panelDesktopPanel.Controls.Add(this.btnSuccess);
-            this.panelDesktopPanel.Controls.Add(this.pictureBox1);
-            this.panelDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktopPanel.Location = new System.Drawing.Point(60, 80);
-            this.panelDesktopPanel.Name = "panelDesktopPanel";
-            this.panelDesktopPanel.Size = new System.Drawing.Size(1018, 532);
-            this.panelDesktopPanel.TabIndex = 2;
-            this.panelDesktopPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // btnInformation
-            // 
-            this.btnInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.btnInformation.Location = new System.Drawing.Point(640, 438);
-            this.btnInformation.Name = "btnInformation";
-            this.btnInformation.Size = new System.Drawing.Size(75, 23);
-            this.btnInformation.TabIndex = 4;
-            this.btnInformation.Text = "info";
-            this.btnInformation.UseVisualStyleBackColor = false;
-            this.btnInformation.Click += new System.EventHandler(this.btnInformation_Click);
-            // 
-            // btnError
-            // 
-            this.btnError.BackColor = System.Drawing.Color.Red;
-            this.btnError.Location = new System.Drawing.Point(559, 438);
-            this.btnError.Name = "btnError";
-            this.btnError.Size = new System.Drawing.Size(75, 23);
-            this.btnError.TabIndex = 3;
-            this.btnError.Text = "error";
-            this.btnError.UseVisualStyleBackColor = false;
-            this.btnError.Click += new System.EventHandler(this.btnError_Click);
-            // 
-            // btnWarning
-            // 
-            this.btnWarning.BackColor = System.Drawing.Color.Yellow;
-            this.btnWarning.Location = new System.Drawing.Point(466, 438);
-            this.btnWarning.Name = "btnWarning";
-            this.btnWarning.Size = new System.Drawing.Size(75, 23);
-            this.btnWarning.TabIndex = 2;
-            this.btnWarning.Text = "warning";
-            this.btnWarning.UseVisualStyleBackColor = false;
-            this.btnWarning.Click += new System.EventHandler(this.btnWarning_Click);
-            // 
-            // btnSuccess
-            // 
-            this.btnSuccess.BackColor = System.Drawing.Color.GreenYellow;
-            this.btnSuccess.Location = new System.Drawing.Point(367, 438);
-            this.btnSuccess.Name = "btnSuccess";
-            this.btnSuccess.Size = new System.Drawing.Size(75, 23);
-            this.btnSuccess.TabIndex = 1;
-            this.btnSuccess.Text = "sucesso";
-            this.btnSuccess.UseVisualStyleBackColor = false;
-            this.btnSuccess.Click += new System.EventHandler(this.btnSuccess_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(406, 178);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // sidebarTimer
-            // 
-            this.sidebarTimer.Interval = 5;
-            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
-            // 
-            // HomeTimer
-            // 
-            this.HomeTimer.Interval = 10;
-            this.HomeTimer.Tick += new System.EventHandler(this.HomeTimer_Tick);
-            // 
             // FormAdm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -413,13 +361,13 @@
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
             this.HomeContainer.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureImageSeta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.panelTittleBar.ResumeLayout(false);
             this.panelTittleBar.PerformLayout();
             this.panelDesktopPanel.ResumeLayout(false);
             this.panelDesktopPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureImageSeta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -445,10 +393,6 @@
         private System.Windows.Forms.Timer HomeTimer;
         private System.Windows.Forms.Button btnFuncionarios;
         private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.Button btnInformation;
-        private System.Windows.Forms.Button btnError;
-        private System.Windows.Forms.Button btnWarning;
-        private System.Windows.Forms.Button btnSuccess;
         private System.Windows.Forms.PictureBox pictureImageSeta;
     }
 }

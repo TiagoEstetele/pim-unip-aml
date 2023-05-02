@@ -32,82 +32,84 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtDataNascimento = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtCPF = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.txtSalario = new System.Windows.Forms.TextBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.txtAdmissao = new System.Windows.Forms.MaskedTextBox();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.panel17 = new System.Windows.Forms.Panel();
             this.comboCargo = new System.Windows.Forms.ComboBox();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel19 = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.txtCTPS = new System.Windows.Forms.TextBox();
             this.panel21 = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.txtConta = new System.Windows.Forms.TextBox();
             this.panel23 = new System.Windows.Forms.Panel();
             this.panel24 = new System.Windows.Forms.Panel();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.txtBanco = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnAtivo = new MainMenu.CustomControls.ToggleButton();
+            this.pictureBoxDinamic = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.panel21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel23.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDinamic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblText
@@ -115,11 +117,13 @@
             this.lblText.AutoSize = true;
             this.lblText.Font = new System.Drawing.Font("Montserrat Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblText.Location = new System.Drawing.Point(359, 9);
+            this.lblText.Location = new System.Drawing.Point(86, 21);
             this.lblText.Name = "lblText";
             this.lblText.Size = new System.Drawing.Size(303, 29);
             this.lblText.TabIndex = 4;
             this.lblText.Text = "Cadastrar novo funcionário";
+            this.lblText.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblText.Click += new System.EventHandler(this.lblText_Click);
             // 
             // txtNome
             // 
@@ -153,15 +157,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(288, 1);
             this.panel2.TabIndex = 8;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MainMenu.Properties.Resources.add_user_male_48px;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(52, 45);
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
             // 
             // panel3
             // 
@@ -206,15 +201,6 @@
             this.panel4.Size = new System.Drawing.Size(288, 1);
             this.panel4.TabIndex = 8;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::MainMenu.Properties.Resources.tear_off_calendar_48px;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(52, 45);
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.txtCPF);
@@ -258,15 +244,6 @@
             this.panel6.Size = new System.Drawing.Size(288, 1);
             this.panel6.TabIndex = 8;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::MainMenu.Properties.Resources.driver_license_48px;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(52, 45);
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.panel8);
@@ -285,15 +262,6 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(288, 1);
             this.panel8.TabIndex = 8;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::MainMenu.Properties.Resources.address_48px;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(52, 45);
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
             // 
             // txtEndereco
             // 
@@ -327,15 +295,6 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(288, 1);
             this.panel10.TabIndex = 8;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::MainMenu.Properties.Resources.cash_48px;
-            this.pictureBox5.Location = new System.Drawing.Point(12, 4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(52, 45);
-            this.pictureBox5.TabIndex = 7;
-            this.pictureBox5.TabStop = false;
             // 
             // txtSalario
             // 
@@ -394,15 +353,6 @@
             this.panel12.Size = new System.Drawing.Size(288, 1);
             this.panel12.TabIndex = 8;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::MainMenu.Properties.Resources.pay_date_48px;
-            this.pictureBox6.Location = new System.Drawing.Point(12, 4);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(52, 45);
-            this.pictureBox6.TabIndex = 7;
-            this.pictureBox6.TabStop = false;
-            // 
             // panel13
             // 
             this.panel13.Controls.Add(this.panel14);
@@ -421,15 +371,6 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(288, 1);
             this.panel14.TabIndex = 8;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::MainMenu.Properties.Resources.phone_48px;
-            this.pictureBox7.Location = new System.Drawing.Point(12, 4);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(52, 45);
-            this.pictureBox7.TabIndex = 7;
-            this.pictureBox7.TabStop = false;
             // 
             // txtTelefone
             // 
@@ -463,15 +404,6 @@
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(288, 1);
             this.panel16.TabIndex = 8;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::MainMenu.Properties.Resources.post_48px;
-            this.pictureBox8.Location = new System.Drawing.Point(12, 4);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(52, 45);
-            this.pictureBox8.TabIndex = 7;
-            this.pictureBox8.TabStop = false;
             // 
             // txtEmail
             // 
@@ -519,15 +451,6 @@
             this.panel18.Size = new System.Drawing.Size(288, 1);
             this.panel18.TabIndex = 8;
             // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::MainMenu.Properties.Resources.permanent_job_48px;
-            this.pictureBox9.Location = new System.Drawing.Point(12, 4);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(52, 45);
-            this.pictureBox9.TabIndex = 7;
-            this.pictureBox9.TabStop = false;
-            // 
             // panel19
             // 
             this.panel19.Controls.Add(this.panel20);
@@ -546,15 +469,6 @@
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(288, 1);
             this.panel20.TabIndex = 8;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::MainMenu.Properties.Resources.resume_48px;
-            this.pictureBox10.Location = new System.Drawing.Point(12, 4);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(52, 45);
-            this.pictureBox10.TabIndex = 7;
-            this.pictureBox10.TabStop = false;
             // 
             // txtCTPS
             // 
@@ -589,15 +503,6 @@
             this.panel22.Size = new System.Drawing.Size(288, 1);
             this.panel22.TabIndex = 8;
             // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::MainMenu.Properties.Resources.card_security_48px;
-            this.pictureBox11.Location = new System.Drawing.Point(12, 4);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(52, 45);
-            this.pictureBox11.TabIndex = 7;
-            this.pictureBox11.TabStop = false;
-            // 
             // txtConta
             // 
             this.txtConta.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -630,15 +535,6 @@
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(288, 1);
             this.panel24.TabIndex = 8;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::MainMenu.Properties.Resources.department_48px;
-            this.pictureBox12.Location = new System.Drawing.Point(12, 4);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(52, 45);
-            this.pictureBox12.TabIndex = 7;
-            this.pictureBox12.TabStop = false;
             // 
             // txtBanco
             // 
@@ -711,12 +607,130 @@
             this.btnAtivo.TabIndex = 23;
             this.btnAtivo.UseVisualStyleBackColor = true;
             // 
+            // pictureBoxDinamic
+            // 
+            this.pictureBoxDinamic.Image = global::MainMenu.Properties.Resources.add_48px;
+            this.pictureBoxDinamic.Location = new System.Drawing.Point(29, 9);
+            this.pictureBoxDinamic.Name = "pictureBoxDinamic";
+            this.pictureBoxDinamic.Size = new System.Drawing.Size(50, 50);
+            this.pictureBoxDinamic.TabIndex = 26;
+            this.pictureBoxDinamic.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::MainMenu.Properties.Resources.permanent_job_48px;
+            this.pictureBox9.Location = new System.Drawing.Point(12, 4);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(52, 45);
+            this.pictureBox9.TabIndex = 7;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::MainMenu.Properties.Resources.resume_48px;
+            this.pictureBox10.Location = new System.Drawing.Point(12, 4);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(52, 45);
+            this.pictureBox10.TabIndex = 7;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::MainMenu.Properties.Resources.card_security_48px;
+            this.pictureBox11.Location = new System.Drawing.Point(12, 4);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(52, 45);
+            this.pictureBox11.TabIndex = 7;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::MainMenu.Properties.Resources.department_48px;
+            this.pictureBox12.Location = new System.Drawing.Point(12, 4);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(52, 45);
+            this.pictureBox12.TabIndex = 7;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::MainMenu.Properties.Resources.cash_48px;
+            this.pictureBox5.Location = new System.Drawing.Point(12, 4);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(52, 45);
+            this.pictureBox5.TabIndex = 7;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::MainMenu.Properties.Resources.pay_date_48px;
+            this.pictureBox6.Location = new System.Drawing.Point(12, 4);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(52, 45);
+            this.pictureBox6.TabIndex = 7;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::MainMenu.Properties.Resources.phone_48px;
+            this.pictureBox7.Location = new System.Drawing.Point(12, 4);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(52, 45);
+            this.pictureBox7.TabIndex = 7;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::MainMenu.Properties.Resources.post_48px;
+            this.pictureBox8.Location = new System.Drawing.Point(12, 4);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(52, 45);
+            this.pictureBox8.TabIndex = 7;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::MainMenu.Properties.Resources.address_48px;
+            this.pictureBox4.Location = new System.Drawing.Point(12, 4);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(52, 45);
+            this.pictureBox4.TabIndex = 7;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::MainMenu.Properties.Resources.driver_license_48px;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(52, 45);
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::MainMenu.Properties.Resources.tear_off_calendar_48px;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(52, 45);
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MainMenu.Properties.Resources.add_user_male_48px;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(52, 45);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1018, 532);
+            this.Controls.Add(this.pictureBoxDinamic);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnAtivo);
@@ -741,39 +755,40 @@
             this.Text = "Cadastro";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel17.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel19.ResumeLayout(false);
             this.panel19.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.panel21.ResumeLayout(false);
             this.panel21.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel23.ResumeLayout(false);
             this.panel23.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDinamic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -837,5 +852,6 @@
         private System.Windows.Forms.MaskedTextBox txtCPF;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.PictureBox pictureBoxDinamic;
     }
 }

@@ -63,6 +63,16 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_48px {
+            get {
+                object obj = ResourceManager.GetObject("add_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add_user_male_48px {
             get {
                 object obj = ResourceManager.GetObject("add_user_male_48px", resourceCulture);
@@ -186,6 +196,16 @@ namespace MainMenu.Properties {
         internal static System.Drawing.Bitmap driver_license_48px {
             get {
                 object obj = ResourceManager.GetObject("driver_license_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit_48px {
+            get {
+                object obj = ResourceManager.GetObject("edit_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

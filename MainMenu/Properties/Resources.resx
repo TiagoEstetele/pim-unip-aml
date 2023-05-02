@@ -124,6 +124,9 @@
   <data name="seta_cima" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\seta_cima.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="HELLO (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HELLO (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ok_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ok_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -268,7 +271,10 @@
   <data name="cheque_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cheque_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HELLO (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HELLO (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -17,7 +17,6 @@ namespace MainMenu.Forms
     {
         private readonly int? IdFuncionario = null;
 
-
         string connectionString = "Host=pim.postgres.database.azure.com;" +
                                     "Port=5432;" +
                                     "Database=Teste02;" +
@@ -33,10 +32,12 @@ namespace MainMenu.Forms
         }
         public Cadastro(int idFuncionario)
         {
+
             IdFuncionario = idFuncionario;
             InitializeComponent();
             PreencherComboCargo();
             Buscar(idFuncionario);
+            PreencherLabel();
         }
 
         private void PreencherComboCargo()
@@ -324,7 +325,8 @@ namespace MainMenu.Forms
             }
             else
             {
-                string strcad = "update funcionario set nome=@nome, data_admissao=@data_admissao,ctps=@ctps,data_nascimento=@data_nascimento,banco=@banco,conta=@conta,cpf=@cpf,email=@email,ativo=@ativo,endereco=@endereco,id_cargo=@id_cargo,salario_bruto=@salario_bruto,telefone=@telefone where id_funcionario=@id_funcionario";
+                string strcad = "UPDATE funcionario SET nome=@nome, data_admissao=@data_admissao, ctps=@ctps, data_nascimento=@data_nascimento, banco=@banco, conta=@conta, cpf=@cpf, email=@email, ativo=@ativo, endereco=@endereco, id_cargo=@id_cargo, salario_bruto=@salario_bruto, telefone=@telefone WHERE id_funcionario=@id_funcionario";
+                ;
                 connection = new NpgsqlConnection(connectionString);
 
                 connection.Open();
@@ -345,6 +347,7 @@ namespace MainMenu.Forms
                     comando.Parameters.AddWithValue("@telefone", txtTelefone.Text);
                     comando.Parameters.AddWithValue("@id_cargo", int.Parse(comboCargo.SelectedValue.ToString()));
                     comando.Parameters.AddWithValue("@salario_bruto", double.Parse(txtSalario.Text));
+                    comando.Parameters.AddWithValue("@id_funcionario", IdFuncionario);
 
                     comando.Prepare();
                     int id_funcionario = Convert.ToInt32(comando.ExecuteScalar());
@@ -425,6 +428,15 @@ namespace MainMenu.Forms
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void lblText_Click(object sender, EventArgs e)
+        {
+        }
+        private void PreencherLabel()
+        {
+            lblText.Text = "Editar Funcionario";
+            pictureBoxDinamic.Image = Properties.Resources.edit_48px;
         }
     }
 }
