@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblText = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -39,6 +39,8 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.txtCPF = new System.Windows.Forms.MaskedTextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -79,10 +81,9 @@
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.txtBanco = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnAtivo = new MainMenu.CustomControls.ToggleButton();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtCPF = new System.Windows.Forms.MaskedTextBox();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnAtivo = new MainMenu.CustomControls.ToggleButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -109,16 +110,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblText
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.label1.Location = new System.Drawing.Point(359, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(303, 29);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Cadastrar novo funcionário";
+            this.lblText.AutoSize = true;
+            this.lblText.Font = new System.Drawing.Font("Montserrat Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.lblText.Location = new System.Drawing.Point(359, 9);
+            this.lblText.Name = "lblText";
+            this.lblText.Size = new System.Drawing.Size(303, 29);
+            this.lblText.TabIndex = 4;
+            this.lblText.Text = "Cadastrar novo funcionário";
             // 
             // txtNome
             // 
@@ -224,6 +225,29 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(298, 68);
             this.panel5.TabIndex = 9;
+            // 
+            // txtCPF
+            // 
+            this.txtCPF.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCPF.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPF.Location = new System.Drawing.Point(69, 24);
+            this.txtCPF.Mask = "000.000.000-00";
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(160, 20);
+            this.txtCPF.TabIndex = 27;
+            this.txtCPF.ValidatingType = typeof(System.DateTime);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Font = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.label5.Location = new System.Drawing.Point(70, 4);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(34, 18);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "CPF";
             // 
             // panel6
             // 
@@ -641,19 +665,6 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "Ativo";
             // 
-            // btnAtivo
-            // 
-            this.btnAtivo.Location = new System.Drawing.Point(486, 447);
-            this.btnAtivo.MinimumSize = new System.Drawing.Size(45, 22);
-            this.btnAtivo.Name = "btnAtivo";
-            this.btnAtivo.OffBackColor = System.Drawing.Color.Gray;
-            this.btnAtivo.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.btnAtivo.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.btnAtivo.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAtivo.Size = new System.Drawing.Size(45, 22);
-            this.btnAtivo.TabIndex = 23;
-            this.btnAtivo.UseVisualStyleBackColor = true;
-            // 
             // btnSalvar
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
@@ -670,28 +681,35 @@
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // label5
+            // btnClose
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.label5.Location = new System.Drawing.Point(70, 4);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 18);
-            this.label5.TabIndex = 26;
-            this.label5.Text = "CPF";
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.btnClose.Location = new System.Drawing.Point(974, 4);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(40, 38);
+            this.btnClose.TabIndex = 25;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // txtCPF
+            // btnAtivo
             // 
-            this.txtCPF.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCPF.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCPF.Location = new System.Drawing.Point(69, 24);
-            this.txtCPF.Mask = "000.000.000-00";
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(160, 20);
-            this.txtCPF.TabIndex = 27;
-            this.txtCPF.ValidatingType = typeof(System.DateTime);
+            this.btnAtivo.Location = new System.Drawing.Point(486, 447);
+            this.btnAtivo.MinimumSize = new System.Drawing.Size(45, 22);
+            this.btnAtivo.Name = "btnAtivo";
+            this.btnAtivo.OffBackColor = System.Drawing.Color.Gray;
+            this.btnAtivo.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.btnAtivo.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.btnAtivo.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAtivo.Size = new System.Drawing.Size(45, 22);
+            this.btnAtivo.TabIndex = 23;
+            this.btnAtivo.UseVisualStyleBackColor = true;
             // 
             // Cadastro
             // 
@@ -699,6 +717,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1018, 532);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnAtivo);
             this.Controls.Add(this.label2);
@@ -714,9 +733,11 @@
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblText);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Location = new System.Drawing.Point(480, 290);
             this.Name = "Cadastro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Cadastro";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -760,7 +781,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblText;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
@@ -815,5 +836,6 @@
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.MaskedTextBox txtCPF;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnClose;
     }
 }

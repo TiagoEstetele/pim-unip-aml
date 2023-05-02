@@ -184,7 +184,6 @@ namespace MainMenu
             childForm.BringToFront();
             childForm.Show();
             labelTittle.Text = childForm.Text;
-
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)

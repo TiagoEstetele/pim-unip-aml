@@ -421,5 +421,10 @@ namespace MainMenu.Forms
                 connection.Close();
             }
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

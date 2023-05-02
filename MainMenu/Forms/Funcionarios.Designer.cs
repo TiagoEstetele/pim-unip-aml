@@ -64,7 +64,7 @@
             this.Controls.Add(this.dgvFuncionarios);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Funcionarios";
-            this.Text = "Deletar";
+            this.Text = "Funcionários";
             ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionarios)).EndInit();
             this.ResumeLayout(false);
 

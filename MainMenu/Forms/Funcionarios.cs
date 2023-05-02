@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,6 +21,8 @@ namespace MainMenu.Forms
                               "Password=Maluco777;";
         NpgsqlConnection connection = null;
         public List<Funcionario> funcionarios = new List<Funcionario>();
+        private readonly object panelDesktopPanel;
+
         public Funcionarios()
         {
             InitializeComponent();
@@ -51,6 +54,7 @@ namespace MainMenu.Forms
             dgvFuncionarios.DataSource = funcionarios;
             dgvFuncionarios.ReadOnly = true;
         }
+      
         void dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             //if click is on new row or header row
@@ -65,7 +69,10 @@ namespace MainMenu.Forms
             if (e.ColumnIndex == dgvFuncionarios.Columns["Editar"].Index)
             {
                 var data = (Funcionario)dgvFuncionarios.Rows[e.RowIndex].DataBoundItem;
-                new Cadastro(data.ID).ShowDialog();
+                Cadastro form = new Cadastro(data.ID);
+                form.Text = "Editar informacoes";
+                form.ShowDialog();
+
             }
         }
 
