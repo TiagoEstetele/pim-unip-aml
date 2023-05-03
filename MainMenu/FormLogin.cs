@@ -13,6 +13,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Npgsql;
 using NpgsqlTypes;
 using MainMenu.Forms.InfoBoxs;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 
 namespace MainMenu
 {
@@ -180,6 +181,15 @@ namespace MainMenu
             finally
             {
                 conec.Close();
+            }
+        }
+
+        private void textbox_password_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                // Ativa o botão
+                btnSignIn.PerformClick();
             }
         }
     }

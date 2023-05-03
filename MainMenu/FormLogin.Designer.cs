@@ -112,6 +112,7 @@
             // 
             // textbox_password
             // 
+            this.textbox_password.AcceptsTab = true;
             this.textbox_password.BackColor = System.Drawing.Color.White;
             this.textbox_password.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textbox_password.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -120,11 +121,12 @@
             this.textbox_password.Location = new System.Drawing.Point(520, 268);
             this.textbox_password.Name = "textbox_password";
             this.textbox_password.Size = new System.Drawing.Size(242, 20);
-            this.textbox_password.TabIndex = 19;
+            this.textbox_password.TabIndex = 1;
             this.textbox_password.TabStop = false;
             this.textbox_password.Text = "Password";
             this.textbox_password.Click += new System.EventHandler(this.textbox_password_Click);
             this.textbox_password.TextChanged += new System.EventHandler(this.textbox_password_TextChanged);
+            this.textbox_password.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textbox_password_KeyPress);
             // 
             // pictureBox6
             // 
@@ -146,6 +148,7 @@
             // 
             // textbox_login
             // 
+            this.textbox_login.AcceptsTab = true;
             this.textbox_login.BackColor = System.Drawing.Color.White;
             this.textbox_login.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textbox_login.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -153,7 +156,7 @@
             this.textbox_login.Location = new System.Drawing.Point(519, 200);
             this.textbox_login.Name = "textbox_login";
             this.textbox_login.Size = new System.Drawing.Size(242, 20);
-            this.textbox_login.TabIndex = 16;
+            this.textbox_login.TabIndex = 0;
             this.textbox_login.Text = "CPF";
             this.textbox_login.Click += new System.EventHandler(this.textbox_login_Click);
             // 
@@ -168,7 +171,7 @@
             this.btnSignIn.Location = new System.Drawing.Point(482, 334);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(263, 39);
-            this.btnSignIn.TabIndex = 15;
+            this.btnSignIn.TabIndex = 3;
             this.btnSignIn.Text = "Sign In";
             this.btnSignIn.UseVisualStyleBackColor = false;
             this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
@@ -203,7 +206,8 @@
             this.btnMinimaze.Location = new System.Drawing.Point(734, -11);
             this.btnMinimaze.Name = "btnMinimaze";
             this.btnMinimaze.Size = new System.Drawing.Size(30, 43);
-            this.btnMinimaze.TabIndex = 9;
+            this.btnMinimaze.TabIndex = 999;
+            this.btnMinimaze.TabStop = false;
             this.btnMinimaze.Text = "-";
             this.btnMinimaze.UseVisualStyleBackColor = true;
             this.btnMinimaze.Click += new System.EventHandler(this.btnMinimaze_Click);
@@ -220,7 +224,8 @@
             this.btnClose.Location = new System.Drawing.Point(770, -8);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(30, 40);
-            this.btnClose.TabIndex = 7;
+            this.btnClose.TabIndex = 999;
+            this.btnClose.TabStop = false;
             this.btnClose.Text = "x";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -294,8 +299,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(106, 127);
