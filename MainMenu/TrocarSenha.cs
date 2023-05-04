@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MainMenu.Forms.InfoBoxs;
 
 namespace MainMenu
 {
@@ -32,10 +33,12 @@ namespace MainMenu
                 if (textbox_nova.Text != textbox_confirma.Text)
                 {
                     MessageBox.Show("As senhas não coincidem.", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
                 else if (textbox_nova.Text == string.Empty && textbox_confirma.Text == string.Empty)
                 {
                     MessageBox.Show("Favor preencher os campos corretamente.", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
 
                 string Postgres_Source = "Host=pim.postgres.database.azure.com;" +
@@ -56,7 +59,7 @@ namespace MainMenu
 
                 if (executou == 1)
                 {
-                    MessageBox.Show("A senha foi alterada com sucesso!", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Sucesso!", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                     if (cargo > 1)
                     {
@@ -71,11 +74,22 @@ namespace MainMenu
                 }
                 else
                 {
-                    MessageBox.Show("A senha não foi alterada, favor verificar!", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    AlertBoxArtan(Color.LightGoldenrodYellow, Color.Goldenrod, "Aviso", "Senha não alterada, verifique", Properties.Resources.box_important_48px);
                 }
             }
             catch (Exception ex) { }
             finally { conec.Close(); }
+        }
+
+        void AlertBoxArtan(Color backColor, Color color, string title, string text, Image icon)
+        {
+            alertBox alertBox = new alertBox();
+            alertBox.BackColor = backColor;
+            alertBox.ColorAlertBox = color;
+            alertBox.TitleAlertBox = title;
+            alertBox.TextAlertBox = text;
+            alertBox.IconeColorAlertBox = icon;
+            alertBox.ShowDialog();
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -86,6 +100,16 @@ namespace MainMenu
         private void btnMinimaze_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void textbox_nova_TextChanged(object sender, EventArgs e)
+        {
+            lblNovaSenha.Visible = true;
+        }
+
+        private void textbox_confirma_TextChanged(object sender, EventArgs e)
+        {
+            lblConfirmeNovaSenha.Visible = true;
         }
     }
 }

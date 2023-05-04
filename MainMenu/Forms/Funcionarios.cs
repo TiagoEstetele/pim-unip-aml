@@ -10,10 +10,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace MainMenu.Forms
 {
     public partial class Funcionarios : Form
     {
+        private Form activeForm;
+        private Button currentButton;
         string connectionString = "Host=pim.postgres.database.azure.com;" +
                               "Port=5432;" +
                               "Database=Teste02;" +
@@ -21,12 +24,13 @@ namespace MainMenu.Forms
                               "Password=Maluco777;";
         NpgsqlConnection connection = null;
         public List<Funcionario> funcionarios = new List<Funcionario>();
-        private readonly object panelDesktopPanel;
+        private readonly Panel panelDesktopPanel;
 
         public Funcionarios()
         {
             InitializeComponent();
             PreencherDataGrid();
+            this.ControlBox = false;
         }
         private void PreencherDataGrid()
         {
@@ -54,7 +58,7 @@ namespace MainMenu.Forms
             dgvFuncionarios.DataSource = funcionarios;
             dgvFuncionarios.ReadOnly = true;
         }
-      
+
         void dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             //if click is on new row or header row
@@ -70,7 +74,7 @@ namespace MainMenu.Forms
             {
                 var data = (Funcionario)dgvFuncionarios.Rows[e.RowIndex].DataBoundItem;
                 Cadastro form = new Cadastro(data.ID);
-                form.ShowDialog();
+               form.ShowDialog();
             }
         }
 

@@ -69,18 +69,20 @@ namespace MainMenu
 
         private void textbox_login_Click(object sender, EventArgs e)
         {
-            textbox_login.Clear();
-            panel1.ForeColor = Color.FromArgb(35, 35, 54);
-            textbox_login.ForeColor = Color.FromArgb(35, 35, 54);
+            try
+            {
+                textbox_login.SelectionStart = textbox_login.TextLength;
+            }
+            catch { }
+            if (textbox_login.Text == "CPF")
+            {
+                textbox_login.Clear();
+            }
         }
 
         private void textbox_password_Click(object sender, EventArgs e)
         {
-            textbox_password.Clear();
-            textbox_password.PasswordChar = '●';
-            textbox_password.Font = new Font("Montserrat Medium", 12);
-            panel2.ForeColor = Color.FromArgb(35, 35, 54);
-            textbox_password.ForeColor = Color.FromArgb(35, 35, 54);
+           
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -91,7 +93,7 @@ namespace MainMenu
 
         private void textbox_password_TextChanged(object sender, EventArgs e)
         {
-
+            lblPassword.Visible = true;
         }
 
         private void toggleButton1_CheckedChanged(object sender, EventArgs e)
@@ -184,11 +186,56 @@ namespace MainMenu
             }
         }
 
+        private void textbox_login_TextChanged(object sender, EventArgs e)
+        {
+            lblCPF.Visible = true;
+            try
+            {
+                lblCPF.ForeColor = System.Drawing.ColorTranslator.FromHtml("#232336");
+            }
+            catch { }
+        }
+
+        private void textbox_password_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                textbox_password.SelectionStart = textbox_password.TextLength;
+            }
+            catch { }
+            if (textbox_password.Text == "Password")
+            {
+                textbox_password.Clear();
+            }
+        }
+
+        private void textbox_password_TextChanged_1(object sender, EventArgs e)
+        {
+            lblPassword.Visible = true;
+            textbox_password.PasswordChar = '●';
+            textbox_password.Font = new Font("Montserrat Medium", 12);
+            panel2.ForeColor = Color.FromArgb(35, 35, 54);
+            textbox_password.ForeColor = Color.FromArgb(35, 35, 54);
+            try
+            {
+                textbox_password.ForeColor = System.Drawing.ColorTranslator.FromHtml("#232336");
+            }
+            catch { }
+        }
+
         private void textbox_password_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
                 // Ativa o botão
+                btnSignIn.PerformClick();
+            }
+        }
+
+        private void textbox_login_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
                 btnSignIn.PerformClick();
             }
         }

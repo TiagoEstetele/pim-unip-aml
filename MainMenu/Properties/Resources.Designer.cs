@@ -433,6 +433,16 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap man_raising_hand_icon_48px {
+            get {
+                object obj = ResourceManager.GetObject("man_raising_hand_icon_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap menu_48px {
             get {
                 object obj = ResourceManager.GetObject("menu_48px", resourceCulture);

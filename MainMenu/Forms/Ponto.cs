@@ -48,6 +48,8 @@ namespace MainMenu.Forms
                 int minutos;
                 int segundos;
                 int horaExtra;
+                DateTime date = new DateTime();
+                int mes = 0;
 
                 string postgres_source = "Host=pim.postgres.database.azure.com;" +
                                          "Port=5432;" +
@@ -56,8 +58,8 @@ namespace MainMenu.Forms
                                          "Password=Maluco777;";
 
                 conec = new NpgsqlConnection(postgres_source);
-                string sql_hora = "insert into controle_de_horas (id_funcionario, data_entrada, data_saida)" +
-                                  " values (@idfun, @data_ent, @data_sai)";
+                string sql_hora = "insert into controle_de_horas (id_funcionario, data_entrada, data_saida, mes, horas_total)" +
+                                  " values (@idfun, @data_ent, @data_sai, @mes, @horas_total)";
 
                 NpgsqlCommand comando = new NpgsqlCommand(sql_hora, conec);
                 conec.Open();
@@ -66,6 +68,8 @@ namespace MainMenu.Forms
                 {
                     hora_saida.Text = DateTime.Now.ToString();
                     saida = DateTime.Parse(hora_saida.Text);
+                    date = DateTime.Now;
+                    mes = (date.Month);
                 }
                 else
                 {
@@ -77,8 +81,12 @@ namespace MainMenu.Forms
 
                 horas = total.Hours;
                 minutos = total.Minutes;
+                double minutosconv = minutos / 60;
+                double totalhoras = horas + minutosconv;
                 segundos = total.Seconds;
                 horaExtra = 0;
+
+
 
                 if (horas > 8)
                 {
@@ -92,6 +100,8 @@ namespace MainMenu.Forms
                     comando.Parameters.AddWithValue("@idfun", identify);
                     comando.Parameters.AddWithValue("@data_ent", entrada);
                     comando.Parameters.AddWithValue("@data_sai", saida);
+                    comando.Parameters.AddWithValue("@mes", mes);
+                    comando.Parameters.AddWithValue("@horas_total", totalhoras);
 
                     comando.ExecuteNonQuery();
                 }

@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
+using MainMenu.Forms.alertBoxCadastro;
 
 namespace MainMenu.Forms
 {
@@ -118,6 +119,7 @@ namespace MainMenu.Forms
 
         private void txtNome_TextChanged(object sender, EventArgs e)
         {
+            lblNome.Visible = true;
             try
             {
                 txtNome.ForeColor = System.Drawing.ColorTranslator.FromHtml("#232336");
@@ -177,14 +179,18 @@ namespace MainMenu.Forms
         {
             try
             {
-                txtTelefone.SelectAll();
-
+                txtEndereco.SelectionStart = txtEndereco.TextLength;
             }
             catch { }
+            if (txtEndereco.Text == "Endereço")
+            {
+                txtEndereco.Clear();
+            }
         }
 
         private void txtEndereco_TextChanged(object sender, EventArgs e)
         {
+            lblEndereco.Visible = true;
             try
             {
                 txtEndereco.ForeColor = System.Drawing.ColorTranslator.FromHtml("#232336");
@@ -275,6 +281,17 @@ namespace MainMenu.Forms
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+            DateTime Data1 = DateTime.Parse(txtDataNascimento.Text);
+            DateTime Data2 = DateTime.Parse(txtAdmissao.Text);
+
+            int Result = DateTime.Compare(Data1, Data2);
+
+            if (Result > 0)
+            {
+                MessageBox.Show("A DATA DE NASCIMENTO NÃO PODE SER MAIOR QUE A DE ADMISSÃO");
+                return;
+            }
+
             if (IdFuncionario == null)
             {
                 string strcad = "insert into funcionario (nome,data_admissao,ctps,data_nascimento,banco,conta,cpf,email,ativo,endereco,id_cargo,salario_bruto,telefone) values(@nome,@data_admissao,@ctps,@data_nascimento,@banco,@conta,@cpf,@email,@ativo,@endereco,@id_cargo,@salario_bruto,@telefone); select currval('funcionario_id_funcionario_seq');";

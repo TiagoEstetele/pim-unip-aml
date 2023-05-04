@@ -60,7 +60,7 @@
             // linAlertBox
             // 
             this.linAlertBox.BackColor = System.Drawing.Color.Black;
-            this.linAlertBox.Location = new System.Drawing.Point(2, 74);
+            this.linAlertBox.Location = new System.Drawing.Point(0, 74);
             this.linAlertBox.Name = "linAlertBox";
             this.linAlertBox.Size = new System.Drawing.Size(5, 6);
             this.linAlertBox.TabIndex = 3;
@@ -82,7 +82,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(400, 80);
+            this.ClientSize = new System.Drawing.Size(383, 80);
             this.Controls.Add(this.linAlertBox);
             this.Controls.Add(this.lblTextAlertBox);
             this.Controls.Add(this.lblTitleAlertBox);

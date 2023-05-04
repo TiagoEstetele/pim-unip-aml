@@ -48,7 +48,7 @@ namespace MainMenu.Forms.InfoBoxs
 
         private void PositionAlertBox()
         {
-            int xPos = 980; int yPos = 720;
+            int xPos = 977; int yPos = 661;
             this.Location = new Point(xPos, yPos);
         }
 

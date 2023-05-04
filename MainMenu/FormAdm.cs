@@ -1,5 +1,4 @@
-﻿using MainMenu.Forms.InfoBoxs;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MainMenu.Forms.alertBoxPrincipal;
 
 namespace MainMenu
 {
@@ -201,36 +201,6 @@ namespace MainMenu
             HomeTimer.Start();
         }
 
-        void AlertBoxArtan(Color backColor, Color color, string title, string text, Image icon)
-        {
-            alertBox alertBox = new alertBox();
-            alertBox.BackColor = backColor;
-            alertBox.ColorAlertBox = color;
-            alertBox.TitleAlertBox = title;
-            alertBox.TextAlertBox = text;
-            alertBox.IconeColorAlertBox = icon;
-            alertBox.ShowDialog();
-        }
-        private void btnSuccess_Click(object sender, EventArgs e)
-        {
-            AlertBoxArtan(Color.LightGreen, Color.SeaGreen, "Success", "Operation Completed Succesfully.", Properties.Resources.ok_48px);
-        }
-
-        private void btnWarning_Click(object sender, EventArgs e)
-        {
-            AlertBoxArtan(Color.LightGoldenrodYellow, Color.Goldenrod, "Warning", "Are you confident in the operation ?", Properties.Resources.box_important_48px);
-        }
-
-        private void btnError_Click(object sender, EventArgs e)
-        {
-            AlertBoxArtan(Color.LightPink, Color.DarkRed, "Error", "Operation encountered problem !!", Properties.Resources.close_48px);
-        }
-
-        private void btnInformation_Click(object sender, EventArgs e)
-        {
-            AlertBoxArtan(Color.LightBlue, Color.DodgerBlue, "Information", "Operation is in progress.", Properties.Resources.info_48px);
-        }
-
         private void button3_MouseEnter(object sender, EventArgs e)
         {
             Color minhaCorPersonalizada = Color.FromArgb(44, 44, 64);
@@ -242,10 +212,24 @@ namespace MainMenu
             Color minhaCorPersonalizada = Color.FromArgb(34, 34, 54); 
             pictureImageSeta.BackColor = minhaCorPersonalizada;
         }
-
+        void AlertBoxArtan(Color backColor, Color color, string title, string text, Image icon)
+        {
+            alertBoxPrincipal alertBox = new alertBoxPrincipal();
+            alertBox.BackColor = backColor;
+            alertBox.ColorAlertBox = color;
+            alertBox.TitleAlertBox = title;
+            alertBox.TextAlertBox = text;
+            alertBox.IconeColorAlertBox = icon;
+            alertBox.ShowDialog();
+        }
         private void pictureImageSeta_Click(object sender, EventArgs e)
         {
             HomeTimer.Start();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AlertBoxArtan(Color.LightPink, Color.DarkRed, "Error", "Usuário ou senha inválidos", Properties.Resources.close_48px);
         }
     }
 }

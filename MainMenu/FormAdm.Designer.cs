@@ -43,6 +43,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.panelTittleBar = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.btnMinimaze = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.labelTittle = new System.Windows.Forms.Label();
@@ -255,6 +256,7 @@
             // panelTittleBar
             // 
             this.panelTittleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.panelTittleBar.Controls.Add(this.button4);
             this.panelTittleBar.Controls.Add(this.btnMinimaze);
             this.panelTittleBar.Controls.Add(this.btnClose);
             this.panelTittleBar.Controls.Add(this.labelTittle);
@@ -263,6 +265,16 @@
             this.panelTittleBar.Name = "panelTittleBar";
             this.panelTittleBar.Size = new System.Drawing.Size(1018, 80);
             this.panelTittleBar.TabIndex = 1;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(66, 32);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnMinimaze
             // 
@@ -394,6 +406,7 @@
         private System.Windows.Forms.Button btnFuncionarios;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.PictureBox pictureImageSeta;
+        private System.Windows.Forms.Button button4;
     }
 }
 

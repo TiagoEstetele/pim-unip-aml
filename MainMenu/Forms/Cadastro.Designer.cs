@@ -31,6 +31,7 @@
             this.lblText = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblNome = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -44,6 +45,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.lblEndereco = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.txtEndereco = new System.Windows.Forms.TextBox();
@@ -83,8 +85,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.btnAtivo = new MainMenu.CustomControls.ToggleButton();
             this.pictureBoxDinamic = new System.Windows.Forms.PictureBox();
+            this.btnAtivo = new MainMenu.CustomControls.ToggleButton();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -141,6 +144,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lblNome);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.txtNome);
@@ -148,6 +152,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(298, 68);
             this.panel1.TabIndex = 7;
+            // 
+            // lblNome
+            // 
+            this.lblNome.BackColor = System.Drawing.Color.White;
+            this.lblNome.Font = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.lblNome.Location = new System.Drawing.Point(67, 0);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(228, 18);
+            this.lblNome.TabIndex = 26;
+            this.lblNome.Text = "Nome";
+            this.lblNome.Visible = false;
             // 
             // panel2
             // 
@@ -273,6 +289,7 @@
             // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.lblEndereco);
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Controls.Add(this.pictureBox4);
             this.panel7.Controls.Add(this.txtEndereco);
@@ -280,6 +297,18 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(298, 68);
             this.panel7.TabIndex = 10;
+            // 
+            // lblEndereco
+            // 
+            this.lblEndereco.BackColor = System.Drawing.Color.White;
+            this.lblEndereco.Font = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEndereco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.lblEndereco.Location = new System.Drawing.Point(70, -4);
+            this.lblEndereco.Name = "lblEndereco";
+            this.lblEndereco.Size = new System.Drawing.Size(225, 18);
+            this.lblEndereco.TabIndex = 27;
+            this.lblEndereco.Text = "Endereço";
+            this.lblEndereco.Visible = false;
             // 
             // panel8
             // 
@@ -702,6 +731,15 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // pictureBoxDinamic
+            // 
+            this.pictureBoxDinamic.Image = global::MainMenu.Properties.Resources.add_48px;
+            this.pictureBoxDinamic.Location = new System.Drawing.Point(29, 9);
+            this.pictureBoxDinamic.Name = "pictureBoxDinamic";
+            this.pictureBoxDinamic.Size = new System.Drawing.Size(50, 50);
+            this.pictureBoxDinamic.TabIndex = 26;
+            this.pictureBoxDinamic.TabStop = false;
+            // 
             // btnAtivo
             // 
             this.btnAtivo.Location = new System.Drawing.Point(486, 447);
@@ -715,14 +753,14 @@
             this.btnAtivo.TabIndex = 23;
             this.btnAtivo.UseVisualStyleBackColor = true;
             // 
-            // pictureBoxDinamic
+            // button1
             // 
-            this.pictureBoxDinamic.Image = global::MainMenu.Properties.Resources.add_48px;
-            this.pictureBoxDinamic.Location = new System.Drawing.Point(29, 9);
-            this.pictureBoxDinamic.Name = "pictureBoxDinamic";
-            this.pictureBoxDinamic.Size = new System.Drawing.Size(50, 50);
-            this.pictureBoxDinamic.TabIndex = 26;
-            this.pictureBoxDinamic.TabStop = false;
+            this.button1.Location = new System.Drawing.Point(571, 26);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Cadastro
             // 
@@ -730,6 +768,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1018, 532);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBoxDinamic);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSalvar);
@@ -853,5 +892,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.PictureBox pictureBoxDinamic;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Label lblEndereco;
+        private System.Windows.Forms.Button button1;
     }
 }
