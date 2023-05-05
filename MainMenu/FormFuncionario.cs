@@ -210,6 +210,11 @@ namespace MainMenu
         {
             HomeTimer.Start();
         }
+
+        private void btnFolha_Click(object sender, EventArgs e)
+        {
+            new ConsultaFolha(idfun).Show();
+        }
     }
 }
 

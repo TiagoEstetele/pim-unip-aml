@@ -281,6 +281,12 @@ namespace MainMenu.Forms
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+            if (txtNome.Text == string.Empty || txtAdmissao.Text == string.Empty || txtAdmissao.Text == " / /" || txtCTPS.Text == string.Empty || txtDataNascimento.Text == string.Empty || txtDataNascimento.Text == " / /" || txtBanco.Text == string.Empty || txtConta.Text == string.Empty || txtCPF.Text == string.Empty || txtEmail.Text == string.Empty || txtEndereco.Text == string.Empty || txtTelefone.Text == string.Empty || txtSalario.Text == string.Empty)
+            {
+                MessageBox.Show("CERTIFIQUE DE PREENCHER TODOS OS CAMPOS!");
+                return;
+            }
+
             DateTime Data1 = DateTime.Parse(txtDataNascimento.Text);
             DateTime Data2 = DateTime.Parse(txtAdmissao.Text);
 

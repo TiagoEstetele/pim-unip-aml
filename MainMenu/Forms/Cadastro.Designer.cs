@@ -86,8 +86,8 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.pictureBoxDinamic = new System.Windows.Forms.PictureBox();
-            this.btnAtivo = new MainMenu.CustomControls.ToggleButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnAtivo = new MainMenu.CustomControls.ToggleButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -118,11 +118,11 @@
             // lblText
             // 
             this.lblText.AutoSize = true;
-            this.lblText.Font = new System.Drawing.Font("Montserrat Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.lblText.Location = new System.Drawing.Point(82, 19);
             this.lblText.Name = "lblText";
-            this.lblText.Size = new System.Drawing.Size(276, 29);
+            this.lblText.Size = new System.Drawing.Size(271, 25);
             this.lblText.TabIndex = 4;
             this.lblText.Text = "Cadastro de Funcionário";
             this.lblText.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -132,11 +132,11 @@
             // 
             this.txtNome.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNome.Font = new System.Drawing.Font("Montserrat Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.txtNome.Location = new System.Drawing.Point(70, 17);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(225, 24);
+            this.txtNome.Size = new System.Drawing.Size(225, 22);
             this.txtNome.TabIndex = 6;
             this.txtNome.Text = "Nome";
             this.txtNome.Click += new System.EventHandler(this.txtNome_Click);
@@ -156,7 +156,7 @@
             // lblNome
             // 
             this.lblNome.BackColor = System.Drawing.Color.White;
-            this.lblNome.Font = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.lblNome.Location = new System.Drawing.Point(67, 0);
             this.lblNome.Name = "lblNome";
@@ -197,11 +197,11 @@
             // txtDataNascimento
             // 
             this.txtDataNascimento.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDataNascimento.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDataNascimento.Location = new System.Drawing.Point(70, 17);
             this.txtDataNascimento.Mask = "00/00/0000";
             this.txtDataNascimento.Name = "txtDataNascimento";
-            this.txtDataNascimento.Size = new System.Drawing.Size(160, 20);
+            this.txtDataNascimento.Size = new System.Drawing.Size(160, 19);
             this.txtDataNascimento.TabIndex = 24;
             this.txtDataNascimento.ValidatingType = typeof(System.DateTime);
             // 
@@ -209,11 +209,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.label3.Location = new System.Drawing.Point(67, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(124, 18);
+            this.label3.Size = new System.Drawing.Size(126, 16);
             this.label3.TabIndex = 25;
             this.label3.Text = "Data Nascimento";
             // 
@@ -249,11 +249,11 @@
             // txtCPF
             // 
             this.txtCPF.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCPF.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCPF.Location = new System.Drawing.Point(69, 24);
             this.txtCPF.Mask = "000.000.000-00";
             this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(160, 20);
+            this.txtCPF.Size = new System.Drawing.Size(160, 19);
             this.txtCPF.TabIndex = 27;
             this.txtCPF.ValidatingType = typeof(System.DateTime);
             // 
@@ -261,11 +261,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.label5.Location = new System.Drawing.Point(70, 4);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 18);
+            this.label5.Size = new System.Drawing.Size(36, 16);
             this.label5.TabIndex = 26;
             this.label5.Text = "CPF";
             // 
@@ -301,7 +301,7 @@
             // lblEndereco
             // 
             this.lblEndereco.BackColor = System.Drawing.Color.White;
-            this.lblEndereco.Font = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEndereco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.lblEndereco.Location = new System.Drawing.Point(70, -4);
             this.lblEndereco.Name = "lblEndereco";
@@ -332,11 +332,11 @@
             // 
             this.txtEndereco.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtEndereco.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEndereco.Font = new System.Drawing.Font("Montserrat Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEndereco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.txtEndereco.Location = new System.Drawing.Point(70, 17);
             this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(225, 24);
+            this.txtEndereco.Size = new System.Drawing.Size(225, 22);
             this.txtEndereco.TabIndex = 6;
             this.txtEndereco.Text = "Endereço";
             this.txtEndereco.Click += new System.EventHandler(this.txtEndereco_Click);
@@ -374,11 +374,11 @@
             // 
             this.txtSalario.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSalario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSalario.Font = new System.Drawing.Font("Montserrat Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSalario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.txtSalario.Location = new System.Drawing.Point(70, 17);
             this.txtSalario.Name = "txtSalario";
-            this.txtSalario.Size = new System.Drawing.Size(225, 24);
+            this.txtSalario.Size = new System.Drawing.Size(225, 22);
             this.txtSalario.TabIndex = 6;
             this.txtSalario.Text = "Salário";
             this.txtSalario.Click += new System.EventHandler(this.txtSalario_Click);
@@ -399,22 +399,22 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.label4.Location = new System.Drawing.Point(70, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 18);
+            this.label4.Size = new System.Drawing.Size(135, 16);
             this.label4.TabIndex = 26;
             this.label4.Text = "Data de Admissão";
             // 
             // txtAdmissao
             // 
             this.txtAdmissao.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAdmissao.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAdmissao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAdmissao.Location = new System.Drawing.Point(73, 21);
             this.txtAdmissao.Mask = "00/00/0000";
             this.txtAdmissao.Name = "txtAdmissao";
-            this.txtAdmissao.Size = new System.Drawing.Size(160, 20);
+            this.txtAdmissao.Size = new System.Drawing.Size(160, 19);
             this.txtAdmissao.TabIndex = 25;
             this.txtAdmissao.ValidatingType = typeof(System.DateTime);
             // 
@@ -468,11 +468,11 @@
             // 
             this.txtTelefone.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTelefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTelefone.Font = new System.Drawing.Font("Montserrat Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.txtTelefone.Location = new System.Drawing.Point(70, 17);
             this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(225, 24);
+            this.txtTelefone.Size = new System.Drawing.Size(225, 22);
             this.txtTelefone.TabIndex = 6;
             this.txtTelefone.Text = "Telefone";
             this.txtTelefone.Click += new System.EventHandler(this.txtTelefone_Click);
@@ -510,11 +510,11 @@
             // 
             this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmail.Font = new System.Drawing.Font("Montserrat Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.txtEmail.Location = new System.Drawing.Point(70, 17);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(225, 24);
+            this.txtEmail.Size = new System.Drawing.Size(225, 22);
             this.txtEmail.TabIndex = 6;
             this.txtEmail.Text = "Email";
             this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
@@ -534,12 +534,12 @@
             // 
             this.comboCargo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboCargo.Font = new System.Drawing.Font("Montserrat Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboCargo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.comboCargo.FormattingEnabled = true;
             this.comboCargo.Location = new System.Drawing.Point(70, 11);
             this.comboCargo.Name = "comboCargo";
-            this.comboCargo.Size = new System.Drawing.Size(225, 34);
+            this.comboCargo.Size = new System.Drawing.Size(225, 32);
             this.comboCargo.TabIndex = 9;
             this.comboCargo.Text = "Cargo";
             // 
@@ -593,11 +593,11 @@
             // 
             this.txtCTPS.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCTPS.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCTPS.Font = new System.Drawing.Font("Montserrat Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCTPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCTPS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.txtCTPS.Location = new System.Drawing.Point(70, 17);
             this.txtCTPS.Name = "txtCTPS";
-            this.txtCTPS.Size = new System.Drawing.Size(225, 24);
+            this.txtCTPS.Size = new System.Drawing.Size(225, 22);
             this.txtCTPS.TabIndex = 6;
             this.txtCTPS.Text = "CTPS";
             this.txtCTPS.Click += new System.EventHandler(this.txtCTPS_Click);
@@ -635,11 +635,11 @@
             // 
             this.txtConta.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtConta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtConta.Font = new System.Drawing.Font("Montserrat Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.txtConta.Location = new System.Drawing.Point(70, 17);
             this.txtConta.Name = "txtConta";
-            this.txtConta.Size = new System.Drawing.Size(225, 24);
+            this.txtConta.Size = new System.Drawing.Size(225, 22);
             this.txtConta.TabIndex = 6;
             this.txtConta.Text = "Conta";
             this.txtConta.Click += new System.EventHandler(this.txtConta_Click);
@@ -677,11 +677,11 @@
             // 
             this.txtBanco.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtBanco.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBanco.Font = new System.Drawing.Font("Montserrat Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBanco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.txtBanco.Location = new System.Drawing.Point(70, 17);
             this.txtBanco.Name = "txtBanco";
-            this.txtBanco.Size = new System.Drawing.Size(225, 24);
+            this.txtBanco.Size = new System.Drawing.Size(225, 22);
             this.txtBanco.TabIndex = 6;
             this.txtBanco.Text = "Banco";
             this.txtBanco.Click += new System.EventHandler(this.txtBanco_Click);
@@ -690,11 +690,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Montserrat Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.label2.Location = new System.Drawing.Point(420, 447);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 21);
+            this.label2.Size = new System.Drawing.Size(57, 18);
             this.label2.TabIndex = 19;
             this.label2.Text = "Inativo";
             // 
@@ -704,7 +704,7 @@
             this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalvar.FlatAppearance.BorderSize = 0;
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvar.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.Color.White;
             this.btnSalvar.Location = new System.Drawing.Point(731, 447);
             this.btnSalvar.Name = "btnSalvar";
@@ -740,6 +740,17 @@
             this.pictureBoxDinamic.TabIndex = 26;
             this.pictureBoxDinamic.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.label1.Location = new System.Drawing.Point(537, 447);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 18);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Ativo";
+            // 
             // btnAtivo
             // 
             this.btnAtivo.Location = new System.Drawing.Point(486, 447);
@@ -752,17 +763,6 @@
             this.btnAtivo.Size = new System.Drawing.Size(45, 22);
             this.btnAtivo.TabIndex = 23;
             this.btnAtivo.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.label1.Location = new System.Drawing.Point(537, 447);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 21);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "Ativo";
             // 
             // Cadastro
             // 
