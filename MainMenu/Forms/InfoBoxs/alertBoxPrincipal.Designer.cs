@@ -1,6 +1,6 @@
 ﻿namespace MainMenu.Forms.alertBoxPrincipal
 {
-    partial class alertBoxPrincipal
+    partial class AlertBoxPrincipal
     {
         /// <summary>
         /// Required designer variable.

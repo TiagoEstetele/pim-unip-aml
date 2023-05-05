@@ -20,6 +20,7 @@ namespace MainMenu
     public partial class FormLogin : Form
     {
         public long identify;
+        public string nome;
         NpgsqlConnection conec;
 
         public FormLogin()
@@ -130,7 +131,7 @@ namespace MainMenu
                                          "Password=Maluco777;";
 
                 conec = new NpgsqlConnection(postgres_source);
-                string sql_login = "select d.id_cargo, d.ativo, d.id_funcionario from login l inner join funcionario d on d.id_funcionario = l.id_funcionario where l.login= @login and l.senha= @senha";
+                string sql_login = "select d.id_cargo, d.ativo, d.id_funcionario, d.nome from login l inner join funcionario d on d.id_funcionario = l.id_funcionario where l.login= @login and l.senha= @senha";
 
                 NpgsqlCommand comando = new NpgsqlCommand(sql_login, conec);
                 conec.Open();
@@ -150,6 +151,7 @@ namespace MainMenu
                         Int64 id_cargo = Convert.ToInt64(reader[0]);
                         bool ativo = Convert.ToBoolean(reader[1]);
                         Int64 identify = Convert.ToInt64(reader[2]);
+                        string nome = Convert.ToString(reader[3]);
 
                         if (ativo)
                         {
@@ -165,7 +167,7 @@ namespace MainMenu
                             }
                             else
                             {
-                                new FormFuncionario(identify).Show();
+                                new FormFuncionario(identify,nome).Show();
                                 this.Hide();
                             }
                         }

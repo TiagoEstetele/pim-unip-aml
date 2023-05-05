@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,16 +47,15 @@
             this.lblConfirmeNovaSenha = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
@@ -66,6 +66,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(432, 411);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::MainMenu.Properties.Resources.HELLO__2_;
+            this.pictureBox2.Location = new System.Drawing.Point(57, 110);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(328, 317);
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
             // 
             // label5
             // 
@@ -130,7 +139,7 @@
             this.textbox_nova.BackColor = System.Drawing.Color.White;
             this.textbox_nova.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textbox_nova.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_nova.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.textbox_nova.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
             this.textbox_nova.Location = new System.Drawing.Point(510, 144);
             this.textbox_nova.Name = "textbox_nova";
             this.textbox_nova.Size = new System.Drawing.Size(242, 20);
@@ -140,7 +149,7 @@
             // 
             // btnSignIn
             // 
-            this.btnSignIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.btnSignIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
             this.btnSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSignIn.FlatAppearance.BorderSize = 0;
             this.btnSignIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -167,7 +176,7 @@
             this.textbox_confirma.BackColor = System.Drawing.Color.White;
             this.textbox_confirma.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textbox_confirma.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_confirma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.textbox_confirma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
             this.textbox_confirma.Location = new System.Drawing.Point(510, 221);
             this.textbox_confirma.Name = "textbox_confirma";
             this.textbox_confirma.Size = new System.Drawing.Size(242, 20);
@@ -179,7 +188,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Montserrat", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
             this.label1.Location = new System.Drawing.Point(503, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(213, 40);
@@ -224,7 +233,7 @@
             // 
             this.lblNovaSenha.BackColor = System.Drawing.Color.White;
             this.lblNovaSenha.Font = new System.Drawing.Font("Montserrat Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNovaSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.lblNovaSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
             this.lblNovaSenha.Location = new System.Drawing.Point(506, 124);
             this.lblNovaSenha.Name = "lblNovaSenha";
             this.lblNovaSenha.Size = new System.Drawing.Size(230, 21);
@@ -236,7 +245,7 @@
             // 
             this.lblConfirmeNovaSenha.BackColor = System.Drawing.Color.White;
             this.lblConfirmeNovaSenha.Font = new System.Drawing.Font("Montserrat Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfirmeNovaSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.lblConfirmeNovaSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
             this.lblConfirmeNovaSenha.Location = new System.Drawing.Point(506, 201);
             this.lblConfirmeNovaSenha.Name = "lblConfirmeNovaSenha";
             this.lblConfirmeNovaSenha.Size = new System.Drawing.Size(230, 21);
@@ -264,15 +273,6 @@
             this.pictureBox7.TabIndex = 24;
             this.pictureBox7.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::MainMenu.Properties.Resources.HELLO__2_;
-            this.pictureBox2.Location = new System.Drawing.Point(57, 110);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(328, 317);
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
-            // 
             // TrocarSenha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -298,9 +298,9 @@
             this.Text = "TrocarSenha";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

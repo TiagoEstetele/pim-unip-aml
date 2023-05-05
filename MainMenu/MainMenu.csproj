@@ -308,11 +308,11 @@
     <Compile Include="Forms\InfoBoxs\alertBoxCadastro.Designer.cs">
       <DependentUpon>alertBoxCadastro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\InfoBoxs\alertBoxPrincipal.cs">
+    <Compile Include="Forms\InfoBoxs\AlertBoxPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\InfoBoxs\alertBoxPrincipal.Designer.cs">
-      <DependentUpon>alertBoxPrincipal.cs</DependentUpon>
+    <Compile Include="Forms\InfoBoxs\AlertBoxPrincipal.Designer.cs">
+      <DependentUpon>AlertBoxPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\InfoBoxs\alertBox.cs">
       <SubType>Form</SubType>
@@ -363,8 +363,8 @@
     <EmbeddedResource Include="Forms\InfoBoxs\alertBoxCadastro.resx">
       <DependentUpon>alertBoxCadastro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\InfoBoxs\alertBoxPrincipal.resx">
-      <DependentUpon>alertBoxPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\InfoBoxs\AlertBoxPrincipal.resx">
+      <DependentUpon>AlertBoxPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\InfoBoxs\alertBox.resx">
       <DependentUpon>alertBox.cs</DependentUpon>
@@ -563,6 +563,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\man_raising_hand_icon_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entrada_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saida_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_account_skin_type_7_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team_skin_type_7_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-rodape-aml.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_tab_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-rodape-aml1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-rodape-aml2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1574779670990.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15747796709901.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />

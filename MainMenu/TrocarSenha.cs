@@ -15,6 +15,7 @@ namespace MainMenu
     public partial class TrocarSenha : Form
     {
         public long identify;
+        public string nomeF;
         NpgsqlConnection conec;
         string cpf;
         long cargo;
@@ -63,7 +64,7 @@ namespace MainMenu
 
                     if (cargo > 1)
                     {
-                        new FormFuncionario(identify).Show();
+                        new FormFuncionario(identify,nomeF).Show();
                         this.Hide();
                     }
                     else

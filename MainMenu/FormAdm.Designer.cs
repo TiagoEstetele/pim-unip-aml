@@ -33,37 +33,36 @@
             this.sidebar = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.HomeContainer = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelTittleBar = new System.Windows.Forms.Panel();
+            this.btnMinimaze = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.labelTittle = new System.Windows.Forms.Label();
+            this.panelDesktopPanel = new System.Windows.Forms.Panel();
+            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
+            this.HomeTimer = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureImageSeta = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.btnFuncionarios = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.menuButton = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.panelTittleBar = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.btnMinimaze = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.labelTittle = new System.Windows.Forms.Label();
-            this.panelDesktopPanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
-            this.HomeTimer = new System.Windows.Forms.Timer(this.components);
+            this.menuButton = new System.Windows.Forms.PictureBox();
             this.sidebar.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.HomeContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureImageSeta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.panelTittleBar.SuspendLayout();
             this.panelDesktopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureImageSeta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
             // 
-            this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
             this.sidebar.Controls.Add(this.panelLogo);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
@@ -75,13 +74,13 @@
             // 
             // panelLogo
             // 
-            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
             this.panelLogo.Controls.Add(this.HomeContainer);
             this.panelLogo.Controls.Add(this.button2);
             this.panelLogo.Controls.Add(this.label1);
-            this.panelLogo.Controls.Add(this.menuButton);
             this.panelLogo.Controls.Add(this.button1);
             this.panelLogo.Controls.Add(this.btnLogout);
+            this.panelLogo.Controls.Add(this.menuButton);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
@@ -95,103 +94,12 @@
             this.HomeContainer.Controls.Add(this.button3);
             this.HomeContainer.Controls.Add(this.btnFuncionarios);
             this.HomeContainer.Controls.Add(this.btnCadastrar);
-            this.HomeContainer.Location = new System.Drawing.Point(1, 83);
-            this.HomeContainer.MaximumSize = new System.Drawing.Size(220, 171);
+            this.HomeContainer.Location = new System.Drawing.Point(3, 80);
+            this.HomeContainer.MaximumSize = new System.Drawing.Size(220, 156);
             this.HomeContainer.MinimumSize = new System.Drawing.Size(220, 61);
             this.HomeContainer.Name = "HomeContainer";
             this.HomeContainer.Size = new System.Drawing.Size(220, 61);
             this.HomeContainer.TabIndex = 5;
-            // 
-            // pictureImageSeta
-            // 
-            this.pictureImageSeta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.pictureImageSeta.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureImageSeta.Image = global::MainMenu.Properties.Resources.seta_baixo1;
-            this.pictureImageSeta.Location = new System.Drawing.Point(114, 25);
-            this.pictureImageSeta.Name = "pictureImageSeta";
-            this.pictureImageSeta.Size = new System.Drawing.Size(22, 23);
-            this.pictureImageSeta.TabIndex = 10;
-            this.pictureImageSeta.TabStop = false;
-            this.pictureImageSeta.Click += new System.EventHandler(this.pictureImageSeta_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(54)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(64)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(64)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Image = global::MainMenu.Properties.Resources.home_48px1;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(220, 64);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "             Home";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            this.button3.MouseEnter += new System.EventHandler(this.button3_MouseEnter);
-            this.button3.MouseLeave += new System.EventHandler(this.button3_MouseLeave);
-            // 
-            // btnFuncionarios
-            // 
-            this.btnFuncionarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(107)))));
-            this.btnFuncionarios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFuncionarios.FlatAppearance.BorderSize = 0;
-            this.btnFuncionarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFuncionarios.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFuncionarios.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnFuncionarios.Image = global::MainMenu.Properties.Resources.male_female_user_group_48px;
-            this.btnFuncionarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFuncionarios.Location = new System.Drawing.Point(0, 61);
-            this.btnFuncionarios.Name = "btnFuncionarios";
-            this.btnFuncionarios.Size = new System.Drawing.Size(220, 46);
-            this.btnFuncionarios.TabIndex = 6;
-            this.btnFuncionarios.Text = "             Funcionários";
-            this.btnFuncionarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFuncionarios.UseVisualStyleBackColor = false;
-            this.btnFuncionarios.Click += new System.EventHandler(this.btnFuncionarios_Click_1);
-            // 
-            // btnCadastrar
-            // 
-            this.btnCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(107)))));
-            this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCadastrar.FlatAppearance.BorderSize = 0;
-            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastrar.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnCadastrar.Image = global::MainMenu.Properties.Resources.add_user_male_48px;
-            this.btnCadastrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCadastrar.Location = new System.Drawing.Point(0, 113);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(220, 46);
-            this.btnCadastrar.TabIndex = 5;
-            this.btnCadastrar.Text = "             Cadastrar";
-            this.btnCadastrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCadastrar.UseVisualStyleBackColor = false;
-            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Image = global::MainMenu.Properties.Resources.help_48px;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(1, 208);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(217, 61);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "             Help";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -204,59 +112,9 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Menu";
             // 
-            // menuButton
-            // 
-            this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.menuButton.Image = global::MainMenu.Properties.Resources.menu_branco;
-            this.menuButton.Location = new System.Drawing.Point(7, 12);
-            this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(50, 50);
-            this.menuButton.TabIndex = 0;
-            this.menuButton.TabStop = false;
-            this.menuButton.Click += new System.EventHandler(this.menuButton_Click_1);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Image = global::MainMenu.Properties.Resources.info_48px;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 144);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(220, 61);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "             About";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogout.FlatAppearance.BorderSize = 0;
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnLogout.Image = global::MainMenu.Properties.Resources.logout_48px;
-            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(1, 261);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(217, 61);
-            this.btnLogout.TabIndex = 7;
-            this.btnLogout.Text = "             Logout";
-            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.UseVisualStyleBackColor = true;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click_1);
-            // 
             // panelTittleBar
             // 
-            this.panelTittleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.panelTittleBar.Controls.Add(this.button4);
+            this.panelTittleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
             this.panelTittleBar.Controls.Add(this.btnMinimaze);
             this.panelTittleBar.Controls.Add(this.btnClose);
             this.panelTittleBar.Controls.Add(this.labelTittle);
@@ -265,16 +123,6 @@
             this.panelTittleBar.Name = "panelTittleBar";
             this.panelTittleBar.Size = new System.Drawing.Size(1018, 80);
             this.panelTittleBar.TabIndex = 1;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(66, 32);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnMinimaze
             // 
@@ -334,17 +182,6 @@
             this.panelDesktopPanel.TabIndex = 2;
             this.panelDesktopPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(406, 178);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // sidebarTimer
             // 
             this.sidebarTimer.Interval = 5;
@@ -354,6 +191,157 @@
             // 
             this.HomeTimer.Interval = 10;
             this.HomeTimer.Tick += new System.EventHandler(this.HomeTimer_Tick);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::MainMenu.Properties.Resources._15747796709901;
+            this.pictureBox1.Location = new System.Drawing.Point(409, 166);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureImageSeta
+            // 
+            this.pictureImageSeta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
+            this.pictureImageSeta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureImageSeta.Image = global::MainMenu.Properties.Resources.seta_baixo1;
+            this.pictureImageSeta.Location = new System.Drawing.Point(114, 25);
+            this.pictureImageSeta.Name = "pictureImageSeta";
+            this.pictureImageSeta.Size = new System.Drawing.Size(22, 23);
+            this.pictureImageSeta.TabIndex = 10;
+            this.pictureImageSeta.TabStop = false;
+            this.pictureImageSeta.Click += new System.EventHandler(this.pictureImageSeta_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(67)))));
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(67)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button3.Image = global::MainMenu.Properties.Resources.home_48px1;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(0, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(220, 64);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "             Home";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            this.button3.MouseEnter += new System.EventHandler(this.button3_MouseEnter);
+            this.button3.MouseLeave += new System.EventHandler(this.button3_MouseLeave);
+            // 
+            // btnFuncionarios
+            // 
+            this.btnFuncionarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(38)))), ((int)(((byte)(74)))));
+            this.btnFuncionarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFuncionarios.FlatAppearance.BorderSize = 0;
+            this.btnFuncionarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFuncionarios.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFuncionarios.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnFuncionarios.Image = global::MainMenu.Properties.Resources.male_female_user_group_48px;
+            this.btnFuncionarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFuncionarios.Location = new System.Drawing.Point(0, 64);
+            this.btnFuncionarios.Name = "btnFuncionarios";
+            this.btnFuncionarios.Size = new System.Drawing.Size(220, 46);
+            this.btnFuncionarios.TabIndex = 6;
+            this.btnFuncionarios.Text = "             Funcionários";
+            this.btnFuncionarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFuncionarios.UseVisualStyleBackColor = false;
+            this.btnFuncionarios.Click += new System.EventHandler(this.btnFuncionarios_Click_1);
+            // 
+            // btnCadastrar
+            // 
+            this.btnCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(38)))), ((int)(((byte)(74)))));
+            this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCadastrar.FlatAppearance.BorderSize = 0;
+            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadastrar.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnCadastrar.Image = global::MainMenu.Properties.Resources.add_user_male_48px;
+            this.btnCadastrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadastrar.Location = new System.Drawing.Point(0, 110);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(220, 46);
+            this.btnCadastrar.TabIndex = 5;
+            this.btnCadastrar.Text = "             Cadastrar";
+            this.btnCadastrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button2.Image = global::MainMenu.Properties.Resources.help_48px;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(4, 211);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(217, 56);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "             Help";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Image = global::MainMenu.Properties.Resources.info_48px;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(3, 147);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(220, 56);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "             About";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnLogout.Image = global::MainMenu.Properties.Resources.logout_48px;
+            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.Location = new System.Drawing.Point(4, 264);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(217, 56);
+            this.btnLogout.TabIndex = 7;
+            this.btnLogout.Text = "             Logout";
+            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click_1);
+            // 
+            // menuButton
+            // 
+            this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.menuButton.Image = global::MainMenu.Properties.Resources.menu_branco;
+            this.menuButton.Location = new System.Drawing.Point(7, 12);
+            this.menuButton.Name = "menuButton";
+            this.menuButton.Size = new System.Drawing.Size(50, 50);
+            this.menuButton.TabIndex = 0;
+            this.menuButton.TabStop = false;
+            this.menuButton.Click += new System.EventHandler(this.menuButton_Click_1);
             // 
             // FormAdm
             // 
@@ -373,13 +361,13 @@
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
             this.HomeContainer.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureImageSeta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.panelTittleBar.ResumeLayout(false);
             this.panelTittleBar.PerformLayout();
             this.panelDesktopPanel.ResumeLayout(false);
             this.panelDesktopPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureImageSeta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -406,7 +394,6 @@
         private System.Windows.Forms.Button btnFuncionarios;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.PictureBox pictureImageSeta;
-        private System.Windows.Forms.Button button4;
     }
 }
 

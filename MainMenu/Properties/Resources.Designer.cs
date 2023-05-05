@@ -63,9 +63,39 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1574779670990 {
+            get {
+                object obj = ResourceManager.GetObject("1574779670990", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _15747796709901 {
+            get {
+                object obj = ResourceManager.GetObject("15747796709901", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add_48px {
             get {
                 object obj = ResourceManager.GetObject("add_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap add_tab_48px {
+            get {
+                object obj = ResourceManager.GetObject("add_tab_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -216,6 +246,16 @@ namespace MainMenu.Properties {
         internal static System.Drawing.Bitmap edit_property_48px {
             get {
                 object obj = ResourceManager.GetObject("edit_property_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap entrada_48px {
+            get {
+                object obj = ResourceManager.GetObject("entrada_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -413,6 +453,36 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo_rodape_aml {
+            get {
+                object obj = ResourceManager.GetObject("logo-rodape-aml", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_rodape_aml1 {
+            get {
+                object obj = ResourceManager.GetObject("logo-rodape-aml1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_rodape_aml2 {
+            get {
+                object obj = ResourceManager.GetObject("logo-rodape-aml2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logout_48px {
             get {
                 object obj = ResourceManager.GetObject("logout_48px", resourceCulture);
@@ -533,6 +603,16 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap saida_48px {
+            get {
+                object obj = ResourceManager.GetObject("saida_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap seta_baixo {
             get {
                 object obj = ResourceManager.GetObject("seta_baixo", resourceCulture);
@@ -573,6 +653,16 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap team_skin_type_7_48px {
+            get {
+                object obj = ResourceManager.GetObject("team_skin_type_7_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tear_off_calendar_48px {
             get {
                 object obj = ResourceManager.GetObject("tear-off_calendar_48px", resourceCulture);
@@ -586,6 +676,16 @@ namespace MainMenu.Properties {
         internal static System.Drawing.Bitmap unlock_96px {
             get {
                 object obj = ResourceManager.GetObject("unlock_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_account_skin_type_7_48px {
+            get {
+                object obj = ResourceManager.GetObject("user_account_skin_type_7_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

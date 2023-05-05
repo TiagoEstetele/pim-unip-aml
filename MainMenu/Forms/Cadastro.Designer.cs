@@ -87,7 +87,7 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.pictureBoxDinamic = new System.Windows.Forms.PictureBox();
             this.btnAtivo = new MainMenu.CustomControls.ToggleButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -120,11 +120,11 @@
             this.lblText.AutoSize = true;
             this.lblText.Font = new System.Drawing.Font("Montserrat Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblText.Location = new System.Drawing.Point(86, 21);
+            this.lblText.Location = new System.Drawing.Point(82, 19);
             this.lblText.Name = "lblText";
-            this.lblText.Size = new System.Drawing.Size(303, 29);
+            this.lblText.Size = new System.Drawing.Size(276, 29);
             this.lblText.TabIndex = 4;
-            this.lblText.Text = "Cadastrar novo funcionário";
+            this.lblText.Text = "Cadastro de Funcionário";
             this.lblText.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblText.Click += new System.EventHandler(this.lblText_Click);
             // 
@@ -692,23 +692,23 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Montserrat Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.label2.Location = new System.Drawing.Point(440, 447);
+            this.label2.Location = new System.Drawing.Point(420, 447);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 21);
+            this.label2.Size = new System.Drawing.Size(62, 21);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Ativo";
+            this.label2.Text = "Inativo";
             // 
             // btnSalvar
             // 
-            this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
             this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalvar.FlatAppearance.BorderSize = 0;
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvar.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.Color.White;
-            this.btnSalvar.Location = new System.Drawing.Point(770, 438);
+            this.btnSalvar.Location = new System.Drawing.Point(731, 447);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(156, 39);
+            this.btnSalvar.Size = new System.Drawing.Size(213, 60);
             this.btnSalvar.TabIndex = 24;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
@@ -733,7 +733,7 @@
             // 
             // pictureBoxDinamic
             // 
-            this.pictureBoxDinamic.Image = global::MainMenu.Properties.Resources.add_48px;
+            this.pictureBoxDinamic.Image = global::MainMenu.Properties.Resources.add_tab_48px;
             this.pictureBoxDinamic.Location = new System.Drawing.Point(29, 9);
             this.pictureBoxDinamic.Name = "pictureBoxDinamic";
             this.pictureBoxDinamic.Size = new System.Drawing.Size(50, 50);
@@ -747,20 +747,22 @@
             this.btnAtivo.Name = "btnAtivo";
             this.btnAtivo.OffBackColor = System.Drawing.Color.Gray;
             this.btnAtivo.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.btnAtivo.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.btnAtivo.OnBackColor = System.Drawing.Color.Lime;
             this.btnAtivo.OnToggleColor = System.Drawing.Color.WhiteSmoke;
             this.btnAtivo.Size = new System.Drawing.Size(45, 22);
             this.btnAtivo.TabIndex = 23;
             this.btnAtivo.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // label1
             // 
-            this.button1.Location = new System.Drawing.Point(571, 26);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Montserrat Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.label1.Location = new System.Drawing.Point(537, 447);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 21);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Ativo";
             // 
             // Cadastro
             // 
@@ -768,7 +770,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1018, 532);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBoxDinamic);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSalvar);
@@ -894,6 +896,6 @@
         private System.Windows.Forms.PictureBox pictureBoxDinamic;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblEndereco;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }

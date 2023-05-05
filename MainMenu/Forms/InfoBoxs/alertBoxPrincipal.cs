@@ -9,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MainMenu.Forms.alertBoxPrincipal
+namespace MainMenu.Forms.alertBoxPrincipal 
 {
-    public partial class alertBoxPrincipal : Form
+    public partial class AlertBoxPrincipal : Form
     {
-        public alertBoxPrincipal()
+        public AlertBoxPrincipal()
         {
             InitializeComponent();
         }

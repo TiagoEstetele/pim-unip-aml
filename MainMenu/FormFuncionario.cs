@@ -19,10 +19,12 @@ namespace MainMenu
         private Form activeForm;
         private Button currentButton;
         long idfun;
+        string nomeF;
         
-        public FormFuncionario(long identify)
+        public FormFuncionario(long identify, string nome)
         {
             idfun = identify;
+            nomeF = nome;
             InitializeComponent();
             this.ControlBox = false;
         }
@@ -134,7 +136,7 @@ namespace MainMenu
         {
             FormLogin form = new FormLogin();
             form.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -173,7 +175,7 @@ namespace MainMenu
 
         private void btnPonto_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Ponto(idfun), sender);
+            OpenChildForm(new Forms.Ponto(idfun, nomeF), sender);
         }
 
         private void button3_Click_1(object sender, EventArgs e)
@@ -191,35 +193,16 @@ namespace MainMenu
             alertBox.IconeColorAlertBox = icon;
             alertBox.ShowDialog();
         }
-        private void btnSuccess_Click(object sender, EventArgs e)
-        {
-            AlertBoxArtan(Color.LightGreen, Color.SeaGreen, "Success", "Operation Completed Succesfully.", Properties.Resources.ok_48px);
-        }
-
-        private void btnWarning_Click(object sender, EventArgs e)
-        {
-            AlertBoxArtan(Color.LightGoldenrodYellow, Color.Goldenrod, "Warning", "Are you confident in the operation ?", Properties.Resources.box_important_48px);
-        }
-
-        private void btnError_Click(object sender, EventArgs e)
-        {
-            AlertBoxArtan(Color.LightPink, Color.DarkRed, "Error", "Operation encountered problem !!", Properties.Resources.close_48px);
-        }
-
-        private void btnInformation_Click(object sender, EventArgs e)
-        {
-            AlertBoxArtan(Color.LightBlue, Color.DodgerBlue, "Information", "Operation is in progress.", Properties.Resources.info_48px);
-        }
 
         private void button3_MouseEnter(object sender, EventArgs e)
         {
-            Color minhaCorPersonalizada = Color.FromArgb(44, 44, 64);
+            Color minhaCorPersonalizada = Color.FromArgb(19, 19, 67);
             pictureImageSeta.BackColor = minhaCorPersonalizada;
         }
 
         private void button3_MouseLeave(object sender, EventArgs e)
         {
-            Color minhaCorPersonalizada = Color.FromArgb(34, 34, 54); 
+            Color minhaCorPersonalizada = Color.FromArgb(16, 16, 56); 
             pictureImageSeta.BackColor = minhaCorPersonalizada;
         }
 

@@ -203,18 +203,18 @@ namespace MainMenu
 
         private void button3_MouseEnter(object sender, EventArgs e)
         {
-            Color minhaCorPersonalizada = Color.FromArgb(44, 44, 64);
+            Color minhaCorPersonalizada = Color.FromArgb(19, 19, 67);
             pictureImageSeta.BackColor = minhaCorPersonalizada;
         }
 
         private void button3_MouseLeave(object sender, EventArgs e)
         {
-            Color minhaCorPersonalizada = Color.FromArgb(34, 34, 54); 
+            Color minhaCorPersonalizada = Color.FromArgb(16, 16, 56);
             pictureImageSeta.BackColor = minhaCorPersonalizada;
         }
         void AlertBoxArtan(Color backColor, Color color, string title, string text, Image icon)
         {
-            alertBoxPrincipal alertBox = new alertBoxPrincipal();
+            AlertBoxPrincipal alertBox = new AlertBoxPrincipal();
             alertBox.BackColor = backColor;
             alertBox.ColorAlertBox = color;
             alertBox.TitleAlertBox = title;
