@@ -345,3 +345,4 @@ C:\Users\tiago\OneDrive\Documentos\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.cspr
 C:\Users\tiago\OneDrive\Documentos\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.csproj.CopyComplete
 C:\Users\tiago\OneDrive\Documentos\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.exe
 C:\Users\tiago\OneDrive\Documentos\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.pdb
+E:\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.Hello.resources

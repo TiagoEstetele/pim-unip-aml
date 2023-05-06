@@ -21,7 +21,7 @@ namespace MainMenu
 
         private async void Hello_Load(object sender, EventArgs e)
         {
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\tiago\Downloads\aml-gif.wav");
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"E:\pim-unip-ibh\MainMenu\Resources\som.wav");
             tempoInicio.Start();
             player.Play();
             await Task.Delay(4000); // espera 5 segundos

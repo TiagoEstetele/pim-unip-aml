@@ -46,7 +46,7 @@ namespace MainMenu.Forms
             {
                 funcionarios.Add(new Funcionario
                 {
-                    ID = reader.GetInt32(0),
+                    ID = reader.GetInt64(0),
                     Nome = reader.GetString(1),
                     CPF = reader.GetString(2),
                     Admissao = reader.GetDateTime(3),
@@ -66,21 +66,23 @@ namespace MainMenu.Forms
                 return;
 
             //Check if click is on specific column 
-            if (e.ColumnIndex == dgvFuncionarios.Columns["Deletar"].Index)
+            if (e.ColumnIndex == dgvFuncionarios.Columns["Perfil"].Index)
             {
                 var data = (Funcionario)dgvFuncionarios.Rows[e.RowIndex].DataBoundItem;
+                Perfil form = new Perfil(data.ID);
+                form.ShowDialog();
             }
             if (e.ColumnIndex == dgvFuncionarios.Columns["Editar"].Index)
             {
                 var data = (Funcionario)dgvFuncionarios.Rows[e.RowIndex].DataBoundItem;
                 Cadastro form = new Cadastro(data.ID);
-               form.ShowDialog();
+                form.ShowDialog();
             }
         }
 
         public class Funcionario
         {
-            public int ID { get; set; }
+            public long ID { get; set; }
             public string Nome { get; set; }
             public string CPF { get; set; }
             public DateTime Admissao { get; set; }

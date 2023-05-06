@@ -16,7 +16,7 @@ namespace MainMenu.Forms
 {
     public partial class Cadastro : Form
     {
-        private readonly int? IdFuncionario = null;
+        private readonly long? IdFuncionario = null;
 
         string connectionString = "Host=pim.postgres.database.azure.com;" +
                                     "Port=5432;" +
@@ -31,7 +31,7 @@ namespace MainMenu.Forms
             InitializeComponent();
             PreencherComboCargo();
         }
-        public Cadastro(int idFuncionario)
+        public Cadastro(long idFuncionario)
         {
 
             IdFuncionario = idFuncionario;
@@ -398,7 +398,7 @@ namespace MainMenu.Forms
             }
 
         }
-        private void Buscar(int id)
+        private void Buscar(long id)
         {
             string strcad = "select * from funcionario where id_funcionario=@buscar";
             connection = new NpgsqlConnection(connectionString);

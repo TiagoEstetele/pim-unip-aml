@@ -32,7 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvFuncionarios = new System.Windows.Forms.DataGridView();
             this.Editar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Deletar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Perfil = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionarios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +45,7 @@
             this.dgvFuncionarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFuncionarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Editar,
-            this.Deletar});
+            this.Perfil});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Montserrat Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -66,10 +66,10 @@
             this.Editar.HeaderText = "Editar";
             this.Editar.Name = "Editar";
             // 
-            // Deletar
+            // Perfil
             // 
-            this.Deletar.HeaderText = "Deletar";
-            this.Deletar.Name = "Deletar";
+            this.Perfil.HeaderText = "Perfil";
+            this.Perfil.Name = "Perfil";
             // 
             // Funcionarios
             // 
@@ -89,6 +89,6 @@
 
         private System.Windows.Forms.DataGridView dgvFuncionarios;
         private System.Windows.Forms.DataGridViewButtonColumn Editar;
-        private System.Windows.Forms.DataGridViewButtonColumn Deletar;
+        private System.Windows.Forms.DataGridViewButtonColumn Perfil;
     }
 }

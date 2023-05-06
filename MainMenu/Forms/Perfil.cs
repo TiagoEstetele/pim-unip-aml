@@ -75,7 +75,7 @@ namespace MainMenu
         }
         private void PreencherRelatorioDeHoras(long idfun)
         {
-            string strcad = "select id_funcionario = @idfun,  data_entrada as Entrada, data_saida as Saida, mes as Mes from controle_de_horas order by id";
+            string strcad = "select id_funcionario as ID, data_entrada as Entrada, data_saida as Saida, mes as Mes from controle_de_horas where id_funcionario = @idfun order by id";
             connection = new NpgsqlConnection(connectionString);
 
             connection.Open();
