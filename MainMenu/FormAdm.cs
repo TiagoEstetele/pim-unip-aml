@@ -120,6 +120,7 @@ namespace MainMenu
             {
                 activeForm.Close();
             }
+
             ActivateButton(btnSender);
             activeForm = childForm;
             childForm.TopLevel = false;

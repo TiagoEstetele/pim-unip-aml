@@ -29,32 +29,33 @@
         private void InitializeComponent()
         {
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnMinimaze = new System.Windows.Forms.Button();
             this.lblCPF = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textbox_login = new System.Windows.Forms.TextBox();
+            this.txtCPF = new System.Windows.Forms.TextBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnVerificar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtData = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelVerificao = new System.Windows.Forms.Panel();
             this.panelTrocarSenha = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnSignIn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.lblConfirmeNovaSenha = new System.Windows.Forms.Label();
+            this.lblNovaSenha = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.textbox_confirma = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.textbox_nova = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -67,6 +68,7 @@
             // 
             // guna2CustomGradientPanel1
             // 
+            this.guna2CustomGradientPanel1.Controls.Add(this.label8);
             this.guna2CustomGradientPanel1.Controls.Add(this.label2);
             this.guna2CustomGradientPanel1.Controls.Add(this.label1);
             this.guna2CustomGradientPanel1.Controls.Add(this.pictureBox2);
@@ -80,27 +82,39 @@
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(417, 451);
             this.guna2CustomGradientPanel1.TabIndex = 1006;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Transparent;
+            this.label8.Location = new System.Drawing.Point(83, 91);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(253, 20);
+            this.label8.TabIndex = 35;
+            this.label8.Text = "para efetuar a troca de senha.";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(8, 66);
+            this.label2.Location = new System.Drawing.Point(41, 66);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(409, 22);
+            this.label2.Size = new System.Drawing.Size(329, 20);
             this.label2.TabIndex = 34;
-            this.label2.Text = "Confirme os dados para efetuar a troca de senha";
+            this.label2.Text = "Confirme os dados conforme o cadastro";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Montserrat Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(82, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 33);
+            this.label1.Size = new System.Drawing.Size(247, 29);
             this.label1.TabIndex = 33;
             this.label1.Text = "Esqueceu a senha ?";
             // 
@@ -108,7 +122,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::MainMenu.Properties.Resources.hominho_senha_esqueci;
-            this.pictureBox2.Location = new System.Drawing.Point(62, 123);
+            this.pictureBox2.Location = new System.Drawing.Point(45, 121);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(328, 330);
             this.pictureBox2.TabIndex = 10;
@@ -133,7 +147,7 @@
             // lblCPF
             // 
             this.lblCPF.BackColor = System.Drawing.Color.White;
-            this.lblCPF.Font = new System.Drawing.Font("Montserrat Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCPF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
             this.lblCPF.Location = new System.Drawing.Point(66, 66);
             this.lblCPF.Name = "lblCPF";
@@ -150,18 +164,19 @@
             this.panel1.Size = new System.Drawing.Size(263, 1);
             this.panel1.TabIndex = 1011;
             // 
-            // textbox_login
+            // txtCPF
             // 
-            this.textbox_login.AcceptsTab = true;
-            this.textbox_login.BackColor = System.Drawing.Color.White;
-            this.textbox_login.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textbox_login.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.textbox_login.Location = new System.Drawing.Point(70, 82);
-            this.textbox_login.Name = "textbox_login";
-            this.textbox_login.Size = new System.Drawing.Size(242, 20);
-            this.textbox_login.TabIndex = 1008;
-            this.textbox_login.Text = "CPF";
+            this.txtCPF.AcceptsTab = true;
+            this.txtCPF.BackColor = System.Drawing.Color.White;
+            this.txtCPF.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.txtCPF.Location = new System.Drawing.Point(70, 82);
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(242, 19);
+            this.txtCPF.TabIndex = 1008;
+            this.txtCPF.Text = "CPF";
+            this.txtCPF.Click += new System.EventHandler(this.txtCPF_Click);
             // 
             // pictureBox7
             // 
@@ -173,37 +188,37 @@
             this.pictureBox7.TabIndex = 1010;
             this.pictureBox7.TabStop = false;
             // 
-            // guna2GradientButton1
+            // btnVerificar
             // 
-            this.guna2GradientButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(42)))), ((int)(((byte)(212)))));
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(20)))), ((int)(((byte)(118)))));
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(40)))), ((int)(((byte)(201)))));
-            this.guna2GradientButton1.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(13)))), ((int)(((byte)(90)))));
-            this.guna2GradientButton1.Location = new System.Drawing.Point(33, 190);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(263, 45);
-            this.guna2GradientButton1.TabIndex = 1022;
-            this.guna2GradientButton1.Text = "Verificar";
-            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
+            this.btnVerificar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVerificar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnVerificar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnVerificar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVerificar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVerificar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnVerificar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(42)))), ((int)(((byte)(212)))));
+            this.btnVerificar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(20)))), ((int)(((byte)(118)))));
+            this.btnVerificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerificar.ForeColor = System.Drawing.Color.White;
+            this.btnVerificar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(40)))), ((int)(((byte)(201)))));
+            this.btnVerificar.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(13)))), ((int)(((byte)(90)))));
+            this.btnVerificar.Location = new System.Drawing.Point(33, 208);
+            this.btnVerificar.Name = "btnVerificar";
+            this.btnVerificar.Size = new System.Drawing.Size(263, 45);
+            this.btnVerificar.TabIndex = 1022;
+            this.btnVerificar.Text = "Verificar";
+            this.btnVerificar.Click += new System.EventHandler(this.btnVerificar_Click);
             // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Montserrat Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
             this.label4.Location = new System.Drawing.Point(66, 132);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(230, 21);
             this.label4.TabIndex = 1026;
-            this.label4.Text = "CPF";
+            this.label4.Text = "Data de nascimento";
             this.label4.Visible = false;
             // 
             // panel4
@@ -214,18 +229,19 @@
             this.panel4.Size = new System.Drawing.Size(263, 1);
             this.panel4.TabIndex = 1025;
             // 
-            // textBox2
+            // txtData
             // 
-            this.textBox2.AcceptsTab = true;
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.textBox2.Location = new System.Drawing.Point(70, 148);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(242, 20);
-            this.textBox2.TabIndex = 1023;
-            this.textBox2.Text = "CPF";
+            this.txtData.AcceptsTab = true;
+            this.txtData.BackColor = System.Drawing.Color.White;
+            this.txtData.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.txtData.Location = new System.Drawing.Point(70, 148);
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(242, 19);
+            this.txtData.TabIndex = 1023;
+            this.txtData.Text = "Data de Nascimento";
+            this.txtData.Click += new System.EventHandler(this.txtData_Click);
             // 
             // pictureBox3
             // 
@@ -239,162 +255,176 @@
             // 
             // panelVerificao
             // 
-            this.panelVerificao.Controls.Add(this.label6);
             this.panelVerificao.Controls.Add(this.pictureBox7);
             this.panelVerificao.Controls.Add(this.label4);
-            this.panelVerificao.Controls.Add(this.textbox_login);
+            this.panelVerificao.Controls.Add(this.txtCPF);
             this.panelVerificao.Controls.Add(this.panel4);
             this.panelVerificao.Controls.Add(this.panel1);
-            this.panelVerificao.Controls.Add(this.textBox2);
+            this.panelVerificao.Controls.Add(this.txtData);
             this.panelVerificao.Controls.Add(this.lblCPF);
             this.panelVerificao.Controls.Add(this.pictureBox3);
-            this.panelVerificao.Controls.Add(this.guna2GradientButton1);
-            this.panelVerificao.Location = new System.Drawing.Point(449, 66);
+            this.panelVerificao.Controls.Add(this.btnVerificar);
+            this.panelVerificao.Location = new System.Drawing.Point(462, 66);
             this.panelVerificao.Name = "panelVerificao";
-            this.panelVerificao.Size = new System.Drawing.Size(326, 317);
+            this.panelVerificao.Size = new System.Drawing.Size(329, 317);
             this.panelVerificao.TabIndex = 1027;
             // 
             // panelTrocarSenha
             // 
-            this.panelTrocarSenha.Controls.Add(this.label7);
-            this.panelTrocarSenha.Controls.Add(this.pictureBox1);
-            this.panelTrocarSenha.Controls.Add(this.label3);
-            this.panelTrocarSenha.Controls.Add(this.textBox1);
+            this.panelTrocarSenha.Controls.Add(this.btnSignIn);
+            this.panelTrocarSenha.Controls.Add(this.lblConfirmeNovaSenha);
+            this.panelTrocarSenha.Controls.Add(this.lblNovaSenha);
             this.panelTrocarSenha.Controls.Add(this.panel3);
-            this.panelTrocarSenha.Controls.Add(this.panel5);
-            this.panelTrocarSenha.Controls.Add(this.textBox3);
-            this.panelTrocarSenha.Controls.Add(this.label5);
+            this.panelTrocarSenha.Controls.Add(this.textbox_confirma);
+            this.panelTrocarSenha.Controls.Add(this.pictureBox1);
+            this.panelTrocarSenha.Controls.Add(this.panel2);
+            this.panelTrocarSenha.Controls.Add(this.textbox_nova);
             this.panelTrocarSenha.Controls.Add(this.pictureBox4);
-            this.panelTrocarSenha.Controls.Add(this.guna2GradientButton2);
-            this.panelTrocarSenha.Location = new System.Drawing.Point(452, 66);
+            this.panelTrocarSenha.Location = new System.Drawing.Point(462, 66);
             this.panelTrocarSenha.Name = "panelTrocarSenha";
             this.panelTrocarSenha.Size = new System.Drawing.Size(326, 317);
             this.panelTrocarSenha.TabIndex = 1028;
             this.panelTrocarSenha.Visible = false;
             // 
-            // pictureBox1
+            // button1
             // 
-            this.pictureBox1.BackgroundImage = global::MainMenu.Properties.Resources.icons8_usuário_64__3_;
-            this.pictureBox1.Image = global::MainMenu.Properties.Resources.icons8_usuário_64__3_;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 77);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(31, 31);
-            this.pictureBox1.TabIndex = 1010;
-            this.pictureBox1.TabStop = false;
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.button1.Location = new System.Drawing.Point(734, -13);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(30, 50);
+            this.button1.TabIndex = 1029;
+            this.button1.TabStop = false;
+            this.button1.Text = "-";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label3
+            // btnClose
             // 
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Montserrat Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
-            this.label3.Location = new System.Drawing.Point(66, 132);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(230, 21);
-            this.label3.TabIndex = 1026;
-            this.label3.Text = "CPF";
-            this.label3.Visible = false;
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(103)))), ((int)(((byte)(101)))));
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.btnClose.Location = new System.Drawing.Point(770, -13);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(30, 50);
+            this.btnClose.TabIndex = 1030;
+            this.btnClose.TabStop = false;
+            this.btnClose.Text = "x";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // textBox1
+            // btnSignIn
             // 
-            this.textBox1.AcceptsTab = true;
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.textBox1.Location = new System.Drawing.Point(70, 82);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(242, 20);
-            this.textBox1.TabIndex = 1008;
-            this.textBox1.Text = "CPF";
+            this.btnSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSignIn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignIn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignIn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSignIn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSignIn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSignIn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(42)))), ((int)(((byte)(212)))));
+            this.btnSignIn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(20)))), ((int)(((byte)(118)))));
+            this.btnSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignIn.ForeColor = System.Drawing.Color.White;
+            this.btnSignIn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(40)))), ((int)(((byte)(201)))));
+            this.btnSignIn.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(13)))), ((int)(((byte)(90)))));
+            this.btnSignIn.Location = new System.Drawing.Point(67, 231);
+            this.btnSignIn.Name = "btnSignIn";
+            this.btnSignIn.Size = new System.Drawing.Size(218, 47);
+            this.btnSignIn.TabIndex = 1037;
+            this.btnSignIn.Text = "Confirmar";
+            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
+            // 
+            // lblConfirmeNovaSenha
+            // 
+            this.lblConfirmeNovaSenha.BackColor = System.Drawing.Color.White;
+            this.lblConfirmeNovaSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirmeNovaSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
+            this.lblConfirmeNovaSenha.Location = new System.Drawing.Point(57, 130);
+            this.lblConfirmeNovaSenha.Name = "lblConfirmeNovaSenha";
+            this.lblConfirmeNovaSenha.Size = new System.Drawing.Size(230, 21);
+            this.lblConfirmeNovaSenha.TabIndex = 1036;
+            this.lblConfirmeNovaSenha.Text = "Confirme Senha";
+            this.lblConfirmeNovaSenha.Visible = false;
+            // 
+            // lblNovaSenha
+            // 
+            this.lblNovaSenha.BackColor = System.Drawing.Color.White;
+            this.lblNovaSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNovaSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
+            this.lblNovaSenha.Location = new System.Drawing.Point(57, 53);
+            this.lblNovaSenha.Name = "lblNovaSenha";
+            this.lblNovaSenha.Size = new System.Drawing.Size(230, 21);
+            this.lblNovaSenha.TabIndex = 1035;
+            this.lblNovaSenha.Text = "Nova Senha";
+            this.lblNovaSenha.Visible = false;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.panel3.Location = new System.Drawing.Point(33, 176);
+            this.panel3.Location = new System.Drawing.Point(24, 178);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(263, 1);
-            this.panel3.TabIndex = 1025;
+            this.panel3.TabIndex = 1034;
             // 
-            // panel5
+            // textbox_confirma
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.panel5.Location = new System.Drawing.Point(33, 110);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(263, 1);
-            this.panel5.TabIndex = 1011;
+            this.textbox_confirma.BackColor = System.Drawing.Color.White;
+            this.textbox_confirma.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textbox_confirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_confirma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
+            this.textbox_confirma.Location = new System.Drawing.Point(61, 150);
+            this.textbox_confirma.Name = "textbox_confirma";
+            this.textbox_confirma.Size = new System.Drawing.Size(242, 19);
+            this.textbox_confirma.TabIndex = 1033;
+            this.textbox_confirma.Text = "Confirme Senha";
             // 
-            // textBox3
+            // pictureBox1
             // 
-            this.textBox3.AcceptsTab = true;
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.textBox3.Location = new System.Drawing.Point(70, 148);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(242, 20);
-            this.textBox3.TabIndex = 1023;
-            this.textBox3.Text = "CPF";
+            this.pictureBox1.BackgroundImage = global::MainMenu.Properties.Resources.icons8_usuário_64__3_;
+            this.pictureBox1.Image = global::MainMenu.Properties.Resources.icons8_senha_50__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 145);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 31);
+            this.pictureBox1.TabIndex = 1032;
+            this.pictureBox1.TabStop = false;
             // 
-            // label5
+            // panel2
             // 
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Montserrat Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
-            this.label5.Location = new System.Drawing.Point(66, 66);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(230, 21);
-            this.label5.TabIndex = 1015;
-            this.label5.Text = "CPF";
-            this.label5.Visible = false;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.panel2.Location = new System.Drawing.Point(24, 101);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(263, 1);
+            this.panel2.TabIndex = 1031;
+            // 
+            // textbox_nova
+            // 
+            this.textbox_nova.BackColor = System.Drawing.Color.White;
+            this.textbox_nova.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textbox_nova.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_nova.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
+            this.textbox_nova.Location = new System.Drawing.Point(61, 73);
+            this.textbox_nova.Name = "textbox_nova";
+            this.textbox_nova.Size = new System.Drawing.Size(242, 19);
+            this.textbox_nova.TabIndex = 1030;
+            this.textbox_nova.Text = "Nova Senha";
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackgroundImage = global::MainMenu.Properties.Resources.icons8_usuário_64__3_;
-            this.pictureBox4.Image = global::MainMenu.Properties.Resources.icons8_usuário_64__3_;
-            this.pictureBox4.Location = new System.Drawing.Point(33, 143);
+            this.pictureBox4.Image = global::MainMenu.Properties.Resources.icons8_senha_50__1_;
+            this.pictureBox4.Location = new System.Drawing.Point(24, 68);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(31, 31);
-            this.pictureBox4.TabIndex = 1024;
+            this.pictureBox4.TabIndex = 1029;
             this.pictureBox4.TabStop = false;
-            // 
-            // guna2GradientButton2
-            // 
-            this.guna2GradientButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(42)))), ((int)(((byte)(212)))));
-            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(20)))), ((int)(((byte)(118)))));
-            this.guna2GradientButton2.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(40)))), ((int)(((byte)(201)))));
-            this.guna2GradientButton2.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(13)))), ((int)(((byte)(90)))));
-            this.guna2GradientButton2.Location = new System.Drawing.Point(33, 190);
-            this.guna2GradientButton2.Name = "guna2GradientButton2";
-            this.guna2GradientButton2.Size = new System.Drawing.Size(263, 45);
-            this.guna2GradientButton2.TabIndex = 1022;
-            this.guna2GradientButton2.Text = "Verificar";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(137, 25);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 13);
-            this.label6.TabIndex = 1027;
-            this.label6.Text = "verificacao";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(124, 25);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 13);
-            this.label7.TabIndex = 1028;
-            this.label7.Text = "trocar senha";
             // 
             // EsqueciSenha
             // 
@@ -402,6 +432,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.panelVerificao);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.panelTrocarSenha);
@@ -431,27 +463,28 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblCPF;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textbox_login;
+        private System.Windows.Forms.TextBox txtCPF;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private Guna.UI2.WinForms.Guna2GradientButton btnVerificar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtData;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panelVerificao;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panelTrocarSenha;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnClose;
+        private Guna.UI2.WinForms.Guna2GradientButton btnSignIn;
+        private System.Windows.Forms.Label lblConfirmeNovaSenha;
+        private System.Windows.Forms.Label lblNovaSenha;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textbox_confirma;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox textbox_nova;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
     }
 }
