@@ -52,7 +52,7 @@ namespace MainMenu.Forms
                     Admissao = reader.GetDateTime(3),
                     Salario = reader.GetDecimal(4),
                     Ativo = reader.GetString(5)
-                }); ;
+                });
             }
 
             dgvFuncionarios.DataSource = funcionarios;

@@ -22,17 +22,17 @@ namespace MainMenu
                                   "Database=Teste02;" +
                                   "Username=ricardinholord;" +
                                   "Password=Maluco777;";
-        long nomeExtrato;
         long idfun;
+        string idCargo2;
         NpgsqlConnection connection;
         decimal IRRF, INSS, Falta, PINSS, FaltaDia, SalarioLiquido, SalarioRecebido, Descontos;
 
         public ConsultaFolha(long idfun)
         {
-            string salario;
+            string salario, idCargo2 = "";
             this.idfun = idfun;
 
-            salario = ConsultarSalario(idfun);
+            salario = ConsultarSalario(idfun, idCargo2);
 
             IRRF = CalcularoIRRF(salario);
             INSS = CalculoINSS(salario);
@@ -46,11 +46,11 @@ namespace MainMenu
             InitializeComponent();
         }
 
-        private string ConsultarSalario(long idfun)
+        private string ConsultarSalario(long idfun, string idCargo)
         {
-            string salario;
+            string salario, idCargo1, idCargo2;
 
-            string strcad = "select salario_bruto from funcionario where id_funcionario=@idfun";
+            string strcad = "select salario_bruto, id_cargo from funcionario where id_funcionario=@idfun";
             connection = new NpgsqlConnection(connectionString);
 
             connection.Open();
@@ -63,6 +63,8 @@ namespace MainMenu
             dr.Read();
 
             salario = Convert.ToString(dr["salario_bruto"]);
+            idCargo1 = Convert.ToString(dr["id_cargo"]);
+            idCargo2 = idCargo1;
 
             return salario;
         }
@@ -97,9 +99,9 @@ namespace MainMenu
 
         private void CreateWordDocument(object filename, object SaveAs)
         {
-            string salario;
-            salario = ConsultarSalario(idfun);
-
+            string salario, idCargo2 = "";
+            salario = ConsultarSalario(idfun, idCargo2);
+            decimal SalarioLiquidoEst = (Decimal.Parse(salario) - Falta);
             Word.Application wordApp = new Word.Application();
             object missing = Missing.Value;
             Word.Document myWordDoc = null;
@@ -120,17 +122,25 @@ namespace MainMenu
 
                     myWordDoc.Activate();
 
-                    //find and replace
-                    this.FindAndReplace(wordApp, "<nome>", txtNome.Text);
-                    this.FindAndReplace(wordApp, "<desconto1>", INSS.ToString("N2"));
-                    this.FindAndReplace(wordApp, "<desconto2>", IRRF.ToString("N2"));
-                    this.FindAndReplace(wordApp, "<desconto3>", Falta.ToString("N2"));
-                    this.FindAndReplace(wordApp, "<fixoIrrf>", IRRF.ToString("N2"));
-                    this.FindAndReplace(wordApp, "<porcInss>", PINSS.ToString("N2"));
+                    if (idCargo2 == "1" || idCargo2 == "2")
+                    {
+                        this.FindAndReplace(wordApp, "<nome>", txtNome.Text);
+                        this.FindAndReplace(wordApp, "<desconto1>", INSS.ToString("N2"));
+                        this.FindAndReplace(wordApp, "<desconto2>", IRRF.ToString("N2"));
+                        this.FindAndReplace(wordApp, "<desconto3>", Falta.ToString("N2"));
+                        this.FindAndReplace(wordApp, "<fixoIrrf>", IRRF.ToString("N2"));
+                        this.FindAndReplace(wordApp, "<porcInss>", PINSS.ToString("N2"));
+                        this.FindAndReplace(wordApp, "<fixoFaltas>", FaltaDia.ToString("N2"));
+                        this.FindAndReplace(wordApp, "<salaBruto>", salario);
+                        this.FindAndReplace(wordApp, "<salaLiquid>", SalarioLiquido.ToString("N2"));
+                        this.FindAndReplace(wordApp, "<salaRecebido>", SalarioRecebido.ToString("N2"));
+                    }
+                    else
+                        this.FindAndReplace(wordApp, "<nome>", txtNome.Text);
                     this.FindAndReplace(wordApp, "<fixoFaltas>", FaltaDia.ToString("N2"));
+                    this.FindAndReplace(wordApp, "<desconto3>", Falta.ToString("N2"));
                     this.FindAndReplace(wordApp, "<salaBruto>", salario);
-                    this.FindAndReplace(wordApp, "<salaLiquid>", SalarioLiquido.ToString("N2"));
-                    this.FindAndReplace(wordApp, "<salaRecebido>", SalarioRecebido.ToString("N2"));
+                    this.FindAndReplace(wordApp, "<salaLiquid>", SalarioLiquidoEst.ToString("N2"));
                 }
                 else
                 {
@@ -157,8 +167,15 @@ namespace MainMenu
 
         private void btnDownload_Click(object sender, EventArgs e)
         {
-            nomeExtrato = idfun;
-            CreateWordDocument(@"C:\temp.docx", $@"C:\Users\tiago\{nomeExtrato} {DateTime.Now.Millisecond}.docx");
+            string Extrato = idfun.ToString();
+            long Modif = DateTime.Now.Ticks;
+
+            if (idCargo2 == "1" || idCargo2 == "2")
+            {
+                CreateWordDocument(@"C:\temp.docx", $@"C:\Users\User\OneDrive\{Extrato} {Modif}.docx");
+            }
+            else
+                CreateWordDocument(@"C:\temp1.docx", $@"C:\Users\User\OneDrive\{Extrato} {Modif}.docx");
         }
 
         private void dtpData_ValueChanged(object sender, EventArgs e)

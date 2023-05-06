@@ -223,7 +223,7 @@ namespace MainMenu
 
         private void btnInfo_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Perfil(), sender);
+            OpenChildForm(new Perfil(idfun), sender);
         }
     }
 }
