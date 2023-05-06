@@ -118,164 +118,182 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="iconSenha2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconSenha2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="box_important_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\box_important_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1574779670990" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1574779670990.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="HELLO (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HELLO (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ok_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ok_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-usuário-64 (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-usuário-64 (3)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="driver_license_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\driver_license_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="clock_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\clock_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconPerfil2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconPerfil2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="phone_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\phone_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close_window_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close_window_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logo-rodape-aml2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo-rodape-aml2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="unlock_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\unlock_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="waste_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\waste_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="edit_property_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\edit_property_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="expand_arrow_48px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\expand_arrow_48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="menu-branco" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu-branco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="info_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="edit_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\edit_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="more_info_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\more_info_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="add_user_male_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add_user_male_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Seta_branca_baixo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Seta_branca_baixo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconSenhaAzulClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconSenhaAzulClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="resume_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\resume_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconPerfilAzulClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconPerfilAzulClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user_account_skin_type_7_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user_account_skin_type_7_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="seta_cima" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seta_cima.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-usuário-64 (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-usuário-64 (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logout_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logout_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="help_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\help_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="saida_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\saida_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Checkmark_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Checkmark_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="man_raising_hand_icon_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\man_raising_hand_icon_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="team_skin_type_7_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\team_skin_type_7_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon-perfil-azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon-perfil-azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tear-off_calendar_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tear-off_calendar_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="department_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\department_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="436-4363443_view-user-icon-png-font-awesome-user-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\436-4363443_view-user-icon-png-font-awesome-user-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="seta_baixo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\seta_baixo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo-rodape-aml1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo-rodape-aml1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconPerfil2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconPerfil2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="seta_baixo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seta_baixo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="collapse_arrow_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\collapse_arrow_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="post_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\post_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logo-rodape-aml" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo-rodape-aml.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="permanent_job_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\permanent_job_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="home_48px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home_48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-senha-50 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-senha-50 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Checkmark_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checkmark_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="expand_arrow_48px2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\expand_arrow_48px2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="expand_arrow_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\expand_arrow_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="resume_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\resume_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="perfilicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\perfilicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ok_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ok_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Daco_4363443 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Daco_4363443 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logout_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="post_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\post_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add_user_male_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_user_male_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="male_female_user_group_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\male_female_user_group_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo-rodape-aml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-rodape-aml.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="man_raising_hand_icon_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\man_raising_hand_icon_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1574779670990" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1574779670990.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_property_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_property_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seta_cima" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seta_cima.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tear-off_calendar_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tear-off_calendar_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rules_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rules_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cash_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cash_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="saida_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\saida_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="department_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\department_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Seta_branca_baixo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Seta_branca_baixo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="box_important_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\box_important_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconSenhaAzulClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconSenhaAzulClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HELLO (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HELLO (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="collapse_arrow_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\collapse_arrow_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="address_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\address_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_account_skin_type_7_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_account_skin_type_7_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo-rodape-aml1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-rodape-aml1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cheque_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cheque_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="expand_arrow_48px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\expand_arrow_48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add_tab_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_tab_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="team_skin_type_7_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\team_skin_type_7_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconPerfilAzulClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconPerfilAzulClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="permanent_job_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\permanent_job_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="card_security_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\card_security_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pay_date_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pay_date_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="close_window_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_window_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon-senha-azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon-senha-azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="expand_arrow_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\expand_arrow_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-usuário-64 (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-usuário-64 (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon-perfil-azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-perfil-azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo-rodape-aml2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-rodape-aml2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="15747796709901" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\15747796709901.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HELLO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HELLO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="male_female_user_group_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\male_female_user_group_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="seta_baixo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seta_baixo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phone_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phone_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="waste_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\waste_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clock_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clock_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-senha-50 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-senha-50 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Daco_4363443" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Daco_4363443.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HELLO (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HELLO (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="entrada_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\entrada_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -283,31 +301,34 @@
   <data name="menu_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rules_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rules_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pay_date_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pay_date_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cash_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cash_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-usuário-64 (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-usuário-64 (3)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="add_tab_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add_tab_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="driver_license_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\driver_license_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HELLO (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HELLO (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menu-branco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-branco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="address_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\address_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon-senha-azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-senha-azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="decoperfil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\decoperfil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home_48px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home_48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconSenha2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconSenha2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="home_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cheque_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cheque_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="15747796709901" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\15747796709901.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Daco_4363443 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Daco_4363443 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

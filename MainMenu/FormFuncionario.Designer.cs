@@ -32,18 +32,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFuncionario));
             this.sidebar = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.btnFolha = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.menuButton = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.HomeContainer = new System.Windows.Forms.Panel();
             this.btnFolhaPagamento = new System.Windows.Forms.Button();
             this.btnInfo = new System.Windows.Forms.Button();
             this.pictureImageSeta = new System.Windows.Forms.PictureBox();
             this.btnPonto = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.menuButton = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnLogout = new System.Windows.Forms.Button();
             this.panelTittleBar = new System.Windows.Forms.Panel();
             this.btnMinimaze = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
@@ -54,9 +53,9 @@
             this.HomeTimer = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
             this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.HomeContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureImageSeta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.panelTittleBar.SuspendLayout();
             this.panelDesktopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -71,13 +70,12 @@
             this.sidebar.MaximumSize = new System.Drawing.Size(220, 1080);
             this.sidebar.MinimumSize = new System.Drawing.Size(60, 1080);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(60, 1080);
+            this.sidebar.Size = new System.Drawing.Size(220, 1080);
             this.sidebar.TabIndex = 0;
             // 
             // panelLogo
             // 
             this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
-            this.panelLogo.Controls.Add(this.btnFolha);
             this.panelLogo.Controls.Add(this.HomeContainer);
             this.panelLogo.Controls.Add(this.button2);
             this.panelLogo.Controls.Add(this.label1);
@@ -87,18 +85,86 @@
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(60, 561);
+            this.panelLogo.Size = new System.Drawing.Size(220, 600);
             this.panelLogo.TabIndex = 0;
             // 
-            // btnFolha
+            // button2
             // 
-            this.btnFolha.Location = new System.Drawing.Point(0, 331);
-            this.btnFolha.Name = "btnFolha";
-            this.btnFolha.Size = new System.Drawing.Size(60, 47);
-            this.btnFolha.TabIndex = 8;
-            this.btnFolha.Text = "Folha";
-            this.btnFolha.UseVisualStyleBackColor = true;
-            this.btnFolha.Click += new System.EventHandler(this.btnFolha_Click);
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button2.Image = global::MainMenu.Properties.Resources.help_48px;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(3, 428);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(217, 61);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "             Help";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(63, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 24);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Menu";
+            // 
+            // menuButton
+            // 
+            this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.menuButton.Image = global::MainMenu.Properties.Resources.menu_branco;
+            this.menuButton.Location = new System.Drawing.Point(7, 12);
+            this.menuButton.Name = "menuButton";
+            this.menuButton.Size = new System.Drawing.Size(50, 50);
+            this.menuButton.TabIndex = 0;
+            this.menuButton.TabStop = false;
+            this.menuButton.Click += new System.EventHandler(this.menuButton_Click_1);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Image = global::MainMenu.Properties.Resources.info_48px;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(3, 376);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(220, 61);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "             About";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnLogout.Image = global::MainMenu.Properties.Resources.logout_48px;
+            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.Location = new System.Drawing.Point(4, 493);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(217, 61);
+            this.btnLogout.TabIndex = 7;
+            this.btnLogout.Text = "             Logout";
+            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click_1);
             // 
             // HomeContainer
             // 
@@ -108,11 +174,11 @@
             this.HomeContainer.Controls.Add(this.pictureImageSeta);
             this.HomeContainer.Controls.Add(this.btnPonto);
             this.HomeContainer.Controls.Add(this.button3);
-            this.HomeContainer.Location = new System.Drawing.Point(0, 83);
-            this.HomeContainer.MaximumSize = new System.Drawing.Size(220, 205);
+            this.HomeContainer.Location = new System.Drawing.Point(1, 86);
+            this.HomeContainer.MaximumSize = new System.Drawing.Size(220, 202);
             this.HomeContainer.MinimumSize = new System.Drawing.Size(220, 61);
             this.HomeContainer.Name = "HomeContainer";
-            this.HomeContainer.Size = new System.Drawing.Size(220, 61);
+            this.HomeContainer.Size = new System.Drawing.Size(220, 202);
             this.HomeContainer.TabIndex = 5;
             // 
             // btnFolhaPagamento
@@ -132,6 +198,7 @@
             this.btnFolhaPagamento.Text = "              Folha de Pagamento";
             this.btnFolhaPagamento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFolhaPagamento.UseVisualStyleBackColor = false;
+            this.btnFolhaPagamento.Click += new System.EventHandler(this.btnFolhaPagamento_Click);
             // 
             // btnInfo
             // 
@@ -141,22 +208,23 @@
             this.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInfo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnInfo.Image = global::MainMenu.Properties.Resources.info_48px;
+            this.btnInfo.Image = global::MainMenu.Properties.Resources.more_info_48px;
             this.btnInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInfo.Location = new System.Drawing.Point(0, 64);
             this.btnInfo.Name = "btnInfo";
             this.btnInfo.Size = new System.Drawing.Size(220, 46);
             this.btnInfo.TabIndex = 11;
-            this.btnInfo.Text = "             Informações";
+            this.btnInfo.Text = "            Perfil";
             this.btnInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInfo.UseVisualStyleBackColor = false;
+            this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
             // 
             // pictureImageSeta
             // 
             this.pictureImageSeta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
             this.pictureImageSeta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureImageSeta.Image = global::MainMenu.Properties.Resources.seta_baixo1;
-            this.pictureImageSeta.Location = new System.Drawing.Point(114, 25);
+            this.pictureImageSeta.Location = new System.Drawing.Point(125, 23);
             this.pictureImageSeta.Name = "pictureImageSeta";
             this.pictureImageSeta.Size = new System.Drawing.Size(22, 23);
             this.pictureImageSeta.TabIndex = 10;
@@ -205,84 +273,6 @@
             this.button3.MouseEnter += new System.EventHandler(this.button3_MouseEnter);
             this.button3.MouseLeave += new System.EventHandler(this.button3_MouseLeave);
             // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Image = global::MainMenu.Properties.Resources.help_48px;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(3, 199);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(217, 61);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "             Help";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(63, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 24);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Menu";
-            // 
-            // menuButton
-            // 
-            this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.menuButton.Image = global::MainMenu.Properties.Resources.menu_branco;
-            this.menuButton.Location = new System.Drawing.Point(7, 12);
-            this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(50, 50);
-            this.menuButton.TabIndex = 0;
-            this.menuButton.TabStop = false;
-            this.menuButton.Click += new System.EventHandler(this.menuButton_Click_1);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Image = global::MainMenu.Properties.Resources.info_48px;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 147);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(220, 61);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "             About";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogout.FlatAppearance.BorderSize = 0;
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnLogout.Image = global::MainMenu.Properties.Resources.logout_48px;
-            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(4, 264);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(217, 61);
-            this.btnLogout.TabIndex = 7;
-            this.btnLogout.Text = "             Logout";
-            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.UseVisualStyleBackColor = true;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click_1);
-            // 
             // panelTittleBar
             // 
             this.panelTittleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
@@ -290,9 +280,9 @@
             this.panelTittleBar.Controls.Add(this.btnClose);
             this.panelTittleBar.Controls.Add(this.labelTittle);
             this.panelTittleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTittleBar.Location = new System.Drawing.Point(60, 0);
+            this.panelTittleBar.Location = new System.Drawing.Point(220, 0);
             this.panelTittleBar.Name = "panelTittleBar";
-            this.panelTittleBar.Size = new System.Drawing.Size(1018, 80);
+            this.panelTittleBar.Size = new System.Drawing.Size(858, 80);
             this.panelTittleBar.TabIndex = 1;
             // 
             // btnMinimaze
@@ -304,7 +294,7 @@
             this.btnMinimaze.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimaze.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimaze.ForeColor = System.Drawing.Color.White;
-            this.btnMinimaze.Location = new System.Drawing.Point(951, -2);
+            this.btnMinimaze.Location = new System.Drawing.Point(791, -2);
             this.btnMinimaze.Name = "btnMinimaze";
             this.btnMinimaze.Size = new System.Drawing.Size(30, 30);
             this.btnMinimaze.TabIndex = 5;
@@ -321,7 +311,7 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(988, 0);
+            this.btnClose.Location = new System.Drawing.Point(828, 0);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(30, 30);
             this.btnClose.TabIndex = 3;
@@ -335,9 +325,9 @@
             this.labelTittle.AutoSize = true;
             this.labelTittle.Font = new System.Drawing.Font("Bebas Neue", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTittle.ForeColor = System.Drawing.Color.White;
-            this.labelTittle.Location = new System.Drawing.Point(478, 29);
+            this.labelTittle.Location = new System.Drawing.Point(398, 29);
             this.labelTittle.Name = "labelTittle";
-            this.labelTittle.Size = new System.Drawing.Size(45, 29);
+            this.labelTittle.Size = new System.Drawing.Size(45, 33);
             this.labelTittle.TabIndex = 2;
             this.labelTittle.Text = "HOME";
             this.labelTittle.UseCompatibleTextRendering = true;
@@ -347,16 +337,16 @@
             this.panelDesktopPanel.BackColor = System.Drawing.Color.White;
             this.panelDesktopPanel.Controls.Add(this.pictureBox1);
             this.panelDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktopPanel.Location = new System.Drawing.Point(60, 80);
+            this.panelDesktopPanel.Location = new System.Drawing.Point(220, 80);
             this.panelDesktopPanel.Name = "panelDesktopPanel";
-            this.panelDesktopPanel.Size = new System.Drawing.Size(1018, 532);
+            this.panelDesktopPanel.Size = new System.Drawing.Size(858, 532);
             this.panelDesktopPanel.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::MainMenu.Properties.Resources._1574779670990;
-            this.pictureBox1.Location = new System.Drawing.Point(409, 166);
+            this.pictureBox1.Location = new System.Drawing.Point(329, 166);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 200);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -389,9 +379,9 @@
             this.sidebar.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.HomeContainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureImageSeta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.panelTittleBar.ResumeLayout(false);
             this.panelTittleBar.PerformLayout();
             this.panelDesktopPanel.ResumeLayout(false);
@@ -424,7 +414,6 @@
         private System.Windows.Forms.Button btnFolhaPagamento;
         private System.Windows.Forms.Button btnInfo;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button btnFolha;
     }
 }
 

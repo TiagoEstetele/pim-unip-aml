@@ -83,6 +83,16 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _436_4363443_view_user_icon_png_font_awesome_user_circle {
+            get {
+                object obj = ResourceManager.GetObject("436-4363443_view-user-icon-png-font-awesome-user-circle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add_48px {
             get {
                 object obj = ResourceManager.GetObject("add_48px", resourceCulture);
@@ -206,6 +216,46 @@ namespace MainMenu.Properties {
         internal static System.Drawing.Bitmap collapse_arrow_48px {
             get {
                 object obj = ResourceManager.GetObject("collapse_arrow_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Daco_4363443 {
+            get {
+                object obj = ResourceManager.GetObject("Daco_4363443", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Daco_4363443__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Daco_4363443 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Daco_4363443__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Daco_4363443 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap decoperfil {
+            get {
+                object obj = ResourceManager.GetObject("decoperfil", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -533,6 +583,16 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap more_info_48px {
+            get {
+                object obj = ResourceManager.GetObject("more_info_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ok_48px {
             get {
                 object obj = ResourceManager.GetObject("ok_48px", resourceCulture);
@@ -546,6 +606,16 @@ namespace MainMenu.Properties {
         internal static System.Drawing.Bitmap pay_date_48px {
             get {
                 object obj = ResourceManager.GetObject("pay_date_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap perfilicon {
+            get {
+                object obj = ResourceManager.GetObject("perfilicon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

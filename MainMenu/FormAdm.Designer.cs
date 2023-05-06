@@ -106,7 +106,7 @@
             this.pictureImageSeta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
             this.pictureImageSeta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureImageSeta.Image = global::MainMenu.Properties.Resources.seta_baixo1;
-            this.pictureImageSeta.Location = new System.Drawing.Point(114, 25);
+            this.pictureImageSeta.Location = new System.Drawing.Point(126, 23);
             this.pictureImageSeta.Name = "pictureImageSeta";
             this.pictureImageSeta.Size = new System.Drawing.Size(22, 23);
             this.pictureImageSeta.TabIndex = 10;
@@ -326,7 +326,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::MainMenu.Properties.Resources._15747796709901;
-            this.pictureBox1.Location = new System.Drawing.Point(409, 166);
+            this.pictureBox1.Location = new System.Drawing.Point(409, 159);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 200);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;

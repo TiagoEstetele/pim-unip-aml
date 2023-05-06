@@ -263,10 +263,10 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsultaFolha.cs">
+    <Compile Include="Forms\ConsultaFolha.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConsultaFolha.Designer.cs">
+    <Compile Include="Forms\ConsultaFolha.Designer.cs">
       <DependentUpon>ConsultaFolha.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomControls\ToggleButton.cs">
@@ -338,6 +338,12 @@
     <Compile Include="Forms\Ponto.Designer.cs">
       <DependentUpon>Ponto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Perfil.Designer.cs">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="PlaceHolder.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -349,7 +355,7 @@
     <Compile Include="TrocarSenha.Designer.cs">
       <DependentUpon>TrocarSenha.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ConsultaFolha.resx">
+    <EmbeddedResource Include="Forms\ConsultaFolha.resx">
       <DependentUpon>ConsultaFolha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormFuncionario.resx">
@@ -383,6 +389,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\informacoes.resx">
       <DependentUpon>informacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Perfil.resx">
+      <DependentUpon>Perfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Ponto.resx">
       <DependentUpon>Ponto.cs</DependentUpon>
@@ -634,6 +643,27 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\more_info_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\436-4363443_view-user-icon-png-font-awesome-user-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Daco_4363443.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfilicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decoperfil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Daco_4363443 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Daco_4363443 %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />

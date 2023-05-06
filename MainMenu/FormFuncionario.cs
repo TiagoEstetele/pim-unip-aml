@@ -215,6 +215,16 @@ namespace MainMenu
         {
             new ConsultaFolha(idfun).Show();
         }
+
+        private void btnFolhaPagamento_Click(object sender, EventArgs e)
+        { 
+            OpenChildForm(new ConsultaFolha(idfun), sender); 
+        }
+
+        private void btnInfo_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Perfil(), sender);
+        }
     }
 }
 

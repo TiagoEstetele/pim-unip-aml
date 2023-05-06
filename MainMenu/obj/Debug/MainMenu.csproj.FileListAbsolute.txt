@@ -271,3 +271,6 @@ C:\Users\User\Downloads\pim-unip-ibh\MainMenu\bin\Debug\System.Threading.Tasks.E
 C:\Users\User\Downloads\pim-unip-ibh\MainMenu\bin\Debug\System.ValueTuple.xml
 C:\Users\User\Downloads\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.csproj.Fody.CopyLocal.cache
 C:\Users\User\Downloads\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.csproj.CopyComplete
+C:\Users\tiago\OneDrive\Documentos\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.csproj.ResolveComReference.cache
+C:\Users\tiago\OneDrive\Documentos\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.ConsultaFolha.resources
+C:\Users\tiago\OneDrive\Documentos\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.Perfil.resources
