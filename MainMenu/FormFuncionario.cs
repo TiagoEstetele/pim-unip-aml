@@ -196,13 +196,13 @@ namespace MainMenu
 
         private void button3_MouseEnter(object sender, EventArgs e)
         {
-            Color minhaCorPersonalizada = Color.FromArgb(19, 19, 67);
+            Color minhaCorPersonalizada = Color.FromArgb(86, 31, 164);
             pictureImageSeta.BackColor = minhaCorPersonalizada;
         }
 
         private void button3_MouseLeave(object sender, EventArgs e)
         {
-            Color minhaCorPersonalizada = Color.FromArgb(16, 16, 56); 
+            Color minhaCorPersonalizada = Color.Transparent; 
             pictureImageSeta.BackColor = minhaCorPersonalizada;
         }
 
