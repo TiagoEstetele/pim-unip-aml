@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.panelInputs = new System.Windows.Forms.Panel();
+            this.btnSignIn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblCPF = new System.Windows.Forms.Label();
             this.showPasswordBtn = new MainMenu.CustomControls.ToggleButton();
@@ -37,35 +40,25 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textbox_login = new System.Windows.Forms.TextBox();
-            this.btnSignIn = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnMinimaze = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.buttonLogin = new System.Windows.Forms.Button();
-            this.inputSenha = new System.Windows.Forms.TextBox();
-            this.inputUsuario = new System.Windows.Forms.TextBox();
             this.textbox_password = new System.Windows.Forms.TextBox();
-            this.panelInfos = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panelInputs.SuspendLayout();
+            this.guna2CustomGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panelInfos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelInputs
             // 
             this.panelInputs.BackColor = System.Drawing.Color.White;
+            this.panelInputs.Controls.Add(this.btnSignIn);
+            this.panelInputs.Controls.Add(this.guna2CustomGradientPanel1);
             this.panelInputs.Controls.Add(this.lblPassword);
             this.panelInputs.Controls.Add(this.lblCPF);
             this.panelInputs.Controls.Add(this.showPasswordBtn);
@@ -73,17 +66,10 @@
             this.panelInputs.Controls.Add(this.pictureBox6);
             this.panelInputs.Controls.Add(this.panel1);
             this.panelInputs.Controls.Add(this.textbox_login);
-            this.panelInputs.Controls.Add(this.btnSignIn);
             this.panelInputs.Controls.Add(this.pictureBox7);
             this.panelInputs.Controls.Add(this.pictureBox5);
             this.panelInputs.Controls.Add(this.btnMinimaze);
             this.panelInputs.Controls.Add(this.btnClose);
-            this.panelInputs.Controls.Add(this.pictureBox3);
-            this.panelInputs.Controls.Add(this.pictureBox4);
-            this.panelInputs.Controls.Add(this.pictureBox2);
-            this.panelInputs.Controls.Add(this.buttonLogin);
-            this.panelInputs.Controls.Add(this.inputSenha);
-            this.panelInputs.Controls.Add(this.inputUsuario);
             this.panelInputs.Controls.Add(this.textbox_password);
             this.panelInputs.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.panelInputs.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -91,6 +77,53 @@
             this.panelInputs.Name = "panelInputs";
             this.panelInputs.Size = new System.Drawing.Size(800, 450);
             this.panelInputs.TabIndex = 0;
+            // 
+            // btnSignIn
+            // 
+            this.btnSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSignIn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignIn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignIn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSignIn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSignIn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSignIn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(42)))), ((int)(((byte)(212)))));
+            this.btnSignIn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(20)))), ((int)(((byte)(118)))));
+            this.btnSignIn.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignIn.ForeColor = System.Drawing.Color.White;
+            this.btnSignIn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(40)))), ((int)(((byte)(201)))));
+            this.btnSignIn.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(13)))), ((int)(((byte)(90)))));
+            this.btnSignIn.Location = new System.Drawing.Point(482, 314);
+            this.btnSignIn.Name = "btnSignIn";
+            this.btnSignIn.Size = new System.Drawing.Size(263, 45);
+            this.btnSignIn.TabIndex = 1002;
+            this.btnSignIn.Text = "Entrar";
+            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click_1);
+            // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.Controls.Add(this.pictureBox1);
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(42)))), ((int)(((byte)(212)))));
+            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(42)))), ((int)(((byte)(212)))));
+            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(10)))), ((int)(((byte)(73)))));
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(417, 451);
+            this.guna2CustomGradientPanel1.TabIndex = 1001;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::MainMenu.Properties.Resources.logo_rodape_aml1;
+            this.pictureBox1.Location = new System.Drawing.Point(87, 194);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(246, 87);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblPassword
             // 
@@ -173,22 +206,6 @@
             this.textbox_login.TextChanged += new System.EventHandler(this.textbox_login_TextChanged);
             this.textbox_login.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textbox_login_KeyPress);
             // 
-            // btnSignIn
-            // 
-            this.btnSignIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
-            this.btnSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSignIn.FlatAppearance.BorderSize = 0;
-            this.btnSignIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSignIn.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignIn.ForeColor = System.Drawing.Color.White;
-            this.btnSignIn.Location = new System.Drawing.Point(482, 318);
-            this.btnSignIn.Name = "btnSignIn";
-            this.btnSignIn.Size = new System.Drawing.Size(263, 39);
-            this.btnSignIn.TabIndex = 3;
-            this.btnSignIn.Text = "Sign In";
-            this.btnSignIn.UseVisualStyleBackColor = false;
-            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
-            // 
             // pictureBox7
             // 
             this.pictureBox7.BackgroundImage = global::MainMenu.Properties.Resources.icons8_usuário_64__3_;
@@ -243,63 +260,6 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(83, 208);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox3.TabIndex = 6;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(83, 275);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(190, 49);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(112, 125);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // buttonLogin
-            // 
-            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.buttonLogin.FlatAppearance.BorderSize = 0;
-            this.buttonLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.buttonLogin.Font = new System.Drawing.Font("Bebas Neue", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogin.ForeColor = System.Drawing.Color.White;
-            this.buttonLogin.Location = new System.Drawing.Point(179, 323);
-            this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(123, 38);
-            this.buttonLogin.TabIndex = 2;
-            this.buttonLogin.Text = "LOGIN";
-            this.buttonLogin.UseVisualStyleBackColor = false;
-            this.buttonLogin.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // inputSenha
-            // 
-            this.inputSenha.Location = new System.Drawing.Point(119, 285);
-            this.inputSenha.Name = "inputSenha";
-            this.inputSenha.Size = new System.Drawing.Size(251, 20);
-            this.inputSenha.TabIndex = 1;
-            // 
-            // inputUsuario
-            // 
-            this.inputUsuario.Location = new System.Drawing.Point(119, 218);
-            this.inputUsuario.Name = "inputUsuario";
-            this.inputUsuario.Size = new System.Drawing.Size(251, 20);
-            this.inputUsuario.TabIndex = 0;
-            this.inputUsuario.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // textbox_password
             // 
             this.textbox_password.AcceptsTab = true;
@@ -315,29 +275,6 @@
             this.textbox_password.Click += new System.EventHandler(this.textbox_password_Click_1);
             this.textbox_password.TextChanged += new System.EventHandler(this.textbox_password_TextChanged_1);
             this.textbox_password.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textbox_password_KeyPress);
-            // 
-            // panelInfos
-            // 
-            this.panelInfos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
-            this.panelInfos.Controls.Add(this.pictureBox1);
-            this.panelInfos.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelInfos.Location = new System.Drawing.Point(0, 0);
-            this.panelInfos.Name = "panelInfos";
-            this.panelInfos.Size = new System.Drawing.Size(417, 450);
-            this.panelInfos.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::MainMenu.Properties.Resources.logo_rodape_aml1;
-            this.pictureBox1.Location = new System.Drawing.Point(83, 187);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(240, 86);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // textBox2
             // 
@@ -356,7 +293,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panelInfos);
             this.Controls.Add(this.panelInputs);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -365,14 +301,11 @@
             this.Text = " ";
             this.panelInputs.ResumeLayout(false);
             this.panelInputs.PerformLayout();
+            this.guna2CustomGradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panelInfos.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -380,17 +313,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panelInputs;
-        private System.Windows.Forms.Panel panelInfos;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox inputUsuario;
-        private System.Windows.Forms.Button buttonLogin;
-        private System.Windows.Forms.TextBox inputSenha;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnMinimaze;
-        private System.Windows.Forms.Button btnSignIn;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.TextBox txt_login;
@@ -403,5 +328,7 @@
         private System.Windows.Forms.Label lblCPF;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.TextBox textbox_password;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
+        private Guna.UI2.WinForms.Guna2GradientButton btnSignIn;
     }
 }

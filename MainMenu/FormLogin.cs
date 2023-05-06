@@ -122,70 +122,7 @@ namespace MainMenu
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string postgres_source = "Host=pim.postgres.database.azure.com;" +
-                                         "Port=5432;" +
-                                         "Database=Teste02;" +
-                                         "Username=ricardinholord;" +
-                                         "Password=Maluco777;";
-
-                conec = new NpgsqlConnection(postgres_source);
-                string sql_login = "select d.id_cargo, d.ativo, d.id_funcionario, d.nome from login l inner join funcionario d on d.id_funcionario = l.id_funcionario where l.login= @login and l.senha= @senha";
-
-                NpgsqlCommand comando = new NpgsqlCommand(sql_login, conec);
-                conec.Open();
-
-                comando.Parameters.AddWithValue("@login", textbox_login.Text);
-                comando.Parameters.AddWithValue("@senha", textbox_password.Text);
-
-                NpgsqlDataReader reader = comando.ExecuteReader();
-                string identif = textbox_login.Text;
-
-
-                if (reader.HasRows)
-                {
-
-                    while (reader.Read())
-                    {
-                        Int64 id_cargo = Convert.ToInt64(reader[0]);
-                        bool ativo = Convert.ToBoolean(reader[1]);
-                        Int64 identify = Convert.ToInt64(reader[2]);
-                        string nome = Convert.ToString(reader[3]);
-
-                        if (ativo)
-                        {
-                            if (textbox_password.Text == "123")
-                            {
-                                new TrocarSenha(identif,id_cargo,identify).Show();
-                                this.Hide();
-                            }
-                            else if ((textbox_login.Text == "admin" && textbox_password.Text == "admin") || id_cargo == 1)
-                            {
-                                new FormAdm().Show();
-                                this.Hide();
-                            }
-                            else
-                            {
-                                new FormFuncionario(identify,nome).Show();
-                                this.Hide();
-                            }
-                        }
-                        else
-                            MessageBox.Show("Usuário inativo, favor entrar em contato com seu superior", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-                else
-                AlertBoxArtan(Color.LightPink, Color.DarkRed, "Error", "Usuário ou senha inválidos", Properties.Resources.close_48px);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                conec.Close();
-            }
+           
         }
 
         private void textbox_login_TextChanged(object sender, EventArgs e)
@@ -239,6 +176,74 @@ namespace MainMenu
             if (e.KeyChar == (char)Keys.Enter)
             {
                 btnSignIn.PerformClick();
+            }
+        }
+
+        private void btnSignIn_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                string postgres_source = "Host=pim.postgres.database.azure.com;" +
+                                         "Port=5432;" +
+                                         "Database=Teste02;" +
+                                         "Username=ricardinholord;" +
+                                         "Password=Maluco777;";
+
+                conec = new NpgsqlConnection(postgres_source);
+                string sql_login = "select d.id_cargo, d.ativo, d.id_funcionario, d.nome from login l inner join funcionario d on d.id_funcionario = l.id_funcionario where l.login= @login and l.senha= @senha";
+
+                NpgsqlCommand comando = new NpgsqlCommand(sql_login, conec);
+                conec.Open();
+
+                comando.Parameters.AddWithValue("@login", textbox_login.Text);
+                comando.Parameters.AddWithValue("@senha", textbox_password.Text);
+
+                NpgsqlDataReader reader = comando.ExecuteReader();
+                string identif = textbox_login.Text;
+
+
+                if (reader.HasRows)
+                {
+
+                    while (reader.Read())
+                    {
+                        Int64 id_cargo = Convert.ToInt64(reader[0]);
+                        bool ativo = Convert.ToBoolean(reader[1]);
+                        Int64 identify = Convert.ToInt64(reader[2]);
+                        string nome = Convert.ToString(reader[3]);
+
+                        if (ativo)
+                        {
+                            if (textbox_password.Text == "123")
+                            {
+                                new TrocarSenha(identif, id_cargo, identify).Show();
+                                this.Hide();
+                            }
+                            else if ((textbox_login.Text == "admin" && textbox_password.Text == "admin") || id_cargo == 1)
+                            {
+                                new FormAdm().Show();
+                                this.Hide();
+                            }
+                            else
+                            {
+                                new FormFuncionario(identify, nome).Show();
+                                this.Hide();
+                            }
+                        }
+                        else
+                            MessageBox.Show("Usuário inativo, favor entrar em contato com seu superior", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                else
+                    AlertBoxArtan(Color.LightPink, Color.DarkRed, "Error", "Usuário ou senha inválidos", Properties.Resources.close_48px);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conec.Close();
             }
         }
     }

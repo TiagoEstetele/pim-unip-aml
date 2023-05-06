@@ -33,31 +33,31 @@
             this.sidebar = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.HomeContainer = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelTittleBar = new System.Windows.Forms.Panel();
+            this.btnMinimaze = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.labelTittle = new System.Windows.Forms.Label();
+            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
+            this.HomeTimer = new System.Windows.Forms.Timer(this.components);
+            this.panelDesktopPanel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureImageSeta = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.btnFuncionarios = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.menuButton = new System.Windows.Forms.PictureBox();
-            this.panelTittleBar = new System.Windows.Forms.Panel();
-            this.btnMinimaze = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.labelTittle = new System.Windows.Forms.Label();
-            this.panelDesktopPanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
-            this.HomeTimer = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.HomeContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureImageSeta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.panelTittleBar.SuspendLayout();
             this.panelDesktopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureImageSeta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -84,7 +84,7 @@
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(60, 541);
+            this.panelLogo.Size = new System.Drawing.Size(60, 590);
             this.panelLogo.TabIndex = 0;
             // 
             // HomeContainer
@@ -100,6 +100,108 @@
             this.HomeContainer.Name = "HomeContainer";
             this.HomeContainer.Size = new System.Drawing.Size(220, 61);
             this.HomeContainer.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(63, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 24);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Menu";
+            // 
+            // panelTittleBar
+            // 
+            this.panelTittleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
+            this.panelTittleBar.Controls.Add(this.btnMinimaze);
+            this.panelTittleBar.Controls.Add(this.btnClose);
+            this.panelTittleBar.Controls.Add(this.labelTittle);
+            this.panelTittleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTittleBar.Location = new System.Drawing.Point(60, 0);
+            this.panelTittleBar.Name = "panelTittleBar";
+            this.panelTittleBar.Size = new System.Drawing.Size(1018, 80);
+            this.panelTittleBar.TabIndex = 1;
+            // 
+            // btnMinimaze
+            // 
+            this.btnMinimaze.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimaze.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimaze.FlatAppearance.BorderSize = 0;
+            this.btnMinimaze.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
+            this.btnMinimaze.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimaze.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinimaze.ForeColor = System.Drawing.Color.White;
+            this.btnMinimaze.Location = new System.Drawing.Point(948, 3);
+            this.btnMinimaze.Name = "btnMinimaze";
+            this.btnMinimaze.Size = new System.Drawing.Size(30, 30);
+            this.btnMinimaze.TabIndex = 5;
+            this.btnMinimaze.Text = "-";
+            this.btnMinimaze.UseVisualStyleBackColor = true;
+            this.btnMinimaze.Click += new System.EventHandler(this.btnMinimaze_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(985, 5);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(30, 30);
+            this.btnClose.TabIndex = 3;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // labelTittle
+            // 
+            this.labelTittle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelTittle.AutoSize = true;
+            this.labelTittle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTittle.ForeColor = System.Drawing.Color.White;
+            this.labelTittle.Location = new System.Drawing.Point(471, 28);
+            this.labelTittle.Name = "labelTittle";
+            this.labelTittle.Size = new System.Drawing.Size(72, 30);
+            this.labelTittle.TabIndex = 2;
+            this.labelTittle.Text = "HOME";
+            this.labelTittle.UseCompatibleTextRendering = true;
+            // 
+            // sidebarTimer
+            // 
+            this.sidebarTimer.Interval = 5;
+            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
+            // 
+            // HomeTimer
+            // 
+            this.HomeTimer.Interval = 10;
+            this.HomeTimer.Tick += new System.EventHandler(this.HomeTimer_Tick);
+            // 
+            // panelDesktopPanel
+            // 
+            this.panelDesktopPanel.BackColor = System.Drawing.Color.White;
+            this.panelDesktopPanel.Controls.Add(this.pictureBox1);
+            this.panelDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktopPanel.Location = new System.Drawing.Point(60, 80);
+            this.panelDesktopPanel.Name = "panelDesktopPanel";
+            this.panelDesktopPanel.Size = new System.Drawing.Size(1018, 532);
+            this.panelDesktopPanel.TabIndex = 2;
+            this.panelDesktopPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::MainMenu.Properties.Resources._15747796709901;
+            this.pictureBox1.Location = new System.Drawing.Point(409, 159);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // pictureImageSeta
             // 
@@ -184,24 +286,13 @@
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button2.Image = global::MainMenu.Properties.Resources.help_48px;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(4, 211);
+            this.button2.Location = new System.Drawing.Point(1, 203);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(217, 56);
             this.button2.TabIndex = 3;
             this.button2.Text = "             Help";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(63, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 24);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Menu";
             // 
             // button1
             // 
@@ -213,7 +304,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Image = global::MainMenu.Properties.Resources.info_48px;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 147);
+            this.button1.Location = new System.Drawing.Point(0, 139);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(220, 56);
             this.button1.TabIndex = 2;
@@ -232,7 +323,7 @@
             this.btnLogout.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnLogout.Image = global::MainMenu.Properties.Resources.logout_48px;
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(4, 264);
+            this.btnLogout.Location = new System.Drawing.Point(0, 531);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(217, 56);
             this.btnLogout.TabIndex = 7;
@@ -252,97 +343,6 @@
             this.menuButton.TabStop = false;
             this.menuButton.Click += new System.EventHandler(this.menuButton_Click_1);
             // 
-            // panelTittleBar
-            // 
-            this.panelTittleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
-            this.panelTittleBar.Controls.Add(this.btnMinimaze);
-            this.panelTittleBar.Controls.Add(this.btnClose);
-            this.panelTittleBar.Controls.Add(this.labelTittle);
-            this.panelTittleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTittleBar.Location = new System.Drawing.Point(60, 0);
-            this.panelTittleBar.Name = "panelTittleBar";
-            this.panelTittleBar.Size = new System.Drawing.Size(1018, 80);
-            this.panelTittleBar.TabIndex = 1;
-            // 
-            // btnMinimaze
-            // 
-            this.btnMinimaze.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimaze.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimaze.FlatAppearance.BorderSize = 0;
-            this.btnMinimaze.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
-            this.btnMinimaze.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimaze.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMinimaze.ForeColor = System.Drawing.Color.White;
-            this.btnMinimaze.Location = new System.Drawing.Point(948, 3);
-            this.btnMinimaze.Name = "btnMinimaze";
-            this.btnMinimaze.Size = new System.Drawing.Size(30, 30);
-            this.btnMinimaze.TabIndex = 5;
-            this.btnMinimaze.Text = "-";
-            this.btnMinimaze.UseVisualStyleBackColor = true;
-            this.btnMinimaze.Click += new System.EventHandler(this.btnMinimaze_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(985, 5);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(30, 30);
-            this.btnClose.TabIndex = 3;
-            this.btnClose.Text = "X";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // labelTittle
-            // 
-            this.labelTittle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelTittle.AutoSize = true;
-            this.labelTittle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTittle.ForeColor = System.Drawing.Color.White;
-            this.labelTittle.Location = new System.Drawing.Point(471, 28);
-            this.labelTittle.Name = "labelTittle";
-            this.labelTittle.Size = new System.Drawing.Size(72, 30);
-            this.labelTittle.TabIndex = 2;
-            this.labelTittle.Text = "HOME";
-            this.labelTittle.UseCompatibleTextRendering = true;
-            // 
-            // panelDesktopPanel
-            // 
-            this.panelDesktopPanel.BackColor = System.Drawing.Color.White;
-            this.panelDesktopPanel.Controls.Add(this.pictureBox1);
-            this.panelDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktopPanel.Location = new System.Drawing.Point(60, 80);
-            this.panelDesktopPanel.Name = "panelDesktopPanel";
-            this.panelDesktopPanel.Size = new System.Drawing.Size(1018, 532);
-            this.panelDesktopPanel.TabIndex = 2;
-            this.panelDesktopPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::MainMenu.Properties.Resources._15747796709901;
-            this.pictureBox1.Location = new System.Drawing.Point(409, 159);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // sidebarTimer
-            // 
-            this.sidebarTimer.Interval = 5;
-            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
-            // 
-            // HomeTimer
-            // 
-            this.HomeTimer.Interval = 10;
-            this.HomeTimer.Tick += new System.EventHandler(this.HomeTimer_Tick);
-            // 
             // FormAdm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -361,13 +361,13 @@
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
             this.HomeContainer.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureImageSeta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.panelTittleBar.ResumeLayout(false);
             this.panelTittleBar.PerformLayout();
             this.panelDesktopPanel.ResumeLayout(false);
             this.panelDesktopPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureImageSeta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -378,8 +378,6 @@
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Panel panelTittleBar;
         private System.Windows.Forms.Label labelTittle;
-        private System.Windows.Forms.Panel panelDesktopPanel;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnMinimaze;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button button2;
@@ -394,6 +392,8 @@
         private System.Windows.Forms.Button btnFuncionarios;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.PictureBox pictureImageSeta;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panelDesktopPanel;
     }
 }
 

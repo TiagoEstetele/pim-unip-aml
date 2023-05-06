@@ -344,6 +344,12 @@
     <Compile Include="Forms\Perfil.Designer.cs">
       <DependentUpon>Perfil.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hello.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hello.Designer.cs">
+      <DependentUpon>Hello.cs</DependentUpon>
+    </Compile>
     <Compile Include="PlaceHolder.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -395,6 +401,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Ponto.resx">
       <DependentUpon>Ponto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hello.resx">
+      <DependentUpon>Hello.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -664,6 +673,58 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Daco_4363443 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aml-consulting-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darth-vader-storm-troopers.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aml-gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darth-vader-storm-troopers1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aml-gif1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aml-gif2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo redimensionada.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aml-gif3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design_sem_nome.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo redimensionada1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design_sem_nome1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design-sem-nome-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design_sem_nome2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design-sem-nome-unscreen1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design-sem-nome-unscreen2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teste-branco-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\som2.wav" />
+    <Content Include="Resources\som.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />

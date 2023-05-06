@@ -133,6 +133,56 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aml_consulting_logo {
+            get {
+                object obj = ResourceManager.GetObject("aml-consulting-logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aml_gif {
+            get {
+                object obj = ResourceManager.GetObject("aml-gif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aml_gif1 {
+            get {
+                object obj = ResourceManager.GetObject("aml-gif1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aml_gif2 {
+            get {
+                object obj = ResourceManager.GetObject("aml-gif2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aml_gif3 {
+            get {
+                object obj = ResourceManager.GetObject("aml-gif3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap box_important_48px {
             get {
                 object obj = ResourceManager.GetObject("box_important_48px", resourceCulture);
@@ -253,6 +303,26 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap darth_vader_storm_troopers {
+            get {
+                object obj = ResourceManager.GetObject("darth-vader-storm-troopers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap darth_vader_storm_troopers1 {
+            get {
+                object obj = ResourceManager.GetObject("darth-vader-storm-troopers1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap decoperfil {
             get {
                 object obj = ResourceManager.GetObject("decoperfil", resourceCulture);
@@ -266,6 +336,66 @@ namespace MainMenu.Properties {
         internal static System.Drawing.Bitmap department_48px {
             get {
                 object obj = ResourceManager.GetObject("department_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Design_sem_nome {
+            get {
+                object obj = ResourceManager.GetObject("Design_sem_nome", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Design_sem_nome_unscreen {
+            get {
+                object obj = ResourceManager.GetObject("Design-sem-nome-unscreen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Design_sem_nome_unscreen1 {
+            get {
+                object obj = ResourceManager.GetObject("Design-sem-nome-unscreen1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Design_sem_nome_unscreen2 {
+            get {
+                object obj = ResourceManager.GetObject("Design-sem-nome-unscreen2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Design_sem_nome1 {
+            get {
+                object obj = ResourceManager.GetObject("Design_sem_nome1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Design_sem_nome2 {
+            get {
+                object obj = ResourceManager.GetObject("Design_sem_nome2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -496,6 +626,26 @@ namespace MainMenu.Properties {
         internal static System.Drawing.Bitmap info_48px {
             get {
                 object obj = ResourceManager.GetObject("info_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_redimensionada {
+            get {
+                object obj = ResourceManager.GetObject("logo redimensionada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_redimensionada1 {
+            get {
+                object obj = ResourceManager.GetObject("logo redimensionada1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -736,6 +886,16 @@ namespace MainMenu.Properties {
         internal static System.Drawing.Bitmap tear_off_calendar_48px {
             get {
                 object obj = ResourceManager.GetObject("tear-off_calendar_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap teste_branco_unscreen {
+            get {
+                object obj = ResourceManager.GetObject("teste-branco-unscreen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

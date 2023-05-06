@@ -70,7 +70,7 @@
             this.sidebar.MaximumSize = new System.Drawing.Size(220, 1080);
             this.sidebar.MinimumSize = new System.Drawing.Size(60, 1080);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(220, 1080);
+            this.sidebar.Size = new System.Drawing.Size(60, 1080);
             this.sidebar.TabIndex = 0;
             // 
             // panelLogo
@@ -85,7 +85,7 @@
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(220, 600);
+            this.panelLogo.Size = new System.Drawing.Size(60, 600);
             this.panelLogo.TabIndex = 0;
             // 
             // HomeContainer
@@ -100,7 +100,7 @@
             this.HomeContainer.MaximumSize = new System.Drawing.Size(220, 202);
             this.HomeContainer.MinimumSize = new System.Drawing.Size(220, 61);
             this.HomeContainer.Name = "HomeContainer";
-            this.HomeContainer.Size = new System.Drawing.Size(220, 202);
+            this.HomeContainer.Size = new System.Drawing.Size(220, 61);
             this.HomeContainer.TabIndex = 5;
             // 
             // btnFolhaPagamento
@@ -205,7 +205,7 @@
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button2.Image = global::MainMenu.Properties.Resources.help_48px;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(3, 428);
+            this.button2.Location = new System.Drawing.Point(0, 205);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(217, 61);
             this.button2.TabIndex = 3;
@@ -245,7 +245,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Image = global::MainMenu.Properties.Resources.info_48px;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 376);
+            this.button1.Location = new System.Drawing.Point(0, 153);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(220, 61);
             this.button1.TabIndex = 2;
@@ -264,7 +264,7 @@
             this.btnLogout.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnLogout.Image = global::MainMenu.Properties.Resources.logout_48px;
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(4, 493);
+            this.btnLogout.Location = new System.Drawing.Point(3, 527);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(217, 61);
             this.btnLogout.TabIndex = 7;
@@ -280,9 +280,9 @@
             this.panelTittleBar.Controls.Add(this.btnClose);
             this.panelTittleBar.Controls.Add(this.labelTittle);
             this.panelTittleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTittleBar.Location = new System.Drawing.Point(220, 0);
+            this.panelTittleBar.Location = new System.Drawing.Point(60, 0);
             this.panelTittleBar.Name = "panelTittleBar";
-            this.panelTittleBar.Size = new System.Drawing.Size(858, 80);
+            this.panelTittleBar.Size = new System.Drawing.Size(1018, 80);
             this.panelTittleBar.TabIndex = 1;
             // 
             // btnMinimaze
@@ -294,7 +294,7 @@
             this.btnMinimaze.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimaze.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimaze.ForeColor = System.Drawing.Color.White;
-            this.btnMinimaze.Location = new System.Drawing.Point(791, -2);
+            this.btnMinimaze.Location = new System.Drawing.Point(951, -2);
             this.btnMinimaze.Name = "btnMinimaze";
             this.btnMinimaze.Size = new System.Drawing.Size(30, 30);
             this.btnMinimaze.TabIndex = 5;
@@ -311,7 +311,7 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(828, 0);
+            this.btnClose.Location = new System.Drawing.Point(988, 0);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(30, 30);
             this.btnClose.TabIndex = 3;
@@ -325,7 +325,7 @@
             this.labelTittle.AutoSize = true;
             this.labelTittle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTittle.ForeColor = System.Drawing.Color.White;
-            this.labelTittle.Location = new System.Drawing.Point(398, 29);
+            this.labelTittle.Location = new System.Drawing.Point(478, 29);
             this.labelTittle.Name = "labelTittle";
             this.labelTittle.Size = new System.Drawing.Size(72, 30);
             this.labelTittle.TabIndex = 2;
@@ -337,16 +337,16 @@
             this.panelDesktopPanel.BackColor = System.Drawing.Color.White;
             this.panelDesktopPanel.Controls.Add(this.pictureBox1);
             this.panelDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktopPanel.Location = new System.Drawing.Point(220, 80);
+            this.panelDesktopPanel.Location = new System.Drawing.Point(60, 80);
             this.panelDesktopPanel.Name = "panelDesktopPanel";
-            this.panelDesktopPanel.Size = new System.Drawing.Size(858, 532);
+            this.panelDesktopPanel.Size = new System.Drawing.Size(1018, 532);
             this.panelDesktopPanel.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::MainMenu.Properties.Resources._1574779670990;
-            this.pictureBox1.Location = new System.Drawing.Point(329, 166);
+            this.pictureBox1.Location = new System.Drawing.Point(409, 166);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 200);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
