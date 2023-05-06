@@ -263,6 +263,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Ajuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Ajuda.Designer.cs">
+      <DependentUpon>Ajuda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ConsultaFolha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -295,6 +301,12 @@
     </Compile>
     <Compile Include="Forms\Cadastro.Designer.cs">
       <DependentUpon>Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EsqueciSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EsqueciSenha.Designer.cs">
+      <DependentUpon>EsqueciSenha.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Funcionarios.cs">
       <SubType>Form</SubType>
@@ -361,6 +373,9 @@
     <Compile Include="TrocarSenha.Designer.cs">
       <DependentUpon>TrocarSenha.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\Ajuda.resx">
+      <DependentUpon>Ajuda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ConsultaFolha.resx">
       <DependentUpon>ConsultaFolha.cs</DependentUpon>
     </EmbeddedResource>
@@ -377,6 +392,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Cadastro.resx">
       <DependentUpon>Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EsqueciSenha.resx">
+      <DependentUpon>EsqueciSenha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Funcionarios.resx">
       <DependentUpon>Funcionarios.cs</DependentUpon>
@@ -723,6 +741,12 @@
     <None Include="Resources\teste-branco-unscreen.gif" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\345208942_6153841654661304_6089581522731771910_n.jpg" />
+    <None Include="Resources\Hominho_esqueceu_a_senha.png" />
+    <None Include="Resources\Hominho_esqueceu_a_senha_com_sombra.png" />
+    <None Include="Resources\hominho teste.png" />
+    <None Include="Resources\hominho_senha_esqueci.png" />
+    <None Include="Resources\HELLO1.png" />
     <Content Include="Resources\som2.wav" />
     <Content Include="Resources\som.wav" />
   </ItemGroup>

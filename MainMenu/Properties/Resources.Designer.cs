@@ -83,6 +83,16 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _345208942_6153841654661304_6089581522731771910_n {
+            get {
+                object obj = ResourceManager.GetObject("345208942_6153841654661304_6089581522731771910_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _436_4363443_view_user_icon_png_font_awesome_user_circle {
             get {
                 object obj = ResourceManager.GetObject("436-4363443_view-user-icon-png-font-awesome-user-circle", resourceCulture);
@@ -503,6 +513,16 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap HELLO1 {
+            get {
+                object obj = ResourceManager.GetObject("HELLO1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap help_48px {
             get {
                 object obj = ResourceManager.GetObject("help_48px", resourceCulture);
@@ -526,6 +546,46 @@ namespace MainMenu.Properties {
         internal static System.Drawing.Bitmap home_48px1 {
             get {
                 object obj = ResourceManager.GetObject("home_48px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hominho_esqueceu_a_senha {
+            get {
+                object obj = ResourceManager.GetObject("Hominho_esqueceu_a_senha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hominho_esqueceu_a_senha_com_sombra {
+            get {
+                object obj = ResourceManager.GetObject("Hominho_esqueceu_a_senha_com_sombra", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hominho_senha_esqueci {
+            get {
+                object obj = ResourceManager.GetObject("hominho_senha_esqueci", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hominho_teste {
+            get {
+                object obj = ResourceManager.GetObject("hominho teste", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

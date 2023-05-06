@@ -14,6 +14,7 @@ using Npgsql;
 using NpgsqlTypes;
 using MainMenu.Forms.InfoBoxs;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
+using MainMenu.Forms;
 
 namespace MainMenu
 {
@@ -245,6 +246,11 @@ namespace MainMenu
             {
                 conec.Close();
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            new EsqueciSenha().Show();
         }
     }
 }

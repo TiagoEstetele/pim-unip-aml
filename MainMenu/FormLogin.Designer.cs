@@ -46,6 +46,7 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.textbox_password = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelInputs.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,6 +58,7 @@
             // panelInputs
             // 
             this.panelInputs.BackColor = System.Drawing.Color.White;
+            this.panelInputs.Controls.Add(this.button1);
             this.panelInputs.Controls.Add(this.btnSignIn);
             this.panelInputs.Controls.Add(this.guna2CustomGradientPanel1);
             this.panelInputs.Controls.Add(this.lblPassword);
@@ -92,7 +94,7 @@
             this.btnSignIn.ForeColor = System.Drawing.Color.White;
             this.btnSignIn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(40)))), ((int)(((byte)(201)))));
             this.btnSignIn.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(13)))), ((int)(((byte)(90)))));
-            this.btnSignIn.Location = new System.Drawing.Point(482, 314);
+            this.btnSignIn.Location = new System.Drawing.Point(482, 315);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(263, 45);
             this.btnSignIn.TabIndex = 1002;
@@ -130,7 +132,7 @@
             this.lblPassword.BackColor = System.Drawing.Color.White;
             this.lblPassword.Font = new System.Drawing.Font("Montserrat Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblPassword.Location = new System.Drawing.Point(514, 229);
+            this.lblPassword.Location = new System.Drawing.Point(514, 213);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(231, 22);
             this.lblPassword.TabIndex = 0;
@@ -142,7 +144,7 @@
             this.lblCPF.BackColor = System.Drawing.Color.White;
             this.lblCPF.Font = new System.Drawing.Font("Montserrat Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCPF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
-            this.lblCPF.Location = new System.Drawing.Point(515, 168);
+            this.lblCPF.Location = new System.Drawing.Point(515, 152);
             this.lblCPF.Name = "lblCPF";
             this.lblCPF.Size = new System.Drawing.Size(230, 21);
             this.lblCPF.TabIndex = 1000;
@@ -151,7 +153,7 @@
             // 
             // showPasswordBtn
             // 
-            this.showPasswordBtn.Location = new System.Drawing.Point(700, 255);
+            this.showPasswordBtn.Location = new System.Drawing.Point(700, 239);
             this.showPasswordBtn.MinimumSize = new System.Drawing.Size(45, 22);
             this.showPasswordBtn.Name = "showPasswordBtn";
             this.showPasswordBtn.OffBackColor = System.Drawing.Color.Gray;
@@ -167,7 +169,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.panel2.Location = new System.Drawing.Point(482, 279);
+            this.panel2.Location = new System.Drawing.Point(482, 263);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(263, 1);
             this.panel2.TabIndex = 20;
@@ -176,7 +178,7 @@
             // 
             this.pictureBox6.BackgroundImage = global::MainMenu.Properties.Resources.icons8_senha_50__1_;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(482, 246);
+            this.pictureBox6.Location = new System.Drawing.Point(482, 230);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(31, 31);
             this.pictureBox6.TabIndex = 18;
@@ -185,7 +187,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.panel1.Location = new System.Drawing.Point(482, 212);
+            this.panel1.Location = new System.Drawing.Point(482, 196);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(263, 1);
             this.panel1.TabIndex = 17;
@@ -197,7 +199,7 @@
             this.textbox_login.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textbox_login.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textbox_login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.textbox_login.Location = new System.Drawing.Point(519, 184);
+            this.textbox_login.Location = new System.Drawing.Point(519, 168);
             this.textbox_login.Name = "textbox_login";
             this.textbox_login.Size = new System.Drawing.Size(242, 20);
             this.textbox_login.TabIndex = 1;
@@ -210,7 +212,7 @@
             // 
             this.pictureBox7.BackgroundImage = global::MainMenu.Properties.Resources.icons8_usuário_64__3_;
             this.pictureBox7.Image = global::MainMenu.Properties.Resources.icons8_usuário_64__3_;
-            this.pictureBox7.Location = new System.Drawing.Point(482, 179);
+            this.pictureBox7.Location = new System.Drawing.Point(482, 163);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(31, 31);
             this.pictureBox7.TabIndex = 12;
@@ -219,7 +221,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(562, 58);
+            this.pictureBox5.Location = new System.Drawing.Point(562, 42);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(102, 100);
             this.pictureBox5.TabIndex = 10;
@@ -267,7 +269,7 @@
             this.textbox_password.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textbox_password.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textbox_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
-            this.textbox_password.Location = new System.Drawing.Point(519, 253);
+            this.textbox_password.Location = new System.Drawing.Point(519, 237);
             this.textbox_password.Name = "textbox_password";
             this.textbox_password.Size = new System.Drawing.Size(183, 20);
             this.textbox_password.TabIndex = 2;
@@ -287,6 +289,24 @@
             this.textBox2.Size = new System.Drawing.Size(242, 20);
             this.textBox2.TabIndex = 19;
             this.textBox2.Text = "Password";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
+            this.button1.Location = new System.Drawing.Point(621, 267);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(124, 26);
+            this.button1.TabIndex = 1003;
+            this.button1.Text = "Esqueci a senha";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // FormLogin
             // 
@@ -330,5 +350,6 @@
         private System.Windows.Forms.TextBox textbox_password;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2GradientButton btnSignIn;
+        private System.Windows.Forms.Button button1;
     }
 }

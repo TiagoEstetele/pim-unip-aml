@@ -132,6 +132,8 @@
             this.pictureImageSeta.TabIndex = 10;
             this.pictureImageSeta.TabStop = false;
             this.pictureImageSeta.Click += new System.EventHandler(this.pictureImageSeta_Click);
+            this.pictureImageSeta.MouseEnter += new System.EventHandler(this.pictureImageSeta_MouseEnter);
+            this.pictureImageSeta.MouseLeave += new System.EventHandler(this.pictureImageSeta_MouseLeave);
             // 
             // button3
             // 
@@ -197,6 +199,7 @@
             this.button2.Text = "             Help";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // label1
             // 
@@ -215,7 +218,7 @@
             this.menuButton.BackColor = System.Drawing.Color.Transparent;
             this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menuButton.Image = global::MainMenu.Properties.Resources.menu_branco;
-            this.menuButton.Location = new System.Drawing.Point(9, 15);
+            this.menuButton.Location = new System.Drawing.Point(6, 15);
             this.menuButton.Name = "menuButton";
             this.menuButton.Size = new System.Drawing.Size(50, 50);
             this.menuButton.TabIndex = 0;

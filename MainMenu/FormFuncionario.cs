@@ -1,4 +1,5 @@
-﻿using MainMenu.Forms.InfoBoxs;
+﻿using MainMenu.Forms;
+using MainMenu.Forms.InfoBoxs;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -224,6 +225,24 @@ namespace MainMenu
         private void btnInfo_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Perfil(idfun), sender);
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new Ajuda(), sender);
+        }
+
+        private void pictureImageSeta_MouseEnter(object sender, EventArgs e)
+        {
+            Color minhaCorPersonalizada = Color.FromArgb(86, 31, 164);
+            button3.BackColor = minhaCorPersonalizada;
+            pictureImageSeta.BackColor = minhaCorPersonalizada;
+        }
+
+        private void pictureImageSeta_MouseLeave(object sender, EventArgs e)
+        {
+            Color minhaCorPersonalizada = Color.Transparent;
+            button3.BackColor = minhaCorPersonalizada;
         }
     }
 }

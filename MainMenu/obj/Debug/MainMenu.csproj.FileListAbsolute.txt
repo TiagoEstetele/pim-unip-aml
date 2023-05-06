@@ -417,3 +417,5 @@ C:\Users\tiago\Downloads\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.csproj.Fody.Co
 C:\Users\tiago\Downloads\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.csproj.CopyComplete
 C:\Users\tiago\Downloads\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.exe
 C:\Users\tiago\Downloads\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.pdb
+C:\Users\tiago\OneDrive\Documentos\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.Forms.Ajuda.resources
+C:\Users\tiago\OneDrive\Documentos\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.Forms.EsqueciSenha.resources

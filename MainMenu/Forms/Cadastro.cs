@@ -132,22 +132,31 @@ namespace MainMenu.Forms
         {
             try
             {
-                txtNome.SelectAll();
+                txtNome.SelectionStart = txtEndereco.TextLength;
             }
             catch { }
+            if (txtNome.Text == "Nome")
+            {
+                txtNome.Clear();
+            }
         }
 
         private void txtEmail_Click(object sender, EventArgs e)
         {
             try
             {
-                txtEmail.SelectAll();
+                txtEmail.SelectionStart = txtEndereco.TextLength;
             }
             catch { }
+            if (txtEmail.Text == "Email")
+            {
+                txtEmail.Clear();
+            }
         }
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
         {
+            lblEmail.Visible = true;
             try
             {
                 txtEmail.ForeColor = System.Drawing.ColorTranslator.FromHtml("#232336");
@@ -160,13 +169,18 @@ namespace MainMenu.Forms
         {
             try
             {
-                txtTelefone.SelectAll();
+                txtTelefone.SelectionStart = txtEndereco.TextLength;
             }
             catch { }
+            if (txtTelefone.Text == "Telefone")
+            {
+                txtTelefone.Clear();
+            }
         }
 
         private void txtTelefone_TextChanged(object sender, EventArgs e)
         {
+            lblTelefone.Visible = true;
             try
             {
                 txtTelefone.ForeColor = System.Drawing.ColorTranslator.FromHtml("#232336");
@@ -201,6 +215,7 @@ namespace MainMenu.Forms
 
         private void txtSalario_TextChanged(object sender, EventArgs e)
         {
+            lblSalario.Visible = true;
             try
             {
                 txtSalario.ForeColor = System.Drawing.ColorTranslator.FromHtml("#232336");
@@ -213,14 +228,18 @@ namespace MainMenu.Forms
         {
             try
             {
-                txtSalario.SelectAll();
-
+                txtSalario.SelectionStart = txtSalario.TextLength;
             }
             catch { }
+            if (txtSalario.Text == "Salário")
+            {
+                txtSalario.Clear();
+            }
         }
 
         private void txtBanco_TextChanged(object sender, EventArgs e)
         {
+            lblBanco.Visible = true;
             try
             {
                 txtBanco.ForeColor = System.Drawing.ColorTranslator.FromHtml("#232336");
@@ -233,14 +252,18 @@ namespace MainMenu.Forms
         {
             try
             {
-                txtBanco.SelectAll();
-
+                txtBanco.SelectionStart = txtBanco.TextLength;
             }
             catch { }
+            if (txtBanco.Text == "Agência")
+            {
+                txtBanco.Clear();
+            }
         }
 
         private void txtConta_TextChanged(object sender, EventArgs e)
         {
+            lblConta.Visible = true;
             try
             {
                 txtConta.ForeColor = System.Drawing.ColorTranslator.FromHtml("#232336");
@@ -253,14 +276,18 @@ namespace MainMenu.Forms
         {
             try
             {
-                txtConta.SelectAll();
-
+                txtConta.SelectionStart = txtConta.TextLength;
             }
             catch { }
+            if (txtConta.Text == "Conta")
+            {
+                txtConta.Clear();
+            }
         }
 
         private void txtCTPS_TextChanged(object sender, EventArgs e)
         {
+            lblCTPS.Visible = true;
             try
             {
                 txtCTPS.ForeColor = System.Drawing.ColorTranslator.FromHtml("#232336");
@@ -273,10 +300,13 @@ namespace MainMenu.Forms
         {
             try
             {
-                txtCTPS.SelectAll();
-
+                txtCTPS.SelectionStart = txtCTPS.TextLength;
             }
             catch { }
+            if (txtCTPS.Text == "CTPS")
+            {
+                txtCTPS.Clear();
+            }
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)

@@ -83,10 +83,16 @@
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.txtBanco = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnSalvar = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.pictureBoxDinamic = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblTelefone = new System.Windows.Forms.Label();
+            this.lblSalario = new System.Windows.Forms.Label();
+            this.lblConta = new System.Windows.Forms.Label();
+            this.lblCTPS = new System.Windows.Forms.Label();
+            this.lblBanco = new System.Windows.Forms.Label();
+            this.btnSalvar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnAtivo = new MainMenu.CustomControls.ToggleButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -303,7 +309,7 @@
             this.lblEndereco.BackColor = System.Drawing.Color.White;
             this.lblEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEndereco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblEndereco.Location = new System.Drawing.Point(70, -4);
+            this.lblEndereco.Location = new System.Drawing.Point(70, -3);
             this.lblEndereco.Name = "lblEndereco";
             this.lblEndereco.Size = new System.Drawing.Size(225, 18);
             this.lblEndereco.TabIndex = 27;
@@ -438,6 +444,7 @@
             // 
             // panel13
             // 
+            this.panel13.Controls.Add(this.lblTelefone);
             this.panel13.Controls.Add(this.panel14);
             this.panel13.Controls.Add(this.pictureBox7);
             this.panel13.Controls.Add(this.txtTelefone);
@@ -563,6 +570,7 @@
             // 
             // panel19
             // 
+            this.panel19.Controls.Add(this.lblCTPS);
             this.panel19.Controls.Add(this.panel20);
             this.panel19.Controls.Add(this.pictureBox10);
             this.panel19.Controls.Add(this.txtCTPS);
@@ -605,6 +613,7 @@
             // 
             // panel21
             // 
+            this.panel21.Controls.Add(this.lblConta);
             this.panel21.Controls.Add(this.panel22);
             this.panel21.Controls.Add(this.pictureBox11);
             this.panel21.Controls.Add(this.txtConta);
@@ -683,7 +692,7 @@
             this.txtBanco.Name = "txtBanco";
             this.txtBanco.Size = new System.Drawing.Size(225, 22);
             this.txtBanco.TabIndex = 6;
-            this.txtBanco.Text = "Banco";
+            this.txtBanco.Text = "Agência";
             this.txtBanco.Click += new System.EventHandler(this.txtBanco_Click);
             this.txtBanco.TextChanged += new System.EventHandler(this.txtBanco_TextChanged);
             // 
@@ -692,27 +701,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.label2.Location = new System.Drawing.Point(420, 447);
+            this.label2.Location = new System.Drawing.Point(420, 470);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 18);
             this.label2.TabIndex = 19;
             this.label2.Text = "Inativo";
-            // 
-            // btnSalvar
-            // 
-            this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
-            this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSalvar.FlatAppearance.BorderSize = 0;
-            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.ForeColor = System.Drawing.Color.White;
-            this.btnSalvar.Location = new System.Drawing.Point(731, 447);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(213, 60);
-            this.btnSalvar.TabIndex = 24;
-            this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = false;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnClose
             // 
@@ -745,15 +738,107 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.label1.Location = new System.Drawing.Point(537, 447);
+            this.label1.Location = new System.Drawing.Point(537, 469);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 18);
             this.label1.TabIndex = 27;
             this.label1.Text = "Ativo";
             // 
+            // lblEmail
+            // 
+            this.lblEmail.BackColor = System.Drawing.Color.White;
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.lblEmail.Location = new System.Drawing.Point(431, 75);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(225, 18);
+            this.lblEmail.TabIndex = 28;
+            this.lblEmail.Text = "Email";
+            this.lblEmail.Visible = false;
+            // 
+            // lblTelefone
+            // 
+            this.lblTelefone.BackColor = System.Drawing.Color.White;
+            this.lblTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.lblTelefone.Location = new System.Drawing.Point(70, -3);
+            this.lblTelefone.Name = "lblTelefone";
+            this.lblTelefone.Size = new System.Drawing.Size(225, 18);
+            this.lblTelefone.TabIndex = 29;
+            this.lblTelefone.Text = "Telefone";
+            this.lblTelefone.Visible = false;
+            // 
+            // lblSalario
+            // 
+            this.lblSalario.BackColor = System.Drawing.Color.White;
+            this.lblSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.lblSalario.Location = new System.Drawing.Point(434, 349);
+            this.lblSalario.Name = "lblSalario";
+            this.lblSalario.Size = new System.Drawing.Size(225, 18);
+            this.lblSalario.TabIndex = 29;
+            this.lblSalario.Text = "Salário";
+            this.lblSalario.Visible = false;
+            // 
+            // lblConta
+            // 
+            this.lblConta.BackColor = System.Drawing.Color.White;
+            this.lblConta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.lblConta.Location = new System.Drawing.Point(70, -2);
+            this.lblConta.Name = "lblConta";
+            this.lblConta.Size = new System.Drawing.Size(225, 18);
+            this.lblConta.TabIndex = 30;
+            this.lblConta.Text = "Conta";
+            this.lblConta.Visible = false;
+            // 
+            // lblCTPS
+            // 
+            this.lblCTPS.BackColor = System.Drawing.Color.White;
+            this.lblCTPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCTPS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.lblCTPS.Location = new System.Drawing.Point(67, -2);
+            this.lblCTPS.Name = "lblCTPS";
+            this.lblCTPS.Size = new System.Drawing.Size(225, 18);
+            this.lblCTPS.TabIndex = 30;
+            this.lblCTPS.Text = "CTPS";
+            this.lblCTPS.Visible = false;
+            // 
+            // lblBanco
+            // 
+            this.lblBanco.BackColor = System.Drawing.Color.White;
+            this.lblBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBanco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.lblBanco.Location = new System.Drawing.Point(755, 346);
+            this.lblBanco.Name = "lblBanco";
+            this.lblBanco.Size = new System.Drawing.Size(225, 18);
+            this.lblBanco.TabIndex = 30;
+            this.lblBanco.Text = "Agência";
+            this.lblBanco.Visible = false;
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalvar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSalvar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSalvar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSalvar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSalvar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSalvar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(42)))), ((int)(((byte)(212)))));
+            this.btnSalvar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(20)))), ((int)(((byte)(118)))));
+            this.btnSalvar.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.ForeColor = System.Drawing.Color.White;
+            this.btnSalvar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(40)))), ((int)(((byte)(201)))));
+            this.btnSalvar.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(13)))), ((int)(((byte)(90)))));
+            this.btnSalvar.Location = new System.Drawing.Point(763, 447);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(202, 58);
+            this.btnSalvar.TabIndex = 1003;
+            this.btnSalvar.Text = "Salvar";
+            // 
             // btnAtivo
             // 
-            this.btnAtivo.Location = new System.Drawing.Point(486, 447);
+            this.btnAtivo.Location = new System.Drawing.Point(486, 469);
             this.btnAtivo.MinimumSize = new System.Drawing.Size(45, 22);
             this.btnAtivo.Name = "btnAtivo";
             this.btnAtivo.OffBackColor = System.Drawing.Color.Gray;
@@ -770,10 +855,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1018, 532);
+            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.lblBanco);
+            this.Controls.Add(this.lblSalario);
+            this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBoxDinamic);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnAtivo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel17);
@@ -889,7 +977,6 @@
         private System.Windows.Forms.MaskedTextBox txtDataNascimento;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.MaskedTextBox txtAdmissao;
-        private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.MaskedTextBox txtCPF;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnClose;
@@ -897,5 +984,12 @@
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblEndereco;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTelefone;
+        private System.Windows.Forms.Label lblCTPS;
+        private System.Windows.Forms.Label lblConta;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblSalario;
+        private System.Windows.Forms.Label lblBanco;
+        private Guna.UI2.WinForms.Guna2GradientButton btnSalvar;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MainMenu.Forms;
 using MainMenu.Forms.alertBoxPrincipal;
 
 namespace MainMenu
@@ -27,31 +28,6 @@ namespace MainMenu
             this.ControlBox = false;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -60,31 +36,6 @@ namespace MainMenu
         private void btnMinimaze_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_DragOver(object sender, DragEventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
         }
 
         private void ActivateButton(object btnSender)
@@ -163,11 +114,6 @@ namespace MainMenu
             this.Hide();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void OpenChildForm(Form childForm, object btnSender)
         {
             if (activeForm != null)
@@ -196,20 +142,16 @@ namespace MainMenu
             OpenChildForm(new Forms.Funcionarios(), sender);
         }
 
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-            HomeTimer.Start();
-        }
 
         private void button3_MouseEnter(object sender, EventArgs e)
         {
-            Color minhaCorPersonalizada = Color.FromArgb(19, 19, 67);
+            Color minhaCorPersonalizada = Color.FromArgb(86, 31, 164);
             pictureImageSeta.BackColor = minhaCorPersonalizada;
         }
 
         private void button3_MouseLeave(object sender, EventArgs e)
         {
-            Color minhaCorPersonalizada = Color.FromArgb(16, 16, 56);
+            Color minhaCorPersonalizada = Color.Transparent;
             pictureImageSeta.BackColor = minhaCorPersonalizada;
         }
         void AlertBoxArtan(Color backColor, Color color, string title, string text, Image icon)
@@ -230,6 +172,29 @@ namespace MainMenu
         private void button4_Click(object sender, EventArgs e)
         {
             AlertBoxArtan(Color.LightPink, Color.DarkRed, "Error", "Usuário ou senha inválidos", Properties.Resources.close_48px);
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new Ajuda(), sender);
+        }
+
+        private void pictureImageSeta_MouseEnter(object sender, EventArgs e)
+        {
+            Color minhaCorPersonalizada = Color.FromArgb(86, 31, 164);
+            button3.BackColor = minhaCorPersonalizada;
+            pictureImageSeta.BackColor = minhaCorPersonalizada;
+        }
+
+        private void pictureImageSeta_MouseLeave(object sender, EventArgs e)
+        {
+            Color minhaCorPersonalizada = Color.Transparent;
+            button3.BackColor = minhaCorPersonalizada;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            HomeTimer.Start();
         }
     }
 }
