@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.panelInputs = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnSignIn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblCPF = new System.Windows.Forms.Label();
-            this.showPasswordBtn = new MainMenu.CustomControls.ToggleButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -46,7 +46,7 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.textbox_password = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.showPasswordBtn = new MainMenu.CustomControls.ToggleButton();
             this.panelInputs.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -79,6 +79,24 @@
             this.panelInputs.Name = "panelInputs";
             this.panelInputs.Size = new System.Drawing.Size(800, 450);
             this.panelInputs.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
+            this.button1.Location = new System.Drawing.Point(621, 267);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(124, 26);
+            this.button1.TabIndex = 1003;
+            this.button1.Text = "Esqueci a senha";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btnSignIn
             // 
@@ -150,21 +168,6 @@
             this.lblCPF.TabIndex = 1000;
             this.lblCPF.Text = "CPF";
             this.lblCPF.Visible = false;
-            // 
-            // showPasswordBtn
-            // 
-            this.showPasswordBtn.Location = new System.Drawing.Point(700, 239);
-            this.showPasswordBtn.MinimumSize = new System.Drawing.Size(45, 22);
-            this.showPasswordBtn.Name = "showPasswordBtn";
-            this.showPasswordBtn.OffBackColor = System.Drawing.Color.Gray;
-            this.showPasswordBtn.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.showPasswordBtn.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.showPasswordBtn.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.showPasswordBtn.Size = new System.Drawing.Size(45, 22);
-            this.showPasswordBtn.TabIndex = 22;
-            this.showPasswordBtn.TabStop = false;
-            this.showPasswordBtn.UseVisualStyleBackColor = true;
-            this.showPasswordBtn.CheckedChanged += new System.EventHandler(this.toggleButton1_CheckedChanged);
             // 
             // panel2
             // 
@@ -290,23 +293,20 @@
             this.textBox2.TabIndex = 19;
             this.textBox2.Text = "Password";
             // 
-            // button1
+            // showPasswordBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
-            this.button1.Location = new System.Drawing.Point(621, 267);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 26);
-            this.button1.TabIndex = 1003;
-            this.button1.Text = "Esqueci a senha";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.showPasswordBtn.Location = new System.Drawing.Point(700, 239);
+            this.showPasswordBtn.MinimumSize = new System.Drawing.Size(45, 22);
+            this.showPasswordBtn.Name = "showPasswordBtn";
+            this.showPasswordBtn.OffBackColor = System.Drawing.Color.Gray;
+            this.showPasswordBtn.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.showPasswordBtn.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.showPasswordBtn.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.showPasswordBtn.Size = new System.Drawing.Size(45, 22);
+            this.showPasswordBtn.TabIndex = 22;
+            this.showPasswordBtn.TabStop = false;
+            this.showPasswordBtn.UseVisualStyleBackColor = true;
+            this.showPasswordBtn.CheckedChanged += new System.EventHandler(this.toggleButton1_CheckedChanged);
             // 
             // FormLogin
             // 

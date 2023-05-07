@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static MainMenu.Forms.Cadastro;
+using MainMenu.Forms.InfoBoxs;
 
 namespace MainMenu.Forms
 {
@@ -32,6 +33,17 @@ namespace MainMenu.Forms
             this.WindowState = FormWindowState.Minimized;
         }
 
+        void AlertBoxArtan(Color backColor, Color color, string title, string text, Image icon)
+        {
+            alertBox alertBox = new alertBox();
+            alertBox.BackColor = backColor;
+            alertBox.ColorAlertBox = color;
+            alertBox.TitleAlertBox = title;
+            alertBox.TextAlertBox = text;
+            alertBox.IconeColorAlertBox = icon;
+            alertBox.ShowDialog();
+        }
+
         private void txtCPF_Click(object sender, EventArgs e)
         {
             try
@@ -52,7 +64,7 @@ namespace MainMenu.Forms
                 txtData.SelectionStart = txtData.TextLength;
             }
             catch { }
-            if (txtData.Text == "Data de nascimento")
+            if (txtData.Text == "Data de Nascimento")
             {
                 txtData.Clear();
             }
@@ -88,7 +100,7 @@ namespace MainMenu.Forms
 
                     if (txtCPF.Text == "" || txtData.Text == "")
                     {
-                        MessageBox.Show("Favor preencher os campos corretamente!", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        AlertBoxArtan(Color.LightPink, Color.DarkRed, "Error", "Favor preencher os campos corretamente!", Properties.Resources.close_48px);
                     }
                     else
                     {
@@ -98,7 +110,8 @@ namespace MainMenu.Forms
                 }
             }
             else
-                MessageBox.Show("Os dados não conferem, favor verificar.", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                AlertBoxArtan(Color.LightPink, Color.DarkRed, "Error", "Os dados não conferem, favor verificar.", Properties.Resources.close_48px);
+
         }
 
         private void btnSignIn_Click(object sender, EventArgs e)
@@ -107,12 +120,12 @@ namespace MainMenu.Forms
             {
                 if (textbox_nova.Text != textbox_confirma.Text)
                 {
-                    MessageBox.Show("As senhas não coincidem.", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    AlertBoxArtan(Color.LightPink, Color.DarkRed, "Error", "As senhas não coincidem.", Properties.Resources.close_48px);
                     return;
                 }
                 else if (textbox_nova.Text == string.Empty && textbox_confirma.Text == string.Empty)
                 {
-                    MessageBox.Show("Favor preencher os campos corretamente.", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    AlertBoxArtan(Color.LightPink, Color.DarkRed, "Error", "Favor preencher os campos.", Properties.Resources.close_48px);
                     return;
                 }
 
@@ -134,17 +147,99 @@ namespace MainMenu.Forms
 
                 if (executou == 1)
                 {
-                    MessageBox.Show("Sucesso! Você será redirecionado para a tela de login para prosseguir com o acesso assim que pressionar 'ok'", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    AlertBoxArtan(Color.LightGreen, Color.SeaGreen, "Successo", "Senha alterada com sucesso!", Properties.Resources.ok_48px);
                     new FormLogin().Show();
                     this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Senha não alterada, verifique", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    AlertBoxArtan(Color.LightPink, Color.DarkRed, "Error", "Senha não alterada, verifique.", Properties.Resources.close_48px);
                 }
             }
             catch (Exception ex) { }
             finally { conec.Close(); }
+        }
+
+        private void txtCPF_TextChanged(object sender, EventArgs e)
+        {
+            lblCPF.Visible = true;
+            try
+            {
+                lblCPF.ForeColor = System.Drawing.ColorTranslator.FromHtml("#232336");
+            }
+            catch { }
+        }
+
+        private void txtData_TextChanged(object sender, EventArgs e)
+        {
+            lblData.Visible = true;
+            try
+            {
+                txtData.ForeColor = System.Drawing.ColorTranslator.FromHtml("#232336");
+            }
+            catch { }
+        }
+
+        private void txtData_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                btnSignIn.PerformClick();
+            }
+        }
+
+        private void txtCPF_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                btnSignIn.PerformClick();
+            }
+        }
+
+        private void textbox_nova_TextChanged(object sender, EventArgs e)
+        {
+            lblNovaSenha.Visible = true;
+            try
+            {
+                textbox_nova.ForeColor = System.Drawing.ColorTranslator.FromHtml("#232336");
+            }
+            catch { }
+        }
+
+        private void textbox_nova_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textbox_nova.SelectionStart = textbox_nova.TextLength;
+            }
+            catch { }
+            if (textbox_nova.Text == "Nova Senha")
+            {
+                textbox_nova.Clear();
+            }
+        }
+
+        private void textbox_confirma_TextChanged(object sender, EventArgs e)
+        {
+            lblConfirmeNovaSenha.Visible = true;
+            try
+            {
+                textbox_confirma.ForeColor = System.Drawing.ColorTranslator.FromHtml("#232336");
+            }
+            catch { }
+        }
+
+        private void textbox_confirma_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textbox_confirma.SelectionStart = textbox_confirma.TextLength;
+            }
+            catch { }
+            if (textbox_confirma.Text == "Confirme Senha")
+            {
+                textbox_confirma.Clear();
+            }
         }
     }
 }
