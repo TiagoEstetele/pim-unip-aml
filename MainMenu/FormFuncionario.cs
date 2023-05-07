@@ -104,11 +104,11 @@ namespace MainMenu
 
             if (sidebar.Width <= 60)
             {
-                menuButton.Image = Image.FromFile("C:\\Users\\tiago\\OneDrive\\Documentos\\Windows Forms Projetos\\MainMenu\\MainMenu\\Resources\\close_48px.png");
+                menuButton.Image = Image.FromFile(@".\Resources\close_48px.png");
             }
             else
             {
-                menuButton.Image = Image.FromFile("C:\\Users\\tiago\\OneDrive\\Documentos\\Windows Forms Projetos\\MainMenu\\MainMenu\\Resources\\menu-branco.png");
+                menuButton.Image = Image.FromFile(@".\Resources\menu-branco.png");
             }
         }
 

@@ -487,10 +487,14 @@
     <None Include="Resources\menu_48px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\menu-branco.png" />
+    <None Include="Resources\menu-branco.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\close_48px.png" />
+    <None Include="Resources\close_48px.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\add_user_male_48px.png" />
@@ -499,6 +503,12 @@
     <None Include="Resources\edit_property_48px.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Funcionario.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Estagiario.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\waste_48px.png" />
   </ItemGroup>
   <ItemGroup>
@@ -753,7 +763,9 @@
     <None Include="Resources\editar-texto %281%291.png" />
     <None Include="Resources\red-eyes.png" />
     <Content Include="Resources\som2.wav" />
-    <Content Include="Resources\som.wav" />
+    <Content Include="Resources\som.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />

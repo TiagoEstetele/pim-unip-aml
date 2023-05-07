@@ -118,6 +118,9 @@ namespace MainMenu
             object missing = Missing.Value;
             Word.Document myWordDoc = null;
 
+            var fileInfo = new FileInfo((string)filename);
+            filename = (object)fileInfo.FullName;
+
             try
             {
                 if (File.Exists((string)filename))
@@ -149,10 +152,10 @@ namespace MainMenu
                     }
                     else
                         this.FindAndReplace(wordApp, "<nome>", txtNome.Text);
-                        this.FindAndReplace(wordApp, "<fixoFaltas>", FaltaDia.ToString("N2"));
-                        this.FindAndReplace(wordApp, "<desconto3>", Falta.ToString("N2"));
-                        this.FindAndReplace(wordApp, "<salaBruto>", salario);
-                        this.FindAndReplace(wordApp, "<salaLiquid>", SalarioLiquidoEst.ToString("N2"));
+                    this.FindAndReplace(wordApp, "<fixoFaltas>", FaltaDia.ToString("N2"));
+                    this.FindAndReplace(wordApp, "<desconto3>", Falta.ToString("N2"));
+                    this.FindAndReplace(wordApp, "<salaBruto>", salario);
+                    this.FindAndReplace(wordApp, "<salaLiquid>", SalarioLiquidoEst.ToString("N2"));
                 }
                 else
                 {
@@ -160,6 +163,8 @@ namespace MainMenu
                     return; // retornar sem salvar o documento
                 }
 
+                var directoryInfo = new DirectoryInfo(@".\Documentos");
+                SaveAs = (object)$"{directoryInfo.FullName}\\{SaveAs.ToString().Split('\\')[2]}";
                 //save as
                 myWordDoc.SaveAs2(ref SaveAs, ref missing, ref missing, ref missing,
                                 ref missing, ref missing, ref missing,
@@ -182,12 +187,17 @@ namespace MainMenu
             string Extrato = idfun.ToString();
             long Modif = DateTime.Now.Ticks;
 
+            if (!Directory.Exists(@".\Documentos"))
+            {
+                Directory.CreateDirectory(@".\Documentos");
+            }
+
             if (idCargo1 == 1 || idCargo1 == 2)
             {
-                CreateWordDocument(@"C:\temp.docx", $@"C:\Users\muril\OneDrive\{Extrato} {Modif}.docx");
+                CreateWordDocument(@".\Resources\Funcionario.docx", $@".\Documentos\{Extrato} {Modif}.docx");
             }
             else
-                CreateWordDocument(@"C:\temp1.docx", $@"C:\Users\muril\OneDrive\{Extrato} {Modif}.docx");
+                CreateWordDocument(@".\Resources\Estagiario.docx", $@".\Documentos\{Extrato} {Modif}.docx");
         }
 
         private void dtpData_ValueChanged(object sender, EventArgs e)
