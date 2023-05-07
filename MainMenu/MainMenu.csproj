@@ -747,6 +747,11 @@
     <None Include="Resources\hominho teste.png" />
     <None Include="Resources\hominho_senha_esqueci.png" />
     <None Include="Resources\HELLO1.png" />
+    <None Include="Resources\338335068_1026540595378768_7730303744687841903_n.jpg" />
+    <None Include="Resources\editar-texto.png" />
+    <None Include="Resources\editar-texto %281%29.png" />
+    <None Include="Resources\editar-texto %281%291.png" />
+    <None Include="Resources\red-eyes.png" />
     <Content Include="Resources\som2.wav" />
     <Content Include="Resources\som.wav" />
   </ItemGroup>

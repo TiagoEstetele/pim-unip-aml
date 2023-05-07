@@ -34,14 +34,26 @@ namespace MainMenu.Forms
         }
         private void PreencherDataGrid()
         {
-            string strcad = "select id_funcionario as ID, nome as Nome, cpf as CPF, data_admissao as Admissao, salario_bruto as Salario, case when ativo = true then 'Sim' else 'Não' end as Ativo from funcionario order by id_funcionario";
+            string strcad = "select id_funcionario as ID, nome as Nome, cpf as CPF, data_admissao as Admissao, salario_bruto as Salario, case when ativo = true then 'Sim' else 'Não' end as Ativo from funcionario where ativo = true";
+            if (txtBuscar.Text.Trim().Length > 0)
+            {
+                strcad += " and lower(nome) like @Nome";
+            }
+            strcad += " order by id_funcionario";
+
             connection = new NpgsqlConnection(connectionString);
 
             connection.Open();
 
             NpgsqlCommand comando = new NpgsqlCommand(strcad, connection);
 
+            if (txtBuscar.Text.Trim().Length > 0)
+            {
+                comando.Parameters.AddWithValue("@Nome", "%" + txtBuscar.Text.ToLower() + "%");
+            }
+
             var reader = comando.ExecuteReader();
+            funcionarios.Clear();
             while (reader.Read())
             {
                 funcionarios.Add(new Funcionario
@@ -55,8 +67,13 @@ namespace MainMenu.Forms
                 });
             }
 
+            dgvFuncionarios.DataSource = null;
+            dgvFuncionarios.Rows.Clear();
             dgvFuncionarios.DataSource = funcionarios;
             dgvFuncionarios.ReadOnly = true;
+            dgvFuncionarios.Refresh();
+
+            connection.Close();
         }
 
         void dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -77,6 +94,7 @@ namespace MainMenu.Forms
                 var data = (Funcionario)dgvFuncionarios.Rows[e.RowIndex].DataBoundItem;
                 Cadastro form = new Cadastro(data.ID);
                 form.ShowDialog();
+                PreencherDataGrid();
             }
         }
 
@@ -88,6 +106,45 @@ namespace MainMenu.Forms
             public DateTime Admissao { get; set; }
             public Decimal Salario { get; set; }
             public string Ativo { get; set; }
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            dgvFuncionarios.Refresh();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            PreencherDataGrid();
+            //string strcad = "select id_funcionario as ID, nome as Nome, cpf as CPF, data_admissao as Admissao, salario_bruto as Salario, case when ativo = true then 'Sim' else 'Não' end as Ativo from funcionario where ativo = true and id_funcionario=@idfun";
+
+            //connection = new NpgsqlConnection(connectionString);
+
+            //connection.Open();
+
+            //NpgsqlCommand comando = new NpgsqlCommand(strcad, connection);
+
+            //comando.Parameters.AddWithValue("@idfun", Convert.ToInt64(txtBuscar.Text));
+            //comando.ExecuteNonQuery();
+
+            //var reader = comando.ExecuteReader();
+            //while (reader.Read())
+            //{
+            //    funcionarios.Add(new Funcionario
+            //    {
+            //        ID = reader.GetInt64(0),
+            //        Nome = reader.GetString(1),
+            //        CPF = reader.GetString(2),
+            //        Admissao = reader.GetDateTime(3),
+            //        Salario = reader.GetDecimal(4),
+            //        Ativo = reader.GetString(5)
+            //    });
+            //}
+
+            //dgvFuncionarios.DataSource = funcionarios;
+            //dgvFuncionarios.ReadOnly = true;
+
+            //connection.Close();
         }
     }
 }

@@ -59,6 +59,7 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.lblTelefone = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.txtTelefone = new System.Windows.Forms.TextBox();
@@ -71,10 +72,12 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel19 = new System.Windows.Forms.Panel();
+            this.lblCTPS = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.txtCTPS = new System.Windows.Forms.TextBox();
             this.panel21 = new System.Windows.Forms.Panel();
+            this.lblConta = new System.Windows.Forms.Label();
             this.panel22 = new System.Windows.Forms.Panel();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.txtConta = new System.Windows.Forms.TextBox();
@@ -87,10 +90,7 @@
             this.pictureBoxDinamic = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.lblTelefone = new System.Windows.Forms.Label();
             this.lblSalario = new System.Windows.Forms.Label();
-            this.lblConta = new System.Windows.Forms.Label();
-            this.lblCTPS = new System.Windows.Forms.Label();
             this.lblBanco = new System.Windows.Forms.Label();
             this.btnSalvar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnAtivo = new MainMenu.CustomControls.ToggleButton();
@@ -257,7 +257,7 @@
             this.txtCPF.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCPF.Location = new System.Drawing.Point(69, 24);
-            this.txtCPF.Mask = "000.000.000-00";
+            this.txtCPF.Mask = "000,000,000-00";
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(160, 19);
             this.txtCPF.TabIndex = 27;
@@ -453,6 +453,18 @@
             this.panel13.Size = new System.Drawing.Size(298, 68);
             this.panel13.TabIndex = 12;
             // 
+            // lblTelefone
+            // 
+            this.lblTelefone.BackColor = System.Drawing.Color.White;
+            this.lblTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.lblTelefone.Location = new System.Drawing.Point(70, -3);
+            this.lblTelefone.Name = "lblTelefone";
+            this.lblTelefone.Size = new System.Drawing.Size(225, 18);
+            this.lblTelefone.TabIndex = 29;
+            this.lblTelefone.Text = "Telefone";
+            this.lblTelefone.Visible = false;
+            // 
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
@@ -579,6 +591,18 @@
             this.panel19.Size = new System.Drawing.Size(298, 68);
             this.panel19.TabIndex = 17;
             // 
+            // lblCTPS
+            // 
+            this.lblCTPS.BackColor = System.Drawing.Color.White;
+            this.lblCTPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCTPS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.lblCTPS.Location = new System.Drawing.Point(67, -2);
+            this.lblCTPS.Name = "lblCTPS";
+            this.lblCTPS.Size = new System.Drawing.Size(225, 18);
+            this.lblCTPS.TabIndex = 30;
+            this.lblCTPS.Text = "CTPS";
+            this.lblCTPS.Visible = false;
+            // 
             // panel20
             // 
             this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
@@ -621,6 +645,18 @@
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(298, 68);
             this.panel21.TabIndex = 16;
+            // 
+            // lblConta
+            // 
+            this.lblConta.BackColor = System.Drawing.Color.White;
+            this.lblConta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.lblConta.Location = new System.Drawing.Point(70, -2);
+            this.lblConta.Name = "lblConta";
+            this.lblConta.Size = new System.Drawing.Size(225, 18);
+            this.lblConta.TabIndex = 30;
+            this.lblConta.Text = "Conta";
+            this.lblConta.Visible = false;
             // 
             // panel22
             // 
@@ -756,18 +792,6 @@
             this.lblEmail.Text = "Email";
             this.lblEmail.Visible = false;
             // 
-            // lblTelefone
-            // 
-            this.lblTelefone.BackColor = System.Drawing.Color.White;
-            this.lblTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblTelefone.Location = new System.Drawing.Point(70, -3);
-            this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(225, 18);
-            this.lblTelefone.TabIndex = 29;
-            this.lblTelefone.Text = "Telefone";
-            this.lblTelefone.Visible = false;
-            // 
             // lblSalario
             // 
             this.lblSalario.BackColor = System.Drawing.Color.White;
@@ -779,30 +803,6 @@
             this.lblSalario.TabIndex = 29;
             this.lblSalario.Text = "Salário";
             this.lblSalario.Visible = false;
-            // 
-            // lblConta
-            // 
-            this.lblConta.BackColor = System.Drawing.Color.White;
-            this.lblConta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblConta.Location = new System.Drawing.Point(70, -2);
-            this.lblConta.Name = "lblConta";
-            this.lblConta.Size = new System.Drawing.Size(225, 18);
-            this.lblConta.TabIndex = 30;
-            this.lblConta.Text = "Conta";
-            this.lblConta.Visible = false;
-            // 
-            // lblCTPS
-            // 
-            this.lblCTPS.BackColor = System.Drawing.Color.White;
-            this.lblCTPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCTPS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblCTPS.Location = new System.Drawing.Point(67, -2);
-            this.lblCTPS.Name = "lblCTPS";
-            this.lblCTPS.Size = new System.Drawing.Size(225, 18);
-            this.lblCTPS.TabIndex = 30;
-            this.lblCTPS.Text = "CTPS";
-            this.lblCTPS.Visible = false;
             // 
             // lblBanco
             // 
@@ -835,6 +835,7 @@
             this.btnSalvar.Size = new System.Drawing.Size(202, 58);
             this.btnSalvar.TabIndex = 1003;
             this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click_1);
             // 
             // btnAtivo
             // 

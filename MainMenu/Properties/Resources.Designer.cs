@@ -83,6 +83,16 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _338335068_1026540595378768_7730303744687841903_n {
+            get {
+                object obj = ResourceManager.GetObject("338335068_1026540595378768_7730303744687841903_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _345208942_6153841654661304_6089581522731771910_n {
             get {
                 object obj = ResourceManager.GetObject("345208942_6153841654661304_6089581522731771910_n", resourceCulture);
@@ -436,6 +446,36 @@ namespace MainMenu.Properties {
         internal static System.Drawing.Bitmap edit_property_48px {
             get {
                 object obj = ResourceManager.GetObject("edit_property_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap editar_texto {
+            get {
+                object obj = ResourceManager.GetObject("editar-texto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap editar_texto__1_ {
+            get {
+                object obj = ResourceManager.GetObject("editar-texto (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap editar_texto__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("editar-texto (1)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -856,6 +896,16 @@ namespace MainMenu.Properties {
         internal static System.Drawing.Bitmap post_48px {
             get {
                 object obj = ResourceManager.GetObject("post_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap red_eyes {
+            get {
+                object obj = ResourceManager.GetObject("red-eyes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

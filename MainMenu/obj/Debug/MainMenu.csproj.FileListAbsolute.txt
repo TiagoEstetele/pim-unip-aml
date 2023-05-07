@@ -565,3 +565,5 @@ C:\Users\tiago\OneDrive\Imagens\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.csproj.
 C:\Users\tiago\OneDrive\Imagens\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.csproj.CopyComplete
 C:\Users\tiago\OneDrive\Imagens\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.exe
 C:\Users\tiago\OneDrive\Imagens\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.pdb
+E:\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.Forms.Ajuda.resources
+E:\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.Forms.EsqueciSenha.resources
