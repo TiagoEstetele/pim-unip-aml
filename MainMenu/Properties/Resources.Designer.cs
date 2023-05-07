@@ -573,6 +573,16 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Folha {
+            get {
+                object obj = ResourceManager.GetObject("Folha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Funcionarios {
             get {
                 object obj = ResourceManager.GetObject("Funcionarios", resourceCulture);
@@ -686,6 +696,16 @@ namespace MainMenu.Properties {
         internal static System.Drawing.Bitmap hominho_teste {
             get {
                 object obj = ResourceManager.GetObject("hominho teste", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hominho_teste1 {
+            get {
+                object obj = ResourceManager.GetObject("hominho teste1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -933,6 +953,16 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Perfil {
+            get {
+                object obj = ResourceManager.GetObject("Perfil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap perfilicon {
             get {
                 object obj = ResourceManager.GetObject("perfilicon", resourceCulture);
@@ -956,6 +986,16 @@ namespace MainMenu.Properties {
         internal static System.Drawing.Bitmap phone_48px {
             get {
                 object obj = ResourceManager.GetObject("phone_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ponto {
+            get {
+                object obj = ResourceManager.GetObject("Ponto", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

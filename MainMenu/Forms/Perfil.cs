@@ -96,6 +96,9 @@ namespace MainMenu
 
             dgvRelatorioHoras.DataSource = Horas;
             dgvRelatorioHoras.ReadOnly = true;
+            dgvRelatorioHoras.Columns[0].Width = 200;
+            dgvRelatorioHoras.Columns[1].Width = 189;
+            dgvRelatorioHoras.Columns[2].Width = 50;
         }
         public class RelatorioHoras
         {

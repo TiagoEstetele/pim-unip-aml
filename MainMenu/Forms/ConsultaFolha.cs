@@ -13,6 +13,7 @@ using System.IO;
 using System.Reflection;
 using Word = Microsoft.Office.Interop.Word;
 using Microsoft.Office.Interop.Word;
+using MainMenu.Forms.alertBoxPrincipal;
 
 namespace MainMenu
 {
@@ -65,6 +66,16 @@ namespace MainMenu
 
             InitializeComponent();
         }
+        void AlertBoxArtan(Color backColor, Color color, string title, string text, Image icon)
+        {
+            AlertBoxPrincipal alertBox = new AlertBoxPrincipal();
+            alertBox.BackColor = backColor;
+            alertBox.ColorAlertBox = color;
+            alertBox.TitleAlertBox = title;
+            alertBox.TextAlertBox = text;
+            alertBox.IconeColorAlertBox = icon;
+            alertBox.ShowDialog();
+        }
 
         private string ConsultarSalario(long idfun, long idCargo1)
         {
@@ -114,6 +125,20 @@ namespace MainMenu
                 ref replace, ref matchKashida,
                 ref matchDiactitics, ref matchAlefHamza,
                 ref matchControl);
+        }
+
+        private void btnIr_Click(object sender, EventArgs e)
+        {
+            string path = @".\Documentos"; 
+
+            try
+            {
+                System.Diagnostics.Process.Start("explorer.exe", path);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao abrir a pasta: " + ex.Message);
+            }
         }
 
         private void CreateWordDocument(object filename, object SaveAs)
@@ -200,7 +225,7 @@ namespace MainMenu
             }
         }
 
-        private void btnDownload_Click(object sender, EventArgs e)
+         private void btnDownload_Click_1(object sender, EventArgs e)
         {
             string Extrato = idfun.ToString();
             long Modif = DateTime.Now.Ticks;
@@ -216,6 +241,17 @@ namespace MainMenu
             }
             else
                 CreateWordDocument(@".\Resources\Estagiario.docx", $@".\Documentos\{Extrato} {Modif}.pdf");
+
+            string path = @".\Documentos";
+
+            try
+            {
+                System.Diagnostics.Process.Start("explorer.exe", path);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao abrir a pasta: " + ex.Message);
+            }
         }
 
         private void dtpData_ValueChanged(object sender, EventArgs e)

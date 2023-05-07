@@ -229,7 +229,7 @@ namespace MainMenu
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            OpenChildForm(new Ajuda(), sender);
+            OpenChildForm(new AjudaFuncionario(), sender);
         }
 
         private void pictureImageSeta_MouseEnter(object sender, EventArgs e)

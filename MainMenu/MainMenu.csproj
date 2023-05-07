@@ -517,6 +517,7 @@
     <None Include="Resources\eye_48px1.png" />
     <None Include="Resources\edit_property_48px2.png" />
     <None Include="Resources\Cadastro.gif" />
+    <None Include="Resources\Folha.gif" />
     <Content Include="Resources\Funcionario.docx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -779,6 +780,9 @@
     <None Include="Resources\olho.png" />
     <None Include="Resources\search_48px.png" />
     <None Include="Resources\Funcionarios.gif" />
+    <None Include="Resources\Perfil.gif" />
+    <None Include="Resources\Ponto.gif" />
+    <None Include="Resources\hominho teste1.png" />
     <Content Include="Resources\som2.wav" />
     <Content Include="Resources\som.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

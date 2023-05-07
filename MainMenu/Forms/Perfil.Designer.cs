@@ -29,7 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelPerfil = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.dgvRelatorioHoras = new System.Windows.Forms.DataGridView();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtAdmissao = new System.Windows.Forms.TextBox();
             this.txtCTPS = new System.Windows.Forms.TextBox();
@@ -51,17 +56,18 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.npgsqlDataAdapter1 = new Npgsql.NpgsqlDataAdapter();
-            this.dgvRelatorioHoras = new System.Windows.Forms.DataGridView();
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panelPerfil.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRelatorioHoras)).BeginInit();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRelatorioHoras)).BeginInit();
             this.SuspendLayout();
             // 
             // panelPerfil
             // 
             this.panelPerfil.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panelPerfil.Controls.Add(this.dgvRelatorioHoras);
+            this.panelPerfil.Controls.Add(this.panel7);
             this.panelPerfil.Controls.Add(this.txtNome);
             this.panelPerfil.Controls.Add(this.txtAdmissao);
             this.panelPerfil.Controls.Add(this.txtCTPS);
@@ -82,6 +88,49 @@
             this.panelPerfil.Name = "panelPerfil";
             this.panelPerfil.Size = new System.Drawing.Size(929, 476);
             this.panelPerfil.TabIndex = 0;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.dgvRelatorioHoras);
+            this.panel7.Location = new System.Drawing.Point(366, 275);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(497, 185);
+            this.panel7.TabIndex = 27;
+            // 
+            // dgvRelatorioHoras
+            // 
+            this.dgvRelatorioHoras.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            this.dgvRelatorioHoras.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvRelatorioHoras.BackgroundColor = System.Drawing.Color.White;
+            this.dgvRelatorioHoras.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvRelatorioHoras.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(42)))), ((int)(((byte)(212)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(42)))), ((int)(((byte)(212)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRelatorioHoras.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvRelatorioHoras.ColumnHeadersHeight = 35;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvRelatorioHoras.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvRelatorioHoras.EnableHeadersVisualStyles = false;
+            this.dgvRelatorioHoras.Location = new System.Drawing.Point(-1, -1);
+            this.dgvRelatorioHoras.Name = "dgvRelatorioHoras";
+            this.dgvRelatorioHoras.Size = new System.Drawing.Size(499, 190);
+            this.dgvRelatorioHoras.TabIndex = 26;
             // 
             // txtNome
             // 
@@ -138,11 +187,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.label1.Location = new System.Drawing.Point(361, 225);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(177, 25);
+            this.label1.Size = new System.Drawing.Size(185, 29);
             this.label1.TabIndex = 20;
             this.label1.Text = "Data Admissão:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -158,11 +207,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.label2.Location = new System.Drawing.Point(361, 185);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 25);
+            this.label2.Size = new System.Drawing.Size(75, 29);
             this.label2.TabIndex = 18;
             this.label2.Text = "CTPS:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -178,11 +227,11 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.label9.Location = new System.Drawing.Point(361, 147);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 25);
+            this.label9.Size = new System.Drawing.Size(62, 29);
             this.label9.TabIndex = 16;
             this.label9.Text = "CPF:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -198,11 +247,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.label3.Location = new System.Drawing.Point(361, 107);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 25);
+            this.label3.Size = new System.Drawing.Size(85, 29);
             this.label3.TabIndex = 12;
             this.label3.Text = "Nome:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -226,11 +275,11 @@
             // lblText
             // 
             this.lblText.AutoSize = true;
-            this.lblText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblText.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.lblText.Location = new System.Drawing.Point(357, 61);
             this.lblText.Name = "lblText";
-            this.lblText.Size = new System.Drawing.Size(140, 25);
+            this.lblText.Size = new System.Drawing.Size(151, 29);
             this.lblText.TabIndex = 5;
             this.lblText.Text = "Informações";
             this.lblText.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -296,13 +345,10 @@
             this.npgsqlDataAdapter1.SelectCommand = null;
             this.npgsqlDataAdapter1.UpdateCommand = null;
             // 
-            // dgvRelatorioHoras
+            // guna2Elipse2
             // 
-            this.dgvRelatorioHoras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRelatorioHoras.Location = new System.Drawing.Point(362, 291);
-            this.dgvRelatorioHoras.Name = "dgvRelatorioHoras";
-            this.dgvRelatorioHoras.Size = new System.Drawing.Size(501, 159);
-            this.dgvRelatorioHoras.TabIndex = 26;
+            this.guna2Elipse2.BorderRadius = 20;
+            this.guna2Elipse2.TargetControl = this.panel7;
             // 
             // Perfil
             // 
@@ -316,10 +362,11 @@
             this.Text = "Perfil";
             this.panelPerfil.ResumeLayout(false);
             this.panelPerfil.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRelatorioHoras)).EndInit();
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRelatorioHoras)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -349,5 +396,7 @@
         private System.Windows.Forms.TextBox txtAdmissao;
         private System.Windows.Forms.TextBox txtCTPS;
         private System.Windows.Forms.DataGridView dgvRelatorioHoras;
+        private System.Windows.Forms.Panel panel7;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
     }
 }
