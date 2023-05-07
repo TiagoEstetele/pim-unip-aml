@@ -12,6 +12,7 @@ using NpgsqlTypes;
 using System.IO;
 using System.Reflection;
 using Word = Microsoft.Office.Interop.Word;
+using Microsoft.Office.Interop.Word;
 
 namespace MainMenu
 {
@@ -23,13 +24,15 @@ namespace MainMenu
                                   "Username=ricardinholord;" +
                                   "Password=Maluco777;";
         long idfun;
+        string nome, endereco, telefone;
         long idCargo1;
+        decimal HoraExtra;
         NpgsqlConnection connection;
-        decimal IRRF, INSS, Falta, PINSS, FaltaDia, SalarioLiquido, SalarioRecebido, Descontos;
+        decimal IRRF, INSS, Falta, PINSS, FaltaDia, SalarioLiquido, SalarioRecebido, Descontos, DescontosE;
 
-        public ConsultaFolha(long idfun, long idCargo1)
+        public ConsultaFolha(long idfun, long idCargo1, string nome, string endereco, string telefone)
         {
-            string strcad = "select salario_bruto, id_cargo from funcionario where id_funcionario=@idfun";
+            string strcad = "select salario_bruto, id_cargo, endereco, nome, telefone from funcionario where id_funcionario=@idfun";
             connection = new NpgsqlConnection(connectionString);
 
             connection.Open();
@@ -44,6 +47,9 @@ namespace MainMenu
             NpgsqlDataReader dr = comando.ExecuteReader();
             dr.Read();
             idCargo1 = Convert.ToInt32(dr[1]);
+            this.endereco = Convert.ToString(dr[2]);
+            this.nome = Convert.ToString(dr[3]);
+            this.telefone = Convert.ToString(dr[4]);
 
             salario = ConsultarSalario(idfun, idCargo1);
 
@@ -54,6 +60,7 @@ namespace MainMenu
             PINSS = CalculoPorcentagemINSS(salario);
             SalarioLiquido = CalculoSalarioLiquido(idfun, salario);
             Descontos = Falta + IRRF + INSS;
+            DescontosE = Falta;
             SalarioRecebido = SalarioLiquido - Descontos;
 
             InitializeComponent();
@@ -139,42 +146,53 @@ namespace MainMenu
 
                     if (idCargo1 == 1 || idCargo1 == 2)
                     {
-                        this.FindAndReplace(wordApp, "<nome>", txtNome.Text);
+                        this.FindAndReplace(wordApp, "<nome>", nome);
+                        this.FindAndReplace(wordApp, "<endereco>", endereco);
+                        this.FindAndReplace(wordApp, "<telefone>", telefone);
                         this.FindAndReplace(wordApp, "<desconto1>", INSS.ToString("N2"));
                         this.FindAndReplace(wordApp, "<desconto2>", IRRF.ToString("N2"));
                         this.FindAndReplace(wordApp, "<desconto3>", Falta.ToString("N2"));
                         this.FindAndReplace(wordApp, "<fixoIrrf>", IRRF.ToString("N2"));
                         this.FindAndReplace(wordApp, "<porcInss>", PINSS.ToString("N2"));
                         this.FindAndReplace(wordApp, "<fixoFaltas>", FaltaDia.ToString("N2"));
-                        this.FindAndReplace(wordApp, "<salaBruto>", salario);
-                        this.FindAndReplace(wordApp, "<salaLiquid>", SalarioLiquido.ToString("N2"));
+                        this.FindAndReplace(wordApp, "<acresc1>", salario);
+                        this.FindAndReplace(wordApp, "<acresc2>", HoraExtra);
+                        this.FindAndReplace(wordApp, "<salaLiquid>", (SalarioLiquido + HoraExtra).ToString("N2"));
                         this.FindAndReplace(wordApp, "<salaRecebido>", SalarioRecebido.ToString("N2"));
+                        this.FindAndReplace(wordApp, "<descontTotal>", Descontos);
                     }
                     else
-                        this.FindAndReplace(wordApp, "<nome>", txtNome.Text);
-                    this.FindAndReplace(wordApp, "<fixoFaltas>", FaltaDia.ToString("N2"));
-                    this.FindAndReplace(wordApp, "<desconto3>", Falta.ToString("N2"));
-                    this.FindAndReplace(wordApp, "<salaBruto>", salario);
-                    this.FindAndReplace(wordApp, "<salaLiquid>", SalarioLiquidoEst.ToString("N2"));
+                        this.FindAndReplace(wordApp, "<nome>", nome);
+                        this.FindAndReplace(wordApp, "<endereco>", endereco);
+                        this.FindAndReplace(wordApp, "<telefone>", telefone);
+                        this.FindAndReplace(wordApp, "<fixoFaltas>", FaltaDia.ToString("N2"));
+                        this.FindAndReplace(wordApp, "<desconto3>", Falta.ToString("N2"));
+                        this.FindAndReplace(wordApp, "<acresc1>", salario);
+                        this.FindAndReplace(wordApp, "<descontTotal>", DescontosE);
+                        this.FindAndReplace(wordApp, "<salaLiquido>", SalarioLiquidoEst.ToString("N2"));
                 }
                 else
                 {
-                    MessageBox.Show("File not found!");
+                    MessageBox.Show("Folha de modelo não foi detectada, favor verificar.");
                     return; // retornar sem salvar o documento
                 }
 
                 var directoryInfo = new DirectoryInfo(@".\Documentos");
                 SaveAs = (object)$"{directoryInfo.FullName}\\{SaveAs.ToString().Split('\\')[2]}";
                 //save as
-                myWordDoc.SaveAs2(ref SaveAs, ref missing, ref missing, ref missing,
+                myWordDoc.SaveAs2(ref SaveAs, WdSaveFormat.wdFormatPDF, ref missing, ref missing,
                                 ref missing, ref missing, ref missing,
                                 ref missing, ref missing, ref missing,
                                 ref missing, ref missing, ref missing,
                                 ref missing, ref missing, ref missing);
 
-                myWordDoc.Close();
+                object SaveChanges = WdSaveOptions.wdDoNotSaveChanges;
+                
+                myWordDoc.Close(ref SaveChanges, ref missing, ref missing);
+                //myWordDoc.ExportAsFixedFormat(SaveAs.ToString(), WdExportFormat.wdExportFormatPDF, false, WdExportOptimizeFor.wdExportOptimizeForOnScreen, WdExportRange.wdExportAllDocument, 1, 1, WdExportItem.wdExportDocumentContent, true, true, WdExportCreateBookmarks.wdExportCreateHeadingBookmarks, true, true, false, ref missing);
+
                 wordApp.Quit();
-                MessageBox.Show("File Created!");
+                MessageBox.Show("O arquivo foi criado!");
             }
             catch (Exception ex)
             {
@@ -194,10 +212,10 @@ namespace MainMenu
 
             if (idCargo1 == 1 || idCargo1 == 2)
             {
-                CreateWordDocument(@".\Resources\Funcionario.docx", $@".\Documentos\{Extrato} {Modif}.docx");
+                CreateWordDocument(@".\Resources\Funcionario.docx", $@".\Documentos\{Extrato} {Modif}.pdf");
             }
             else
-                CreateWordDocument(@".\Resources\Estagiario.docx", $@".\Documentos\{Extrato} {Modif}.docx");
+                CreateWordDocument(@".\Resources\Estagiario.docx", $@".\Documentos\{Extrato} {Modif}.pdf");
         }
 
         private void dtpData_ValueChanged(object sender, EventArgs e)
@@ -272,14 +290,21 @@ namespace MainMenu
             DateTime date = new DateTime();
             date = DateTime.Now;
             int mes = (date.Month);
-            string horas;
-            decimal Falta;
+            decimal Falta, horas;
             decimal PagamentoTotal;
 
             decimal salarioDecimal = decimal.Parse(salario);
             decimal salarioBruto = decimal.Parse(salario);
 
-            salarioDecimal = salarioDecimal / 220;
+            if (idCargo1 <= 2)
+            {
+                salarioDecimal = salarioDecimal / 160;
+            }
+            else
+            {
+                salarioDecimal = salarioDecimal / 120;
+            }
+
 
             string strcad = "select id_funcionario, sum(horas_total) as trabalho from controle_de_horas where id_funcionario=@id and mes=@mes group by id_funcionario";
             connection = new NpgsqlConnection(connectionString);
@@ -294,12 +319,24 @@ namespace MainMenu
             NpgsqlDataReader dr = comando.ExecuteReader();
             dr.Read();
 
-            horas = Convert.ToString(dr["trabalho"]);
+            horas = Convert.ToDecimal(dr["trabalho"]);
 
             connection.Close();
 
-            PagamentoTotal = decimal.Parse(horas) * salarioDecimal;
-            Falta = salarioBruto - PagamentoTotal;
+            PagamentoTotal = horas * salarioDecimal;
+
+            if (horas <= 160)
+            {
+                Falta = salarioBruto - PagamentoTotal;
+                HoraExtra = 0;
+            }
+            else
+            {
+                Falta = salarioBruto - PagamentoTotal;
+                HoraExtra = Falta * -1;
+                Falta = 0;
+            }
+                
 
             return Falta;
         }
@@ -311,8 +348,16 @@ namespace MainMenu
 
             decimal salarioDecimal = decimal.Parse(salario);
 
-            salarioDecimal = salarioDecimal / 220;
-            FaltaDia = salarioDecimal * 8;
+            if (idCargo1 <= 2)
+            {
+                salarioDecimal = salarioDecimal / 160;
+                FaltaDia = salarioDecimal * 8;
+            }
+            else
+            {
+                salarioDecimal = salarioDecimal / 120;
+                FaltaDia = salarioDecimal * 6;
+            }
 
             return FaltaDia;
         }
@@ -329,7 +374,14 @@ namespace MainMenu
             decimal salarioDecimal = decimal.Parse(salario);
             decimal salarioBruto = decimal.Parse(salario);
 
-            salarioDecimal = salarioDecimal / 220;
+            if (idCargo1 <= 2)
+            {
+                salarioDecimal = salarioDecimal / 160;
+            }
+            else
+            {
+                salarioDecimal = salarioDecimal / 120;
+            }
 
             string strcad = "select id_funcionario, sum(horas_total) as trabalho from controle_de_horas where id_funcionario=@id and mes=@mes group by id_funcionario";
             connection = new NpgsqlConnection(connectionString);

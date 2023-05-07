@@ -20,7 +20,7 @@ namespace MainMenu
         private Form activeForm;
         private Button currentButton;
         long idfun, idCargo1;
-        string nomeF;
+        string nomeF, nome, endereco, telefone;
         
         public FormFuncionario(long identify, string nome)
         {
@@ -214,12 +214,12 @@ namespace MainMenu
 
         private void btnFolha_Click(object sender, EventArgs e)
         {
-            new ConsultaFolha(idfun, idCargo1).Show();
+            new ConsultaFolha(idfun, idCargo1, nome, endereco, telefone).Show();
         }
 
         private void btnFolhaPagamento_Click(object sender, EventArgs e)
         { 
-            OpenChildForm(new ConsultaFolha(idfun, idCargo1), sender); 
+            OpenChildForm(new ConsultaFolha(idfun, idCargo1, nome, endereco, telefone), sender); 
         }
 
         private void btnInfo_Click(object sender, EventArgs e)
