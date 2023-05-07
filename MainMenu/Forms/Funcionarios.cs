@@ -72,6 +72,14 @@ namespace MainMenu.Forms
             dgvFuncionarios.DataSource = funcionarios;
             dgvFuncionarios.ReadOnly = true;
             dgvFuncionarios.Refresh();
+            dgvFuncionarios.Columns[1].Width = 50;
+            dgvFuncionarios.Columns[2].Width = 70;
+            dgvFuncionarios.Columns[3].Width = 200;
+            dgvFuncionarios.Columns[4].Width = 200;
+            dgvFuncionarios.Columns[5].Width = 100;
+            dgvFuncionarios.Columns[6].Width = 100;
+            dgvFuncionarios.Columns[7].Width = 150;
+
 
             connection.Close();
         }
@@ -108,11 +116,6 @@ namespace MainMenu.Forms
             public string Ativo { get; set; }
         }
 
-        private void btnAtualizar_Click(object sender, EventArgs e)
-        {
-            dgvFuncionarios.Refresh();
-        }
-
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             PreencherDataGrid();
@@ -145,6 +148,13 @@ namespace MainMenu.Forms
             //dgvFuncionarios.ReadOnly = true;
 
             //connection.Close();
+        }
+
+      
+
+        private void btnBuscar_Click_1(object sender, EventArgs e)
+        {
+            PreencherDataGrid();
         }
     }
 }

@@ -124,6 +124,9 @@
   <data name="Design_sem_nome" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Design_sem_nome.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="edit_property_48px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_property_48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="info_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,6 +142,9 @@
   <data name="darth-vader-storm-troopers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\darth-vader-storm-troopers.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="search_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="teste-branco-unscreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\teste-branco-unscreen.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -153,6 +159,9 @@
   </data>
   <data name="Daco_4363443 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Daco_4363443 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconSenha2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconSenha2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logout_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logout_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,9 +187,6 @@
   <data name="editar-texto (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\editar-texto (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="edit_property_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\edit_property_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="seta_cima" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\seta_cima.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -190,8 +196,8 @@
   <data name="Hominho_esqueceu_a_senha_com_sombra" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hominho_esqueceu_a_senha_com_sombra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rules_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rules_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo-rodape-aml1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-rodape-aml1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="345208942_6153841654661304_6089581522731771910_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\345208942_6153841654661304_6089581522731771910_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,20 +232,23 @@
   <data name="collapse_arrow_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\collapse_arrow_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="eye_48px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eye_48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="address_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\address_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user_account_skin_type_7_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_account_skin_type_7_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo-rodape-aml1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo-rodape-aml1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="edit_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cheque_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cheque_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo-rodape-aml2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-rodape-aml2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="expand_arrow_48px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\expand_arrow_48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -262,6 +271,9 @@
   <data name="aml-consulting-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aml-consulting-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icon-perfil-azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-perfil-azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="close_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -276,6 +288,9 @@
   </data>
   <data name="close_window_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close_window_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_property_48px2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_property_48px2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hominho teste" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hominho teste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -292,14 +307,14 @@
   <data name="seta_baixo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\seta_baixo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon-perfil-azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon-perfil-azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hominho_senha_esqueci" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hominho_senha_esqueci.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo-rodape-aml2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo-rodape-aml2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="edit_property_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_property_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Daco_4363443" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Daco_4363443.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -322,6 +337,9 @@
   <data name="Design_sem_nome1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Design_sem_nome1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="olho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\olho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Design_sem_nome2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Design_sem_nome2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -340,8 +358,8 @@
   <data name="phone_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\phone_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="waste_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\waste_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rules_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rules_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Design-sem-nome-unscreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Design-sem-nome-unscreen.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -355,17 +373,14 @@
   <data name="post_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\post_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menu_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="HELLO (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HELLO (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Checkmark_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Checkmark_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="add_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menu_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="338335068_1026540595378768_7730303744687841903_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\338335068_1026540595378768_7730303744687841903_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -375,6 +390,9 @@
   </data>
   <data name="entrada_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\entrada_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="red-eyes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\red-eyes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-usuário-64 (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-usuário-64 (3)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -397,19 +415,25 @@
   <data name="pay_date_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pay_date_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Funcionarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Funcionarios.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="decoperfil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\decoperfil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="home_48px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home_48px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconSenha2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconSenha2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eye_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eye_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="home_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="red-eyes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\red-eyes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="waste_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\waste_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cadastro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cadastro.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
