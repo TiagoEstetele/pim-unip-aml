@@ -23,21 +23,34 @@ namespace MainMenu
                                   "Username=ricardinholord;" +
                                   "Password=Maluco777;";
         long idfun;
-        string idCargo2;
+        long idCargo1;
         NpgsqlConnection connection;
         decimal IRRF, INSS, Falta, PINSS, FaltaDia, SalarioLiquido, SalarioRecebido, Descontos;
 
-        public ConsultaFolha(long idfun)
+        public ConsultaFolha(long idfun, long idCargo1)
         {
-            string salario, idCargo2 = "";
+            string strcad = "select salario_bruto, id_cargo from funcionario where id_funcionario=@idfun";
+            connection = new NpgsqlConnection(connectionString);
+
+            connection.Open();
+
+            NpgsqlCommand comando = new NpgsqlCommand(strcad, connection);
+
+            comando.Parameters.AddWithValue("@idfun", idfun);
+
+            string salario;
             this.idfun = idfun;
 
-            salario = ConsultarSalario(idfun, idCargo2);
+            NpgsqlDataReader dr = comando.ExecuteReader();
+            dr.Read();
+            idCargo1 = Convert.ToInt32(dr[1]);
+
+            salario = ConsultarSalario(idfun, idCargo1);
 
             IRRF = CalcularoIRRF(salario);
             INSS = CalculoINSS(salario);
             FaltaDia = PagamentoDia(salario);
-            Falta = PagamentoFalta(idfun, salario);
+            Falta = PagamentoFalta(idfun, salario, idCargo1);
             PINSS = CalculoPorcentagemINSS(salario);
             SalarioLiquido = CalculoSalarioLiquido(idfun, salario);
             Descontos = Falta + IRRF + INSS;
@@ -46,11 +59,12 @@ namespace MainMenu
             InitializeComponent();
         }
 
-        private string ConsultarSalario(long idfun, string idCargo)
+        private string ConsultarSalario(long idfun, long idCargo1)
         {
-            string salario, idCargo1, idCargo2;
+            string salario;
+            this.idCargo1 = idCargo1;
 
-            string strcad = "select salario_bruto, id_cargo from funcionario where id_funcionario=@idfun";
+            string strcad = "select salario_bruto from funcionario where id_funcionario=@idfun";
             connection = new NpgsqlConnection(connectionString);
 
             connection.Open();
@@ -63,9 +77,7 @@ namespace MainMenu
             dr.Read();
 
             salario = Convert.ToString(dr["salario_bruto"]);
-            idCargo1 = Convert.ToString(dr["id_cargo"]);
-            idCargo2 = idCargo1;
-
+            
             return salario;
         }
 
@@ -99,8 +111,8 @@ namespace MainMenu
 
         private void CreateWordDocument(object filename, object SaveAs)
         {
-            string salario, idCargo2 = "";
-            salario = ConsultarSalario(idfun, idCargo2);
+            string salario;
+            salario = ConsultarSalario(idfun, idCargo1);
             decimal SalarioLiquidoEst = (Decimal.Parse(salario) - Falta);
             Word.Application wordApp = new Word.Application();
             object missing = Missing.Value;
@@ -122,7 +134,7 @@ namespace MainMenu
 
                     myWordDoc.Activate();
 
-                    if (idCargo2 == "1" || idCargo2 == "2")
+                    if (idCargo1 == 1 || idCargo1 == 2)
                     {
                         this.FindAndReplace(wordApp, "<nome>", txtNome.Text);
                         this.FindAndReplace(wordApp, "<desconto1>", INSS.ToString("N2"));
@@ -137,10 +149,10 @@ namespace MainMenu
                     }
                     else
                         this.FindAndReplace(wordApp, "<nome>", txtNome.Text);
-                    this.FindAndReplace(wordApp, "<fixoFaltas>", FaltaDia.ToString("N2"));
-                    this.FindAndReplace(wordApp, "<desconto3>", Falta.ToString("N2"));
-                    this.FindAndReplace(wordApp, "<salaBruto>", salario);
-                    this.FindAndReplace(wordApp, "<salaLiquid>", SalarioLiquidoEst.ToString("N2"));
+                        this.FindAndReplace(wordApp, "<fixoFaltas>", FaltaDia.ToString("N2"));
+                        this.FindAndReplace(wordApp, "<desconto3>", Falta.ToString("N2"));
+                        this.FindAndReplace(wordApp, "<salaBruto>", salario);
+                        this.FindAndReplace(wordApp, "<salaLiquid>", SalarioLiquidoEst.ToString("N2"));
                 }
                 else
                 {
@@ -170,12 +182,12 @@ namespace MainMenu
             string Extrato = idfun.ToString();
             long Modif = DateTime.Now.Ticks;
 
-            if (idCargo2 == "1" || idCargo2 == "2")
+            if (idCargo1 == 1 || idCargo1 == 2)
             {
-                CreateWordDocument(@"C:\temp.docx", $@"C:\Users\User\OneDrive\{Extrato} {Modif}.docx");
+                CreateWordDocument(@"C:\temp.docx", $@"C:\Users\muril\OneDrive\{Extrato} {Modif}.docx");
             }
             else
-                CreateWordDocument(@"C:\temp1.docx", $@"C:\Users\User\OneDrive\{Extrato} {Modif}.docx");
+                CreateWordDocument(@"C:\temp1.docx", $@"C:\Users\muril\OneDrive\{Extrato} {Modif}.docx");
         }
 
         private void dtpData_ValueChanged(object sender, EventArgs e)
@@ -245,7 +257,7 @@ namespace MainMenu
             return porcentagemDesconto;
         }
 
-        private decimal PagamentoFalta(long idfun, string salario)
+        private decimal PagamentoFalta(long idfun, string salario, long idCargo1)
         {
             DateTime date = new DateTime();
             date = DateTime.Now;

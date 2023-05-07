@@ -19,7 +19,7 @@ namespace MainMenu
         bool homeCollapse;
         private Form activeForm;
         private Button currentButton;
-        long idfun;
+        long idfun, idCargo1;
         string nomeF;
         
         public FormFuncionario(long identify, string nome)
@@ -214,12 +214,12 @@ namespace MainMenu
 
         private void btnFolha_Click(object sender, EventArgs e)
         {
-            new ConsultaFolha(idfun).Show();
+            new ConsultaFolha(idfun, idCargo1).Show();
         }
 
         private void btnFolhaPagamento_Click(object sender, EventArgs e)
         { 
-            OpenChildForm(new ConsultaFolha(idfun), sender); 
+            OpenChildForm(new ConsultaFolha(idfun, idCargo1), sender); 
         }
 
         private void btnInfo_Click(object sender, EventArgs e)
