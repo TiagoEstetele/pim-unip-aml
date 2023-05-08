@@ -93,9 +93,29 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _341190888_740078104493076_7584019672855781808_n {
+            get {
+                object obj = ResourceManager.GetObject("341190888_740078104493076_7584019672855781808_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _345208942_6153841654661304_6089581522731771910_n {
             get {
                 object obj = ResourceManager.GetObject("345208942_6153841654661304_6089581522731771910_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _345208942_6153841654661304_6089581522731771910_n1 {
+            get {
+                object obj = ResourceManager.GetObject("345208942_6153841654661304_6089581522731771910_n1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -573,6 +593,16 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fernando {
+            get {
+                object obj = ResourceManager.GetObject("Fernando", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Folha {
             get {
                 object obj = ResourceManager.GetObject("Folha", resourceCulture);
@@ -586,6 +616,16 @@ namespace MainMenu.Properties {
         internal static System.Drawing.Bitmap Funcionarios {
             get {
                 object obj = ResourceManager.GetObject("Funcionarios", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gilibleatch {
+            get {
+                object obj = ResourceManager.GetObject("Gilibleatch", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -813,6 +853,16 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Jaqueline {
+            get {
+                object obj = ResourceManager.GetObject("Jaqueline", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_redimensionada {
             get {
                 object obj = ResourceManager.GetObject("logo redimensionada", resourceCulture);
@@ -893,6 +943,16 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Matheus {
+            get {
+                object obj = ResourceManager.GetObject("Matheus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap menu_48px {
             get {
                 object obj = ResourceManager.GetObject("menu_48px", resourceCulture);
@@ -916,6 +976,16 @@ namespace MainMenu.Properties {
         internal static System.Drawing.Bitmap more_info_48px {
             get {
                 object obj = ResourceManager.GetObject("more_info_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Murilo {
+            get {
+                object obj = ResourceManager.GetObject("Murilo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1013,6 +1083,16 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap qrcode {
+            get {
+                object obj = ResourceManager.GetObject("qrcode", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap red_eyes {
             get {
                 object obj = ResourceManager.GetObject("red-eyes", resourceCulture);
@@ -1026,6 +1106,16 @@ namespace MainMenu.Properties {
         internal static System.Drawing.Bitmap resume_48px {
             get {
                 object obj = ResourceManager.GetObject("resume_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ricardo {
+            get {
+                object obj = ResourceManager.GetObject("Ricardo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1126,6 +1216,16 @@ namespace MainMenu.Properties {
         internal static System.Drawing.Bitmap teste_branco_unscreen {
             get {
                 object obj = ResourceManager.GetObject("teste-branco-unscreen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tiago {
+            get {
+                object obj = ResourceManager.GetObject("Tiago", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

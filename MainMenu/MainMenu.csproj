@@ -263,6 +263,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AjudaFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -379,6 +385,9 @@
     <Compile Include="TrocarSenha.Designer.cs">
       <DependentUpon>TrocarSenha.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Ajuda.resx">
       <DependentUpon>Ajuda.cs</DependentUpon>
     </EmbeddedResource>
@@ -512,12 +521,16 @@
     <None Include="Resources\edit_property_48px.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Tiago.jpg" />
     <None Include="Resources\edit_property_48px1.png" />
     <None Include="Resources\eye_48px.png" />
     <None Include="Resources\eye_48px1.png" />
     <None Include="Resources\edit_property_48px2.png" />
     <None Include="Resources\Cadastro.gif" />
     <None Include="Resources\Folha.gif" />
+    <None Include="Resources\345208942_6153841654661304_6089581522731771910_n1.jpg" />
+    <None Include="Resources\341190888_740078104493076_7584019672855781808_n.jpg" />
+    <None Include="Resources\Fernando.jpg" />
     <Content Include="Resources\Funcionario.docx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -783,6 +796,12 @@
     <None Include="Resources\Perfil.gif" />
     <None Include="Resources\Ponto.gif" />
     <None Include="Resources\hominho teste1.png" />
+    <None Include="Resources\Gilibleatch.jpg" />
+    <None Include="Resources\Murilo.jpg" />
+    <None Include="Resources\Matheus.jpg" />
+    <None Include="Resources\Jaqueline.jpg" />
+    <None Include="Resources\Ricardo.jpg" />
+    <None Include="Resources\qrcode.png" />
     <Content Include="Resources\som2.wav" />
     <Content Include="Resources\som.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

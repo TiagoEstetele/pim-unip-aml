@@ -192,7 +192,7 @@
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button2.Image = global::MainMenu.Properties.Resources.help_48px;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(1, 404);
+            this.button2.Location = new System.Drawing.Point(0, 351);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(217, 61);
             this.button2.TabIndex = 3;
@@ -238,7 +238,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Image = global::MainMenu.Properties.Resources.info_48px;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 342);
+            this.button1.Location = new System.Drawing.Point(1, 404);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(220, 61);
             this.button1.TabIndex = 2;

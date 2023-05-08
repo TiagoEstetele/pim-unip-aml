@@ -130,8 +130,8 @@
   <data name="info_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Folha" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Folha.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Gilibleatch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gilibleatch.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="more_info_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\more_info_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,14 +184,17 @@
   <data name="man_raising_hand_icon_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\man_raising_hand_icon_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Jaqueline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Jaqueline.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="1574779670990" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1574779670990.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="editar-texto (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\editar-texto (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hominho_esqueceu_a_senha" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hominho_esqueceu_a_senha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Cadastro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cadastro.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="seta_cima" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\seta_cima.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,6 +232,9 @@
   <data name="box_important_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\box_important_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="345208942_6153841654661304_6089581522731771910_n1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\345208942_6153841654661304_6089581522731771910_n1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="iconSenhaAzulClaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconSenhaAzulClaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -249,6 +255,9 @@
   </data>
   <data name="user_account_skin_type_7_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_account_skin_type_7_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="expand_arrow_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\expand_arrow_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="edit_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -280,8 +289,8 @@
   <data name="aml-consulting-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aml-consulting-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon-perfil-azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon-perfil-azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hominho teste1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hominho teste1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="close_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -304,8 +313,11 @@
   <data name="hominho teste" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hominho teste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="expand_arrow_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\expand_arrow_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Hominho_esqueceu_a_senha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hominho_esqueceu_a_senha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fernando" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fernando.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="aml-gif1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aml-gif1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -316,6 +328,9 @@
   <data name="seta_baixo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\seta_baixo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Tiago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tiago.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="add_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -325,8 +340,8 @@
   <data name="edit_property_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit_property_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Daco_4363443" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Daco_4363443.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Murilo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Murilo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="aml-gif" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aml-gif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -382,8 +397,14 @@
   <data name="icons8-senha-50 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-senha-50 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="post_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\post_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Daco_4363443" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Daco_4363443.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="341190888_740078104493076_7584019672855781808_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\341190888_740078104493076_7584019672855781808_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Matheus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Matheus.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HELLO (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HELLO (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -400,8 +421,8 @@
   <data name="Seta_branca_baixo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Seta_branca_baixo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cadastro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cadastro.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="post_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\post_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="entrada_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\entrada_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -411,6 +432,9 @@
   </data>
   <data name="icons8-usuário-64 (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-usuário-64 (3)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ricardo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ricardo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="15747796709901" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\15747796709901.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -430,6 +454,12 @@
   <data name="pay_date_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pay_date_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icon-perfil-azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-perfil-azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Folha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Folha.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="decoperfil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\decoperfil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -445,7 +475,7 @@
   <data name="waste_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\waste_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hominho teste1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hominho teste1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="qrcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\qrcode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

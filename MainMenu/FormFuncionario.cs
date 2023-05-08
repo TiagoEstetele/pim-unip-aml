@@ -61,7 +61,7 @@ namespace MainMenu
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            OpenChildForm(new About(), sender);
         }
 
         private void ActivateButton(object btnSender)

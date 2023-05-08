@@ -578,3 +578,4 @@ C:\Users\muril\OneDrive\Área de Trabalho\GitH\pim-unip-ibh\MainMenu\bin\Debug\R
 C:\Users\muril\OneDrive\Área de Trabalho\GitH\pim-unip-ibh\MainMenu\bin\Debug\Resources\menu-branco.png
 C:\Users\muril\OneDrive\Área de Trabalho\GitH\pim-unip-ibh\MainMenu\bin\Debug\Resources\close_48px.png
 C:\Users\tiago\OneDrive\Documentos\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.AjudaFuncionario.resources
+C:\Users\tiago\OneDrive\Documentos\pim-unip-ibh\MainMenu\obj\Debug\MainMenu.About.resources

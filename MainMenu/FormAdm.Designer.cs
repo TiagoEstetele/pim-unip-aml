@@ -200,13 +200,14 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Image = global::MainMenu.Properties.Resources.info_48px;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(1, 324);
+            this.button1.Location = new System.Drawing.Point(3, 398);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(220, 56);
             this.button1.TabIndex = 2;
             this.button1.Text = "             About";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnLogout
             // 
@@ -243,7 +244,7 @@
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button2.Image = global::MainMenu.Properties.Resources.help_48px;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(2, 388);
+            this.button2.Location = new System.Drawing.Point(2, 345);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(217, 56);
             this.button2.TabIndex = 3;
