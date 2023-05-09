@@ -32,8 +32,8 @@
             this.btnIr = new Guna.UI2.WinForms.Guna2GradientButton();
             this.lblText = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cmbMes = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,7 +51,7 @@
             this.btnDownload.ForeColor = System.Drawing.Color.White;
             this.btnDownload.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(40)))), ((int)(((byte)(201)))));
             this.btnDownload.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(13)))), ((int)(((byte)(90)))));
-            this.btnDownload.Location = new System.Drawing.Point(354, 66);
+            this.btnDownload.Location = new System.Drawing.Point(496, 66);
             this.btnDownload.Name = "btnDownload";
             this.btnDownload.Size = new System.Drawing.Size(263, 45);
             this.btnDownload.TabIndex = 1003;
@@ -86,9 +86,9 @@
             this.lblText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.lblText.Location = new System.Drawing.Point(177, 22);
             this.lblText.Name = "lblText";
-            this.lblText.Size = new System.Drawing.Size(651, 29);
+            this.lblText.Size = new System.Drawing.Size(644, 29);
             this.lblText.TabIndex = 1005;
-            this.lblText.Text = "Clique no botão abaixo para emitar a folha de pagamento!";
+            this.lblText.Text = "Clique no botão abaixo para emitir a folha de pagamento!";
             this.lblText.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label1
@@ -103,17 +103,12 @@
             this.label1.Text = "Não encontrou a pasta onde o arquivo foi salvo? Clique no botão abaixo.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MainMenu.Properties.Resources.hominho_teste1;
-            this.pictureBox1.Location = new System.Drawing.Point(338, 226);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(335, 308);
-            this.pictureBox1.TabIndex = 1007;
-            this.pictureBox1.TabStop = false;
-            // 
             // cmbMes
             // 
+            this.cmbMes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbMes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.cmbMes.FormattingEnabled = true;
             this.cmbMes.Items.AddRange(new object[] {
             "Janeiro",
@@ -128,11 +123,20 @@
             "Outubro",
             "Novembro",
             "Dezembro"});
-            this.cmbMes.Location = new System.Drawing.Point(64, 77);
+            this.cmbMes.Location = new System.Drawing.Point(260, 70);
             this.cmbMes.Name = "cmbMes";
-            this.cmbMes.Size = new System.Drawing.Size(121, 21);
-            this.cmbMes.TabIndex = 1008;
-            this.cmbMes.SelectedIndexChanged += new System.EventHandler(this.cmbMes_SelectedIndexChanged);
+            this.cmbMes.Size = new System.Drawing.Size(225, 32);
+            this.cmbMes.TabIndex = 1009;
+            this.cmbMes.Text = "Mês";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MainMenu.Properties.Resources.hominhos_folha_pagament;
+            this.pictureBox1.Location = new System.Drawing.Point(342, 231);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(335, 308);
+            this.pictureBox1.TabIndex = 1007;
+            this.pictureBox1.TabStop = false;
             // 
             // ConsultaFolha
             // 
@@ -147,7 +151,8 @@
             this.Controls.Add(this.btnDownload);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ConsultaFolha";
-            this.Text = "Consultar Folha de Pagamento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Holerite";
             this.Load += new System.EventHandler(this.ConsultaFolha_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

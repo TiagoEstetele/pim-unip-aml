@@ -753,6 +753,16 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hominhos_folha_pagament {
+            get {
+                object obj = ResourceManager.GetObject("hominhos_folha_pagament", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_perfil_azul {
             get {
                 object obj = ResourceManager.GetObject("icon-perfil-azul", resourceCulture);
