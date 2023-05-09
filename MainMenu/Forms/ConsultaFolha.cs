@@ -25,7 +25,7 @@ namespace MainMenu
                                   "Username=ricardinholord;" +
                                   "Password=Maluco777;";
         long idfun;
-        string nome, endereco, telefone;
+        string nome, endereco, telefone, Salario;
         long idCargo1;
         decimal HoraExtra;
         NpgsqlConnection connection;
@@ -33,6 +33,7 @@ namespace MainMenu
 
         public ConsultaFolha(long idfun, long idCargo1, string nome, string endereco, string telefone)
         {
+
             string strcad = "select salario_bruto, id_cargo, endereco, nome, telefone from funcionario where id_funcionario=@idfun";
             connection = new NpgsqlConnection(connectionString);
 
@@ -42,7 +43,7 @@ namespace MainMenu
 
             comando.Parameters.AddWithValue("@idfun", idfun);
 
-            string salario;
+
             this.idfun = idfun;
 
             NpgsqlDataReader dr = comando.ExecuteReader();
@@ -52,17 +53,17 @@ namespace MainMenu
             this.nome = Convert.ToString(dr[3]);
             this.telefone = Convert.ToString(dr[4]);
 
-            salario = ConsultarSalario(idfun, idCargo1);
+            Salario = ConsultarSalario(idfun, idCargo1);
 
-            IRRF = CalcularoIRRF(salario);
-            INSS = CalculoINSS(salario);
-            FaltaDia = PagamentoDia(salario);
-            Falta = PagamentoFalta(idfun, salario, idCargo1);
-            PINSS = CalculoPorcentagemINSS(salario);
-            SalarioLiquido = CalculoSalarioLiquido(idfun, salario);
-            Descontos = Falta + IRRF + INSS;
-            DescontosE = Falta;
-            SalarioRecebido = SalarioLiquido - Descontos;
+            //IRRF = CalcularoIRRF(salario);
+            //INSS = CalculoINSS(salario);
+            //FaltaDia = PagamentoDia(salario);
+            //Falta = PagamentoFalta(idfun, salario, idCargo1);
+            //PINSS = CalculoPorcentagemINSS(salario);
+            //SalarioLiquido = CalculoSalarioLiquido(idfun, salario);
+            //Descontos = Falta + IRRF + INSS;
+            //DescontosE = Falta;
+            //SalarioRecebido = SalarioLiquido - Descontos;
 
             InitializeComponent();
         }
@@ -79,7 +80,7 @@ namespace MainMenu
 
         private string ConsultarSalario(long idfun, long idCargo1)
         {
-            string salario;
+            string Salario;
             this.idCargo1 = idCargo1;
 
             string strcad = "select salario_bruto from funcionario where id_funcionario=@idfun";
@@ -94,9 +95,9 @@ namespace MainMenu
             NpgsqlDataReader dr = comando.ExecuteReader();
             dr.Read();
 
-            salario = Convert.ToString(dr["salario_bruto"]);
-            
-            return salario;
+            Salario = Convert.ToString(dr["salario_bruto"]);
+
+            return Salario;
         }
 
         private void FindAndReplace(Word.Application wordApp, object ToFindText, object replaceWithText)
@@ -129,7 +130,7 @@ namespace MainMenu
 
         private void btnIr_Click(object sender, EventArgs e)
         {
-            string path = @".\Documentos"; 
+            string path = @".\Documentos";
 
             try
             {
@@ -141,11 +142,21 @@ namespace MainMenu
             }
         }
 
+        private void cmbMes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ConsultaFolha_Load(object sender, EventArgs e)
+        {
+        }
+
         private void CreateWordDocument(object filename, object SaveAs)
         {
-            string salario;
-            salario = ConsultarSalario(idfun, idCargo1);
-            decimal SalarioLiquidoEst = (Decimal.Parse(salario) - Falta);
+
+            string Salario;
+            Salario = ConsultarSalario(idfun, idCargo1);
+            decimal SalarioLiquidoEst = (Decimal.Parse(Salario) - Falta);
             Word.Application wordApp = new Word.Application();
             object missing = Missing.Value;
             Word.Document myWordDoc = null;
@@ -180,7 +191,7 @@ namespace MainMenu
                         this.FindAndReplace(wordApp, "<fixoIrrf>", IRRF.ToString("N2"));
                         this.FindAndReplace(wordApp, "<porcInss>", PINSS.ToString("N2"));
                         this.FindAndReplace(wordApp, "<fixoFaltas>", FaltaDia.ToString("N2"));
-                        this.FindAndReplace(wordApp, "<acresc1>", salario);
+                        this.FindAndReplace(wordApp, "<acresc1>", Salario);
                         this.FindAndReplace(wordApp, "<acresc2>", HoraExtra);
                         this.FindAndReplace(wordApp, "<salaLiquid>", (SalarioLiquido + HoraExtra).ToString("N2"));
                         this.FindAndReplace(wordApp, "<salaRecebido>", SalarioRecebido.ToString("N2"));
@@ -188,13 +199,13 @@ namespace MainMenu
                     }
                     else
                         this.FindAndReplace(wordApp, "<nome>", nome);
-                        this.FindAndReplace(wordApp, "<endereco>", endereco);
-                        this.FindAndReplace(wordApp, "<telefone>", telefone);
-                        this.FindAndReplace(wordApp, "<fixoFaltas>", FaltaDia.ToString("N2"));
-                        this.FindAndReplace(wordApp, "<desconto3>", Falta.ToString("N2"));
-                        this.FindAndReplace(wordApp, "<acresc1>", salario);
-                        this.FindAndReplace(wordApp, "<descontTotal>", DescontosE);
-                        this.FindAndReplace(wordApp, "<salaLiquido>", SalarioLiquidoEst.ToString("N2"));
+                    this.FindAndReplace(wordApp, "<endereco>", endereco);
+                    this.FindAndReplace(wordApp, "<telefone>", telefone);
+                    this.FindAndReplace(wordApp, "<fixoFaltas>", FaltaDia.ToString("N2"));
+                    this.FindAndReplace(wordApp, "<desconto3>", Falta.ToString("N2"));
+                    this.FindAndReplace(wordApp, "<acresc1>", Salario);
+                    this.FindAndReplace(wordApp, "<descontTotal>", DescontosE);
+                    this.FindAndReplace(wordApp, "<salaLiquido>", SalarioLiquidoEst.ToString("N2"));
                 }
                 else
                 {
@@ -212,7 +223,7 @@ namespace MainMenu
                                 ref missing, ref missing, ref missing);
 
                 object SaveChanges = WdSaveOptions.wdDoNotSaveChanges;
-                
+
                 myWordDoc.Close(ref SaveChanges, ref missing, ref missing);
                 //myWordDoc.ExportAsFixedFormat(SaveAs.ToString(), WdExportFormat.wdExportFormatPDF, false, WdExportOptimizeFor.wdExportOptimizeForOnScreen, WdExportRange.wdExportAllDocument, 1, 1, WdExportItem.wdExportDocumentContent, true, true, WdExportCreateBookmarks.wdExportCreateHeadingBookmarks, true, true, false, ref missing);
 
@@ -225,8 +236,26 @@ namespace MainMenu
             }
         }
 
-         private void btnDownload_Click_1(object sender, EventArgs e)
+        private void btnDownload_Click_1(object sender, EventArgs e)
         {
+
+            int Mes = cmbMes.SelectedIndex + 1;
+
+            IRRF = CalcularoIRRF(Salario);
+            INSS = CalculoINSS(Salario);
+            FaltaDia = PagamentoDia(Salario);
+            Falta = PagamentoFalta(idfun, Salario, idCargo1, Mes);
+            if (Falta == -1)
+            {
+                MessageBox.Show("Não encontramos horas trabalhadas nesse mes");
+                return;
+            }
+            PINSS = CalculoPorcentagemINSS(Salario);
+            SalarioLiquido = CalculoSalarioLiquido(idfun, Salario);
+            Descontos = Falta + IRRF + INSS;
+            DescontosE = Falta;
+            SalarioRecebido = SalarioLiquido - Descontos;
+
             string Extrato = idfun.ToString();
             long Modif = DateTime.Now.Ticks;
 
@@ -263,9 +292,9 @@ namespace MainMenu
         {
 
         }
-        private decimal CalcularoIRRF(string salario)
+        private decimal CalcularoIRRF(string Salario)
         {
-            decimal salarioDecimal = decimal.Parse(salario);
+            decimal salarioDecimal = decimal.Parse(Salario);
 
             if (salarioDecimal < 2112.01M)
                 return 0;
@@ -279,9 +308,9 @@ namespace MainMenu
                 return 884.96M;
         }
 
-        private decimal CalculoINSS(string salario)
+        private decimal CalculoINSS(string Salario)
         {
-            decimal salarioDecimal = decimal.Parse(salario);
+            decimal salarioDecimal = decimal.Parse(Salario);
             decimal? porcentagemDesconto = null;
             decimal? valorDesconto = null;
 
@@ -302,9 +331,9 @@ namespace MainMenu
             return valorDesconto.Value;
         }
 
-        private decimal CalculoPorcentagemINSS(string salario)
+        private decimal CalculoPorcentagemINSS(string Salario)
         {
-            decimal salarioDecimal = decimal.Parse(salario);
+            decimal salarioDecimal = decimal.Parse(Salario);
             decimal porcentagemDesconto;
 
             if (salarioDecimal <= 1302)
@@ -321,16 +350,13 @@ namespace MainMenu
             return porcentagemDesconto;
         }
 
-        private decimal PagamentoFalta(long idfun, string salario, long idCargo1)
+        private decimal PagamentoFalta(long idfun, string Salario, long idCargo1, int Mes)
         {
-            DateTime date = new DateTime();
-            date = DateTime.Now;
-            int mes = (date.Month);
             decimal Falta, horas;
             decimal PagamentoTotal;
 
-            decimal salarioDecimal = decimal.Parse(salario);
-            decimal salarioBruto = decimal.Parse(salario);
+            decimal salarioDecimal = decimal.Parse(Salario);
+            decimal salarioBruto = decimal.Parse(Salario);
 
             if (idCargo1 <= 2)
             {
@@ -350,10 +376,15 @@ namespace MainMenu
             NpgsqlCommand comando = new NpgsqlCommand(strcad, connection);
 
             comando.Parameters.AddWithValue("@id", idfun);
-            comando.Parameters.AddWithValue("@mes", mes);
+            comando.Parameters.AddWithValue("@mes", Mes);
 
             NpgsqlDataReader dr = comando.ExecuteReader();
             dr.Read();
+
+            if (dr.HasRows == false)
+            {
+                return -1;
+            }
 
             horas = Convert.ToDecimal(dr["trabalho"]);
 
@@ -372,17 +403,17 @@ namespace MainMenu
                 HoraExtra = Falta * -1;
                 Falta = 0;
             }
-                
+
 
             return Falta;
         }
 
-        private decimal PagamentoDia(string salario)
+        private decimal PagamentoDia(string Salario)
         {
             decimal FaltaDia;
             decimal PagamentoTotal;
 
-            decimal salarioDecimal = decimal.Parse(salario);
+            decimal salarioDecimal = decimal.Parse(Salario);
 
             if (idCargo1 <= 2)
             {
@@ -398,7 +429,7 @@ namespace MainMenu
             return FaltaDia;
         }
 
-        private decimal CalculoSalarioLiquido(long idfun, string salario)
+        private decimal CalculoSalarioLiquido(long idfun, string Salario)
         {
             DateTime date = new DateTime();
             date = DateTime.Now;
@@ -407,8 +438,8 @@ namespace MainMenu
             decimal SalarioLiquido;
             decimal PagamentoTotal;
 
-            decimal salarioDecimal = decimal.Parse(salario);
-            decimal salarioBruto = decimal.Parse(salario);
+            decimal salarioDecimal = decimal.Parse(Salario);
+            decimal salarioBruto = decimal.Parse(Salario);
 
             if (idCargo1 <= 2)
             {

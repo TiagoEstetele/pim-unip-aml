@@ -33,6 +33,7 @@
             this.lblText = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cmbMes = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,11 +112,34 @@
             this.pictureBox1.TabIndex = 1007;
             this.pictureBox1.TabStop = false;
             // 
+            // cmbMes
+            // 
+            this.cmbMes.FormattingEnabled = true;
+            this.cmbMes.Items.AddRange(new object[] {
+            "Janeiro",
+            "Fevereiro",
+            "Março",
+            "Abril",
+            "Maio",
+            "Junho",
+            "Julho",
+            "Agosto",
+            "Setembro",
+            "Outubro",
+            "Novembro",
+            "Dezembro"});
+            this.cmbMes.Location = new System.Drawing.Point(64, 77);
+            this.cmbMes.Name = "cmbMes";
+            this.cmbMes.Size = new System.Drawing.Size(121, 21);
+            this.cmbMes.TabIndex = 1008;
+            this.cmbMes.SelectedIndexChanged += new System.EventHandler(this.cmbMes_SelectedIndexChanged);
+            // 
             // ConsultaFolha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1018, 532);
+            this.Controls.Add(this.cmbMes);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblText);
@@ -124,6 +148,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ConsultaFolha";
             this.Text = "Consultar Folha de Pagamento";
+            this.Load += new System.EventHandler(this.ConsultaFolha_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -137,5 +162,6 @@
         private System.Windows.Forms.Label lblText;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox cmbMes;
     }
 }
