@@ -1,4 +1,5 @@
 ﻿using Npgsql;
+using NpgsqlTypes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static MainMenu.Forms.Cadastro;
 using MainMenu.Forms.InfoBoxs;
+using Microsoft.Office.Interop.Word;
 
 namespace MainMenu.Forms
 {
@@ -25,7 +27,7 @@ namespace MainMenu.Forms
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            System.Windows.Forms.Application.Exit();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -81,37 +83,37 @@ namespace MainMenu.Forms
 
             string sql_verific = "select id_funcionario as id, id_cargo as idc, cpf as CPF, data_nascimento as DATAN from funcionario where cpf = @CPF and data_nascimento = @DATAN";
 
-            NpgsqlCommand comando = new NpgsqlCommand(sql_verific, conec);
-            conec.Open();
-
-            comando.Parameters.AddWithValue("@CPF", NpgsqlTypes.NpgsqlDbType.Varchar, txtCPF.Text);
-            comando.Parameters.AddWithValue("@DATAN", NpgsqlTypes.NpgsqlDbType.Date, DateTime.Parse(txtData.Text));
-
-            NpgsqlDataReader reader = comando.ExecuteReader();
-            string identif = txtCPF.Text;
-
-            if (reader.HasRows)
+            if (txtCPF.Text == "   .   .   -" || txtCPF.Text.Length < 14 || txtData.Text == "  /  /" || txtCPF.Text.Length < 10)
             {
+                AlertBoxArtan(Color.LightPink, Color.DarkRed, "Error", "Favor preencher os campos corretamente!", Properties.Resources.close_48px);
+                return;
+            }
+            else
+            {
+                NpgsqlCommand comando = new NpgsqlCommand(sql_verific, conec);
+                conec.Open();
 
-                while (reader.Read())
+                comando.Parameters.AddWithValue("@CPF", NpgsqlTypes.NpgsqlDbType.Varchar, txtCPF.Text);
+                comando.Parameters.AddWithValue("@DATAN", DateTime.Parse(txtData.Text));
+
+                NpgsqlDataReader reader = comando.ExecuteReader();
+                string identif = txtCPF.Text;
+
+                if (reader.HasRows)
                 {
-                    Int64 identify = Convert.ToInt64(reader[0]);
-                    Int64 id_cargo = Convert.ToInt64(reader[1]);
 
-                    if (txtCPF.Text == "" || txtData.Text == "")
+                    while (reader.Read())
                     {
-                        AlertBoxArtan(Color.LightPink, Color.DarkRed, "Error", "Favor preencher os campos corretamente!", Properties.Resources.close_48px);
-                    }
-                    else
-                    {
+                        Int64 identify = Convert.ToInt64(reader[0]);
+                        Int64 id_cargo = Convert.ToInt64(reader[1]);
+
                         panelVerificao.Visible = false;
                         panelTrocarSenha.Visible = true;
                     }
                 }
+                else
+                    AlertBoxArtan(Color.LightPink, Color.DarkRed, "Error", "Os dados não conferem, favor verificar.", Properties.Resources.close_48px);
             }
-            else
-                AlertBoxArtan(Color.LightPink, Color.DarkRed, "Error", "Os dados não conferem, favor verificar.", Properties.Resources.close_48px);
-
         }
 
         private void btnSignIn_Click(object sender, EventArgs e)
