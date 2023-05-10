@@ -73,6 +73,8 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel19 = new System.Windows.Forms.Panel();
+            this.lblCTPSlbl = new System.Windows.Forms.Label();
+            this.txtCTPS = new System.Windows.Forms.MaskedTextBox();
             this.lblCTPS = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -87,17 +89,18 @@
             this.txtAgencia = new System.Windows.Forms.MaskedTextBox();
             this.panel24 = new System.Windows.Forms.Panel();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
-            this.pictureBoxDinamic = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblSalario = new System.Windows.Forms.Label();
             this.lblBanco = new System.Windows.Forms.Label();
             this.btnSalvar = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.comboSexo = new System.Windows.Forms.ComboBox();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDinamic = new System.Windows.Forms.PictureBox();
             this.btnAtivo = new MainMenu.CustomControls.ToggleButton();
-            this.lblCTPSlbl = new System.Windows.Forms.Label();
-            this.txtCTPS = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -122,6 +125,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel23.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            this.panel25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDinamic)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,7 +135,7 @@
             this.lblText.AutoSize = true;
             this.lblText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblText.Location = new System.Drawing.Point(82, 19);
+            this.lblText.Location = new System.Drawing.Point(82, 10);
             this.lblText.Name = "lblText";
             this.lblText.Size = new System.Drawing.Size(271, 25);
             this.lblText.TabIndex = 4;
@@ -158,7 +163,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.txtNome);
-            this.panel1.Location = new System.Drawing.Point(30, 79);
+            this.panel1.Location = new System.Drawing.Point(30, 55);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(298, 68);
             this.panel1.TabIndex = 7;
@@ -199,7 +204,7 @@
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Location = new System.Drawing.Point(30, 165);
+            this.panel3.Location = new System.Drawing.Point(30, 141);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(298, 68);
             this.panel3.TabIndex = 8;
@@ -251,7 +256,7 @@
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.pictureBox3);
-            this.panel5.Location = new System.Drawing.Point(30, 257);
+            this.panel5.Location = new System.Drawing.Point(30, 233);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(298, 68);
             this.panel5.TabIndex = 9;
@@ -303,7 +308,7 @@
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Controls.Add(this.pictureBox4);
             this.panel7.Controls.Add(this.txtEndereco);
-            this.panel7.Location = new System.Drawing.Point(30, 350);
+            this.panel7.Location = new System.Drawing.Point(30, 326);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(298, 68);
             this.panel7.TabIndex = 10;
@@ -357,7 +362,7 @@
             this.panel9.Controls.Add(this.panel10);
             this.panel9.Controls.Add(this.pictureBox5);
             this.panel9.Controls.Add(this.txtSalario);
-            this.panel9.Location = new System.Drawing.Point(364, 350);
+            this.panel9.Location = new System.Drawing.Point(364, 326);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(298, 68);
             this.panel9.TabIndex = 14;
@@ -400,7 +405,7 @@
             this.panel11.Controls.Add(this.txtAdmissao);
             this.panel11.Controls.Add(this.panel12);
             this.panel11.Controls.Add(this.pictureBox6);
-            this.panel11.Location = new System.Drawing.Point(364, 257);
+            this.panel11.Location = new System.Drawing.Point(364, 233);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(298, 68);
             this.panel11.TabIndex = 13;
@@ -453,7 +458,7 @@
             this.panel13.Controls.Add(this.lblTelefone);
             this.panel13.Controls.Add(this.panel14);
             this.panel13.Controls.Add(this.pictureBox7);
-            this.panel13.Location = new System.Drawing.Point(364, 165);
+            this.panel13.Location = new System.Drawing.Point(364, 141);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(298, 68);
             this.panel13.TabIndex = 12;
@@ -517,7 +522,7 @@
             this.panel15.Controls.Add(this.panel16);
             this.panel15.Controls.Add(this.pictureBox8);
             this.panel15.Controls.Add(this.txtEmail);
-            this.panel15.Location = new System.Drawing.Point(364, 79);
+            this.panel15.Location = new System.Drawing.Point(364, 55);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(298, 68);
             this.panel15.TabIndex = 11;
@@ -559,7 +564,7 @@
             this.panel17.Controls.Add(this.comboCargo);
             this.panel17.Controls.Add(this.panel18);
             this.panel17.Controls.Add(this.pictureBox9);
-            this.panel17.Location = new System.Drawing.Point(690, 79);
+            this.panel17.Location = new System.Drawing.Point(690, 55);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(298, 68);
             this.panel17.TabIndex = 18;
@@ -576,6 +581,7 @@
             this.comboCargo.Size = new System.Drawing.Size(225, 32);
             this.comboCargo.TabIndex = 9;
             this.comboCargo.Text = "Cargo";
+            this.comboCargo.SelectedIndexChanged += new System.EventHandler(this.comboCargo_SelectedIndexChanged);
             // 
             // panel18
             // 
@@ -602,10 +608,35 @@
             this.panel19.Controls.Add(this.lblCTPS);
             this.panel19.Controls.Add(this.panel20);
             this.panel19.Controls.Add(this.pictureBox10);
-            this.panel19.Location = new System.Drawing.Point(690, 257);
+            this.panel19.Location = new System.Drawing.Point(690, 233);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(298, 68);
             this.panel19.TabIndex = 17;
+            // 
+            // lblCTPSlbl
+            // 
+            this.lblCTPSlbl.AutoSize = true;
+            this.lblCTPSlbl.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lblCTPSlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblCTPSlbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.lblCTPSlbl.Location = new System.Drawing.Point(70, 19);
+            this.lblCTPSlbl.Name = "lblCTPSlbl";
+            this.lblCTPSlbl.Size = new System.Drawing.Size(63, 24);
+            this.lblCTPSlbl.TabIndex = 1004;
+            this.lblCTPSlbl.Text = "CTPS";
+            this.lblCTPSlbl.Click += new System.EventHandler(this.lblCTPSlbl_Click);
+            // 
+            // txtCTPS
+            // 
+            this.txtCTPS.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCTPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCTPS.Location = new System.Drawing.Point(71, 24);
+            this.txtCTPS.Mask = "0000000-000-0";
+            this.txtCTPS.Name = "txtCTPS";
+            this.txtCTPS.Size = new System.Drawing.Size(160, 19);
+            this.txtCTPS.TabIndex = 1005;
+            this.txtCTPS.ValidatingType = typeof(System.DateTime);
+            this.txtCTPS.Visible = false;
             // 
             // lblCTPS
             // 
@@ -644,7 +675,7 @@
             this.panel21.Controls.Add(this.panel22);
             this.panel21.Controls.Add(this.pictureBox11);
             this.panel21.Controls.Add(this.txtConta);
-            this.panel21.Location = new System.Drawing.Point(690, 165);
+            this.panel21.Location = new System.Drawing.Point(690, 141);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(298, 68);
             this.panel21.TabIndex = 16;
@@ -712,7 +743,7 @@
             this.panel23.Controls.Add(this.txtAgencia);
             this.panel23.Controls.Add(this.panel24);
             this.panel23.Controls.Add(this.pictureBox12);
-            this.panel23.Location = new System.Drawing.Point(687, 350);
+            this.panel23.Location = new System.Drawing.Point(687, 326);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(298, 68);
             this.panel23.TabIndex = 15;
@@ -760,17 +791,6 @@
             this.pictureBox12.TabIndex = 7;
             this.pictureBox12.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.label2.Location = new System.Drawing.Point(420, 470);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 18);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Inativo";
-            // 
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -788,21 +808,12 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // pictureBoxDinamic
-            // 
-            this.pictureBoxDinamic.Image = global::MainMenu.Properties.Resources.add_tab_48px;
-            this.pictureBoxDinamic.Location = new System.Drawing.Point(29, 9);
-            this.pictureBoxDinamic.Name = "pictureBoxDinamic";
-            this.pictureBoxDinamic.Size = new System.Drawing.Size(50, 50);
-            this.pictureBoxDinamic.TabIndex = 26;
-            this.pictureBoxDinamic.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.label1.Location = new System.Drawing.Point(537, 469);
+            this.label1.Location = new System.Drawing.Point(772, 424);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 18);
             this.label1.TabIndex = 27;
@@ -813,7 +824,7 @@
             this.lblEmail.BackColor = System.Drawing.Color.White;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblEmail.Location = new System.Drawing.Point(431, 75);
+            this.lblEmail.Location = new System.Drawing.Point(431, 51);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(225, 18);
             this.lblEmail.TabIndex = 28;
@@ -825,7 +836,7 @@
             this.lblSalario.BackColor = System.Drawing.Color.White;
             this.lblSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSalario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblSalario.Location = new System.Drawing.Point(434, 349);
+            this.lblSalario.Location = new System.Drawing.Point(434, 325);
             this.lblSalario.Name = "lblSalario";
             this.lblSalario.Size = new System.Drawing.Size(225, 18);
             this.lblSalario.TabIndex = 29;
@@ -858,16 +869,71 @@
             this.btnSalvar.ForeColor = System.Drawing.Color.White;
             this.btnSalvar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(40)))), ((int)(((byte)(201)))));
             this.btnSalvar.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(13)))), ((int)(((byte)(90)))));
-            this.btnSalvar.Location = new System.Drawing.Point(763, 447);
+            this.btnSalvar.Location = new System.Drawing.Point(762, 462);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(202, 58);
             this.btnSalvar.TabIndex = 1003;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click_1);
             // 
+            // panel25
+            // 
+            this.panel25.Controls.Add(this.comboSexo);
+            this.panel25.Controls.Add(this.panel26);
+            this.panel25.Controls.Add(this.pictureBox13);
+            this.panel25.Location = new System.Drawing.Point(30, 419);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(298, 68);
+            this.panel25.TabIndex = 1004;
+            // 
+            // comboSexo
+            // 
+            this.comboSexo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboSexo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboSexo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.comboSexo.FormattingEnabled = true;
+            this.comboSexo.Items.AddRange(new object[] {
+            "Sexo",
+            "Masculino",
+            "Feminino",
+            "Cavalo"});
+            this.comboSexo.Location = new System.Drawing.Point(69, 13);
+            this.comboSexo.Name = "comboSexo";
+            this.comboSexo.Size = new System.Drawing.Size(225, 32);
+            this.comboSexo.TabIndex = 1006;
+            // 
+            // panel26
+            // 
+            this.panel26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.panel26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.panel26.Location = new System.Drawing.Point(70, 47);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(288, 1);
+            this.panel26.TabIndex = 8;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::MainMenu.Properties.Resources.toilet_48px;
+            this.pictureBox13.Location = new System.Drawing.Point(12, 4);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(52, 45);
+            this.pictureBox13.TabIndex = 7;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBoxDinamic
+            // 
+            this.pictureBoxDinamic.Image = global::MainMenu.Properties.Resources.add_tab_48px;
+            this.pictureBoxDinamic.Location = new System.Drawing.Point(29, -3);
+            this.pictureBoxDinamic.Name = "pictureBoxDinamic";
+            this.pictureBoxDinamic.Size = new System.Drawing.Size(50, 50);
+            this.pictureBoxDinamic.TabIndex = 26;
+            this.pictureBoxDinamic.TabStop = false;
+            // 
             // btnAtivo
             // 
-            this.btnAtivo.Location = new System.Drawing.Point(486, 469);
+            this.btnAtivo.Location = new System.Drawing.Point(823, 423);
             this.btnAtivo.MinimumSize = new System.Drawing.Size(45, 22);
             this.btnAtivo.Name = "btnAtivo";
             this.btnAtivo.OffBackColor = System.Drawing.Color.Gray;
@@ -878,37 +944,13 @@
             this.btnAtivo.TabIndex = 23;
             this.btnAtivo.UseVisualStyleBackColor = true;
             // 
-            // lblCTPSlbl
-            // 
-            this.lblCTPSlbl.AutoSize = true;
-            this.lblCTPSlbl.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lblCTPSlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblCTPSlbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblCTPSlbl.Location = new System.Drawing.Point(70, 19);
-            this.lblCTPSlbl.Name = "lblCTPSlbl";
-            this.lblCTPSlbl.Size = new System.Drawing.Size(63, 24);
-            this.lblCTPSlbl.TabIndex = 1004;
-            this.lblCTPSlbl.Text = "CTPS";
-            this.lblCTPSlbl.Click += new System.EventHandler(this.lblCTPSlbl_Click);
-            // 
-            // txtCTPS
-            // 
-            this.txtCTPS.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCTPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCTPS.Location = new System.Drawing.Point(71, 24);
-            this.txtCTPS.Mask = "0000000,000-0";
-            this.txtCTPS.Name = "txtCTPS";
-            this.txtCTPS.Size = new System.Drawing.Size(160, 19);
-            this.txtCTPS.TabIndex = 1005;
-            this.txtCTPS.ValidatingType = typeof(System.DateTime);
-            this.txtCTPS.Visible = false;
-            // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1018, 532);
+            this.Controls.Add(this.panel25);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.lblBanco);
             this.Controls.Add(this.lblSalario);
@@ -917,7 +959,6 @@
             this.Controls.Add(this.pictureBoxDinamic);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnAtivo);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel17);
             this.Controls.Add(this.panel19);
             this.Controls.Add(this.panel23);
@@ -971,6 +1012,8 @@
             this.panel23.ResumeLayout(false);
             this.panel23.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            this.panel25.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDinamic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1020,7 +1063,6 @@
         private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.Panel panel24;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboCargo;
         private CustomControls.ToggleButton btnAtivo;
         private System.Windows.Forms.Label label3;
@@ -1049,5 +1091,9 @@
         private System.Windows.Forms.MaskedTextBox txtTelefone;
         private System.Windows.Forms.Label lblCTPSlbl;
         private System.Windows.Forms.MaskedTextBox txtCTPS;
+        private System.Windows.Forms.Panel panel25;
+        private System.Windows.Forms.ComboBox comboSexo;
+        private System.Windows.Forms.Panel panel26;
+        private System.Windows.Forms.PictureBox pictureBox13;
     }
 }

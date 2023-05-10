@@ -106,5 +106,10 @@ namespace MainMenu
             public DateTime Saida { get; set; }
             public int Mes { get; set; }
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

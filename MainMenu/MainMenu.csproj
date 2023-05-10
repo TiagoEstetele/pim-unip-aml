@@ -521,6 +521,7 @@
     <None Include="Resources\edit_property_48px.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\toilet_48px.png" />
     <None Include="Resources\Tiago.jpg" />
     <None Include="Resources\edit_property_48px1.png" />
     <None Include="Resources\eye_48px.png" />

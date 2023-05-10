@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cmbMes = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,6 +107,7 @@
             // cmbMes
             // 
             this.cmbMes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbMes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
@@ -127,7 +129,6 @@
             this.cmbMes.Name = "cmbMes";
             this.cmbMes.Size = new System.Drawing.Size(225, 32);
             this.cmbMes.TabIndex = 1009;
-            this.cmbMes.Text = "Mês";
             // 
             // pictureBox1
             // 
@@ -138,11 +139,24 @@
             this.pictureBox1.TabIndex = 1007;
             this.pictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.label2.Location = new System.Drawing.Point(197, 70);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 29);
+            this.label2.TabIndex = 1010;
+            this.label2.Text = "Mês:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // ConsultaFolha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1018, 532);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.cmbMes);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
@@ -168,5 +182,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox cmbMes;
+        private System.Windows.Forms.Label label2;
     }
 }

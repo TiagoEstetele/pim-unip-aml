@@ -1243,6 +1243,16 @@ namespace MainMenu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap toilet_48px {
+            get {
+                object obj = ResourceManager.GetObject("toilet_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap unlock_96px {
             get {
                 object obj = ResourceManager.GetObject("unlock_96px", resourceCulture);

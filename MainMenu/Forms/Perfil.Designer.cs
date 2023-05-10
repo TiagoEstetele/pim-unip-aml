@@ -57,6 +57,7 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.npgsqlDataAdapter1 = new Npgsql.NpgsqlDataAdapter();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.btnClose = new System.Windows.Forms.Button();
             this.panelPerfil.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRelatorioHoras)).BeginInit();
@@ -129,6 +130,7 @@
             this.dgvRelatorioHoras.EnableHeadersVisualStyles = false;
             this.dgvRelatorioHoras.Location = new System.Drawing.Point(-1, -1);
             this.dgvRelatorioHoras.Name = "dgvRelatorioHoras";
+            this.dgvRelatorioHoras.ReadOnly = true;
             this.dgvRelatorioHoras.Size = new System.Drawing.Size(499, 190);
             this.dgvRelatorioHoras.TabIndex = 26;
             // 
@@ -138,8 +140,9 @@
             this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNome.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.txtNome.Location = new System.Drawing.Point(440, 107);
+            this.txtNome.Location = new System.Drawing.Point(444, 107);
             this.txtNome.Name = "txtNome";
+            this.txtNome.ReadOnly = true;
             this.txtNome.Size = new System.Drawing.Size(295, 24);
             this.txtNome.TabIndex = 25;
             // 
@@ -149,8 +152,9 @@
             this.txtAdmissao.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAdmissao.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAdmissao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.txtAdmissao.Location = new System.Drawing.Point(536, 224);
+            this.txtAdmissao.Location = new System.Drawing.Point(541, 224);
             this.txtAdmissao.Name = "txtAdmissao";
+            this.txtAdmissao.ReadOnly = true;
             this.txtAdmissao.Size = new System.Drawing.Size(295, 24);
             this.txtAdmissao.TabIndex = 24;
             // 
@@ -160,8 +164,9 @@
             this.txtCTPS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCTPS.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCTPS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.txtCTPS.Location = new System.Drawing.Point(440, 184);
+            this.txtCTPS.Location = new System.Drawing.Point(436, 184);
             this.txtCTPS.Name = "txtCTPS";
+            this.txtCTPS.ReadOnly = true;
             this.txtCTPS.Size = new System.Drawing.Size(295, 24);
             this.txtCTPS.TabIndex = 23;
             // 
@@ -171,8 +176,9 @@
             this.txtCPF.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCPF.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCPF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.txtCPF.Location = new System.Drawing.Point(424, 146);
+            this.txtCPF.Location = new System.Drawing.Point(421, 146);
             this.txtCPF.Name = "txtCPF";
+            this.txtCPF.ReadOnly = true;
             this.txtCPF.Size = new System.Drawing.Size(295, 24);
             this.txtCPF.TabIndex = 22;
             // 
@@ -350,15 +356,35 @@
             this.guna2Elipse2.BorderRadius = 20;
             this.guna2Elipse2.TargetControl = this.panel7;
             // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.btnClose.Location = new System.Drawing.Point(976, 2);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(40, 38);
+            this.btnClose.TabIndex = 26;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // Perfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1018, 532);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.panelPerfil);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Location = new System.Drawing.Point(480, 290);
             this.Name = "Perfil";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Perfil";
             this.panelPerfil.ResumeLayout(false);
             this.panelPerfil.PerformLayout();
@@ -398,5 +424,6 @@
         private System.Windows.Forms.DataGridView dgvRelatorioHoras;
         private System.Windows.Forms.Panel panel7;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private System.Windows.Forms.Button btnClose;
     }
 }

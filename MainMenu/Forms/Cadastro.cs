@@ -392,6 +392,7 @@ namespace MainMenu.Forms
                 {
                     connection.Close();
                 }
+                this.Close();
             }
             else
             {
@@ -442,6 +443,7 @@ namespace MainMenu.Forms
                 {
                     connection.Close();
                 }
+                    this.Close();
             }
 
         }
@@ -553,6 +555,11 @@ namespace MainMenu.Forms
             txtCTPS.Visible = true;
             txtCTPS.Focus();
             txtCTPS.SelectionStart = 0;
+        }
+
+        private void comboCargo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

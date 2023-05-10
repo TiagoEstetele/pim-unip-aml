@@ -18,6 +18,7 @@ namespace MainMenu.Forms
     {
         public long identify;
         public string nomeF;
+        int horas, minutos, horaExtra;
         string nome;
         long idfun;
         DateTime entrada, saida;
@@ -32,13 +33,11 @@ namespace MainMenu.Forms
             this.identify = identify;
             InitializeComponent();
             lblTextWelcome.Text = $"Bem vindo {nomeF}!";
-            hora_entrada.Text = cache.Get("1") as string;
-            hora_saida.Text = cache.Get("2") as string;
+            hora_entrada.Text = cache.Get($"{identify}{identify}") as string;
+            hora_saida.Text = cache.Get($"{identify}{identify}{identify}") as string;
+            total_horas.Text = $"Sua carga horária de hoje foi de {horas} hora(s) e {minutos} minuto(s)";
+            total_horas2.Text = $"em adição, {horaExtra} hora(s) extras.";
         }
-        //private void timer1_Tick(object sender, EventArgs e)
-        //{
-        //    lblStatus.Text = DateTime.Now.ToString("T");
-        //}
 
         private void Ponto_Load(object sender, EventArgs e)
         {
@@ -69,7 +68,15 @@ namespace MainMenu.Forms
 
         private void hora_saida_TextChanged(object sender, EventArgs e)
         {
-            btnBater.Visible = false;
+            btnBater.Text = "Bom descanso!";
+            btnBater.Enabled = false;
+            total_horas.Visible = true;
+            total_horas2.Visible = true;
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            lblStatus.Text = DateTime.Now.ToString("T");
         }
 
         private void total_horas2_TextChanged(object sender, EventArgs e)
@@ -105,9 +112,9 @@ namespace MainMenu.Forms
                 if (hora_entrada.Text != "")
                 {
                     hora_saida.Text = DateTime.Now.ToString();
-                    cache.Add("2", hora_saida.Text, DateTimeOffset.Now.AddMinutes(3600));
+                    cache.Add($"{identify}{identify}{identify}", hora_saida.Text, DateTimeOffset.Now.AddMinutes(3600));
                     saida = DateTime.Parse(hora_saida.Text);
-                    entradaCache = cache.Get("1") as string;
+                    entradaCache = cache.Get($"{identify}{identify}") as string;
 
                     comando.Parameters.AddWithValue("@idfun", identify);
                     comando.Parameters.AddWithValue("@data_ent", DateTime.Parse(entradaCache)); //1231
@@ -115,7 +122,7 @@ namespace MainMenu.Forms
                     comando.Parameters.AddWithValue("@mes", mes);
                     comando.Parameters.AddWithValue("@horas_total", totalhoras);
 
-                    saidaCache = cache.Get("2") as string;
+                    saidaCache = cache.Get($"{identify}{identify}{identify}") as string;
                     date = DateTime.Now;
                     mes = (date.Month);
 
@@ -126,9 +133,9 @@ namespace MainMenu.Forms
                 else if (hora_entrada.Text == "")
                 {
                     hora_entrada.Text = DateTime.Now.ToString();
-                    cache.Add("1", hora_entrada.Text, DateTimeOffset.Now.AddMinutes(3600));
+                    cache.Add($"{identify}{identify}", hora_entrada.Text, DateTimeOffset.Now.AddMinutes(3600));
                     entrada = DateTime.Parse(hora_entrada.Text);
-                    entradaCache = cache.Get("1") as string;
+                    entradaCache = cache.Get($"{identify}{identify}") as string;
                     AlertBoxArtan(Color.LightGreen, Color.SeaGreen, "Successo", "Hora de entrada cadastrada", Properties.Resources.ok_48px);
                 }
 
@@ -144,12 +151,6 @@ namespace MainMenu.Forms
                 if (horas > 8)
                 {
                     horaExtra = horas % 8;
-                }
-
-                if (hora_saida.Text != "")
-                {
-                    total_horas.Text = $"Sua carga horária de hoje foi de {horas} hora(s) e {minutos} minuto(s)";
-                    total_horas2.Text = $"em adição, {horaExtra} hora(s) extras.";
                 }
             }
             catch (Exception ex) { }

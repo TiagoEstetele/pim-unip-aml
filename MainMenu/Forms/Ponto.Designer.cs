@@ -70,6 +70,7 @@
             // timer1
             // 
             this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
             // lblStatus
             // 
@@ -120,6 +121,7 @@
             this.total_horas.Name = "total_horas";
             this.total_horas.Size = new System.Drawing.Size(613, 24);
             this.total_horas.TabIndex = 5;
+            this.total_horas.Visible = false;
             // 
             // hora_saida
             // 
@@ -203,6 +205,7 @@
             this.total_horas2.Name = "total_horas2";
             this.total_horas2.Size = new System.Drawing.Size(323, 24);
             this.total_horas2.TabIndex = 16;
+            this.total_horas2.Visible = false;
             this.total_horas2.TextChanged += new System.EventHandler(this.total_horas2_TextChanged);
             // 
             // btnClose
