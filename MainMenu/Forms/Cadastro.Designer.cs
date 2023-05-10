@@ -59,10 +59,11 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.lblTelefonelbl = new System.Windows.Forms.Label();
+            this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.lblTelefone = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.txtTelefone = new System.Windows.Forms.TextBox();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -75,16 +76,17 @@
             this.lblCTPS = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.txtCTPS = new System.Windows.Forms.TextBox();
             this.panel21 = new System.Windows.Forms.Panel();
+            this.lblContaPrincipal = new System.Windows.Forms.Label();
             this.lblConta = new System.Windows.Forms.Label();
             this.panel22 = new System.Windows.Forms.Panel();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.txtConta = new System.Windows.Forms.TextBox();
+            this.txtConta = new System.Windows.Forms.MaskedTextBox();
             this.panel23 = new System.Windows.Forms.Panel();
+            this.lblAgencia = new System.Windows.Forms.Label();
+            this.txtAgencia = new System.Windows.Forms.MaskedTextBox();
             this.panel24 = new System.Windows.Forms.Panel();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.txtBanco = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.pictureBoxDinamic = new System.Windows.Forms.PictureBox();
@@ -94,6 +96,8 @@
             this.lblBanco = new System.Windows.Forms.Label();
             this.btnSalvar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnAtivo = new MainMenu.CustomControls.ToggleButton();
+            this.lblCTPSlbl = new System.Windows.Forms.Label();
+            this.txtCTPS = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -204,7 +208,7 @@
             // 
             this.txtDataNascimento.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDataNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataNascimento.Location = new System.Drawing.Point(70, 17);
+            this.txtDataNascimento.Location = new System.Drawing.Point(71, 23);
             this.txtDataNascimento.Mask = "00/00/0000";
             this.txtDataNascimento.Name = "txtDataNascimento";
             this.txtDataNascimento.Size = new System.Drawing.Size(160, 19);
@@ -417,7 +421,7 @@
             // 
             this.txtAdmissao.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAdmissao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAdmissao.Location = new System.Drawing.Point(73, 21);
+            this.txtAdmissao.Location = new System.Drawing.Point(71, 23);
             this.txtAdmissao.Mask = "00/00/0000";
             this.txtAdmissao.Name = "txtAdmissao";
             this.txtAdmissao.Size = new System.Drawing.Size(160, 19);
@@ -444,14 +448,39 @@
             // 
             // panel13
             // 
+            this.panel13.Controls.Add(this.lblTelefonelbl);
+            this.panel13.Controls.Add(this.txtTelefone);
             this.panel13.Controls.Add(this.lblTelefone);
             this.panel13.Controls.Add(this.panel14);
             this.panel13.Controls.Add(this.pictureBox7);
-            this.panel13.Controls.Add(this.txtTelefone);
             this.panel13.Location = new System.Drawing.Point(364, 165);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(298, 68);
             this.panel13.TabIndex = 12;
+            // 
+            // lblTelefonelbl
+            // 
+            this.lblTelefonelbl.AutoSize = true;
+            this.lblTelefonelbl.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lblTelefonelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblTelefonelbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.lblTelefonelbl.Location = new System.Drawing.Point(69, 20);
+            this.lblTelefonelbl.Name = "lblTelefonelbl";
+            this.lblTelefonelbl.Size = new System.Drawing.Size(93, 24);
+            this.lblTelefonelbl.TabIndex = 1004;
+            this.lblTelefonelbl.Text = "Telefone";
+            this.lblTelefonelbl.Click += new System.EventHandler(this.lblTelefonelbl_Click);
+            // 
+            // txtTelefone
+            // 
+            this.txtTelefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefone.Location = new System.Drawing.Point(70, 24);
+            this.txtTelefone.Mask = "(00) 00000-0000";
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(160, 19);
+            this.txtTelefone.TabIndex = 1005;
+            this.txtTelefone.Visible = false;
             // 
             // lblTelefone
             // 
@@ -482,20 +511,6 @@
             this.pictureBox7.Size = new System.Drawing.Size(52, 45);
             this.pictureBox7.TabIndex = 7;
             this.pictureBox7.TabStop = false;
-            // 
-            // txtTelefone
-            // 
-            this.txtTelefone.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTelefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.txtTelefone.Location = new System.Drawing.Point(70, 17);
-            this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(225, 22);
-            this.txtTelefone.TabIndex = 6;
-            this.txtTelefone.Text = "Telefone";
-            this.txtTelefone.Click += new System.EventHandler(this.txtTelefone_Click);
-            this.txtTelefone.TextChanged += new System.EventHandler(this.txtTelefone_TextChanged);
             // 
             // panel15
             // 
@@ -582,10 +597,11 @@
             // 
             // panel19
             // 
+            this.panel19.Controls.Add(this.lblCTPSlbl);
+            this.panel19.Controls.Add(this.txtCTPS);
             this.panel19.Controls.Add(this.lblCTPS);
             this.panel19.Controls.Add(this.panel20);
             this.panel19.Controls.Add(this.pictureBox10);
-            this.panel19.Controls.Add(this.txtCTPS);
             this.panel19.Location = new System.Drawing.Point(690, 257);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(298, 68);
@@ -621,22 +637,9 @@
             this.pictureBox10.TabIndex = 7;
             this.pictureBox10.TabStop = false;
             // 
-            // txtCTPS
-            // 
-            this.txtCTPS.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCTPS.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCTPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCTPS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.txtCTPS.Location = new System.Drawing.Point(70, 17);
-            this.txtCTPS.Name = "txtCTPS";
-            this.txtCTPS.Size = new System.Drawing.Size(225, 22);
-            this.txtCTPS.TabIndex = 6;
-            this.txtCTPS.Text = "CTPS";
-            this.txtCTPS.Click += new System.EventHandler(this.txtCTPS_Click);
-            this.txtCTPS.TextChanged += new System.EventHandler(this.txtCTPS_TextChanged);
-            // 
             // panel21
             // 
+            this.panel21.Controls.Add(this.lblContaPrincipal);
             this.panel21.Controls.Add(this.lblConta);
             this.panel21.Controls.Add(this.panel22);
             this.panel21.Controls.Add(this.pictureBox11);
@@ -645,6 +648,20 @@
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(298, 68);
             this.panel21.TabIndex = 16;
+            this.panel21.Paint += new System.Windows.Forms.PaintEventHandler(this.panel21_Paint);
+            // 
+            // lblContaPrincipal
+            // 
+            this.lblContaPrincipal.AutoSize = true;
+            this.lblContaPrincipal.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lblContaPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblContaPrincipal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.lblContaPrincipal.Location = new System.Drawing.Point(68, 22);
+            this.lblContaPrincipal.Name = "lblContaPrincipal";
+            this.lblContaPrincipal.Size = new System.Drawing.Size(64, 24);
+            this.lblContaPrincipal.TabIndex = 1004;
+            this.lblContaPrincipal.Text = "Conta";
+            this.lblContaPrincipal.Click += new System.EventHandler(this.lblContaPrincipal_Click);
             // 
             // lblConta
             // 
@@ -678,27 +695,52 @@
             // 
             // txtConta
             // 
-            this.txtConta.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtConta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtConta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.txtConta.Location = new System.Drawing.Point(70, 17);
+            this.txtConta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConta.Location = new System.Drawing.Point(70, 24);
+            this.txtConta.Mask = "00000-0";
             this.txtConta.Name = "txtConta";
-            this.txtConta.Size = new System.Drawing.Size(225, 22);
-            this.txtConta.TabIndex = 6;
-            this.txtConta.Text = "Conta";
-            this.txtConta.Click += new System.EventHandler(this.txtConta_Click);
-            this.txtConta.TextChanged += new System.EventHandler(this.txtConta_TextChanged);
+            this.txtConta.Size = new System.Drawing.Size(160, 19);
+            this.txtConta.TabIndex = 28;
+            this.txtConta.ValidatingType = typeof(System.DateTime);
+            this.txtConta.Visible = false;
+            this.txtConta.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // panel23
             // 
+            this.panel23.Controls.Add(this.lblAgencia);
+            this.panel23.Controls.Add(this.txtAgencia);
             this.panel23.Controls.Add(this.panel24);
             this.panel23.Controls.Add(this.pictureBox12);
-            this.panel23.Controls.Add(this.txtBanco);
             this.panel23.Location = new System.Drawing.Point(687, 350);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(298, 68);
             this.panel23.TabIndex = 15;
+            // 
+            // lblAgencia
+            // 
+            this.lblAgencia.AutoSize = true;
+            this.lblAgencia.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lblAgencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblAgencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.lblAgencia.Location = new System.Drawing.Point(72, 20);
+            this.lblAgencia.Name = "lblAgencia";
+            this.lblAgencia.Size = new System.Drawing.Size(87, 24);
+            this.lblAgencia.TabIndex = 1004;
+            this.lblAgencia.Text = "Agência";
+            this.lblAgencia.Click += new System.EventHandler(this.lblAgencia_Click);
+            // 
+            // txtAgencia
+            // 
+            this.txtAgencia.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAgencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAgencia.Location = new System.Drawing.Point(72, 21);
+            this.txtAgencia.Mask = "0000";
+            this.txtAgencia.Name = "txtAgencia";
+            this.txtAgencia.Size = new System.Drawing.Size(160, 19);
+            this.txtAgencia.TabIndex = 1004;
+            this.txtAgencia.ValidatingType = typeof(System.DateTime);
+            this.txtAgencia.Visible = false;
             // 
             // panel24
             // 
@@ -717,20 +759,6 @@
             this.pictureBox12.Size = new System.Drawing.Size(52, 45);
             this.pictureBox12.TabIndex = 7;
             this.pictureBox12.TabStop = false;
-            // 
-            // txtBanco
-            // 
-            this.txtBanco.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBanco.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBanco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.txtBanco.Location = new System.Drawing.Point(70, 17);
-            this.txtBanco.Name = "txtBanco";
-            this.txtBanco.Size = new System.Drawing.Size(225, 22);
-            this.txtBanco.TabIndex = 6;
-            this.txtBanco.Text = "Agência";
-            this.txtBanco.Click += new System.EventHandler(this.txtBanco_Click);
-            this.txtBanco.TextChanged += new System.EventHandler(this.txtBanco_TextChanged);
             // 
             // label2
             // 
@@ -826,7 +854,7 @@
             this.btnSalvar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSalvar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(42)))), ((int)(((byte)(212)))));
             this.btnSalvar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(20)))), ((int)(((byte)(118)))));
-            this.btnSalvar.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.Color.White;
             this.btnSalvar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(40)))), ((int)(((byte)(201)))));
             this.btnSalvar.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(13)))), ((int)(((byte)(90)))));
@@ -850,6 +878,31 @@
             this.btnAtivo.TabIndex = 23;
             this.btnAtivo.UseVisualStyleBackColor = true;
             // 
+            // lblCTPSlbl
+            // 
+            this.lblCTPSlbl.AutoSize = true;
+            this.lblCTPSlbl.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lblCTPSlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblCTPSlbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.lblCTPSlbl.Location = new System.Drawing.Point(70, 19);
+            this.lblCTPSlbl.Name = "lblCTPSlbl";
+            this.lblCTPSlbl.Size = new System.Drawing.Size(63, 24);
+            this.lblCTPSlbl.TabIndex = 1004;
+            this.lblCTPSlbl.Text = "CTPS";
+            this.lblCTPSlbl.Click += new System.EventHandler(this.lblCTPSlbl_Click);
+            // 
+            // txtCTPS
+            // 
+            this.txtCTPS.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCTPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCTPS.Location = new System.Drawing.Point(71, 24);
+            this.txtCTPS.Mask = "0000000,000-0";
+            this.txtCTPS.Name = "txtCTPS";
+            this.txtCTPS.Size = new System.Drawing.Size(160, 19);
+            this.txtCTPS.TabIndex = 1005;
+            this.txtCTPS.ValidatingType = typeof(System.DateTime);
+            this.txtCTPS.Visible = false;
+            // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -867,7 +920,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel17);
             this.Controls.Add(this.panel19);
-            this.Controls.Add(this.panel21);
             this.Controls.Add(this.panel23);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel11);
@@ -878,6 +930,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblText);
+            this.Controls.Add(this.panel21);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(480, 290);
             this.Name = "Cadastro";
@@ -951,7 +1004,6 @@
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.PictureBox pictureBox8;
@@ -962,15 +1014,12 @@
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.TextBox txtCTPS;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.TextBox txtConta;
         private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.Panel panel24;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.TextBox txtBanco;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboCargo;
         private CustomControls.ToggleButton btnAtivo;
@@ -992,5 +1041,13 @@
         private System.Windows.Forms.Label lblSalario;
         private System.Windows.Forms.Label lblBanco;
         private Guna.UI2.WinForms.Guna2GradientButton btnSalvar;
+        private System.Windows.Forms.MaskedTextBox txtConta;
+        private System.Windows.Forms.MaskedTextBox txtAgencia;
+        private System.Windows.Forms.Label lblContaPrincipal;
+        private System.Windows.Forms.Label lblAgencia;
+        private System.Windows.Forms.Label lblTelefonelbl;
+        private System.Windows.Forms.MaskedTextBox txtTelefone;
+        private System.Windows.Forms.Label lblCTPSlbl;
+        private System.Windows.Forms.MaskedTextBox txtCTPS;
     }
 }

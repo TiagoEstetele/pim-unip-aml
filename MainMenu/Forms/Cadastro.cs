@@ -244,7 +244,7 @@ namespace MainMenu.Forms
             lblBanco.Visible = true;
             try
             {
-                txtBanco.ForeColor = System.Drawing.ColorTranslator.FromHtml("#232336");
+                txtAgencia.ForeColor = System.Drawing.ColorTranslator.FromHtml("#232336");
 
             }
             catch { }
@@ -254,18 +254,17 @@ namespace MainMenu.Forms
         {
             try
             {
-                txtBanco.SelectionStart = txtBanco.TextLength;
+                txtAgencia.SelectionStart = txtAgencia.TextLength;
             }
             catch { }
-            if (txtBanco.Text == "Agência")
+            if (txtAgencia.Text == "Agência")
             {
-                txtBanco.Clear();
+                txtAgencia.Clear();
             }
         }
 
         private void txtConta_TextChanged(object sender, EventArgs e)
         {
-            lblConta.Visible = true;
             try
             {
                 txtConta.ForeColor = System.Drawing.ColorTranslator.FromHtml("#232336");
@@ -313,17 +312,24 @@ namespace MainMenu.Forms
 
         private void btnSalvar_Click_1(object sender, EventArgs e)
         {
-            if (txtNome.Text == string.Empty || txtNome.Text == "Nome"/* || Regex.IsMatch(txtNome.Text, "^[a-zA-Z ]*$")*/) { MessageBox.Show("Favor preencher campo de nome corretamente."); return; }
-            else if (txtAdmissao.Text == string.Empty || txtAdmissao.Text == "  /  /") { MessageBox.Show("Favor preencher campo de nome corretamente."); return; }
-            else if (txtCTPS.Text == string.Empty || txtCTPS.Text == "CTPS") { MessageBox.Show("Favor preencher campo de CTPS corretamente."); return; }
-            else if (txtDataNascimento.Text == string.Empty || txtDataNascimento.Text == "  /  /" || DateTime.Parse(txtDataNascimento.Text) < DateTime.Parse(txtAdmissao.Text)) { MessageBox.Show("Favor preencher campo de data de nascimento corretamente."); return; }
-            else if (txtBanco.Text == string.Empty || txtBanco.Text == "Agência") { MessageBox.Show("Favor preencher campo de agência corretamente."); return; }
-            else if (txtConta.Text == string.Empty ||/* Regex.IsMatch(txtConta.Text, @"^\d+$") ||*/ txtConta.Text == "Conta") { MessageBox.Show("Favor preencher campo de conta corretamente."); return; }
-            else if (txtCPF.Text == string.Empty ||/* Regex.IsMatch(txtCPF.Text, @"^\d+$") ||*/ txtCPF.Text == "   .   .   -") { MessageBox.Show("Favor preencher campo de CPF corretamente."); return; }
-            else if (txtEmail.Text == string.Empty ||/* Regex.IsMatch(txtEmail.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$") ||*/ txtCPF.Text == "Email") { MessageBox.Show("Favor preencher campo de email corretamente."); return; }
+            bool nome = Regex.IsMatch(txtNome.Text, @"^[a-zA-Z]+\s[a-zA-Z]+$");
+            bool banco = Regex.IsMatch(txtAgencia.Text, @"^\d+$");
+            bool conta = Regex.IsMatch(txtConta.Text, @"\d+-");
+            bool cpf = Regex.IsMatch(txtCPF.Text, @"^\d{3}\.\d{3}\.\d{3}-\d{2}$");
+            bool email = Regex.IsMatch(txtEmail.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$");
+            bool telefone = Regex.IsMatch(txtTelefone.Text, @"^\(\s*\d{2}\s*\)\s*\d{5}-\d{4}$");
+
+            if (txtNome.Text == string.Empty || txtNome.Text == "Nome" || nome == false) { MessageBox.Show("Favor preencher campo de nome corretamente."); return; }
+            else if (txtAdmissao.Text == string.Empty || txtAdmissao.Text == "  /  /" || txtAdmissao.Text.Length < 10) { MessageBox.Show("Favor preencher campo de admissão corretamente."); return; }
+            else if (txtCTPS.Text == string.Empty || txtCTPS.Text == "CTPS" || txtCTPS.Text == "       .   -" || txtCTPS.Text.Length < 13) { MessageBox.Show("Favor preencher campo de CTPS corretamente."); return; }
+            else if (txtDataNascimento.Text == string.Empty || txtDataNascimento.Text == "  /  /" || DateTime.Parse(txtDataNascimento.Text) > DateTime.Parse(txtAdmissao.Text) || txtDataNascimento.Text.Length < 10) { MessageBox.Show("Favor preencher campo de data de nascimento corretamente."); return; }
+            else if (txtAgencia.Text == string.Empty || txtAgencia.Text == "Agência" || txtAgencia.Text.Length != 4 || banco == false) { MessageBox.Show("Favor preencher campo de agência corretamente."); return; }
+            else if (txtConta.Text == string.Empty || conta == false || txtConta.Text == "Conta" || txtConta.Text.Length < 7) { MessageBox.Show("Favor preencher campo de conta corretamente."); return; }
+            else if (txtCPF.Text == string.Empty || cpf == false || txtCPF.Text == "   .   .   -" || txtCPF.Text.Length < 14) { MessageBox.Show("Favor preencher campo de CPF corretamente."); return; }
+            else if (txtEmail.Text == string.Empty || email == false || txtCPF.Text == "Email") { MessageBox.Show("Favor preencher campo de email corretamente."); return; }
             else if (txtEndereco.Text == string.Empty || txtEndereco.Text == "Endereço") { MessageBox.Show("Favor preencher campo de endereço corretamente."); return; }
-            else if (txtTelefone.Text == string.Empty ||/* Regex.IsMatch(txtTelefone.Text, @"^\d+$") ||*/ txtEndereco.Text == "Telefone") { MessageBox.Show("Favor preencher campo de telefone corretamente."); return; }
-            else if (txtSalario.Text == string.Empty ||/* Regex.IsMatch(txtSalario.Text, @"^\d+$") ||*/ txtSalario.Text == "Salário") { MessageBox.Show("Favor preencher campo de salário corretamente."); return; }
+            else if (txtTelefone.Text == string.Empty || telefone == false || txtTelefone.Text == "(  )      -") { MessageBox.Show("Favor preencher campo de telefone corretamente."); return; }
+            else if (txtSalario.Text == string.Empty || txtSalario.Text == "Salário") { MessageBox.Show("Favor preencher campo de salário corretamente."); return; }
             else if (comboCargo.Text == string.Empty || comboCargo.Text == "Cargo") { MessageBox.Show("Favor preencher campo de cargo corretamente."); return; }
             //else if (txtNomeSocial.Text == string.Empty || txtNomeSocial ) { }
             //else if (comboGenero.Text == string.Empty) { }
@@ -353,7 +359,7 @@ namespace MainMenu.Forms
                     comando.Parameters.AddWithValue("@data_admissao", Convert.ToDateTime(txtAdmissao.Text));
                     comando.Parameters.AddWithValue("@ctps", txtCTPS.Text);
                     comando.Parameters.AddWithValue("@data_nascimento", Convert.ToDateTime(txtDataNascimento.Text));
-                    comando.Parameters.AddWithValue("@banco", txtBanco.Text);
+                    comando.Parameters.AddWithValue("@banco", txtAgencia.Text);
                     comando.Parameters.AddWithValue("@conta", txtConta.Text);
                     comando.Parameters.AddWithValue("@cpf", txtCPF.Text);
                     comando.Parameters.AddWithValue("@email", txtEmail.Text);
@@ -402,7 +408,7 @@ namespace MainMenu.Forms
                     comando.Parameters.AddWithValue("@data_admissao", Convert.ToDateTime(txtAdmissao.Text));
                     comando.Parameters.AddWithValue("@ctps", txtCTPS.Text);
                     comando.Parameters.AddWithValue("@data_nascimento", Convert.ToDateTime(txtDataNascimento.Text));
-                    comando.Parameters.AddWithValue("@banco", txtBanco.Text);
+                    comando.Parameters.AddWithValue("@banco", txtAgencia.Text);
                     comando.Parameters.AddWithValue("@conta", txtConta.Text);
                     comando.Parameters.AddWithValue("@cpf", txtCPF.Text);
                     comando.Parameters.AddWithValue("@email", txtEmail.Text);
@@ -468,7 +474,7 @@ namespace MainMenu.Forms
                 txtAdmissao.Text = Convert.ToString(dr["data_admissao"]);
                 txtCTPS.Text = Convert.ToString(dr["ctps"]);
                 txtDataNascimento.Text = Convert.ToString(dr["data_nascimento"]);
-                txtBanco.Text = Convert.ToString(dr["banco"]);
+                txtAgencia.Text = Convert.ToString(dr["banco"]);
                 txtConta.Text = Convert.ToString(dr["conta"]);
                 txtCPF.Text = Convert.ToString(dr["cpf"]);
                 txtEmail.Text = Convert.ToString(dr["email"]);
@@ -501,6 +507,52 @@ namespace MainMenu.Forms
         {
             lblText.Text = "Editar Funcionario";
             pictureBoxDinamic.Image = Properties.Resources.edit_48px;
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+            
+        }
+
+        private void panel21_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblContaPrincipal_Click(object sender, EventArgs e)
+        {
+            lblConta.Visible = true;
+            lblContaPrincipal.Visible = false;
+            txtConta.Visible = true;
+            txtConta.Focus();
+            txtConta.SelectionStart = 0;
+        }
+
+        private void lblAgencia_Click(object sender, EventArgs e)
+        {
+            lblBanco.Visible = true;
+            lblAgencia.Visible = false;
+            txtAgencia.Visible = true;
+            txtAgencia.Focus();
+            txtAgencia.SelectionStart = 0;
+        }
+
+        private void lblTelefonelbl_Click(object sender, EventArgs e)
+        {
+            lblTelefone.Visible = true;
+            lblTelefonelbl.Visible = false;
+            txtTelefone.Visible = true;
+            txtTelefone.Focus();
+            txtTelefone.SelectionStart = 0;
+        }
+
+        private void lblCTPSlbl_Click(object sender, EventArgs e)
+        {
+            lblCTPS.Visible = true;
+            lblCTPSlbl.Visible = false;
+            txtCTPS.Visible = true;
+            txtCTPS.Focus();
+            txtCTPS.SelectionStart = 0;
         }
     }
 }
