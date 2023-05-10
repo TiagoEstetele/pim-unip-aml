@@ -59,27 +59,26 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat Medium", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.label1.Location = new System.Drawing.Point(413, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 40);
+            this.label1.Size = new System.Drawing.Size(175, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bater ponto";
             // 
             // timer1
             // 
             this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Font = new System.Drawing.Font("Montserrat Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.lblStatus.Location = new System.Drawing.Point(53, 12);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(121, 33);
+            this.lblStatus.Size = new System.Drawing.Size(111, 29);
             this.lblStatus.TabIndex = 1;
             this.lblStatus.Text = "00:00:00";
             // 
@@ -106,20 +105,20 @@
             this.hora_entrada.BackColor = System.Drawing.Color.White;
             this.hora_entrada.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.hora_entrada.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.hora_entrada.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hora_entrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hora_entrada.Location = new System.Drawing.Point(278, 259);
             this.hora_entrada.Name = "hora_entrada";
             this.hora_entrada.ReadOnly = true;
-            this.hora_entrada.Size = new System.Drawing.Size(210, 26);
+            this.hora_entrada.Size = new System.Drawing.Size(210, 24);
             this.hora_entrada.TabIndex = 4;
             // 
             // total_horas
             // 
             this.total_horas.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.total_horas.Font = new System.Drawing.Font("Montserrat Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_horas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total_horas.Location = new System.Drawing.Point(203, 326);
             this.total_horas.Name = "total_horas";
-            this.total_horas.Size = new System.Drawing.Size(613, 26);
+            this.total_horas.Size = new System.Drawing.Size(613, 24);
             this.total_horas.TabIndex = 5;
             // 
             // hora_saida
@@ -127,12 +126,13 @@
             this.hora_saida.BackColor = System.Drawing.Color.White;
             this.hora_saida.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.hora_saida.Cursor = System.Windows.Forms.Cursors.Default;
-            this.hora_saida.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hora_saida.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hora_saida.Location = new System.Drawing.Point(585, 265);
             this.hora_saida.Name = "hora_saida";
             this.hora_saida.ReadOnly = true;
-            this.hora_saida.Size = new System.Drawing.Size(210, 26);
+            this.hora_saida.Size = new System.Drawing.Size(210, 24);
             this.hora_saida.TabIndex = 6;
+            this.hora_saida.TextChanged += new System.EventHandler(this.hora_saida_TextChanged);
             // 
             // btnBater
             // 
@@ -142,7 +142,7 @@
             this.btnBater.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnBater.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnBater.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.btnBater.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBater.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBater.ForeColor = System.Drawing.Color.White;
             this.btnBater.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(110)))));
             this.btnBater.Location = new System.Drawing.Point(395, 407);
@@ -160,11 +160,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Montserrat Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.label2.Location = new System.Drawing.Point(278, 229);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 33);
+            this.label2.Size = new System.Drawing.Size(89, 29);
             this.label2.TabIndex = 10;
             this.label2.Text = "Entrou";
             // 
@@ -187,21 +187,21 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Montserrat Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.label3.Location = new System.Drawing.Point(585, 229);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 33);
+            this.label3.Size = new System.Drawing.Size(65, 29);
             this.label3.TabIndex = 14;
             this.label3.Text = "Saiu";
             // 
             // total_horas2
             // 
             this.total_horas2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.total_horas2.Font = new System.Drawing.Font("Montserrat Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_horas2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total_horas2.Location = new System.Drawing.Point(348, 358);
             this.total_horas2.Name = "total_horas2";
-            this.total_horas2.Size = new System.Drawing.Size(323, 26);
+            this.total_horas2.Size = new System.Drawing.Size(323, 24);
             this.total_horas2.TabIndex = 16;
             this.total_horas2.TextChanged += new System.EventHandler(this.total_horas2_TextChanged);
             // 
@@ -224,7 +224,7 @@
             // 
             // lblTextWelcome
             // 
-            this.lblTextWelcome.Font = new System.Drawing.Font("Montserrat SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTextWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTextWelcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.lblTextWelcome.Location = new System.Drawing.Point(357, 141);
             this.lblTextWelcome.Name = "lblTextWelcome";

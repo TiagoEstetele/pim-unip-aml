@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 using MainMenu.Forms.alertBoxCadastro;
+using System.Text.RegularExpressions;
+using Microsoft.Office.Interop.Word;
 
 namespace MainMenu.Forms
 {
@@ -311,11 +313,20 @@ namespace MainMenu.Forms
 
         private void btnSalvar_Click_1(object sender, EventArgs e)
         {
-            if (txtNome.Text == string.Empty || txtAdmissao.Text == string.Empty || txtAdmissao.Text == "  /  /" || txtCTPS.Text == string.Empty || txtDataNascimento.Text == string.Empty || txtDataNascimento.Text == "  /  /" || txtBanco.Text == string.Empty || txtConta.Text == string.Empty || txtCPF.Text == string.Empty || txtEmail.Text == string.Empty || txtEndereco.Text == string.Empty || txtTelefone.Text == string.Empty || txtSalario.Text == string.Empty)
-            {
-                MessageBox.Show("CERTIFIQUE DE PREENCHER TODOS OS CAMPOS!");
-                return;
-            }
+            if (txtNome.Text == string.Empty || txtNome.Text == "Nome"/* || Regex.IsMatch(txtNome.Text, "^[a-zA-Z ]*$")*/) { MessageBox.Show("Favor preencher campo de nome corretamente."); return; }
+            else if (txtAdmissao.Text == string.Empty || txtAdmissao.Text == "  /  /") { MessageBox.Show("Favor preencher campo de nome corretamente."); return; }
+            else if (txtCTPS.Text == string.Empty || txtCTPS.Text == "CTPS") { MessageBox.Show("Favor preencher campo de CTPS corretamente."); return; }
+            else if (txtDataNascimento.Text == string.Empty || txtDataNascimento.Text == "  /  /" || DateTime.Parse(txtDataNascimento.Text) < DateTime.Parse(txtAdmissao.Text)) { MessageBox.Show("Favor preencher campo de data de nascimento corretamente."); return; }
+            else if (txtBanco.Text == string.Empty || txtBanco.Text == "Agência") { MessageBox.Show("Favor preencher campo de agência corretamente."); return; }
+            else if (txtConta.Text == string.Empty ||/* Regex.IsMatch(txtConta.Text, @"^\d+$") ||*/ txtConta.Text == "Conta") { MessageBox.Show("Favor preencher campo de conta corretamente."); return; }
+            else if (txtCPF.Text == string.Empty ||/* Regex.IsMatch(txtCPF.Text, @"^\d+$") ||*/ txtCPF.Text == "   .   .   -") { MessageBox.Show("Favor preencher campo de CPF corretamente."); return; }
+            else if (txtEmail.Text == string.Empty ||/* Regex.IsMatch(txtEmail.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$") ||*/ txtCPF.Text == "Email") { MessageBox.Show("Favor preencher campo de email corretamente."); return; }
+            else if (txtEndereco.Text == string.Empty || txtEndereco.Text == "Endereço") { MessageBox.Show("Favor preencher campo de endereço corretamente."); return; }
+            else if (txtTelefone.Text == string.Empty ||/* Regex.IsMatch(txtTelefone.Text, @"^\d+$") ||*/ txtEndereco.Text == "Telefone") { MessageBox.Show("Favor preencher campo de telefone corretamente."); return; }
+            else if (txtSalario.Text == string.Empty ||/* Regex.IsMatch(txtSalario.Text, @"^\d+$") ||*/ txtSalario.Text == "Salário") { MessageBox.Show("Favor preencher campo de salário corretamente."); return; }
+            else if (comboCargo.Text == string.Empty || comboCargo.Text == "Cargo") { MessageBox.Show("Favor preencher campo de cargo corretamente."); return; }
+            //else if (txtNomeSocial.Text == string.Empty || txtNomeSocial ) { }
+            //else if (comboGenero.Text == string.Empty) { }
 
             DateTime Data1 = DateTime.Parse(txtDataNascimento.Text);
             DateTime Data2 = DateTime.Parse(txtAdmissao.Text);

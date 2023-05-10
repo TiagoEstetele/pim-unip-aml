@@ -21,9 +21,12 @@ namespace MainMenu
         private Button currentButton;
         long idfun, idCargo1;
         string nomeF, nome, endereco, telefone;
-        
-        public FormFuncionario(long identify, string nome)
+        public DateTime entrada, ent;
+
+        public FormFuncionario(long identify, string nome, DateTime entrada)
         {
+            this.entrada = entrada;
+            ent = entrada;
             idfun = identify;
             nomeF = nome;
             InitializeComponent();
@@ -135,9 +138,9 @@ namespace MainMenu
 
         private void btnLogout_Click_1(object sender, EventArgs e)
         {
+            this.Close();
             FormLogin form = new FormLogin();
             form.Show();
-            this.Close();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -176,7 +179,7 @@ namespace MainMenu
 
         private void btnPonto_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Ponto(idfun, nomeF), sender);
+            OpenChildForm(new Forms.Ponto(idfun, nomeF, entrada), sender);
         }
 
         private void button3_Click_1(object sender, EventArgs e)

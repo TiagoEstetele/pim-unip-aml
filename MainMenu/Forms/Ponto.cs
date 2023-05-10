@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MainMenu.Forms.alertBoxPrincipal;
+using System.Configuration;
+using System.Runtime.Caching;
 
 namespace MainMenu.Forms
 {
@@ -16,22 +18,27 @@ namespace MainMenu.Forms
     {
         public long identify;
         public string nomeF;
+        string nome;
         long idfun;
         DateTime entrada, saida;
+        string entradaCache, saidaCache;
         NpgsqlConnection conec;
         TimeSpan total;
-        public Ponto(long identify, string nomeF)
+        MemoryCache cache = MemoryCache.Default;
+        public Ponto(long identify, string nomeF, DateTime entrada)
         {
+            this.entrada = entrada;
             this.nomeF = nomeF;
             this.identify = identify;
             InitializeComponent();
             lblTextWelcome.Text = $"Bem vindo {nomeF}!";
+            hora_entrada.Text = cache.Get("1") as string;
+            hora_saida.Text = cache.Get("2") as string;
         }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            lblStatus.Text = DateTime.Now.ToString("T");
-        }
+        //private void timer1_Tick(object sender, EventArgs e)
+        //{
+        //    lblStatus.Text = DateTime.Now.ToString("T");
+        //}
 
         private void Ponto_Load(object sender, EventArgs e)
         {
@@ -40,7 +47,7 @@ namespace MainMenu.Forms
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            FormFuncionario form = new FormFuncionario(identify, nomeF);
+            FormFuncionario form = new FormFuncionario(identify, nomeF, entrada);
             form.Show();
         }
 
@@ -57,7 +64,12 @@ namespace MainMenu.Forms
 
         private void lblTextWelcome_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void hora_saida_TextChanged(object sender, EventArgs e)
+        {
+            btnBater.Visible = false;
         }
 
         private void total_horas2_TextChanged(object sender, EventArgs e)
@@ -69,6 +81,7 @@ namespace MainMenu.Forms
         {
             try
             {
+                double totalhoras = 0;
                 int horas;
                 int minutos;
                 int segundos;
@@ -92,51 +105,55 @@ namespace MainMenu.Forms
                 if (hora_entrada.Text != "")
                 {
                     hora_saida.Text = DateTime.Now.ToString();
+                    cache.Add("2", hora_saida.Text, DateTimeOffset.Now.AddMinutes(3600));
                     saida = DateTime.Parse(hora_saida.Text);
+                    entradaCache = cache.Get("1") as string;
+
+                    comando.Parameters.AddWithValue("@idfun", identify);
+                    comando.Parameters.AddWithValue("@data_ent", DateTime.Parse(entradaCache)); //1231
+                    comando.Parameters.AddWithValue("@data_sai", saida);
+                    comando.Parameters.AddWithValue("@mes", mes);
+                    comando.Parameters.AddWithValue("@horas_total", totalhoras);
+
+                    saidaCache = cache.Get("2") as string;
                     date = DateTime.Now;
                     mes = (date.Month);
+
+                    comando.ExecuteNonQuery();
+                    conec.Close();
                     AlertBoxArtan(Color.LightGreen, Color.SeaGreen, "Successo", "Hora de saída cadastrada!", Properties.Resources.ok_48px);
                 }
-                else
+                else if (hora_entrada.Text == "")
                 {
                     hora_entrada.Text = DateTime.Now.ToString();
+                    cache.Add("1", hora_entrada.Text, DateTimeOffset.Now.AddMinutes(3600));
                     entrada = DateTime.Parse(hora_entrada.Text);
+                    entradaCache = cache.Get("1") as string;
                     AlertBoxArtan(Color.LightGreen, Color.SeaGreen, "Successo", "Hora de entrada cadastrada", Properties.Resources.ok_48px);
                 }
 
-                total = saida - entrada;
+                total = saida - DateTime.Parse(hora_entrada.Text);
 
                 horas = total.Hours;
                 minutos = total.Minutes;
                 double minutosconv = minutos / 60;
-                double totalhoras = horas + minutosconv;
+                totalhoras = horas + minutosconv;
                 segundos = total.Seconds;
                 horaExtra = 0;
-
-
 
                 if (horas > 8)
                 {
                     horaExtra = horas % 8;
                 }
 
-                if (hora_entrada.Text != "" && hora_saida.Text != "")
+                if (hora_saida.Text != "")
                 {
                     total_horas.Text = $"Sua carga horária de hoje foi de {horas} hora(s) e {minutos} minuto(s)";
                     total_horas2.Text = $"em adição, {horaExtra} hora(s) extras.";
-                   
-
-                    comando.Parameters.AddWithValue("@idfun", identify);
-                    comando.Parameters.AddWithValue("@data_ent", entrada);
-                    comando.Parameters.AddWithValue("@data_sai", saida);
-                    comando.Parameters.AddWithValue("@mes", mes);
-                    comando.Parameters.AddWithValue("@horas_total", totalhoras);
-
-                    comando.ExecuteNonQuery();
                 }
             }
             catch (Exception ex) { }
-            finally { conec.Close(); }
+            finally { }
         }
     }
 }

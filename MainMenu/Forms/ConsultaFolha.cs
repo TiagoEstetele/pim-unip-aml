@@ -240,6 +240,7 @@ namespace MainMenu
         {
 
             int Mes = cmbMes.SelectedIndex + 1;
+            string data = Mes.ToString(); 
 
             IRRF = CalcularoIRRF(Salario);
             INSS = CalculoINSS(Salario);
@@ -266,10 +267,10 @@ namespace MainMenu
 
             if (idCargo1 == 1 || idCargo1 == 2)
             {
-                CreateWordDocument(@".\Resources\Funcionario.docx", $@".\Documentos\{Extrato} {Modif}.pdf");
+                CreateWordDocument(@".\Resources\Funcionario.docx", $@".\Documentos\{idfun} - {nome} - {data}.2023.pdf");
             }
             else
-                CreateWordDocument(@".\Resources\Estagiario.docx", $@".\Documentos\{Extrato} {Modif}.pdf");
+                CreateWordDocument(@".\Resources\Estagiario.docx", $@".\Documentos\{idfun} - {nome} - {data}.2023.pdf");
 
             string path = @".\Documentos";
 

@@ -23,6 +23,7 @@ namespace MainMenu
         public long identify;
         public string nome;
         NpgsqlConnection conec;
+        DateTime entrada, ent;
 
         public FormLogin()
         {
@@ -227,7 +228,7 @@ namespace MainMenu
                             }
                             else
                             {
-                                new FormFuncionario(identify, nome).Show();
+                                new FormFuncionario(identify, nome, entrada).Show();
                                 this.Hide();
                             }
                         }

@@ -19,6 +19,7 @@ namespace MainMenu
         NpgsqlConnection conec;
         string cpf;
         long cargo;
+        DateTime entrada;
         public TrocarSenha(string identif, long id_cargo, long identify)
         {
             cpf = identif;
@@ -64,7 +65,7 @@ namespace MainMenu
 
                     if (cargo > 1)
                     {
-                        new FormFuncionario(identify,nomeF).Show();
+                        new FormFuncionario(identify,nomeF, entrada).Show();
                         this.Hide();
                     }
                     else
