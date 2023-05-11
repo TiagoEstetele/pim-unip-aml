@@ -70,18 +70,6 @@ namespace MainMenu
 
         }
 
-        private void textbox_login_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                textbox_login.SelectionStart = textbox_login.TextLength;
-            }
-            catch { }
-            if (textbox_login.Text == "CPF")
-            {
-                textbox_login.Clear();
-            }
-        }
 
         private void textbox_password_Click(object sender, EventArgs e)
         {
@@ -197,11 +185,11 @@ namespace MainMenu
                 NpgsqlCommand comando = new NpgsqlCommand(sql_login, conec);
                 conec.Open();
 
-                comando.Parameters.AddWithValue("@login", textbox_login.Text);
+                comando.Parameters.AddWithValue("@login", txtCPF.Text);
                 comando.Parameters.AddWithValue("@senha", textbox_password.Text);
 
                 NpgsqlDataReader reader = comando.ExecuteReader();
-                string identif = textbox_login.Text;
+                string identif = txtCPF.Text;
 
 
                 if (reader.HasRows)
@@ -221,7 +209,7 @@ namespace MainMenu
                                 new TrocarSenha(identif, id_cargo, identify).Show();
                                 this.Hide();
                             }
-                            else if ((textbox_login.Text == "admin" && textbox_password.Text == "admin") || id_cargo == 1)
+                            else if ((txtCPF.Text == "admin" && textbox_password.Text == "admin") || id_cargo == 1)
                             {
                                 new FormAdm().Show();
                                 this.Hide();
@@ -249,10 +237,15 @@ namespace MainMenu
             }
         }
 
+        private void lblCTPSlbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click_1(object sender, EventArgs e)
         {
-            this.Close();
             new EsqueciSenha().Show();
+            this.Hide();
         }
     }
 }

@@ -32,6 +32,7 @@ namespace MainMenu.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EsqueciSenha));
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,13 +54,13 @@ namespace MainMenu.Forms
             this.label5 = new System.Windows.Forms.Label();
             this.btnSignIn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.lblConfirmeNovaSenha = new System.Windows.Forms.Label();
-            this.lblNovaSenha = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.textbox_confirma = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textbox_nova = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.lblNovaSenha = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.guna2CustomGradientPanel1.SuspendLayout();
@@ -341,18 +342,6 @@ namespace MainMenu.Forms
             this.lblConfirmeNovaSenha.Text = "Confirme Senha";
             this.lblConfirmeNovaSenha.Visible = false;
             // 
-            // lblNovaSenha
-            // 
-            this.lblNovaSenha.BackColor = System.Drawing.Color.White;
-            this.lblNovaSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNovaSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
-            this.lblNovaSenha.Location = new System.Drawing.Point(57, 70);
-            this.lblNovaSenha.Name = "lblNovaSenha";
-            this.lblNovaSenha.Size = new System.Drawing.Size(230, 21);
-            this.lblNovaSenha.TabIndex = 1035;
-            this.lblNovaSenha.Text = "Nova Senha";
-            this.lblNovaSenha.Visible = false;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
@@ -417,6 +406,18 @@ namespace MainMenu.Forms
             this.pictureBox4.TabIndex = 1029;
             this.pictureBox4.TabStop = false;
             // 
+            // lblNovaSenha
+            // 
+            this.lblNovaSenha.BackColor = System.Drawing.Color.White;
+            this.lblNovaSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNovaSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
+            this.lblNovaSenha.Location = new System.Drawing.Point(57, 70);
+            this.lblNovaSenha.Name = "lblNovaSenha";
+            this.lblNovaSenha.Size = new System.Drawing.Size(230, 21);
+            this.lblNovaSenha.TabIndex = 1035;
+            this.lblNovaSenha.Text = "Nova Senha";
+            this.lblNovaSenha.Visible = false;
+            // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -464,6 +465,7 @@ namespace MainMenu.Forms
             this.Controls.Add(this.panelVerificao);
             this.Controls.Add(this.panelTrocarSenha);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EsqueciSenha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EsqueciSenha";

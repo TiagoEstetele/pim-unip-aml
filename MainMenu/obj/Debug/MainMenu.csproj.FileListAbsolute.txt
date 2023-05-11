@@ -803,7 +803,6 @@ C:\Users\tiago\OneDrive\Documentos\pim-unip-aml\MainMenu\obj\Debug\MainMenu.Form
 C:\Users\tiago\OneDrive\Documentos\pim-unip-aml\MainMenu\obj\Debug\MainMenu.Forms.Cadastro.resources
 C:\Users\tiago\OneDrive\Documentos\pim-unip-aml\MainMenu\obj\Debug\MainMenu.Forms.EsqueciSenha.resources
 C:\Users\tiago\OneDrive\Documentos\pim-unip-aml\MainMenu\obj\Debug\MainMenu.Forms.Funcionarios.resources
-C:\Users\tiago\OneDrive\Documentos\pim-unip-aml\MainMenu\obj\Debug\MainMenu.Forms.Editar.resources
 C:\Users\tiago\OneDrive\Documentos\pim-unip-aml\MainMenu\obj\Debug\MainMenu.Forms.alertBoxCadastro.alertBoxCadastro.resources
 C:\Users\tiago\OneDrive\Documentos\pim-unip-aml\MainMenu\obj\Debug\MainMenu.Forms.alertBoxPrincipal.AlertBoxPrincipal.resources
 C:\Users\tiago\OneDrive\Documentos\pim-unip-aml\MainMenu\obj\Debug\MainMenu.Forms.InfoBoxs.alertBox.resources

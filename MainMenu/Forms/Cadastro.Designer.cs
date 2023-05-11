@@ -59,7 +59,6 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.lblTelefonelbl = new System.Windows.Forms.Label();
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.lblTelefone = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
@@ -73,19 +72,16 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.lblCTPSlbl = new System.Windows.Forms.Label();
             this.txtCTPS = new System.Windows.Forms.MaskedTextBox();
             this.lblCTPS = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.panel21 = new System.Windows.Forms.Panel();
-            this.lblContaPrincipal = new System.Windows.Forms.Label();
             this.lblConta = new System.Windows.Forms.Label();
             this.panel22 = new System.Windows.Forms.Panel();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.txtConta = new System.Windows.Forms.MaskedTextBox();
             this.panel23 = new System.Windows.Forms.Panel();
-            this.lblAgencia = new System.Windows.Forms.Label();
             this.txtAgencia = new System.Windows.Forms.MaskedTextBox();
             this.panel24 = new System.Windows.Forms.Panel();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
@@ -101,6 +97,8 @@
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBoxDinamic = new System.Windows.Forms.PictureBox();
             this.btnAtivo = new MainMenu.CustomControls.ToggleButton();
+            this.lblGenero = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -149,11 +147,10 @@
             this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.txtNome.Location = new System.Drawing.Point(70, 17);
+            this.txtNome.Location = new System.Drawing.Point(70, 23);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(225, 22);
-            this.txtNome.TabIndex = 6;
-            this.txtNome.Text = "Nome";
+            this.txtNome.TabIndex = 1;
             this.txtNome.Click += new System.EventHandler(this.txtNome_Click);
             this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
@@ -173,12 +170,11 @@
             this.lblNome.BackColor = System.Drawing.Color.White;
             this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblNome.Location = new System.Drawing.Point(67, 0);
+            this.lblNome.Location = new System.Drawing.Point(67, 1);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(228, 18);
             this.lblNome.TabIndex = 26;
             this.lblNome.Text = "Nome";
-            this.lblNome.Visible = false;
             // 
             // panel2
             // 
@@ -212,12 +208,12 @@
             // txtDataNascimento
             // 
             this.txtDataNascimento.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDataNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataNascimento.Location = new System.Drawing.Point(71, 23);
+            this.txtDataNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.txtDataNascimento.Location = new System.Drawing.Point(70, 22);
             this.txtDataNascimento.Mask = "00/00/0000";
             this.txtDataNascimento.Name = "txtDataNascimento";
-            this.txtDataNascimento.Size = new System.Drawing.Size(160, 19);
-            this.txtDataNascimento.TabIndex = 24;
+            this.txtDataNascimento.Size = new System.Drawing.Size(160, 22);
+            this.txtDataNascimento.TabIndex = 2;
             this.txtDataNascimento.ValidatingType = typeof(System.DateTime);
             // 
             // label3
@@ -226,7 +222,7 @@
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.label3.Location = new System.Drawing.Point(67, 0);
+            this.label3.Location = new System.Drawing.Point(67, 2);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(126, 16);
             this.label3.TabIndex = 25;
@@ -264,12 +260,12 @@
             // txtCPF
             // 
             this.txtCPF.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCPF.Location = new System.Drawing.Point(69, 24);
+            this.txtCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.txtCPF.Location = new System.Drawing.Point(71, 22);
             this.txtCPF.Mask = "000,000,000-00";
             this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(160, 19);
-            this.txtCPF.TabIndex = 27;
+            this.txtCPF.Size = new System.Drawing.Size(160, 22);
+            this.txtCPF.TabIndex = 3;
             this.txtCPF.ValidatingType = typeof(System.DateTime);
             // 
             // label5
@@ -318,12 +314,11 @@
             this.lblEndereco.BackColor = System.Drawing.Color.White;
             this.lblEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEndereco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblEndereco.Location = new System.Drawing.Point(70, -3);
+            this.lblEndereco.Location = new System.Drawing.Point(69, 2);
             this.lblEndereco.Name = "lblEndereco";
             this.lblEndereco.Size = new System.Drawing.Size(225, 18);
             this.lblEndereco.TabIndex = 27;
             this.lblEndereco.Text = "Endereço";
-            this.lblEndereco.Visible = false;
             // 
             // panel8
             // 
@@ -349,11 +344,10 @@
             this.txtEndereco.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEndereco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.txtEndereco.Location = new System.Drawing.Point(70, 17);
+            this.txtEndereco.Location = new System.Drawing.Point(70, 23);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(225, 22);
-            this.txtEndereco.TabIndex = 6;
-            this.txtEndereco.Text = "Endereço";
+            this.txtEndereco.TabIndex = 4;
             this.txtEndereco.Click += new System.EventHandler(this.txtEndereco_Click);
             this.txtEndereco.TextChanged += new System.EventHandler(this.txtEndereco_TextChanged);
             // 
@@ -391,11 +385,10 @@
             this.txtSalario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSalario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.txtSalario.Location = new System.Drawing.Point(70, 17);
+            this.txtSalario.Location = new System.Drawing.Point(70, 23);
             this.txtSalario.Name = "txtSalario";
             this.txtSalario.Size = new System.Drawing.Size(225, 22);
-            this.txtSalario.TabIndex = 6;
-            this.txtSalario.Text = "Salário";
+            this.txtSalario.TabIndex = 9;
             this.txtSalario.Click += new System.EventHandler(this.txtSalario_Click);
             this.txtSalario.TextChanged += new System.EventHandler(this.txtSalario_TextChanged);
             // 
@@ -416,7 +409,7 @@
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.label4.Location = new System.Drawing.Point(70, 0);
+            this.label4.Location = new System.Drawing.Point(70, 1);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(135, 16);
             this.label4.TabIndex = 26;
@@ -425,12 +418,12 @@
             // txtAdmissao
             // 
             this.txtAdmissao.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAdmissao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAdmissao.Location = new System.Drawing.Point(71, 23);
+            this.txtAdmissao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.txtAdmissao.Location = new System.Drawing.Point(71, 22);
             this.txtAdmissao.Mask = "00/00/0000";
             this.txtAdmissao.Name = "txtAdmissao";
-            this.txtAdmissao.Size = new System.Drawing.Size(160, 19);
-            this.txtAdmissao.TabIndex = 25;
+            this.txtAdmissao.Size = new System.Drawing.Size(160, 22);
+            this.txtAdmissao.TabIndex = 8;
             this.txtAdmissao.ValidatingType = typeof(System.DateTime);
             // 
             // panel12
@@ -453,7 +446,6 @@
             // 
             // panel13
             // 
-            this.panel13.Controls.Add(this.lblTelefonelbl);
             this.panel13.Controls.Add(this.txtTelefone);
             this.panel13.Controls.Add(this.lblTelefone);
             this.panel13.Controls.Add(this.panel14);
@@ -463,41 +455,26 @@
             this.panel13.Size = new System.Drawing.Size(298, 68);
             this.panel13.TabIndex = 12;
             // 
-            // lblTelefonelbl
-            // 
-            this.lblTelefonelbl.AutoSize = true;
-            this.lblTelefonelbl.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lblTelefonelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblTelefonelbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblTelefonelbl.Location = new System.Drawing.Point(69, 20);
-            this.lblTelefonelbl.Name = "lblTelefonelbl";
-            this.lblTelefonelbl.Size = new System.Drawing.Size(93, 24);
-            this.lblTelefonelbl.TabIndex = 1004;
-            this.lblTelefonelbl.Text = "Telefone";
-            this.lblTelefonelbl.Click += new System.EventHandler(this.lblTelefonelbl_Click);
-            // 
             // txtTelefone
             // 
             this.txtTelefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefone.Location = new System.Drawing.Point(70, 24);
+            this.txtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.txtTelefone.Location = new System.Drawing.Point(70, 22);
             this.txtTelefone.Mask = "(00) 00000-0000";
             this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(160, 19);
-            this.txtTelefone.TabIndex = 1005;
-            this.txtTelefone.Visible = false;
+            this.txtTelefone.Size = new System.Drawing.Size(160, 22);
+            this.txtTelefone.TabIndex = 7;
             // 
             // lblTelefone
             // 
             this.lblTelefone.BackColor = System.Drawing.Color.White;
             this.lblTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblTelefone.Location = new System.Drawing.Point(70, -3);
+            this.lblTelefone.Location = new System.Drawing.Point(70, 1);
             this.lblTelefone.Name = "lblTelefone";
             this.lblTelefone.Size = new System.Drawing.Size(225, 18);
             this.lblTelefone.TabIndex = 29;
             this.lblTelefone.Text = "Telefone";
-            this.lblTelefone.Visible = false;
             // 
             // panel14
             // 
@@ -551,16 +528,16 @@
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.txtEmail.Location = new System.Drawing.Point(70, 17);
+            this.txtEmail.Location = new System.Drawing.Point(70, 23);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(225, 22);
             this.txtEmail.TabIndex = 6;
-            this.txtEmail.Text = "Email";
             this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
             this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // panel17
             // 
+            this.panel17.Controls.Add(this.label2);
             this.panel17.Controls.Add(this.comboCargo);
             this.panel17.Controls.Add(this.panel18);
             this.panel17.Controls.Add(this.pictureBox9);
@@ -576,10 +553,10 @@
             this.comboCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboCargo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.comboCargo.FormattingEnabled = true;
-            this.comboCargo.Location = new System.Drawing.Point(70, 11);
+            this.comboCargo.Location = new System.Drawing.Point(70, 15);
             this.comboCargo.Name = "comboCargo";
             this.comboCargo.Size = new System.Drawing.Size(225, 32);
-            this.comboCargo.TabIndex = 9;
+            this.comboCargo.TabIndex = 10;
             this.comboCargo.Text = "Cargo";
             this.comboCargo.SelectedIndexChanged += new System.EventHandler(this.comboCargo_SelectedIndexChanged);
             // 
@@ -603,52 +580,36 @@
             // 
             // panel19
             // 
-            this.panel19.Controls.Add(this.lblCTPSlbl);
             this.panel19.Controls.Add(this.txtCTPS);
             this.panel19.Controls.Add(this.lblCTPS);
             this.panel19.Controls.Add(this.panel20);
             this.panel19.Controls.Add(this.pictureBox10);
-            this.panel19.Location = new System.Drawing.Point(690, 233);
+            this.panel19.Location = new System.Drawing.Point(690, 326);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(298, 68);
             this.panel19.TabIndex = 17;
             // 
-            // lblCTPSlbl
-            // 
-            this.lblCTPSlbl.AutoSize = true;
-            this.lblCTPSlbl.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lblCTPSlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblCTPSlbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblCTPSlbl.Location = new System.Drawing.Point(70, 19);
-            this.lblCTPSlbl.Name = "lblCTPSlbl";
-            this.lblCTPSlbl.Size = new System.Drawing.Size(63, 24);
-            this.lblCTPSlbl.TabIndex = 1004;
-            this.lblCTPSlbl.Text = "CTPS";
-            this.lblCTPSlbl.Click += new System.EventHandler(this.lblCTPSlbl_Click);
-            // 
             // txtCTPS
             // 
             this.txtCTPS.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCTPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCTPS.Location = new System.Drawing.Point(71, 24);
+            this.txtCTPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.txtCTPS.Location = new System.Drawing.Point(70, 22);
             this.txtCTPS.Mask = "0000000-000-0";
             this.txtCTPS.Name = "txtCTPS";
-            this.txtCTPS.Size = new System.Drawing.Size(160, 19);
-            this.txtCTPS.TabIndex = 1005;
+            this.txtCTPS.Size = new System.Drawing.Size(160, 22);
+            this.txtCTPS.TabIndex = 13;
             this.txtCTPS.ValidatingType = typeof(System.DateTime);
-            this.txtCTPS.Visible = false;
             // 
             // lblCTPS
             // 
             this.lblCTPS.BackColor = System.Drawing.Color.White;
             this.lblCTPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCTPS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblCTPS.Location = new System.Drawing.Point(67, -2);
+            this.lblCTPS.Location = new System.Drawing.Point(67, 2);
             this.lblCTPS.Name = "lblCTPS";
             this.lblCTPS.Size = new System.Drawing.Size(225, 18);
             this.lblCTPS.TabIndex = 30;
             this.lblCTPS.Text = "CTPS";
-            this.lblCTPS.Visible = false;
             // 
             // panel20
             // 
@@ -670,7 +631,6 @@
             // 
             // panel21
             // 
-            this.panel21.Controls.Add(this.lblContaPrincipal);
             this.panel21.Controls.Add(this.lblConta);
             this.panel21.Controls.Add(this.panel22);
             this.panel21.Controls.Add(this.pictureBox11);
@@ -681,30 +641,16 @@
             this.panel21.TabIndex = 16;
             this.panel21.Paint += new System.Windows.Forms.PaintEventHandler(this.panel21_Paint);
             // 
-            // lblContaPrincipal
-            // 
-            this.lblContaPrincipal.AutoSize = true;
-            this.lblContaPrincipal.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lblContaPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblContaPrincipal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblContaPrincipal.Location = new System.Drawing.Point(68, 22);
-            this.lblContaPrincipal.Name = "lblContaPrincipal";
-            this.lblContaPrincipal.Size = new System.Drawing.Size(64, 24);
-            this.lblContaPrincipal.TabIndex = 1004;
-            this.lblContaPrincipal.Text = "Conta";
-            this.lblContaPrincipal.Click += new System.EventHandler(this.lblContaPrincipal_Click);
-            // 
             // lblConta
             // 
             this.lblConta.BackColor = System.Drawing.Color.White;
             this.lblConta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblConta.Location = new System.Drawing.Point(70, -2);
+            this.lblConta.Location = new System.Drawing.Point(70, 2);
             this.lblConta.Name = "lblConta";
             this.lblConta.Size = new System.Drawing.Size(225, 18);
             this.lblConta.TabIndex = 30;
             this.lblConta.Text = "Conta";
-            this.lblConta.Visible = false;
             // 
             // panel22
             // 
@@ -727,51 +673,37 @@
             // txtConta
             // 
             this.txtConta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtConta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConta.Location = new System.Drawing.Point(70, 24);
+            this.txtConta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.txtConta.Location = new System.Drawing.Point(70, 22);
             this.txtConta.Mask = "00000-0";
             this.txtConta.Name = "txtConta";
-            this.txtConta.Size = new System.Drawing.Size(160, 19);
-            this.txtConta.TabIndex = 28;
+            this.txtConta.Size = new System.Drawing.Size(160, 22);
+            this.txtConta.TabIndex = 11;
             this.txtConta.ValidatingType = typeof(System.DateTime);
-            this.txtConta.Visible = false;
             this.txtConta.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // panel23
             // 
-            this.panel23.Controls.Add(this.lblAgencia);
             this.panel23.Controls.Add(this.txtAgencia);
+            this.panel23.Controls.Add(this.lblBanco);
             this.panel23.Controls.Add(this.panel24);
             this.panel23.Controls.Add(this.pictureBox12);
-            this.panel23.Location = new System.Drawing.Point(687, 326);
+            this.panel23.Location = new System.Drawing.Point(690, 233);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(298, 68);
             this.panel23.TabIndex = 15;
             // 
-            // lblAgencia
-            // 
-            this.lblAgencia.AutoSize = true;
-            this.lblAgencia.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lblAgencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblAgencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblAgencia.Location = new System.Drawing.Point(72, 20);
-            this.lblAgencia.Name = "lblAgencia";
-            this.lblAgencia.Size = new System.Drawing.Size(87, 24);
-            this.lblAgencia.TabIndex = 1004;
-            this.lblAgencia.Text = "Agência";
-            this.lblAgencia.Click += new System.EventHandler(this.lblAgencia_Click);
-            // 
             // txtAgencia
             // 
             this.txtAgencia.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAgencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAgencia.Location = new System.Drawing.Point(72, 21);
+            this.txtAgencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.txtAgencia.Location = new System.Drawing.Point(70, 22);
             this.txtAgencia.Mask = "0000";
             this.txtAgencia.Name = "txtAgencia";
-            this.txtAgencia.Size = new System.Drawing.Size(160, 19);
-            this.txtAgencia.TabIndex = 1004;
+            this.txtAgencia.Size = new System.Drawing.Size(160, 22);
+            this.txtAgencia.TabIndex = 12;
             this.txtAgencia.ValidatingType = typeof(System.DateTime);
-            this.txtAgencia.Visible = false;
+            this.txtAgencia.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtAgencia_MaskInputRejected);
             // 
             // panel24
             // 
@@ -824,36 +756,33 @@
             this.lblEmail.BackColor = System.Drawing.Color.White;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblEmail.Location = new System.Drawing.Point(431, 51);
+            this.lblEmail.Location = new System.Drawing.Point(431, 57);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(225, 18);
             this.lblEmail.TabIndex = 28;
             this.lblEmail.Text = "Email";
-            this.lblEmail.Visible = false;
             // 
             // lblSalario
             // 
             this.lblSalario.BackColor = System.Drawing.Color.White;
             this.lblSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSalario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblSalario.Location = new System.Drawing.Point(434, 325);
+            this.lblSalario.Location = new System.Drawing.Point(432, 327);
             this.lblSalario.Name = "lblSalario";
             this.lblSalario.Size = new System.Drawing.Size(225, 18);
             this.lblSalario.TabIndex = 29;
             this.lblSalario.Text = "Salário";
-            this.lblSalario.Visible = false;
             // 
             // lblBanco
             // 
             this.lblBanco.BackColor = System.Drawing.Color.White;
             this.lblBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBanco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.lblBanco.Location = new System.Drawing.Point(755, 346);
+            this.lblBanco.Location = new System.Drawing.Point(69, 1);
             this.lblBanco.Name = "lblBanco";
             this.lblBanco.Size = new System.Drawing.Size(225, 18);
             this.lblBanco.TabIndex = 30;
             this.lblBanco.Text = "Agência";
-            this.lblBanco.Visible = false;
             // 
             // btnSalvar
             // 
@@ -878,6 +807,7 @@
             // 
             // panel25
             // 
+            this.panel25.Controls.Add(this.lblGenero);
             this.panel25.Controls.Add(this.comboSexo);
             this.panel25.Controls.Add(this.panel26);
             this.panel25.Controls.Add(this.pictureBox13);
@@ -894,15 +824,15 @@
             this.comboSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboSexo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
             this.comboSexo.FormattingEnabled = true;
+            this.comboSexo.ItemHeight = 24;
             this.comboSexo.Items.AddRange(new object[] {
-            "Sexo",
             "Masculino",
             "Feminino",
-            "Cavalo"});
+            "Outro"});
             this.comboSexo.Location = new System.Drawing.Point(69, 13);
             this.comboSexo.Name = "comboSexo";
             this.comboSexo.Size = new System.Drawing.Size(225, 32);
-            this.comboSexo.TabIndex = 1006;
+            this.comboSexo.TabIndex = 5;
             // 
             // panel26
             // 
@@ -941,8 +871,30 @@
             this.btnAtivo.OnBackColor = System.Drawing.Color.Lime;
             this.btnAtivo.OnToggleColor = System.Drawing.Color.WhiteSmoke;
             this.btnAtivo.Size = new System.Drawing.Size(45, 22);
-            this.btnAtivo.TabIndex = 23;
+            this.btnAtivo.TabIndex = 14;
             this.btnAtivo.UseVisualStyleBackColor = true;
+            // 
+            // lblGenero
+            // 
+            this.lblGenero.BackColor = System.Drawing.Color.White;
+            this.lblGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGenero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.lblGenero.Location = new System.Drawing.Point(66, 2);
+            this.lblGenero.Name = "lblGenero";
+            this.lblGenero.Size = new System.Drawing.Size(225, 18);
+            this.lblGenero.TabIndex = 28;
+            this.lblGenero.Text = "Gênero";
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
+            this.label2.Location = new System.Drawing.Point(67, 1);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(225, 18);
+            this.label2.TabIndex = 1005;
+            this.label2.Text = "Cargo";
             // 
             // Cadastro
             // 
@@ -950,11 +902,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1018, 532);
+            this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.panel25);
             this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.lblBanco);
             this.Controls.Add(this.lblSalario);
-            this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBoxDinamic);
             this.Controls.Add(this.btnClose);
@@ -977,6 +928,7 @@
             this.Name = "Cadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Cadastro";
+            this.Load += new System.EventHandler(this.Cadastro_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1085,15 +1037,13 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnSalvar;
         private System.Windows.Forms.MaskedTextBox txtConta;
         private System.Windows.Forms.MaskedTextBox txtAgencia;
-        private System.Windows.Forms.Label lblContaPrincipal;
-        private System.Windows.Forms.Label lblAgencia;
-        private System.Windows.Forms.Label lblTelefonelbl;
         private System.Windows.Forms.MaskedTextBox txtTelefone;
-        private System.Windows.Forms.Label lblCTPSlbl;
         private System.Windows.Forms.MaskedTextBox txtCTPS;
         private System.Windows.Forms.Panel panel25;
         private System.Windows.Forms.ComboBox comboSexo;
         private System.Windows.Forms.Panel panel26;
         private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.Label lblGenero;
+        private System.Windows.Forms.Label label2;
     }
 }

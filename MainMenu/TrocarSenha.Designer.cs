@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrocarSenha));
             this.panel4 = new System.Windows.Forms.Panel();
             this.textbox_nova = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -71,6 +72,7 @@
             this.textbox_nova.Size = new System.Drawing.Size(242, 20);
             this.textbox_nova.TabIndex = 26;
             this.textbox_nova.Text = "Nova Senha";
+            this.textbox_nova.Click += new System.EventHandler(this.textbox_nova_Click);
             this.textbox_nova.TextChanged += new System.EventHandler(this.textbox_nova_TextChanged);
             // 
             // panel3
@@ -92,6 +94,7 @@
             this.textbox_confirma.Size = new System.Drawing.Size(242, 20);
             this.textbox_confirma.TabIndex = 29;
             this.textbox_confirma.Text = "Confirme Senha";
+            this.textbox_confirma.Click += new System.EventHandler(this.textbox_confirma_Click);
             this.textbox_confirma.TextChanged += new System.EventHandler(this.textbox_confirma_TextChanged);
             // 
             // label1
@@ -182,6 +185,7 @@
             this.btnSignIn.Size = new System.Drawing.Size(218, 47);
             this.btnSignIn.TabIndex = 1004;
             this.btnSignIn.Text = "Confirmar";
+            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click_1);
             // 
             // label2
             // 
@@ -295,6 +299,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox7);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TrocarSenha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TrocarSenha";

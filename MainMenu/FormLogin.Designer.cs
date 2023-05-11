@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.panelInputs = new System.Windows.Forms.Panel();
+            this.txtCPF = new System.Windows.Forms.MaskedTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btnSignIn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
@@ -39,7 +40,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textbox_login = new System.Windows.Forms.TextBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnMinimaze = new System.Windows.Forms.Button();
@@ -58,6 +58,7 @@
             // panelInputs
             // 
             this.panelInputs.BackColor = System.Drawing.Color.White;
+            this.panelInputs.Controls.Add(this.txtCPF);
             this.panelInputs.Controls.Add(this.button1);
             this.panelInputs.Controls.Add(this.btnSignIn);
             this.panelInputs.Controls.Add(this.guna2CustomGradientPanel1);
@@ -67,7 +68,6 @@
             this.panelInputs.Controls.Add(this.panel2);
             this.panelInputs.Controls.Add(this.pictureBox6);
             this.panelInputs.Controls.Add(this.panel1);
-            this.panelInputs.Controls.Add(this.textbox_login);
             this.panelInputs.Controls.Add(this.pictureBox7);
             this.panelInputs.Controls.Add(this.pictureBox5);
             this.panelInputs.Controls.Add(this.btnMinimaze);
@@ -79,6 +79,17 @@
             this.panelInputs.Name = "panelInputs";
             this.panelInputs.Size = new System.Drawing.Size(800, 450);
             this.panelInputs.TabIndex = 0;
+            // 
+            // txtCPF
+            // 
+            this.txtCPF.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCPF.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold);
+            this.txtCPF.Location = new System.Drawing.Point(519, 171);
+            this.txtCPF.Mask = "000,000,000-00";
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(160, 20);
+            this.txtCPF.TabIndex = 1;
+            this.txtCPF.ValidatingType = typeof(System.DateTime);
             // 
             // button1
             // 
@@ -162,12 +173,11 @@
             this.lblCPF.BackColor = System.Drawing.Color.White;
             this.lblCPF.Font = new System.Drawing.Font("Montserrat Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCPF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(56)))));
-            this.lblCPF.Location = new System.Drawing.Point(515, 152);
+            this.lblCPF.Location = new System.Drawing.Point(515, 150);
             this.lblCPF.Name = "lblCPF";
             this.lblCPF.Size = new System.Drawing.Size(230, 21);
             this.lblCPF.TabIndex = 1000;
             this.lblCPF.Text = "CPF";
-            this.lblCPF.Visible = false;
             // 
             // panel2
             // 
@@ -194,22 +204,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(263, 1);
             this.panel1.TabIndex = 17;
-            // 
-            // textbox_login
-            // 
-            this.textbox_login.AcceptsTab = true;
-            this.textbox_login.BackColor = System.Drawing.Color.White;
-            this.textbox_login.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textbox_login.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(54)))));
-            this.textbox_login.Location = new System.Drawing.Point(519, 168);
-            this.textbox_login.Name = "textbox_login";
-            this.textbox_login.Size = new System.Drawing.Size(242, 20);
-            this.textbox_login.TabIndex = 1;
-            this.textbox_login.Text = "CPF";
-            this.textbox_login.Click += new System.EventHandler(this.textbox_login_Click);
-            this.textbox_login.TextChanged += new System.EventHandler(this.textbox_login_TextChanged);
-            this.textbox_login.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textbox_login_KeyPress);
             // 
             // pictureBox7
             // 
@@ -300,7 +294,7 @@
             this.showPasswordBtn.Name = "showPasswordBtn";
             this.showPasswordBtn.OffBackColor = System.Drawing.Color.Gray;
             this.showPasswordBtn.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.showPasswordBtn.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.showPasswordBtn.OnBackColor = System.Drawing.Color.Lime;
             this.showPasswordBtn.OnToggleColor = System.Drawing.Color.WhiteSmoke;
             this.showPasswordBtn.Size = new System.Drawing.Size(45, 22);
             this.showPasswordBtn.TabIndex = 22;
@@ -343,7 +337,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.TextBox textbox_login;
         private CustomControls.ToggleButton showPasswordBtn;
         private System.Windows.Forms.Label lblCPF;
         private System.Windows.Forms.Label lblPassword;
@@ -351,5 +344,6 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2GradientButton btnSignIn;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MaskedTextBox txtCPF;
     }
 }

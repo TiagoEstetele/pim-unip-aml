@@ -129,6 +129,7 @@
             this.cmbMes.Name = "cmbMes";
             this.cmbMes.Size = new System.Drawing.Size(225, 32);
             this.cmbMes.TabIndex = 1009;
+            this.cmbMes.SelectedIndexChanged += new System.EventHandler(this.cmbMes_SelectedIndexChanged_1);
             // 
             // pictureBox1
             // 

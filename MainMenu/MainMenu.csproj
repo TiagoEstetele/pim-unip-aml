@@ -326,12 +326,6 @@
     <Compile Include="Forms\Funcionarios.Designer.cs">
       <DependentUpon>Funcionarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Editar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Editar.Designer.cs">
-      <DependentUpon>Editar.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\InfoBoxs\alertBoxCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -416,9 +410,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Funcionarios.resx">
       <DependentUpon>Funcionarios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Editar.resx">
-      <DependentUpon>Editar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\InfoBoxs\alertBoxCadastro.resx">
       <DependentUpon>alertBoxCadastro.cs</DependentUpon>

@@ -28,7 +28,38 @@ namespace MainMenu
             this.identify = identify;
         }
 
-        private void btnSignIn_Click(object sender, EventArgs e)
+        void AlertBoxArtan(Color backColor, Color color, string title, string text, Image icon)
+        {
+            alertBox alertBox = new alertBox();
+            alertBox.BackColor = backColor;
+            alertBox.ColorAlertBox = color;
+            alertBox.TitleAlertBox = title;
+            alertBox.TextAlertBox = text;
+            alertBox.IconeColorAlertBox = icon;
+            alertBox.ShowDialog();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMinimaze_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void textbox_nova_TextChanged(object sender, EventArgs e)
+        {
+            lblNovaSenha.Visible = true;
+        }
+
+        private void textbox_confirma_TextChanged(object sender, EventArgs e)
+        {
+            lblConfirmeNovaSenha.Visible = true;
+        }
+
+        private void btnSignIn_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -65,7 +96,7 @@ namespace MainMenu
 
                     if (cargo > 1)
                     {
-                        new FormFuncionario(identify,nomeF, entrada).Show();
+                        new FormFuncionario(identify, nomeF, entrada).Show();
                         this.Hide();
                     }
                     else
@@ -83,35 +114,30 @@ namespace MainMenu
             finally { conec.Close(); }
         }
 
-        void AlertBoxArtan(Color backColor, Color color, string title, string text, Image icon)
+        private void textbox_nova_Click(object sender, EventArgs e)
         {
-            alertBox alertBox = new alertBox();
-            alertBox.BackColor = backColor;
-            alertBox.ColorAlertBox = color;
-            alertBox.TitleAlertBox = title;
-            alertBox.TextAlertBox = text;
-            alertBox.IconeColorAlertBox = icon;
-            alertBox.ShowDialog();
+            try
+            {
+                textbox_nova.SelectionStart = textbox_nova.TextLength;
+            }
+            catch { }
+            if (textbox_nova.Text == "Nova Senha")
+            {
+                textbox_nova.Clear();
+            }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void textbox_confirma_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-
-        private void btnMinimaze_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void textbox_nova_TextChanged(object sender, EventArgs e)
-        {
-            lblNovaSenha.Visible = true;
-        }
-
-        private void textbox_confirma_TextChanged(object sender, EventArgs e)
-        {
-            lblConfirmeNovaSenha.Visible = true;
+            try
+            {
+                textbox_confirma.SelectionStart = textbox_confirma.TextLength;
+            }
+            catch { }
+            if (textbox_confirma.Text == "Confirme Senha")
+            {
+                textbox_confirma.Clear();
+            }
         }
     }
 }

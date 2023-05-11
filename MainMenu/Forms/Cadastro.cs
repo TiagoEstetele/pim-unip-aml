@@ -32,6 +32,7 @@ namespace MainMenu.Forms
         {
             InitializeComponent();
             PreencherComboCargo();
+            PreencherComboSexo();
         }
         public Cadastro(long idFuncionario)
         {
@@ -312,7 +313,7 @@ namespace MainMenu.Forms
 
         private void btnSalvar_Click_1(object sender, EventArgs e)
         {
-            bool nome = Regex.IsMatch(txtNome.Text, @"^[a-zA-Z]+\s[a-zA-Z]+$");
+            bool nome = Regex.IsMatch(txtNome.Text, @"^[a-zA-ZÀ-ÿ\sçÇ]+$");
             bool banco = Regex.IsMatch(txtAgencia.Text, @"^\d+$");
             bool conta = Regex.IsMatch(txtConta.Text, @"\d+-");
             bool cpf = Regex.IsMatch(txtCPF.Text, @"^\d{3}\.\d{3}\.\d{3}-\d{2}$");
@@ -347,7 +348,7 @@ namespace MainMenu.Forms
 
             if (IdFuncionario == null)
             {
-                string strcad = "insert into funcionario (nome,data_admissao,ctps,data_nascimento,banco,conta,cpf,email,ativo,endereco,id_cargo,salario_bruto,telefone) values(@nome,@data_admissao,@ctps,@data_nascimento,@banco,@conta,@cpf,@email,@ativo,@endereco,@id_cargo,@salario_bruto,@telefone); select currval('funcionario_id_funcionario_seq');";
+                string strcad = "insert into funcionario (nome,data_admissao,ctps,data_nascimento,banco,conta,cpf,email,ativo,endereco,id_cargo,salario_bruto,telefone,genero) values(@nome,@data_admissao,@ctps,@data_nascimento,@banco,@conta,@cpf,@email,@ativo,@endereco,@id_cargo,@salario_bruto,@telefone,@genero); select currval('funcionario_id_funcionario_seq');";
                 connection = new NpgsqlConnection(connectionString);
 
                 connection.Open();
@@ -368,6 +369,7 @@ namespace MainMenu.Forms
                     comando.Parameters.AddWithValue("@telefone", txtTelefone.Text);
                     comando.Parameters.AddWithValue("@id_cargo", int.Parse(comboCargo.SelectedValue.ToString()));
                     comando.Parameters.AddWithValue("@salario_bruto", double.Parse(txtSalario.Text));
+                    comando.Parameters.AddWithValue("@genero", comboSexo.SelectedItem.ToString());
 
                     comando.Prepare();
                     int id_funcionario = Convert.ToInt32(comando.ExecuteScalar());
@@ -383,10 +385,31 @@ namespace MainMenu.Forms
 
                     comando2.Prepare();
                     comando2.ExecuteNonQuery();
+
+                    this.Close();
                 }
-                catch (Exception ex)
+                catch (NpgsqlException ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    string exc = ex.Message;
+                    if (exc.Contains("23505"))
+                    {
+                        if (exc.Contains("funcionario_cpf_key"))
+                        {
+                            MessageBox.Show("CPF já registrado!");
+                        }
+                        else if (exc.Contains("funcionario_email_key"))
+                        {
+                            MessageBox.Show("E-mail já registrado!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Erro: " + ex.Message);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erro: " + ex.Message);
+                    }
                 }
                 finally
                 {
@@ -396,7 +419,7 @@ namespace MainMenu.Forms
             }
             else
             {
-                string strcad = "UPDATE funcionario SET nome=@nome, data_admissao=@data_admissao, ctps=@ctps, data_nascimento=@data_nascimento, banco=@banco, conta=@conta, cpf=@cpf, email=@email, ativo=@ativo, endereco=@endereco, id_cargo=@id_cargo, salario_bruto=@salario_bruto, telefone=@telefone WHERE id_funcionario=@id_funcionario";
+                string strcad = "UPDATE funcionario SET nome=@nome, data_admissao=@data_admissao, ctps=@ctps, data_nascimento=@data_nascimento, banco=@banco, conta=@conta, cpf=@cpf, email=@email, ativo=@ativo, endereco=@endereco, id_cargo=@id_cargo, salario_bruto=@salario_bruto, telefone=@telefone, genero=@genero WHERE id_funcionario=@id_funcionario";
                 ;
                 connection = new NpgsqlConnection(connectionString);
 
@@ -419,6 +442,7 @@ namespace MainMenu.Forms
                     comando.Parameters.AddWithValue("@id_cargo", int.Parse(comboCargo.SelectedValue.ToString()));
                     comando.Parameters.AddWithValue("@salario_bruto", double.Parse(txtSalario.Text));
                     comando.Parameters.AddWithValue("@id_funcionario", IdFuncionario);
+                    comando.Parameters.AddWithValue("@genero", comboSexo.SelectedItem.ToString());
 
                     comando.Prepare();
                     int id_funcionario = Convert.ToInt32(comando.ExecuteScalar());
@@ -434,16 +458,36 @@ namespace MainMenu.Forms
 
                     comando2.Prepare();
                     comando2.ExecuteNonQuery();
+
+                    this.Close();
                 }
-                catch (Exception ex)
+                catch (NpgsqlException ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    string exc = ex.Message;
+                    if (exc.Contains("23505"))
+                    {
+                        if (exc.Contains("funcionario_cpf_key"))
+                        {
+                            MessageBox.Show("CPF já registrado!");
+                        }
+                        else if (exc.Contains("funcionario_email_key"))
+                        {
+                            MessageBox.Show("E-mail já registrado!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Erro: " + ex.Message);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erro: " + ex.Message);
+                    }
                 }
                 finally
                 {
                     connection.Close();
                 }
-                    this.Close();
             }
 
         }
@@ -485,6 +529,7 @@ namespace MainMenu.Forms
                 txtTelefone.Text = Convert.ToString(dr["telefone"]);
                 comboCargo.SelectedValue = Convert.ToInt32(dr["id_cargo"]);
                 txtSalario.Text = Convert.ToString(dr["salario_bruto"]);
+                comboSexo.SelectedItem = Convert.ToString(dr["genero"]);
 
             }
             catch (Exception ex)
@@ -511,6 +556,11 @@ namespace MainMenu.Forms
             pictureBoxDinamic.Image = Properties.Resources.edit_48px;
         }
 
+        private void PreencherComboSexo()
+        {
+            comboSexo.SelectedIndex = 0;
+        }
+
         private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
             
@@ -521,43 +571,17 @@ namespace MainMenu.Forms
 
         }
 
-        private void lblContaPrincipal_Click(object sender, EventArgs e)
-        {
-            lblConta.Visible = true;
-            lblContaPrincipal.Visible = false;
-            txtConta.Visible = true;
-            txtConta.Focus();
-            txtConta.SelectionStart = 0;
-        }
-
-        private void lblAgencia_Click(object sender, EventArgs e)
-        {
-            lblBanco.Visible = true;
-            lblAgencia.Visible = false;
-            txtAgencia.Visible = true;
-            txtAgencia.Focus();
-            txtAgencia.SelectionStart = 0;
-        }
-
-        private void lblTelefonelbl_Click(object sender, EventArgs e)
-        {
-            lblTelefone.Visible = true;
-            lblTelefonelbl.Visible = false;
-            txtTelefone.Visible = true;
-            txtTelefone.Focus();
-            txtTelefone.SelectionStart = 0;
-        }
-
-        private void lblCTPSlbl_Click(object sender, EventArgs e)
-        {
-            lblCTPS.Visible = true;
-            lblCTPSlbl.Visible = false;
-            txtCTPS.Visible = true;
-            txtCTPS.Focus();
-            txtCTPS.SelectionStart = 0;
-        }
-
         private void comboCargo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAgencia_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void Cadastro_Load(object sender, EventArgs e)
         {
 
         }

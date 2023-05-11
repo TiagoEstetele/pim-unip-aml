@@ -147,6 +147,11 @@ namespace MainMenu
 
         }
 
+        private void cmbMes_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
         private void ConsultaFolha_Load(object sender, EventArgs e)
         {
         }
@@ -240,17 +245,27 @@ namespace MainMenu
         {
 
             int Mes = cmbMes.SelectedIndex + 1;
-            string data = Mes.ToString(); 
+            string data = Mes.ToString();
 
             IRRF = CalcularoIRRF(Salario);
             INSS = CalculoINSS(Salario);
             FaltaDia = PagamentoDia(Salario);
             Falta = PagamentoFalta(idfun, Salario, idCargo1, Mes);
-            if (Falta == -1)
+            if (data == "0")
             {
-                MessageBox.Show("Não encontramos horas trabalhadas nesse mes");
+                MessageBox.Show("Favor selecionar o mês antes de gerar o holerite.");
                 return;
             }
+            else if (Falta == -1)
+            {
+                MessageBox.Show("Não encontramos horas trabalhadas nesse mês.");
+                return;
+            }
+            //else if (data == "0")
+            //{
+            //    MessageBox.Show("Favor selecionar o mês antes de gerar o holerite.");
+            //    return;
+            //}
             PINSS = CalculoPorcentagemINSS(Salario);
             SalarioLiquido = CalculoSalarioLiquido(idfun, Salario);
             Descontos = Falta + IRRF + INSS;
