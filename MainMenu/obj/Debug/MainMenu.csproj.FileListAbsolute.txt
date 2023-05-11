@@ -723,7 +723,6 @@ E:\pim-unip-aml\MainMenu\obj\Debug\MainMenu.FormLogin.resources
 E:\pim-unip-aml\MainMenu\obj\Debug\MainMenu.Forms.Cadastro.resources
 E:\pim-unip-aml\MainMenu\obj\Debug\MainMenu.Forms.EsqueciSenha.resources
 E:\pim-unip-aml\MainMenu\obj\Debug\MainMenu.Forms.Funcionarios.resources
-E:\pim-unip-aml\MainMenu\obj\Debug\MainMenu.Forms.Editar.resources
 E:\pim-unip-aml\MainMenu\obj\Debug\MainMenu.Forms.alertBoxCadastro.alertBoxCadastro.resources
 E:\pim-unip-aml\MainMenu\obj\Debug\MainMenu.Forms.alertBoxPrincipal.AlertBoxPrincipal.resources
 E:\pim-unip-aml\MainMenu\obj\Debug\MainMenu.Forms.InfoBoxs.alertBox.resources

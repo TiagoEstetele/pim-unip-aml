@@ -111,6 +111,8 @@ namespace MainMenu.Forms
 
                 if (hora_entrada.Text != "")
                 {
+                    date = DateTime.Now;
+                    mes = (date.Month);
                     hora_saida.Text = DateTime.Now.ToString();
                     cache.Add($"{identify}{identify}{identify}", hora_saida.Text, DateTimeOffset.Now.AddMinutes(3600));
                     saida = DateTime.Parse(hora_saida.Text);
@@ -123,8 +125,6 @@ namespace MainMenu.Forms
                     comando.Parameters.AddWithValue("@horas_total", totalhoras);
 
                     saidaCache = cache.Get($"{identify}{identify}{identify}") as string;
-                    date = DateTime.Now;
-                    mes = (date.Month);
 
                     comando.ExecuteNonQuery();
                     conec.Close();
