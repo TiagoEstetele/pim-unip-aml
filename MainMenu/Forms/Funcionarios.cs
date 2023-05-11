@@ -73,12 +73,12 @@ namespace MainMenu.Forms
             dgvFuncionarios.ReadOnly = true;
             dgvFuncionarios.Refresh();
             dgvFuncionarios.Columns[1].Width = 50;
-            dgvFuncionarios.Columns[2].Width = 70;
-            dgvFuncionarios.Columns[3].Width = 200;
-            dgvFuncionarios.Columns[4].Width = 200;
+            dgvFuncionarios.Columns[2].Width = 50;
+            dgvFuncionarios.Columns[3].Width = 180;
+            dgvFuncionarios.Columns[4].Width = 180;
             dgvFuncionarios.Columns[5].Width = 100;
             dgvFuncionarios.Columns[6].Width = 100;
-            dgvFuncionarios.Columns[7].Width = 150;
+            dgvFuncionarios.Columns[7].Width = 147;
 
 
             connection.Close();

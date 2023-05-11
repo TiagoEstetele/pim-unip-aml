@@ -48,14 +48,14 @@ namespace MainMenu.Forms.alertBoxPrincipal
 
         private void PositionAlertBox()
         {
-            int xPos = 1116; int yPos = 742;
+            int xPos = 990; int yPos = 742;
             this.Location = new Point(xPos, yPos);
         }
 
         private void timerAnimasion_Tick(object sender, EventArgs e)
         {
             linAlertBox.Width = linAlertBox.Width + 2;
-            if (linAlertBox.Width >= 400)
+            if (linAlertBox.Width >= 508)
                this.Close();
         }
 

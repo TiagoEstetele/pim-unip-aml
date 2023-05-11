@@ -65,12 +65,14 @@ namespace MainMenu
             {
                 if (textbox_nova.Text != textbox_confirma.Text)
                 {
-                    MessageBox.Show("As senhas não coincidem.", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    AlertBoxArtan(Color.LightGoldenrodYellow, Color.Goldenrod, "Aviso", "As senhas não coincidem.", Properties.Resources.box_important_48px);
+
                     return;
                 }
                 else if (textbox_nova.Text == string.Empty && textbox_confirma.Text == string.Empty)
                 {
-                    MessageBox.Show("Favor preencher os campos corretamente.", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    AlertBoxArtan(Color.LightGoldenrodYellow, Color.Goldenrod, "Aviso", "Favor preencher os campos corretamente.", Properties.Resources.box_important_48px);
+
                     return;
                 }
 
@@ -92,7 +94,8 @@ namespace MainMenu
 
                 if (executou == 1)
                 {
-                    MessageBox.Show("Sucesso!", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    AlertBoxArtan(Color.LightGreen, Color.SeaGreen, "Success", "A senha foi alterada!", Properties.Resources.ok_48px);
+
 
                     if (cargo > 1)
                     {
@@ -111,7 +114,12 @@ namespace MainMenu
                 }
             }
             catch (Exception ex) { }
-            finally { conec.Close(); }
+            finally {
+                if (conec != null)
+                {
+                    conec.Close();
+                }
+             }
         }
 
         private void textbox_nova_Click(object sender, EventArgs e)

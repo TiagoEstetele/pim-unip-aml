@@ -78,18 +78,18 @@
             this.picAlertBox.TabIndex = 0;
             this.picAlertBox.TabStop = false;
             // 
-            // alertBox
+            // AlertBoxPrincipal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(383, 80);
+            this.ClientSize = new System.Drawing.Size(508, 80);
             this.Controls.Add(this.linAlertBox);
             this.Controls.Add(this.lblTextAlertBox);
             this.Controls.Add(this.lblTitleAlertBox);
             this.Controls.Add(this.picAlertBox);
             this.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "alertBox";
+            this.Name = "AlertBoxPrincipal";
             this.Text = "alertBox";
             this.Load += new System.EventHandler(this.alertBox_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picAlertBox)).EndInit();

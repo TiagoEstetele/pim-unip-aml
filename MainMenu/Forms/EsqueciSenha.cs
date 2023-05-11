@@ -243,5 +243,11 @@ namespace MainMenu.Forms
                 textbox_confirma.Clear();
             }
         }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            new FormLogin().Show();
+            this.Close();
+        }
     }
 }

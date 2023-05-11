@@ -13,6 +13,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 using MainMenu.Forms.alertBoxCadastro;
 using System.Text.RegularExpressions;
 using Microsoft.Office.Interop.Word;
+using MainMenu.Forms.alertBoxPrincipal;
 
 namespace MainMenu.Forms
 {
@@ -42,6 +43,17 @@ namespace MainMenu.Forms
             PreencherComboCargo();
             Buscar(idFuncionario);
             PreencherLabel();
+        }
+
+        void AlertBoxArtan(Color backColor, Color color, string title, string text, Image icon)
+        {
+            AlertBoxPrincipal alertBox = new AlertBoxPrincipal();
+            alertBox.BackColor = backColor;
+            alertBox.ColorAlertBox = color;
+            alertBox.TitleAlertBox = title;
+            alertBox.TextAlertBox = text;
+            alertBox.IconeColorAlertBox = icon;
+            alertBox.ShowDialog();
         }
 
         private void PreencherComboCargo()
@@ -320,18 +332,18 @@ namespace MainMenu.Forms
             bool email = Regex.IsMatch(txtEmail.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$");
             bool telefone = Regex.IsMatch(txtTelefone.Text, @"^\(\s*\d{2}\s*\)\s*\d{5}-\d{4}$");
 
-            if (txtNome.Text == string.Empty || txtNome.Text == "Nome" || nome == false) { MessageBox.Show("Favor preencher campo de nome corretamente."); return; }
-            else if (txtAdmissao.Text == string.Empty || txtAdmissao.Text == "  /  /" || txtAdmissao.Text.Length < 10) { MessageBox.Show("Favor preencher campo de admissão corretamente."); return; }
-            else if (txtCTPS.Text == string.Empty || txtCTPS.Text == "CTPS" || txtCTPS.Text == "       .   -" || txtCTPS.Text.Length < 13) { MessageBox.Show("Favor preencher campo de CTPS corretamente."); return; }
-            else if (txtDataNascimento.Text == string.Empty || txtDataNascimento.Text == "  /  /" || DateTime.Parse(txtDataNascimento.Text) > DateTime.Parse(txtAdmissao.Text) || txtDataNascimento.Text.Length < 10) { MessageBox.Show("Favor preencher campo de data de nascimento corretamente."); return; }
-            else if (txtAgencia.Text == string.Empty || txtAgencia.Text == "Agência" || txtAgencia.Text.Length != 4 || banco == false) { MessageBox.Show("Favor preencher campo de agência corretamente."); return; }
-            else if (txtConta.Text == string.Empty || conta == false || txtConta.Text == "Conta" || txtConta.Text.Length < 7) { MessageBox.Show("Favor preencher campo de conta corretamente."); return; }
-            else if (txtCPF.Text == string.Empty || cpf == false || txtCPF.Text == "   .   .   -" || txtCPF.Text.Length < 14) { MessageBox.Show("Favor preencher campo de CPF corretamente."); return; }
-            else if (txtEmail.Text == string.Empty || email == false || txtCPF.Text == "Email") { MessageBox.Show("Favor preencher campo de email corretamente."); return; }
-            else if (txtEndereco.Text == string.Empty || txtEndereco.Text == "Endereço") { MessageBox.Show("Favor preencher campo de endereço corretamente."); return; }
-            else if (txtTelefone.Text == string.Empty || telefone == false || txtTelefone.Text == "(  )      -") { MessageBox.Show("Favor preencher campo de telefone corretamente."); return; }
-            else if (txtSalario.Text == string.Empty || txtSalario.Text == "Salário") { MessageBox.Show("Favor preencher campo de salário corretamente."); return; }
-            else if (comboCargo.Text == string.Empty || comboCargo.Text == "Cargo") { MessageBox.Show("Favor preencher campo de cargo corretamente."); return; }
+            if (txtNome.Text == string.Empty || txtNome.Text == "Nome" || nome == false) { AlertBoxArtan(Color.LightGoldenrodYellow, Color.Goldenrod, "Aviso", "Favor preencher campo de nome corretamente.", Properties.Resources.box_important_48px); return; }
+            else if (txtAdmissao.Text == string.Empty || txtAdmissao.Text == "  /  /" || txtAdmissao.Text.Length < 10) { AlertBoxArtan(Color.LightGoldenrodYellow, Color.Goldenrod, "Aviso", "Favor preencher campo de admissão corretamente", Properties.Resources.box_important_48px); return; }
+            else if (txtCTPS.Text == string.Empty || txtCTPS.Text == "CTPS" || txtCTPS.Text == "       .   -" || txtCTPS.Text.Length < 13) { AlertBoxArtan(Color.LightGoldenrodYellow, Color.Goldenrod, "Aviso", "Favor preencher campo de CTPS corretamente.", Properties.Resources.box_important_48px); return; }
+            else if (txtDataNascimento.Text == string.Empty || txtDataNascimento.Text == "  /  /" || DateTime.Parse(txtDataNascimento.Text) > DateTime.Parse(txtAdmissao.Text) || txtDataNascimento.Text.Length < 10) { AlertBoxArtan(Color.LightGoldenrodYellow, Color.Goldenrod, "Aviso", "Favor preencher campo de data de nascimento corretamente.", Properties.Resources.box_important_48px); return; }
+            else if (txtAgencia.Text == string.Empty || txtAgencia.Text == "Agência" || txtAgencia.Text.Length != 4 || banco == false) { AlertBoxArtan(Color.LightGoldenrodYellow, Color.Goldenrod, "Aviso", "Favor preencher campo de agência corretamente.", Properties.Resources.box_important_48px); return; }
+            else if (txtConta.Text == string.Empty || conta == false || txtConta.Text == "Conta" || txtConta.Text.Length < 7) { AlertBoxArtan(Color.LightGoldenrodYellow, Color.Goldenrod, "Aviso", "Favor preencher campo de conta corretamente.", Properties.Resources.box_important_48px); return; }
+            else if (txtCPF.Text == string.Empty || cpf == false || txtCPF.Text == "   .   .   -" || txtCPF.Text.Length < 14) { AlertBoxArtan(Color.LightGoldenrodYellow, Color.Goldenrod, "Aviso", "Favor preencher campo de CPF corretamente.", Properties.Resources.box_important_48px); return; }
+            else if (txtEmail.Text == string.Empty || email == false || txtCPF.Text == "Email") { AlertBoxArtan(Color.LightGoldenrodYellow, Color.Goldenrod, "Aviso", "Favor preencher campo de email corretamente.", Properties.Resources.box_important_48px); return; }
+            else if (txtEndereco.Text == string.Empty || txtEndereco.Text == "Endereço") { AlertBoxArtan(Color.LightGoldenrodYellow, Color.Goldenrod, "Aviso", "Favor preencher campo de endereço corretamente.", Properties.Resources.box_important_48px); return; }
+            else if (txtTelefone.Text == string.Empty || telefone == false || txtTelefone.Text == "(  )      -") { AlertBoxArtan(Color.LightGoldenrodYellow, Color.Goldenrod, "Aviso", "Favor preencher campo de telefone corretamente.", Properties.Resources.box_important_48px); return; }
+            else if (txtSalario.Text == string.Empty || txtSalario.Text == "Salário") { AlertBoxArtan(Color.LightGoldenrodYellow, Color.Goldenrod, "Aviso", "Favor preencher campo de salário corretamente.", Properties.Resources.box_important_48px); return; }
+            else if (comboCargo.Text == string.Empty || comboCargo.Text == "Cargo") { AlertBoxArtan(Color.LightGoldenrodYellow, Color.Goldenrod, "Aviso", "Favor preencher campo de cargo corretamente.", Properties.Resources.box_important_48px); return; }
             //else if (txtNomeSocial.Text == string.Empty || txtNomeSocial ) { }
             //else if (comboGenero.Text == string.Empty) { }
 
@@ -342,7 +354,8 @@ namespace MainMenu.Forms
 
             if (Result > 0)
             {
-                MessageBox.Show("A DATA DE NASCIMENTO NÃO PODE SER MAIOR QUE A DE ADMISSÃO");
+                AlertBoxArtan(Color.LightPink, Color.DarkRed, "Error", "DATA DE NASCIMENTO MAIOR QUE A DE ADMISSÃO", Properties.Resources.close_48px);
+
                 return;
             }
 
@@ -374,7 +387,7 @@ namespace MainMenu.Forms
                     comando.Prepare();
                     int id_funcionario = Convert.ToInt32(comando.ExecuteScalar());
 
-                    MessageBox.Show("CADASTRO EFETUADO COM SUCESSO");
+                    AlertBoxArtan(Color.LightGreen, Color.SeaGreen, "Successo", "CADASTRO EFETUADO COM SUCESSO", Properties.Resources.ok_48px);
 
                     string strlog = "insert into login (login, senha, id_funcionario) values(@login, '123', @id_funcionario)";
 
@@ -395,15 +408,18 @@ namespace MainMenu.Forms
                     {
                         if (exc.Contains("funcionario_cpf_key"))
                         {
-                            MessageBox.Show("CPF já registrado!");
+                            AlertBoxArtan(Color.LightPink, Color.DarkRed, "Error", "CPF já registrado!", Properties.Resources.close_48px);
+
                         }
                         else if (exc.Contains("funcionario_email_key"))
                         {
-                            MessageBox.Show("E-mail já registrado!");
+                            AlertBoxArtan(Color.LightPink, Color.DarkRed, "Error", "E-mail já registrado!", Properties.Resources.close_48px);
+
                         }
                         else
                         {
                             MessageBox.Show("Erro: " + ex.Message);
+                 
                         }
                     }
                     else
@@ -447,7 +463,7 @@ namespace MainMenu.Forms
                     comando.Prepare();
                     int id_funcionario = Convert.ToInt32(comando.ExecuteScalar());
 
-                    MessageBox.Show("O FUNCIONARIO FOI ATUALIZADO");
+                    AlertBoxArtan(Color.LightGreen, Color.SeaGreen, "Successo", "O funcionário foi atualizado!", Properties.Resources.ok_48px);
 
                     string strlog = "update login set login=@login where id_funcionario=@id_funcionario";
 
@@ -468,11 +484,11 @@ namespace MainMenu.Forms
                     {
                         if (exc.Contains("funcionario_cpf_key"))
                         {
-                            MessageBox.Show("CPF já registrado!");
+                            AlertBoxArtan(Color.LightPink, Color.DarkRed, "Error", "CPF já registrado!", Properties.Resources.close_48px);
                         }
                         else if (exc.Contains("funcionario_email_key"))
                         {
-                            MessageBox.Show("E-mail já registrado!");
+                            AlertBoxArtan(Color.LightPink, Color.DarkRed, "Error", "E-mail já registrado!", Properties.Resources.close_48px);
                         }
                         else
                         {
@@ -584,6 +600,11 @@ namespace MainMenu.Forms
         private void Cadastro_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AlertBoxArtan(Color.LightGoldenrodYellow, Color.Goldenrod, "Aviso", "Favor preencher campo de nome corretamente.", Properties.Resources.box_important_48px);
         }
     }
 }

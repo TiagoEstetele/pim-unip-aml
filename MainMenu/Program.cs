@@ -16,7 +16,7 @@ namespace MainMenu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+           Application.Run(new FormLogin());
             //Application.Run(new FormAdm());
             //Application.Run(new Hello());
         }

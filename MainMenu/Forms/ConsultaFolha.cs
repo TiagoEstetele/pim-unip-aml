@@ -233,7 +233,8 @@ namespace MainMenu
                 //myWordDoc.ExportAsFixedFormat(SaveAs.ToString(), WdExportFormat.wdExportFormatPDF, false, WdExportOptimizeFor.wdExportOptimizeForOnScreen, WdExportRange.wdExportAllDocument, 1, 1, WdExportItem.wdExportDocumentContent, true, true, WdExportCreateBookmarks.wdExportCreateHeadingBookmarks, true, true, false, ref missing);
 
                 wordApp.Quit();
-                MessageBox.Show("O arquivo foi criado!");
+                AlertBoxArtan(Color.LightGreen, Color.SeaGreen, "Successo", "O arquivo foi criado!", Properties.Resources.ok_48px);
+
             }
             catch (Exception ex)
             {
@@ -253,12 +254,14 @@ namespace MainMenu
             Falta = PagamentoFalta(idfun, Salario, idCargo1, Mes);
             if (data == "0")
             {
-                MessageBox.Show("Favor selecionar o mês antes de gerar o holerite.");
+                AlertBoxArtan(Color.LightGoldenrodYellow, Color.Goldenrod, "Aviso", "Favor selecionar o mês antes de gerar o holerite.", Properties.Resources.box_important_48px);
+
                 return;
             }
             else if (Falta == -1)
             {
-                MessageBox.Show("Não encontramos horas trabalhadas nesse mês.");
+                AlertBoxArtan(Color.LightGoldenrodYellow, Color.Goldenrod, "Aviso", "Não encontramos horas trabalhadas nesse mês.", Properties.Resources.box_important_48px);
+
                 return;
             }
             //else if (data == "0")

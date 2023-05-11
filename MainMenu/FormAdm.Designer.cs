@@ -138,7 +138,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(220, 64);
             this.button3.TabIndex = 4;
-            this.button3.Text = "             Home";
+            this.button3.Text = "             Menu";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -204,7 +204,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(220, 56);
             this.button1.TabIndex = 2;
-            this.button1.Text = "             About";
+            this.button1.Text = "             Sobre";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -226,7 +226,7 @@
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(217, 56);
             this.btnLogout.TabIndex = 7;
-            this.btnLogout.Text = "             Logout";
+            this.btnLogout.Text = "             Sair";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click_1);
@@ -248,7 +248,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(217, 56);
             this.button2.TabIndex = 3;
-            this.button2.Text = "             Help";
+            this.button2.Text = "             Ajuda";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
@@ -282,9 +282,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(61, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 24);
+            this.label1.Size = new System.Drawing.Size(83, 24);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Menu";
+            this.label1.Text = "Opções";
             // 
             // menuButton
             // 
@@ -364,9 +364,9 @@
             this.labelTittle.ForeColor = System.Drawing.Color.White;
             this.labelTittle.Location = new System.Drawing.Point(463, 28);
             this.labelTittle.Name = "labelTittle";
-            this.labelTittle.Size = new System.Drawing.Size(72, 30);
+            this.labelTittle.Size = new System.Drawing.Size(139, 30);
             this.labelTittle.TabIndex = 2;
-            this.labelTittle.Text = "HOME";
+            this.labelTittle.Text = "Tela Principal";
             this.labelTittle.UseCompatibleTextRendering = true;
             // 
             // guna2GradientPanel1
