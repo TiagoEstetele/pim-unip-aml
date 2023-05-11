@@ -270,7 +270,7 @@ namespace MainMenu
             //    return;
             //}
             PINSS = CalculoPorcentagemINSS(Salario);
-            SalarioLiquido = CalculoSalarioLiquido(idfun, Salario);
+            SalarioLiquido = CalculoSalarioLiquido(idfun, Salario, Mes);
             Descontos = Falta + IRRF + INSS;
             DescontosE = Falta;
             SalarioRecebido = SalarioLiquido - Descontos;
@@ -448,11 +448,8 @@ namespace MainMenu
             return FaltaDia;
         }
 
-        private decimal CalculoSalarioLiquido(long idfun, string Salario)
+        private decimal CalculoSalarioLiquido(long idfun, string Salario, int Mes)
         {
-            DateTime date = new DateTime();
-            date = DateTime.Now;
-            int mes = (date.Month);
             string horas;
             decimal SalarioLiquido;
             decimal PagamentoTotal;
@@ -477,7 +474,7 @@ namespace MainMenu
             NpgsqlCommand comando = new NpgsqlCommand(strcad, connection);
 
             comando.Parameters.AddWithValue("@id", idfun);
-            comando.Parameters.AddWithValue("@mes", mes);
+            comando.Parameters.AddWithValue("@mes", Mes);
 
             NpgsqlDataReader dr = comando.ExecuteReader();
             dr.Read();
