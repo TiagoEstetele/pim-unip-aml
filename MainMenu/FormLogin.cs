@@ -173,11 +173,11 @@ namespace MainMenu
         {
             try
             {
-                string postgres_source = "Host=pim.postgres.database.azure.com;" +
+                string postgres_source = "Host=bancoaml.postgres.database.azure.com;" +
                                          "Port=5432;" +
-                                         "Database=Teste02;" +
-                                         "Username=ricardinholord;" +
-                                         "Password=Maluco777;";
+                                         "Database=Banco_AML;" +
+                                         "Username=ADM_AML;" +
+                                         "Password=Banco2023;";
 
                 conec = new NpgsqlConnection(postgres_source);
                 string sql_login = "select d.id_cargo, d.ativo, d.id_funcionario, d.nome from login l inner join funcionario d on d.id_funcionario = l.id_funcionario where l.login= @login and l.senha= @senha";

@@ -15,11 +15,11 @@ namespace MainMenu
 {
     public partial class Perfil : Form
     {
-        string connectionString = "Host=pim.postgres.database.azure.com;" +
-                                    "Port=5432;" +
-                                    "Database=Teste02;" +
-                                    "Username=ricardinholord;" +
-                                    "Password=Maluco777;";
+        string connectionString = "Host=bancoaml.postgres.database.azure.com;" +
+                                  "Port=5432;" +
+                                  "Database=Banco_AML;" +
+                                  "Username=ADM_AML;" +
+                                  "Password=Banco2023;";
         NpgsqlConnection connection = null;
         public List<RelatorioHoras> Horas = new List<RelatorioHoras>();
         public long idfun;

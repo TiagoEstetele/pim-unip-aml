@@ -76,11 +76,11 @@ namespace MainMenu
                     return;
                 }
 
-                string Postgres_Source = "Host=pim.postgres.database.azure.com;" +
+                string Postgres_Source = "Host=bancoaml.postgres.database.azure.com;" +
                                          "Port=5432;" +
-                                         "Database=Teste02;" +
-                                         "Username=ricardinholord;" +
-                                         "Password=Maluco777;";
+                                         "Database=Banco_AML;" +
+                                         "Username=ADM_AML;" +
+                                         "Password=Banco2023;";
                 conec = new NpgsqlConnection(Postgres_Source);
                 string Sql_NovaSenha = "update login set senha = @senha_nova where senha = '123' and login = @identif";
 

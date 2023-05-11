@@ -73,11 +73,11 @@ namespace MainMenu.Forms
         }
         private void btnVerificar_Click(object sender, EventArgs e)
         {
-            string postgres_source = "Host=pim.postgres.database.azure.com;" +
-                                         "Port=5432;" +
-                                         "Database=Teste02;" +
-                                         "Username=ricardinholord;" +
-                                         "Password=Maluco777;";
+            string postgres_source = "Host=bancoaml.postgres.database.azure.com;" +
+                                     "Port=5432;" +
+                                     "Database=Banco_AML;" +
+                                     "Username=ADM_AML;" +
+                                     "Password=Banco2023;";
 
             conec = new NpgsqlConnection(postgres_source);
 

@@ -19,11 +19,11 @@ namespace MainMenu
 {
     public partial class ConsultaFolha : Form
     {
-        string connectionString = "Host=pim.postgres.database.azure.com;" +
+        string connectionString = "Host=bancoaml.postgres.database.azure.com;" +
                                   "Port=5432;" +
-                                  "Database=Teste02;" +
-                                  "Username=ricardinholord;" +
-                                  "Password=Maluco777;";
+                                  "Database=Banco_AML;" +
+                                  "Username=ADM_AML;" +
+                                  "Password=Banco2023;";
         long idfun;
         string nome, endereco, telefone, Salario;
         long idCargo1;

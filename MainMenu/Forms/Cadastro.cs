@@ -21,11 +21,11 @@ namespace MainMenu.Forms
     {
         private readonly long? IdFuncionario = null;
 
-        string connectionString = "Host=pim.postgres.database.azure.com;" +
-                                    "Port=5432;" +
-                                    "Database=Teste02;" +
-                                    "Username=ricardinholord;" +
-                                    "Password=Maluco777;";
+        string connectionString = "Host=bancoaml.postgres.database.azure.com;" +
+                                  "Port=5432;" +
+                                  "Database=Banco_AML;" +
+                                  "Username=ADM_AML;" +
+                                  "Password=Banco2023;";
         NpgsqlConnection connection = null;
         private string strsql = string.Empty;
         public List<Cargo> cargoList = new List<Cargo>();

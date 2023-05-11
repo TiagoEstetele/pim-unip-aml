@@ -17,11 +17,11 @@ namespace MainMenu.Forms
     {
         private Form activeForm;
         private Button currentButton;
-        string connectionString = "Host=pim.postgres.database.azure.com;" +
-                              "Port=5432;" +
-                              "Database=Teste02;" +
-                              "Username=ricardinholord;" +
-                              "Password=Maluco777;";
+        string connectionString = "Host=bancoaml.postgres.database.azure.com;" +
+                                  "Port=5432;" +
+                                  "Database=Banco_AML;" +
+                                  "Username=ADM_AML;" +
+                                  "Password=Banco2023;";
         NpgsqlConnection connection = null;
         public List<Funcionario> funcionarios = new List<Funcionario>();
         private readonly Panel panelDesktopPanel;
